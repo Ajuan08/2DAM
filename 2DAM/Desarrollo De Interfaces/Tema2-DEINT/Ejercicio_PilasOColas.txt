@@ -1,0 +1,63 @@
+namespace Ejercicio_PilasOColas
+{
+    internal class Program
+    {
+        static bool ValidarDeSimbolos(string formula)
+        {
+            Stack<char> pila = new Stack<char>();
+
+            foreach (char caracter in formula)
+            {
+                if (Simbolos(caracter))
+                {
+                    if (SimboloDeApertura(caracter))
+                    {
+                        pila.Push(caracter);
+                    }
+                    else
+                    {
+                        if (pila.Count == 0 || !CoincidenSimbolos(pila.Pop(), caracter))
+                        {
+                            return false; 
+                        }
+                    }
+                }
+            }
+            return pila.Count == 0;
+        }
+
+        static bool Simbolos(char c)
+        {
+            return c == '(' || c == ')' || c == '[' || c == ']' || c == '{' || c == '}';
+        }
+
+        static bool SimboloDeApertura(char c)
+        {
+            return c == '(' || c == '[' || c == '{';
+        }
+
+        static bool CoincidenSimbolos(char apertura, char cierre)
+        {
+            return (apertura == '(' && cierre == ')') ||
+                   (apertura == '[' && cierre == ']') ||
+                   (apertura == '{' && cierre == '}');
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ingrese una fórmula:");
+            string formula = Console.ReadLine();
+
+            bool balanceados = ValidarDeSimbolos(formula);
+
+            if (balanceados)
+            {
+                Console.WriteLine("La formula esta balanceada.");
+            }
+            else
+            {
+                Console.WriteLine("La formula no esta balanceada.");
+            }
+        }
+    }
+}

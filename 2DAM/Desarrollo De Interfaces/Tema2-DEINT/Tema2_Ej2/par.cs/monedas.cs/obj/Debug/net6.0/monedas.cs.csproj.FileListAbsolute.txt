@@ -1,0 +1,14 @@
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\bin\Debug\net6.0\monedas.cs.exe
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\bin\Debug\net6.0\monedas.cs.deps.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\bin\Debug\net6.0\monedas.cs.runtimeconfig.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\bin\Debug\net6.0\monedas.cs.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\bin\Debug\net6.0\monedas.cs.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\obj\Debug\net6.0\monedas.cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\obj\Debug\net6.0\monedas.cs.AssemblyInfoInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\obj\Debug\net6.0\monedas.cs.AssemblyInfo.cs
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\obj\Debug\net6.0\monedas.cs.csproj.CoreCompileInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\obj\Debug\net6.0\monedas.cs.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\obj\Debug\net6.0\refint\monedas.cs.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\obj\Debug\net6.0\monedas.cs.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\obj\Debug\net6.0\monedas.cs.genruntimeconfig.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\monedas.cs\obj\Debug\net6.0\ref\monedas.cs.dll

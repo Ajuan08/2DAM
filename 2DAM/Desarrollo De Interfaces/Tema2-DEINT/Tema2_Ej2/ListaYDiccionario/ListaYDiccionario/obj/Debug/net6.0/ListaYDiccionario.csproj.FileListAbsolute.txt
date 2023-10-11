@@ -1,0 +1,14 @@
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\bin\Debug\net6.0\ListaYDiccionario.exe
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\bin\Debug\net6.0\ListaYDiccionario.deps.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\bin\Debug\net6.0\ListaYDiccionario.runtimeconfig.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\bin\Debug\net6.0\ListaYDiccionario.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\bin\Debug\net6.0\ListaYDiccionario.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\obj\Debug\net6.0\ListaYDiccionario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\obj\Debug\net6.0\ListaYDiccionario.AssemblyInfoInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\obj\Debug\net6.0\ListaYDiccionario.AssemblyInfo.cs
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\obj\Debug\net6.0\ListaYDiccionario.csproj.CoreCompileInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\obj\Debug\net6.0\ListaYDiccionario.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\obj\Debug\net6.0\refint\ListaYDiccionario.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\obj\Debug\net6.0\ListaYDiccionario.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\obj\Debug\net6.0\ListaYDiccionario.genruntimeconfig.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\ListaYDiccionario\ListaYDiccionario\obj\Debug\net6.0\ref\ListaYDiccionario.dll

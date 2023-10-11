@@ -1,0 +1,14 @@
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\bin\Debug\net6.0\Ejercicio_PilaOCola.exe
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\bin\Debug\net6.0\Ejercicio_PilaOCola.deps.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\bin\Debug\net6.0\Ejercicio_PilaOCola.runtimeconfig.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\bin\Debug\net6.0\Ejercicio_PilaOCola.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\bin\Debug\net6.0\Ejercicio_PilaOCola.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\obj\Debug\net6.0\Ejercicio_PilaOCola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\obj\Debug\net6.0\Ejercicio_PilaOCola.AssemblyInfoInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\obj\Debug\net6.0\Ejercicio_PilaOCola.AssemblyInfo.cs
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\obj\Debug\net6.0\Ejercicio_PilaOCola.csproj.CoreCompileInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\obj\Debug\net6.0\Ejercicio_PilaOCola.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\obj\Debug\net6.0\refint\Ejercicio_PilaOCola.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\obj\Debug\net6.0\Ejercicio_PilaOCola.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\obj\Debug\net6.0\Ejercicio_PilaOCola.genruntimeconfig.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej4\Ejercicio_PilaOCola\Ejercicio_PilaOCola\obj\Debug\net6.0\ref\Ejercicio_PilaOCola.dll

@@ -1,0 +1,6 @@
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\PruebaUnitaria\PruebaUnitariaTests1\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\PruebaUnitaria\PruebaUnitariaTests1\obj\Debug\net6.0\PruebaUnitariaTests1.csproj.AssemblyReference.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\PruebaUnitaria\PruebaUnitariaTests1\obj\Debug\net6.0\PruebaUnitariaTests1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\PruebaUnitaria\PruebaUnitariaTests1\obj\Debug\net6.0\PruebaUnitariaTests1.AssemblyInfoInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\PruebaUnitaria\PruebaUnitariaTests1\obj\Debug\net6.0\PruebaUnitariaTests1.AssemblyInfo.cs
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\PruebaUnitaria\PruebaUnitariaTests1\obj\Debug\net6.0\PruebaUnitariaTests1.csproj.CoreCompileInputs.cache

@@ -1,0 +1,16 @@
+package herencia;
+
+public class TestAnimal {
+
+	public static void main(String[] args) {
+		//Animal a = new Animal("Leocan", "Pitbull");
+		//System.out.println(a.toString());
+		//Mamifero m = new Mamifero("Lucia","Ballena",2);
+		
+		Reptil r = new Reptil("Alvaro","Gecko",24);
+		
+		System.out.println(r);
+		
+	}
+
+}

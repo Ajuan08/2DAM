@@ -1,0 +1,26 @@
+package herencia;
+
+public  class Animal {
+	
+	private String nombre, especie;
+
+	public Animal(String nombre, String especie) {
+		this.nombre = nombre;
+		this.especie = especie;
+	}
+
+	public Animal() {
+		
+	}
+	
+	public void cualquiera();
+
+	@Override
+	public String toString() {
+		return "Nombre=" + nombre + " Especie=" + especie;
+	}
+	
+	
+
+	
+}

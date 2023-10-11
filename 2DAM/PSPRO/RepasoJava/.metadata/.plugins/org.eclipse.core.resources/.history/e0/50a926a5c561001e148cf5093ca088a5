@@ -1,0 +1,8 @@
+package herencia;
+
+public class Reptil {
+
+	private Float temperatura;
+	
+	
+}

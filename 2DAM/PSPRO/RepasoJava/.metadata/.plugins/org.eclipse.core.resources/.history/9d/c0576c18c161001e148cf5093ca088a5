@@ -1,0 +1,14 @@
+package herencia;
+
+public abstract class Animal {
+	
+	private String nombre, especie;
+
+	public Animal(String nombre, String especie) {
+		super();
+		this.nombre = nombre;
+		this.especie = especie;
+	}
+
+	
+}

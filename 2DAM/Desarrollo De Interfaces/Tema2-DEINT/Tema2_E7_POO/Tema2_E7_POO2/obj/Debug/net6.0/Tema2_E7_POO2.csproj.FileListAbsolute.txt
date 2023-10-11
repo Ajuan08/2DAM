@@ -1,0 +1,28 @@
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\bin\Debug\net6.0\Tema2_E7_POO2.exe
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\bin\Debug\net6.0\Tema2_E7_POO2.deps.json
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\bin\Debug\net6.0\Tema2_E7_POO2.runtimeconfig.json
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\bin\Debug\net6.0\Tema2_E7_POO2.dll
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\bin\Debug\net6.0\Tema2_E7_POO2.pdb
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.AssemblyInfoInputs.cache
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.AssemblyInfo.cs
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.dll
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\refint\Tema2_E7_POO2.dll
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.pdb
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.genruntimeconfig.cache
+C:\Users\anton\Desktop\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\ref\Tema2_E7_POO2.dll
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\bin\Debug\net6.0\Tema2_E7_POO2.exe
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\bin\Debug\net6.0\Tema2_E7_POO2.deps.json
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\bin\Debug\net6.0\Tema2_E7_POO2.runtimeconfig.json
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\bin\Debug\net6.0\Tema2_E7_POO2.dll
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\bin\Debug\net6.0\Tema2_E7_POO2.pdb
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.GeneratedMSBuildEditorConfig.editorconfig
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.AssemblyInfoInputs.cache
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.AssemblyInfo.cs
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.csproj.CoreCompileInputs.cache
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.dll
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\refint\Tema2_E7_POO2.dll
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.pdb
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\Tema2_E7_POO2.genruntimeconfig.cache
+G:\Mi unidad\2ºDAM\Tema2_E7_POO\Tema2_E7_POO2\obj\Debug\net6.0\ref\Tema2_E7_POO2.dll

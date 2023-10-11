@@ -1,0 +1,14 @@
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\bin\Debug\net6.0\par.cs.exe
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\bin\Debug\net6.0\par.cs.deps.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\bin\Debug\net6.0\par.cs.runtimeconfig.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\bin\Debug\net6.0\par.cs.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\bin\Debug\net6.0\par.cs.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\obj\Debug\net6.0\par.cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\obj\Debug\net6.0\par.cs.AssemblyInfoInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\obj\Debug\net6.0\par.cs.AssemblyInfo.cs
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\obj\Debug\net6.0\par.cs.csproj.CoreCompileInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\obj\Debug\net6.0\par.cs.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\obj\Debug\net6.0\refint\par.cs.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\obj\Debug\net6.0\par.cs.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\obj\Debug\net6.0\par.cs.genruntimeconfig.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\par.cs\obj\Debug\net6.0\ref\par.cs.dll

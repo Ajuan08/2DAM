@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ListaConBotones</string>
+    <string name="strButtonSumar">+</string>
+    <string name="strButtonRestar">-</string>
+    <string name="strButtonReset">Reset</string>
+    <string name="strContadorClicks">0</string>
+</resources>

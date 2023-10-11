@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+
+    <script>
+        // Estructura de datos para almacenar la lista de tareas
+        let listaDeTareas = [];
+
+        // Función para agregar una nueva tarea a la lista
+        function agregarTarea() {
+            let nuevaTarea = document.getElementById("nuevaTarea").value;
+            if (nuevaTarea !== "") {
+                listaDeTareas.push({ tarea: nuevaTarea, completada: false });
+                mostrarTareas();
+                document.getElementById("nuevaTarea").value = "";
+            }
+        }
+
+        // Función para marcar una tarea como completada
+        function marcarComoCompletada(indice) {
+            if (indice >= 0 && indice < listaDeTareas.length) {
+                listaDeTareas[indice].completada = true;
+                mostrarTareas();
+            } else {
+                alert("El índice proporcionado no es válido.");
+            }
+        }
+
+        // Función para mostrar las tareas en la lista
+        function mostrarTareas() {
+            let listaTareasElement = document.getElementById("listaTareas");
+            listaTareasElement.innerHTML = "";
+
+            for (let i = 0; i < listaDeTareas.length; i++) {
+                let tarea = listaDeTareas[i];
+                let tareaElement = document.createElement("li");
+                tareaElement.textContent = tarea.tarea;
+
+                if (tarea.completada) {
+                    tareaElement.style.textDecoration = "line-through";
+                }
+
+                tareaElement.addEventListener("click", function() {
+                    marcarComoCompletada(i);
+                });
+
+                listaTareasElement.appendChild(tareaElement);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    
+    <!-- Input para ingresar nueva tarea -->
+    <input type="text" id="nuevaTarea">
+    <!-- Botón para agregar tarea -->
+    <button onclick="agregarTarea()">Agregar Tarea</button>
+
+    <!-- Lista para mostrar las tareas -->
+    <ul id="listaTareas"></ul>
+
+    
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Museo&apos; to &apos;museo&apos;&#x0D;&#x0A;- Original project: &apos;Ej4_Museo&apos;&#x0D;&#x0A;- Original element: &apos;Ej4_Museo/src/Museo&apos;&#x0D;&#x0A;- Renamed element: &apos;Ej4_Museo/src/museo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Museo&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Museo" name="museo" qualified="false" references="true" stamp="1696333251914" textual="false" version="1.0"/>
+</session>

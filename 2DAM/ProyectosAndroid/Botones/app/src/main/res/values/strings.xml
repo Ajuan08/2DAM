@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Botones</string>
+    <string name="strButtonSumar" />
+    <string name="strBotonSumar">+</string>
+    <string name="strBotonRestar">-</string>
+    <string name="strBotonReset">Reset</string>
+    <string name="strTextView">0</string>
+    <string name="onclickSumar" />
+    <string name="onclickRestar" />
+    <string name="onclickReset" />
+</resources>

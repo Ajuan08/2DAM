@@ -1,0 +1,33 @@
+package herencia;
+
+public class Reptil extends Animal {
+
+	private Integer temperatura;
+	
+	public Reptil (String nombre, String especie, Integer temperatura) 
+	
+	{
+		super(nombre, especie);
+		this.temperatura = temperatura;
+	}
+
+	
+	
+
+
+	@Override
+	public String toString() {
+		return super.toString()+ " Temperatura = "+temperatura +"grados";
+	}
+
+
+
+
+
+	@Override
+	public void cualquiera() {
+		
+	}
+	
+	
+}

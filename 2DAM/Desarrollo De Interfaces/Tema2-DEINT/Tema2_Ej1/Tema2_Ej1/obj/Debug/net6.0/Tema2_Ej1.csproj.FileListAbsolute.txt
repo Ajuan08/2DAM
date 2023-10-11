@@ -1,0 +1,14 @@
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\bin\Debug\net6.0\Tema2_Ej1.exe
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\bin\Debug\net6.0\Tema2_Ej1.deps.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\bin\Debug\net6.0\Tema2_Ej1.runtimeconfig.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\bin\Debug\net6.0\Tema2_Ej1.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\bin\Debug\net6.0\Tema2_Ej1.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\obj\Debug\net6.0\Tema2_Ej1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\obj\Debug\net6.0\Tema2_Ej1.AssemblyInfoInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\obj\Debug\net6.0\Tema2_Ej1.AssemblyInfo.cs
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\obj\Debug\net6.0\Tema2_Ej1.csproj.CoreCompileInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\obj\Debug\net6.0\Tema2_Ej1.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\obj\Debug\net6.0\refint\Tema2_Ej1.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\obj\Debug\net6.0\Tema2_Ej1.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\obj\Debug\net6.0\Tema2_Ej1.genruntimeconfig.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej1\Tema2_Ej1\obj\Debug\net6.0\ref\Tema2_Ej1.dll

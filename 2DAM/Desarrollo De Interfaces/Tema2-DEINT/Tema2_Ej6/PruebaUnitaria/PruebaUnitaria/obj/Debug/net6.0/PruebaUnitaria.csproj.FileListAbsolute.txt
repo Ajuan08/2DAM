@@ -1,0 +1,4 @@
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\PruebaUnitaria\PruebaUnitaria\obj\Debug\net6.0\PruebaUnitaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\PruebaUnitaria\PruebaUnitaria\obj\Debug\net6.0\PruebaUnitaria.AssemblyInfoInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\PruebaUnitaria\PruebaUnitaria\obj\Debug\net6.0\PruebaUnitaria.AssemblyInfo.cs
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\PruebaUnitaria\PruebaUnitaria\obj\Debug\net6.0\PruebaUnitaria.csproj.CoreCompileInputs.cache

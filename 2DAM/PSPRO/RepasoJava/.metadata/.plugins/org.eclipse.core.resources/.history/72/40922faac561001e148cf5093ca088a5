@@ -1,0 +1,13 @@
+package herencia;
+
+public class Reptil extends Animal {
+
+	private Float temperatura;
+	
+	public Reptil (String nombre, String especie, Float temperatura) 
+	
+	{
+		super(nombre, especie);
+		this.temperatura = temperatura;
+	}
+}

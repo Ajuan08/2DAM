@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Ej_Calculadora</string>
+    <string name="strButton0">o</string>
+    <string name="strButtonPunto">.</string>
+    <string name="strButtonSuma">+</string>
+    <string name="strButtonResta">-</string>
+    <string name="strButtonMulti">X</string>
+    <string name="strButtonDivis">/</string>
+    <string name="strButton1">1</string>
+    <string name="strButton2">2</string>
+    <string name="strButton3">3</string>
+    <string name="strButton4">4</string>
+    <string name="strButton5">5</string>
+    <string name="strButton6">6</string>
+    <string name="strButton7">7</string>
+    <string name="strButton8">8</string>
+    <string name="strButton9">9</string>
+    <string name="strButtonReset">C</string>
+    <string name="strButtonMC">MC</string>
+    <string name="strButtonMmas">M+</string>
+    <string name="strButtonMmenos">M-</string>
+    <string name="strButtonValNegPos">+/-</string>
+    <string name="strButtonMR">MR</string>
+    <string name="strButtonCero">0</string>
+</resources>

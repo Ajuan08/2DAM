@@ -1,0 +1,10 @@
+C:\Users\dam\source\repos\Mi1Calculadora\Mi1Calculadora\obj\Debug\Mi1Calculadora.csproj.AssemblyReference.cache
+C:\Users\dam\source\repos\Mi1Calculadora\Mi1Calculadora\obj\Debug\Mi1Calculadora.Properties.Resources.resources
+C:\Users\dam\source\repos\Mi1Calculadora\Mi1Calculadora\obj\Debug\Mi1Calculadora.csproj.GenerateResource.cache
+C:\Users\dam\source\repos\Mi1Calculadora\Mi1Calculadora\obj\Debug\Mi1Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\dam\source\repos\Mi1Calculadora\Mi1Calculadora\bin\Debug\Mi1Calculadora.exe.config
+C:\Users\dam\source\repos\Mi1Calculadora\Mi1Calculadora\bin\Debug\Mi1Calculadora.exe
+C:\Users\dam\source\repos\Mi1Calculadora\Mi1Calculadora\bin\Debug\Mi1Calculadora.pdb
+C:\Users\dam\source\repos\Mi1Calculadora\Mi1Calculadora\obj\Debug\Mi1Calculadora.titulo.resources
+C:\Users\dam\source\repos\Mi1Calculadora\Mi1Calculadora\obj\Debug\Mi1Calculadora.exe
+C:\Users\dam\source\repos\Mi1Calculadora\Mi1Calculadora\obj\Debug\Mi1Calculadora.pdb

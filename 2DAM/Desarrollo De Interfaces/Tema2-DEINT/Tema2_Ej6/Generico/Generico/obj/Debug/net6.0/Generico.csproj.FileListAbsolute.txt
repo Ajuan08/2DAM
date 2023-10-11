@@ -1,0 +1,14 @@
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\bin\Debug\net6.0\Generico.exe
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\bin\Debug\net6.0\Generico.deps.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\bin\Debug\net6.0\Generico.runtimeconfig.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\bin\Debug\net6.0\Generico.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\bin\Debug\net6.0\Generico.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\obj\Debug\net6.0\Generico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\obj\Debug\net6.0\Generico.AssemblyInfoInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\obj\Debug\net6.0\Generico.AssemblyInfo.cs
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\obj\Debug\net6.0\Generico.csproj.CoreCompileInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\obj\Debug\net6.0\Generico.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\obj\Debug\net6.0\refint\Generico.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\obj\Debug\net6.0\Generico.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\obj\Debug\net6.0\Generico.genruntimeconfig.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej6\Generico\Generico\obj\Debug\net6.0\ref\Generico.dll

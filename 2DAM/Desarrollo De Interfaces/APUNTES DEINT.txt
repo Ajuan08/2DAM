@@ -1,0 +1,64 @@
+APUNTES DEINT:
+
+Internal --> Permite acceder desde cualquier parte del proyecto.
+
+Nombre de las variables = _marca
+
+
+propiedades (prop tab tab)
+
+Los campos tienen que ser privados
+
+
+Siempre que se trate un dato en la propiedad las variables se quedan pero si no puedes quitarlas
+
+Cuando una propiedad es privada, se tiene que ralizar en la clase por un metodo para modificarla
+
+
+constructor (ctor tab tab)
+
+Diferencia entre constructor y metodo es que el contructor no devuelve nada
+
+----------------------------------------------------------------------------------------------------------
+
+internal static claas ExtensionesString
+
+internal static int ContarPalabras(this string? s, int ValorPorDefecto)   --> Método para contar Palabras
+{
+	if (string.IsNullOrWhiteSpaces(s)
+	{
+		return ValorPorDefecto
+	}
+
+	var separadores = new string[] { " ", Enviroment.NewLine}
+
+	var palabras = s.Split(separadores, StringSplitOption)
+
+	return palabras.Lenght;
+
+
+
+} 
+
+----------------------------------------------------------------------------------------------------------------
+
+HERENCIAS
+
+internal class Coche : Vehiculo 
+
+public virtual void SonarClaxon()
+					---->Xlase virtual que permite sobreescribir o no la otra clase
+public override void SonarClaxon()
+
+
+public abstract void ---> Es obligatorio sobreescribir
+
+
+internal sealed class --> No se puede derivar de ella.
+
+
+
+
+
+
+

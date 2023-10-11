@@ -1,0 +1,12 @@
+package herencia;
+
+public class TestAnimal {
+
+	public static void main(String[] args) {
+		Animal a = new Animal("Leocan", "Pitbull");
+		Animal b = new Animal();
+		
+		System.out.println(a.toString());
+	}
+
+}

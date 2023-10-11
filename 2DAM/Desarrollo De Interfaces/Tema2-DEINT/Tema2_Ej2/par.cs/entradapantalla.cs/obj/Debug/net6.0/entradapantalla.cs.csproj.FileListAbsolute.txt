@@ -1,0 +1,14 @@
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\bin\Debug\net6.0\entradapantalla.cs.exe
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\bin\Debug\net6.0\entradapantalla.cs.deps.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\bin\Debug\net6.0\entradapantalla.cs.runtimeconfig.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\bin\Debug\net6.0\entradapantalla.cs.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\bin\Debug\net6.0\entradapantalla.cs.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\obj\Debug\net6.0\entradapantalla.cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\obj\Debug\net6.0\entradapantalla.cs.AssemblyInfoInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\obj\Debug\net6.0\entradapantalla.cs.AssemblyInfo.cs
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\obj\Debug\net6.0\entradapantalla.cs.csproj.CoreCompileInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\obj\Debug\net6.0\entradapantalla.cs.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\obj\Debug\net6.0\refint\entradapantalla.cs.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\obj\Debug\net6.0\entradapantalla.cs.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\obj\Debug\net6.0\entradapantalla.cs.genruntimeconfig.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\par.cs\entradapantalla.cs\obj\Debug\net6.0\ref\entradapantalla.cs.dll

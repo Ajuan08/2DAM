@@ -1,0 +1,14 @@
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\bin\Debug\net6.0\Ejercicio_Exam_Silla.exe
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\bin\Debug\net6.0\Ejercicio_Exam_Silla.deps.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\bin\Debug\net6.0\Ejercicio_Exam_Silla.runtimeconfig.json
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\bin\Debug\net6.0\Ejercicio_Exam_Silla.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\bin\Debug\net6.0\Ejercicio_Exam_Silla.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\obj\Debug\net6.0\Ejercicio_Exam_Silla.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\obj\Debug\net6.0\Ejercicio_Exam_Silla.AssemblyInfoInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\obj\Debug\net6.0\Ejercicio_Exam_Silla.AssemblyInfo.cs
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\obj\Debug\net6.0\Ejercicio_Exam_Silla.csproj.CoreCompileInputs.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\obj\Debug\net6.0\Ejercicio_Exam_Silla.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\obj\Debug\net6.0\refint\Ejercicio_Exam_Silla.dll
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\obj\Debug\net6.0\Ejercicio_Exam_Silla.pdb
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\obj\Debug\net6.0\Ejercicio_Exam_Silla.genruntimeconfig.cache
+C:\Users\dam\source\repos\DesarrolloInterfaces\Tema2-DEINT\Tema2_Ej2\Ejercicio_Exam_Silla\Ejercicio_Exam_Silla\obj\Debug\net6.0\ref\Ejercicio_Exam_Silla.dll

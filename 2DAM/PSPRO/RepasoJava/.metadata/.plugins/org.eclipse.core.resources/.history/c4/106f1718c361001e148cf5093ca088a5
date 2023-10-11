@@ -1,0 +1,11 @@
+package herencia;
+
+public class Mamifero extends Animal {
+	
+	private Integer mamas;
+	
+	public Mamifero (String nombre, String especie)
+	{
+		
+	}
+}

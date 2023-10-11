@@ -1,0 +1,6 @@
+package herencia;
+
+public abstract class Animal {
+
+	private String nombre, especie;
+}

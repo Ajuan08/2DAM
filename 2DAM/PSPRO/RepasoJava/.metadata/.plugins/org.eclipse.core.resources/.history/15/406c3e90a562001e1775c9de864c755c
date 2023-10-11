@@ -1,0 +1,41 @@
+package museo;
+
+import java.time.LocalDate;
+
+public class TestMuseo {
+
+	public static void main(String[] args) {
+        
+		
+	 	LocalDate fechaNacArtista1 = LocalDate.of(2001, 9, 8);
+        LocalDate fechaFallecimientoArtista1 = LocalDate.of(2040, 8, 12);
+        LocalDate fechaNacArtista2 = LocalDate.of(2002, 12, 30);
+        LocalDate fechaFallecimientoArtista2 = LocalDate.of(2050, 9, 28);
+        
+        LocalDate anoEscultura = LocalDate.of(2012, 4, 15);
+        LocalDate anoPintura = LocalDate.of(2020, 6, 20);
+	        
+        Artistas artista1 = new Artistas("Airam", "Jerez De La Fra.",fechaNacArtista1,fechaFallecimientoArtista1);
+        Artistas artista2 = new Artistas("Alvaro", "Villamartin", fechaNacArtista2, fechaFallecimientoArtista2);
+
+        
+        Esculturas escultura1 = new Esculturas("Guernica", 1, artista1, anoEscultura, "Mármol", 2);
+        Pinturas pintura1 = new Pinturas("Mona Lisa", 2, artista2, anoPintura, 24, "Óleo sobre lienzo");
+
+      
+        CatalogoMuseo catalogo = new CatalogoMuseo();
+        
+     
+        catalogo.añadeObra(escultura1);
+        catalogo.añadeObra(pintura1);
+
+        
+        double superficiePinturas = catalogo.superficie();
+
+        
+        int numInventarioMasAlta = catalogo.masAlta();
+
+        System.out.println("Nombre del artista: " + artista1.getNombre()+"\nObra creada: " + escultura1.getTitulo()+"\nPintura: " + pintura1.getTitulo()+"\nSuperficie de las pinturas: " + superficiePinturas+"\nLa escultura más alta tiene el número de inventario: " + numInventarioMasAlta);
+    }
+
+}

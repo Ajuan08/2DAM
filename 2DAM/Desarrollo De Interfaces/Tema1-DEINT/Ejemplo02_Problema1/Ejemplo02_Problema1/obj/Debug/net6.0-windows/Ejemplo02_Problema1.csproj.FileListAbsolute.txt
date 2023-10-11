@@ -1,0 +1,16 @@
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\bin\Debug\net6.0-windows\Ejemplo02_Problema1.exe
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\bin\Debug\net6.0-windows\Ejemplo02_Problema1.deps.json
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\bin\Debug\net6.0-windows\Ejemplo02_Problema1.runtimeconfig.json
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\bin\Debug\net6.0-windows\Ejemplo02_Problema1.dll
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\bin\Debug\net6.0-windows\Ejemplo02_Problema1.pdb
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\obj\Debug\net6.0-windows\Ejemplo02_Problema1.Form1.resources
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\obj\Debug\net6.0-windows\Ejemplo02_Problema1.csproj.GenerateResource.cache
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\obj\Debug\net6.0-windows\Ejemplo02_Problema1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\obj\Debug\net6.0-windows\Ejemplo02_Problema1.AssemblyInfoInputs.cache
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\obj\Debug\net6.0-windows\Ejemplo02_Problema1.AssemblyInfo.cs
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\obj\Debug\net6.0-windows\Ejemplo02_Problema1.csproj.CoreCompileInputs.cache
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\obj\Debug\net6.0-windows\Ejemplo02_Problema1.dll
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\obj\Debug\net6.0-windows\refint\Ejemplo02_Problema1.dll
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\obj\Debug\net6.0-windows\Ejemplo02_Problema1.pdb
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\obj\Debug\net6.0-windows\Ejemplo02_Problema1.genruntimeconfig.cache
+C:\Users\dam\source\repos\Ejemplo02_Problema1\Ejemplo02_Problema1\obj\Debug\net6.0-windows\ref\Ejemplo02_Problema1.dll
