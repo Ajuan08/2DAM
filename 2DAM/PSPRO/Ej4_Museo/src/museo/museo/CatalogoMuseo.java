@@ -6,11 +6,11 @@ import java.util.List;
 
 public class CatalogoMuseo 
 {
-	private List<ObrasArtisticas> catalogo;
+	private ArrayList<ObrasArtisticas> catalogo;
 	
 	public CatalogoMuseo() 
 	{
-		this.catalogo = new ArrayList<>();
+		catalogo = DAO.getObras();
     } 
 	
 	public void añadeObra(ObrasArtisticas obra) {

@@ -1,13 +1,22 @@
-package museo;
-
 import java.time.LocalDate;
 
-public class TestMuseo {
+public class DAOObras 
+{
 
-	public static void main(String[] args) {
-        
+	public static ArrayList<Obra> getObras()
+	{ArrayList<Obra> catalogo = new ArrayList<Obra>();
+	 
+    Autor autor = new Autor ("Felipe","Jerez", LocalDate.of(2000, 2, 4),null);
+		Obra pintura = new Pintura(autor,1,2010,"Manchas",40,40,"Papel");
+		catalogo.add(pintura);
 		
-	 	LocalDate fechaNacArtista1 = LocalDate.of(2001, 9, 8);
+		 autor = new Autor ("Adrían","Arcos", LocalDate.of(1980, 1, 4),null);
+		pintura = new Pintura(autor,2,2010,"Manchas",40,40,"Papel");
+		catalogo.add(pintura);
+		
+		return catalogo;
+		
+		LocalDate fechaNacArtista1 = LocalDate.of(2001, 9, 8);
         LocalDate fechaFallecimientoArtista1 = LocalDate.of(2040, 8, 12);
         LocalDate fechaNacArtista2 = LocalDate.of(2002, 12, 30);
         LocalDate fechaFallecimientoArtista2 = LocalDate.of(2050, 9, 28);
@@ -36,6 +45,5 @@ public class TestMuseo {
         int numInventarioMasAlta = catalogo.masAlta();
 
         System.out.println("Nombre del artista: " + artista1.getNombre()+"\nObra creada: " + escultura1.getTitulo()+"\nPintura: " + pintura1.getTitulo()+"\nSuperficie de las pinturas: " + superficiePinturas+"\nLa escultura más alta tiene el número de inventario: " + numInventarioMasAlta);
-    }
-
+	}
 }

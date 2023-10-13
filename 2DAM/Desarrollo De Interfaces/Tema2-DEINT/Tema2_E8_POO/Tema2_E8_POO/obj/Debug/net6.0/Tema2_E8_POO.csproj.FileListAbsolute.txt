@@ -1,0 +1,14 @@
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\bin\Debug\net6.0\Tema2_E8_POO.exe
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\bin\Debug\net6.0\Tema2_E8_POO.deps.json
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\bin\Debug\net6.0\Tema2_E8_POO.runtimeconfig.json
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\bin\Debug\net6.0\Tema2_E8_POO.dll
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\bin\Debug\net6.0\Tema2_E8_POO.pdb
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\obj\Debug\net6.0\Tema2_E8_POO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\obj\Debug\net6.0\Tema2_E8_POO.AssemblyInfoInputs.cache
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\obj\Debug\net6.0\Tema2_E8_POO.AssemblyInfo.cs
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\obj\Debug\net6.0\Tema2_E8_POO.csproj.CoreCompileInputs.cache
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\obj\Debug\net6.0\Tema2_E8_POO.dll
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\obj\Debug\net6.0\refint\Tema2_E8_POO.dll
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\obj\Debug\net6.0\Tema2_E8_POO.pdb
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\obj\Debug\net6.0\Tema2_E8_POO.genruntimeconfig.cache
+C:\Users\dam\Desktop\GitHub\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Tema2_E8_POO\Tema2_E8_POO\obj\Debug\net6.0\ref\Tema2_E8_POO.dll

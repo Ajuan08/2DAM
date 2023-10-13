@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema2_E8_POO", "Tema2_E8_POO\Tema2_E8_POO.csproj", "{6AB77CFE-2108-4439-9E53-EEE33BA21808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema2_E8_POO_Act2", "Tema2_E8_POO_Act2\Tema2_E8_POO_Act2.csproj", "{EE76EAF5-2CEF-4757-8461-BFA2ACE3F54F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AB77CFE-2108-4439-9E53-EEE33BA21808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB77CFE-2108-4439-9E53-EEE33BA21808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB77CFE-2108-4439-9E53-EEE33BA21808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB77CFE-2108-4439-9E53-EEE33BA21808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE76EAF5-2CEF-4757-8461-BFA2ACE3F54F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE76EAF5-2CEF-4757-8461-BFA2ACE3F54F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE76EAF5-2CEF-4757-8461-BFA2ACE3F54F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE76EAF5-2CEF-4757-8461-BFA2ACE3F54F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94A3ACCB-4C0D-40C9-90F8-96AB6EBC5ED3}
+	EndGlobalSection
+EndGlobal
