@@ -1,49 +1,30 @@
+package museo.museo;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
-public class DAOObras 
-{
+public class DAOObras {
 
-	public static ArrayList<Obra> getObras()
-	{ArrayList<Obra> catalogo = new ArrayList<Obra>();
-	 
-    Autor autor = new Autor ("Felipe","Jerez", LocalDate.of(2000, 2, 4),null);
-		Obra pintura = new Pintura(autor,1,2010,"Manchas",40,40,"Papel");
-		catalogo.add(pintura);
+	private static DAOObras DAO=null;
+	private ArrayList<Obra> obras;
+	
+	private DAOObras()
+	{
+		obras = new ArrayList<Obra>();
+		Artista artista = new Artista("Airam","Linares",LocalDate.of(2000, 9, 24),null);
+		obras.add(new Pintura("One Piece", 1, artista, 2000, 30.7, 12.5, "Papel"));
+		obras.add(new Escultura("Pistola de Goma", 3, artista, 2008, "Madera", 500));
 		
-		 autor = new Autor ("Adrían","Arcos", LocalDate.of(1980, 1, 4),null);
-		pintura = new Pintura(autor,2,2010,"Manchas",40,40,"Papel");
-		catalogo.add(pintura);
-		
-		return catalogo;
-		
-		LocalDate fechaNacArtista1 = LocalDate.of(2001, 9, 8);
-        LocalDate fechaFallecimientoArtista1 = LocalDate.of(2040, 8, 12);
-        LocalDate fechaNacArtista2 = LocalDate.of(2002, 12, 30);
-        LocalDate fechaFallecimientoArtista2 = LocalDate.of(2050, 9, 28);
-        
-        LocalDate anoEscultura = LocalDate.of(2012, 4, 15);
-        LocalDate anoPintura = LocalDate.of(2020, 6, 20);
-	        
-        Artistas artista1 = new Artistas("Airam", "Jerez De La Fra.",fechaNacArtista1,fechaFallecimientoArtista1);
-        Artistas artista2 = new Artistas("Alvaro", "Villamartin", fechaNacArtista2, fechaFallecimientoArtista2);
-
-        
-        Esculturas escultura1 = new Esculturas("Guernica", 1, artista1, anoEscultura, "Mármol", 2);
-        Pinturas pintura1 = new Pinturas("Mona Lisa", 2, artista2, anoPintura, 24, "Óleo sobre lienzo");
-
-      
-        CatalogoMuseo catalogo = new CatalogoMuseo();
-        
-     
-        catalogo.añadeObra(escultura1);
-        catalogo.añadeObra(pintura1);
-
-        
-        double superficiePinturas = catalogo.superficie();
-
-        
-        int numInventarioMasAlta = catalogo.masAlta();
-
-        System.out.println("Nombre del artista: " + artista1.getNombre()+"\nObra creada: " + escultura1.getTitulo()+"\nPintura: " + pintura1.getTitulo()+"\nSuperficie de las pinturas: " + superficiePinturas+"\nLa escultura más alta tiene el número de inventario: " + numInventarioMasAlta);
 	}
+	
+	public static DAOObras getInstance() {
+		if (DAO == null) DAO = new DAOObras();
+		
+		return DAO;
+	}
+	
+	public ArrayList<Obra> getObras()
+	{
+		return obras;
+	}
+
 }
