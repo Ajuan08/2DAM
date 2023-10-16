@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Joke } from '../joke';
+import { JokeService } from '../joke.service';
 
 @Component({
   selector: 'joke-list',
@@ -9,24 +10,16 @@ import { Joke } from '../joke';
 export class JokeListComponent {
 
   jokes: Joke[];
-    constructor() {
-    this.jokes = [
-          new Joke("¿Cuál es el último animal que subió al arca de Noé?", "El del-fin"),
-          new Joke("¿Cómo se dice pañuelo en japonés?","Saka-moko"),
-          new Joke("¿Cómo se dice pelo sucio en chino?", "Chin cham pu"),
-    ];
+
+  constructor(private jokeService: JokeService) {
+    this.jokes = this.jokeService.getJokes();
   }
 
-addJoke(joke : any) 
-  {
-  this.jokes.unshift(joke);
+  addJoke(joke: Joke) {
+    this.jokeService.addJoke(joke);
   }
 
-  deleteJoke(joke: any) {
-    const index = this.jokes.indexOf(joke);
-    if (index !== -1) {
-      this.jokes.splice(index, 1);
-    }
+  deleteJoke(joke: Joke) {
+    this.jokeService.deleteJoke(joke);
   }
-
 }

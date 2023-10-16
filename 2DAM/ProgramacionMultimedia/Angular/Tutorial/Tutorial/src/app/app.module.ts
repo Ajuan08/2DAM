@@ -11,7 +11,7 @@ import { ItemComponent } from './item/item.component';
     AppComponent,
     JokeListComponent,
     JokeFormComponent,
-    ItemComponent
+    ItemComponent,
   ],
   imports: [
     BrowserModule

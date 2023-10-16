@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { JokeService } from '../joke.service';
 import { Joke } from '../joke';
 
 @Component({
@@ -9,8 +10,16 @@ import { Joke } from '../joke';
 export class JokeFormComponent {
   
   @Output() jokeCreated = new EventEmitter<Joke>();
+  setup: string = '';
+  punchline: string = '';
 
-  createJoke(setup: string, punchline: string) {
-    this.jokeCreated.emit(new Joke(setup, punchline));
+  constructor(private jokeService: JokeService) {}
+
+  createJoke() {
+    const newJoke = new Joke(this.setup, this.punchline);
+    this.jokeService.addJoke(newJoke);
+    this.jokeCreated.emit(newJoke);
+    this.setup = '';
+    this.punchline = '';
   }
 }
