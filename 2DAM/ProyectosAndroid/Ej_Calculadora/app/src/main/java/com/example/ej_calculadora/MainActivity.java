@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                         resultado = num1 / num2;
                         break;
                     default:
-                        resultado = 0; //
+                        resultado = 0;
                         break;
                 }
 
