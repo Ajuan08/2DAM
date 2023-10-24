@@ -1,0 +1,31 @@
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.exe
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.deps.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.runtimeconfig.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.runtimeconfig.dev.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\ref\Actividad9.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.pdb
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.csproj.AssemblyReference.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.AssemblyInfoInputs.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.AssemblyInfo.cs
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.csproj.CoreCompileInputs.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\ref\Actividad9.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.pdb
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.genruntimeconfig.cache
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.exe
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.deps.json
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.runtimeconfig.json
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.runtimeconfig.dev.json
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.dll
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.pdb
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.GeneratedMSBuildEditorConfig.editorconfig
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.AssemblyInfoInputs.cache
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.AssemblyInfo.cs
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.csproj.CoreCompileInputs.cache
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.dll
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\refint\Actividad9.dll
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.pdb
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.genruntimeconfig.cache
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\T2_E9_Expresiones regulares\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\ref\Actividad9.dll

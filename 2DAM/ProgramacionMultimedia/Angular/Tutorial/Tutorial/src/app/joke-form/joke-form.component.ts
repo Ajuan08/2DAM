@@ -8,18 +8,9 @@ import { Joke } from '../joke';
   styleUrls: ['./joke-form.component.css']
 })
 export class JokeFormComponent {
-  
-  @Output() jokeCreated = new EventEmitter<Joke>();
-  setup: string = '';
-  punchline: string = '';
+  @Output() jokeCreated = new EventEmitter<any>();
 
-  constructor(private jokeService: JokeService) {}
-
-  createJoke() {
-    const newJoke = new Joke(this.setup, this.punchline);
-    this.jokeService.addJoke(newJoke);
-    this.jokeCreated.emit(newJoke);
-    this.setup = '';
-    this.punchline = '';
+  createJoke(setup:string, punchline:string) {
+    this.jokeCreated.emit({setup:setup, punchline:punchline});
   }
 }
