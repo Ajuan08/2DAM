@@ -90,6 +90,7 @@
             buttonModificar.TabIndex = 5;
             buttonModificar.Text = "Modificar";
             buttonModificar.UseVisualStyleBackColor = true;
+            buttonModificar.Click += buttonModificar_Click;
             // 
             // buttonBorrar
             // 
@@ -99,6 +100,7 @@
             buttonBorrar.TabIndex = 6;
             buttonBorrar.Text = "Borrar";
             buttonBorrar.UseVisualStyleBackColor = true;
+            buttonBorrar.Click += buttonBorrar_Click;
             // 
             // buttonCancelar
             // 
@@ -108,6 +110,7 @@
             buttonCancelar.TabIndex = 7;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // dataGridViewCiclo
             // 

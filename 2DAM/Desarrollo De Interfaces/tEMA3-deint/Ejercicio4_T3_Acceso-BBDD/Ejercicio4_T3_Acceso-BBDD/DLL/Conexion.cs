@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -34,6 +35,29 @@ namespace Ejercicio4_T3_Acceso_BBDD.DLL
             {
                 return false;
             }
+        }
+
+        public DataSet EjecutarSentencia(SqlCommand sqlComando)
+        {
+            DataSet ds = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter();
+
+            try
+            {
+                SqlCommand sqlCommand = new SqlCommand();
+                sqlCommand = sqlComando;
+                sqlCommand.Connection = this.EstablecerConexion();
+                adapter.SelectCommand = sqlCommand;
+                sqlConnection.Open();
+                adapter.Fill(ds);
+                sqlConnection.Close();
+                return ds;
+            }
+            catch (Exception ex) 
+            {
+                return ds;
+            }
+            
         }
     }
 }

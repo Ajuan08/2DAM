@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             imagen = new PictureBox();
-            dataGridView1 = new DataGridView();
+            dataGridViewEstudiante = new DataGridView();
             buttonExaminar = new Button();
             labelClave = new Label();
             labelNombre = new Label();
@@ -42,13 +42,13 @@
             labelCorreo = new Label();
             labelCiclo = new Label();
             textBoxCorreo = new TextBox();
-            textBoxCiclo = new TextBox();
-            buttonApagar = new Button();
+            buttonAgregar = new Button();
             buttonModificar = new Button();
             buttonBorrar = new Button();
             buttonCancelar = new Button();
+            comboBoxCiclos = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)imagen).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewEstudiante).BeginInit();
             SuspendLayout();
             // 
             // imagen
@@ -56,17 +56,19 @@
             imagen.Location = new Point(33, 15);
             imagen.Name = "imagen";
             imagen.Size = new Size(139, 221);
+            imagen.SizeMode = PictureBoxSizeMode.StretchImage;
             imagen.TabIndex = 0;
             imagen.TabStop = false;
+            imagen.Click += imagen_Click;
             // 
-            // dataGridView1
+            // dataGridViewEstudiante
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(70, 316);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(673, 122);
-            dataGridView1.TabIndex = 1;
+            dataGridViewEstudiante.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewEstudiante.Location = new Point(70, 316);
+            dataGridViewEstudiante.Name = "dataGridViewEstudiante";
+            dataGridViewEstudiante.RowTemplate.Height = 25;
+            dataGridViewEstudiante.Size = new Size(673, 122);
+            dataGridViewEstudiante.TabIndex = 1;
             // 
             // buttonExaminar
             // 
@@ -76,7 +78,7 @@
             buttonExaminar.TabIndex = 2;
             buttonExaminar.Text = "Examinar";
             buttonExaminar.UseVisualStyleBackColor = true;
-            buttonExaminar.Click += button1_Click;
+            buttonExaminar.Click += buttonExaminar_Click;
             // 
             // labelClave
             // 
@@ -167,21 +169,15 @@
             textBoxCorreo.Size = new Size(406, 23);
             textBoxCorreo.TabIndex = 13;
             // 
-            // textBoxCiclo
+            // buttonAgregar
             // 
-            textBoxCiclo.Location = new Point(230, 239);
-            textBoxCiclo.Name = "textBoxCiclo";
-            textBoxCiclo.Size = new Size(406, 23);
-            textBoxCiclo.TabIndex = 14;
-            // 
-            // buttonApagar
-            // 
-            buttonApagar.Location = new Point(230, 276);
-            buttonApagar.Name = "buttonApagar";
-            buttonApagar.Size = new Size(75, 23);
-            buttonApagar.TabIndex = 15;
-            buttonApagar.Text = "Apagar";
-            buttonApagar.UseVisualStyleBackColor = true;
+            buttonAgregar.Location = new Point(230, 276);
+            buttonAgregar.Name = "buttonAgregar";
+            buttonAgregar.Size = new Size(75, 23);
+            buttonAgregar.TabIndex = 15;
+            buttonAgregar.Text = "Agregar";
+            buttonAgregar.UseVisualStyleBackColor = true;
+            buttonAgregar.Click += buttonAgregar_Click;
             // 
             // buttonModificar
             // 
@@ -191,6 +187,7 @@
             buttonModificar.TabIndex = 16;
             buttonModificar.Text = "Modificar";
             buttonModificar.UseVisualStyleBackColor = true;
+            buttonModificar.Click += buttonModificar_Click;
             // 
             // buttonBorrar
             // 
@@ -200,6 +197,7 @@
             buttonBorrar.TabIndex = 17;
             buttonBorrar.Text = "Borrar";
             buttonBorrar.UseVisualStyleBackColor = true;
+            buttonBorrar.Click += buttonBorrar_Click;
             // 
             // buttonCancelar
             // 
@@ -209,17 +207,27 @@
             buttonCancelar.TabIndex = 18;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
+            // 
+            // comboBoxCiclos
+            // 
+            comboBoxCiclos.FormattingEnabled = true;
+            comboBoxCiclos.Location = new Point(230, 239);
+            comboBoxCiclos.Name = "comboBoxCiclos";
+            comboBoxCiclos.Size = new Size(406, 23);
+            comboBoxCiclos.TabIndex = 19;
+            comboBoxCiclos.SelectedIndexChanged += comboBoxCiclos_SelectedIndexChanged;
             // 
             // frmEstudiante
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(comboBoxCiclos);
             Controls.Add(buttonCancelar);
             Controls.Add(buttonBorrar);
             Controls.Add(buttonModificar);
-            Controls.Add(buttonApagar);
-            Controls.Add(textBoxCiclo);
+            Controls.Add(buttonAgregar);
             Controls.Add(textBoxCorreo);
             Controls.Add(labelCiclo);
             Controls.Add(labelCorreo);
@@ -232,12 +240,13 @@
             Controls.Add(labelNombre);
             Controls.Add(labelClave);
             Controls.Add(buttonExaminar);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewEstudiante);
             Controls.Add(imagen);
             Name = "frmEstudiante";
             Text = "frmEstudiante";
+            Load += frmEstudiante_Load;
             ((System.ComponentModel.ISupportInitialize)imagen).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewEstudiante).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -245,7 +254,7 @@
         #endregion
 
         private PictureBox imagen;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewEstudiante;
         private Button buttonExaminar;
         private Label labelClave;
         private Label labelNombre;
@@ -258,10 +267,10 @@
         private Label labelCorreo;
         private Label labelCiclo;
         private TextBox textBoxCorreo;
-        private TextBox textBoxCiclo;
-        private Button buttonApagar;
+        private Button buttonAgregar;
         private Button buttonModificar;
         private Button buttonBorrar;
         private Button buttonCancelar;
+        private ComboBox comboBoxCiclos;
     }
 }
