@@ -1,0 +1,24 @@
+div {
+    text-align: center;
+    border: 2px solid black;
+    background-color: lightgray;
+}
+
+.Titulo{
+    color: red;
+    text-transform: uppercase;
+}
+
+.ph2, .ph3{
+    color: blue;
+}
+
+.p1, .p2, .p3{
+    font-weight: bold;
+}
+
+.padre{
+    border: 2px solid red;
+    
+}
+

@@ -1,0 +1,3 @@
+<div [ngClass]="'divPadre'">
+    <button *ngFor="let libro of libros" [ngClass]="'botones'" (click)="emitirIdLibro(libro.id)">{{libro.titulo}}</button>
+</div>

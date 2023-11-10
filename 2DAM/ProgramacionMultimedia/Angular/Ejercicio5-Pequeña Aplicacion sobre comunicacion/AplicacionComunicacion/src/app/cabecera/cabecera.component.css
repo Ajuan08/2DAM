@@ -1,0 +1,13 @@
+.divPadre {
+    text-align: center;
+}
+
+.botones{
+    background-color: black;
+    padding: 2px;
+    font-weight: bold;
+    height: 100px;
+    width: 200px;
+    font-size: 24px;
+    color: white;
+}

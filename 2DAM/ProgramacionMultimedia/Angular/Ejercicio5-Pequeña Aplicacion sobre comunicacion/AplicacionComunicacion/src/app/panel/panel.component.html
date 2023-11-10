@@ -1,0 +1,12 @@
+<div>
+    <div [ngClass]="'padre'">
+        <h1 [ngClass]="'Titulo'">Información del Libro</h1>
+    </div>
+    <div>
+        <h2 *ngIf="libro" [ngClass]="{'ph2': libro.titulo}">Titulo: {{libro.titulo}}</h2>
+        <h3 *ngIf="libro" [ngClass]="{'ph3': libro.autor}">Autor: {{libro.autor}}</h3>
+        <p *ngIf="libro" [ngClass]="{'p1': libro.editorial}">Editorial: {{libro.editorial}}</p>
+        <p *ngIf="libro" [ngClass]="{'p2': libro.fechaPublicacion}">Fecha de Publicación: {{libro.fechaPublicacion | date: 'yyyy-MM-dd' }}</p>
+        <p *ngIf="libro" [ngClass]="{'p3': libro.fechaPublicacion}">Años que lleva el libro editado: {{ libro.fechaPublicacion | tuberia }} años</p>
+    </div>
+</div>
