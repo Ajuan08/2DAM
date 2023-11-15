@@ -1,44 +1,35 @@
 ﻿using System;
 using System.IO;
 
-Console.WriteLine("Introduce el nombre de un directorio");
-string nombreDirectorio = Console.ReadLine();
+Console.Write("Introduce el nombre del directorio: ");
+string directorio = Console.ReadLine();
 
-if (Directory.Exists(nombreDirectorio))
+
+if (Directory.Exists(directorio))
 {
-    string[] archivos = Directory.GetFiles(nombreDirectorio);
-    if (archivos.Length > 0)
+    
+    string[] ficheros = Directory.GetFiles(directorio);
+    if (ficheros.Length == 0)
     {
-        string extensionFichero = calcularExtensionFichero(archivos);
-        Console.WriteLine($"El fichero mas reciente es: {extensionFichero}");
-
+        Console.WriteLine("El directorio no contiene ficheros.");
     }
     else
     {
-        Console.WriteLine($"El directorio {nombreDirectorio} existe, pero no tiene archivos");
+        
+        Console.Write("Introduce la extensión de fichero: ");
+        string extension = Console.ReadLine();
+
+        foreach (var item in ficheros)
+        {
+            if (Path.GetExtension(item) == $".{extension}")
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
 }
 else
 {
-    Console.WriteLine($"El directorio no existe");
-}
-
-string calcularExtensionFichero(string[] archivos)
-{
-    Console.WriteLine("Intoduzca una extension para el fichero");
-    string extensionObtenida = Console.ReadLine();
-    var archivoADevolver = "";
-
-    foreach (var item in archivos)
-    {
-        
-
-        if (extensionObtenida > )
-        {
-            fecha = fech;
-            archivoADevolver = item;
-        }
-    }
-    return archivoADevolver;
+    Console.WriteLine("El directorio no existe.");
 }
 
