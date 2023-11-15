@@ -1,0 +1,12 @@
+<form [formGroup]="formulario">
+    <div class="card card-block">
+        <h4 class="card-title">Crear Chiste</h4>
+        <div class="form-group">
+            <input [ngClass]="{'invalido': formulario.get('pregunta')!.invalid && formulario.get('respuesta')!.invalid}"  placeholder="Introduce la pregunta" #setup formControlName="pregunta">
+        </div>
+        <div class="form-group">
+            <input [ngClass]="{'invalido': formulario.get('pregunta')!.invalid && formulario.get('respuesta')!.invalid}"  placeholder="Introduce la respuesta" #punchline formControlName="respuesta">
+        </div>
+            <button [disabled]="formulario.get('pregunta')!.invalid || formulario.get('respuesta')!.invalid" type="button" class="btn btn-primary" (click)="createJoke(setup.value,punchline.value)">Crear chiste</button>
+      </div>
+</form>

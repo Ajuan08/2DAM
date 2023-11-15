@@ -1,0 +1,6 @@
+<div class="card card-block">
+    <h4 class="card-title">{{data.setup}}</h4>
+    <p class="card-text" [hidden]="data.hide">{{data.punchline}}</p>
+    <button type="button" class="btn btn-warining" (click)="data.toggle()">Saber más...</button>
+    <button type="button" class="btn btn-danger" (click)="deleteJoke()">Borrar</button>
+  </div>
