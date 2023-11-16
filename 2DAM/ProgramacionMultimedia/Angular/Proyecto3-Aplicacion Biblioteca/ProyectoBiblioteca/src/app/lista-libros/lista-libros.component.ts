@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./lista-libros.component.css']
 })
 export class ListaLibrosComponent {
+  mostrarComponentes = false;
 
+  login(){
+    this.mostrarComponentes = true;
+  }
 }

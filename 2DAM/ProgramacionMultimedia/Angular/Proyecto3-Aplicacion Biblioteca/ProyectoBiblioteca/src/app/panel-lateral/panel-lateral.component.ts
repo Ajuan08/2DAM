@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./panel-lateral.component.css']
 })
 export class PanelLateralComponent {
+  mostrarComponentes = false;
 
+  login(){
+    this.mostrarComponentes = true;
+  }
 }
+

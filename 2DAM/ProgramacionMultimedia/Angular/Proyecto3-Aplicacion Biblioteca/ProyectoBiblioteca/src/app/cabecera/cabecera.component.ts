@@ -6,13 +6,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./cabecera.component.css']
 })
 export class CabeceraComponent {
-  @Output() loginEvent = new EventEmitter<void>();
+  @Output() loginEvent = new EventEmitter();
 
   login() {
     this.loginEvent.emit();
   }
 
-  mostrarComponentes(){
-    this.mostrarComponentes = this.mostrarComponentes
-  }
 }
