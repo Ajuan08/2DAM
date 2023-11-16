@@ -1,0 +1,18 @@
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\bin\Debug\net8.0-windows\Ejercicio8-Bloc de notas.exe
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\bin\Debug\net8.0-windows\Ejercicio8-Bloc de notas.deps.json
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\bin\Debug\net8.0-windows\Ejercicio8-Bloc de notas.runtimeconfig.json
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\bin\Debug\net8.0-windows\Ejercicio8-Bloc de notas.dll
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\bin\Debug\net8.0-windows\Ejercicio8-Bloc de notas.pdb
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\Ejercicio8_Bloc_de_notas.Form1.resources
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\Ejercicio8_Bloc_de_notas.Properties.Resources.resources
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\Ejercicio8-Bloc de notas.csproj.GenerateResource.cache
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\Ejercicio8-Bloc de notas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\Ejercicio8-Bloc de notas.AssemblyInfoInputs.cache
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\Ejercicio8-Bloc de notas.AssemblyInfo.cs
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\Ejercicio8-Bloc de notas.csproj.CoreCompileInputs.cache
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\Ejercicio8-Bloc de notas.sourcelink.json
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\Ejercicio8-Bloc de notas.dll
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\refint\Ejercicio8-Bloc de notas.dll
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\Ejercicio8-Bloc de notas.pdb
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\Ejercicio8-Bloc de notas.genruntimeconfig.cache
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio8-Bloc de notas\Ejercicio8-Bloc de notas\obj\Debug\net8.0-windows\ref\Ejercicio8-Bloc de notas.dll
