@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorFondo1">#ECEAEA</color>
+    <color name="colorFondo2">#000000</color>
+    <string name="Activar_Favorita">Activar Favorita</string>
+    <string name="Colorfondo">Color del Fondo</string>
+    <string name="Huevos">Huevo\n</string>
+    <string name="LogIn">LogIn</string>
+    <string name="Login">Login</string>
+    <string name="Pimientos">Pimiento\n</string>
+    <string name="Piña">Piña</string>
+    <string name="Register">Register</string>
+    <string name="Registro">Registro</string>
+    <string name="Siguiente">Seguir</string>
+    <string name="WebTitulo">Ajuan\'s Pizza</string>
+    <string name="York">Jamón York</string>
+    <string name="aceitunas">Aceitunas</string>
+    <string name="app_name">Pizzeria</string>
+    <string name="atun">Atún</string>
+    <string name="btnCarbonara">Comprar</string>
+    <string name="btnCarnivora">Comprar</string>
+    <string name="cebolla">Cebolla\n</string>
+    <string name="champi">Champiñones</string>
+    <string name="confirm">Confirmar</string>
+    <string name="familiar">Familiar</string>
+    <string name="fondo">Fondo</string>
+    <string name="labelConfiguracion">Configuración</string>
+    <string name="mediana">Mediana</string>
+    <string name="paginaweb">Esta es la web de la pizzería.</string>
+    <string name="pedir">Hacer pedido</string>
+    <string name="peperoni">Pepperoni</string>
+    <string name="pequeña">Pequeña</string>
+    <string name="personalizada">Pizza Personalizada</string>
+    <string name="picada">Carne Picada</string>
+    <string name="pimiento">Bacon</string>
+    <string name="pimientos">Pimientos</string>
+    <string name="pizzaFav">Pedir Pizza Favorita</string>
+    <string name="pizzaPred">Pizzas Predeterminadas</string>
+    <string name="pollo">Pollo</string>
+    <string name="salir">Salir</string>
+    <string name="textViewContra">Contraseña</string>
+    <string name="textViewUsuario">Usuario</string>
+    <string name="titulo">Pizzeria</string>
+    <string name="tituloWeb">Web de Pizzeria</string>
+    <string name="usuario"/>
+    <string name="volver">Volver</string>
+    <string name="web">Nuestro Sitio WEB</string>
+    <style name="Base.Theme.Pizzeria" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Pizzeria" parent="Base.Theme.Pizzeria"/>
+</resources>
