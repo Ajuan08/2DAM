@@ -2,7 +2,7 @@ namespace Ejercicio8_Bloc_de_notas
 {
     public partial class Form1 : Form
     {
-       
+
         public Form1()
         {
             InitializeComponent();
@@ -80,7 +80,7 @@ namespace Ejercicio8_Bloc_de_notas
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
 
-                richTextBox1.LoadFile(openFileDialog.FileName);
+                richTextBox1.LoadFile(openFileDialog.FileName, RichTextBoxStreamType.PlainText);
                 ficheroGuardado = openFileDialog.FileName;
 
             }
@@ -97,7 +97,7 @@ namespace Ejercicio8_Bloc_de_notas
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
 
-                richTextBox1.LoadFile(openFileDialog.FileName);
+                richTextBox1.LoadFile(openFileDialog.FileName, RichTextBoxStreamType.PlainText);
                 ficheroGuardado = openFileDialog.FileName;
 
             }
@@ -107,24 +107,136 @@ namespace Ejercicio8_Bloc_de_notas
         {
             bool primeraGuardado;
 
-            if(primeraGuardado = true)
+
+
+
+            if (primeraGuardado = true)
             {
                 SaveFileDialog guardarDialogo = new SaveFileDialog();
-
-                if(guardarDialogo.ShowDialog() == DialogResult.OK)
+                guardarDialogo.Filter = "Archivos de texto (*.txt; *.rtf)|*.txt;*.rtf";
+                string nombreFichero = guardarDialogo.FileName;
+                if (guardarDialogo.ShowDialog() == DialogResult.OK)
                 {
-                    richTextBox1.SaveFile(guardarDialogo.FileName);
-                    string guardarArchivo = guardarDialogo.FileName;
-                    primeraGuardado = false;
+                    richTextBox1.SaveFile(nombreFichero);
 
                 }
             }
             else
             {
-                richTextBox1.SaveFile();
+
             }
 
-            
+
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("¿Está seguro de que desea salir?", "Salir", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void cortarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.SelectionLength > 0)
+            {
+                richTextBox1.Cut();
+            }
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+
+            if (richTextBox1.SelectionLength > 0)
+            {
+                richTextBox1.Cut();
+            }
+        }
+
+        private void copiarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.SelectionLength > 0)
+            {
+                richTextBox1.Copy();
+            }
+            else
+            {
+                richTextBox1.SelectAll();
+                richTextBox1.Copy();
+            }
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.SelectionLength > 0)
+            {
+                richTextBox1.Copy();
+            }
+            else
+            {
+                richTextBox1.SelectAll();
+                richTextBox1.Copy();
+            }
+        }
+
+        private void pegarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Paste();
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Paste();
+        }
+
+        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontDialog fontDialog = new FontDialog();
+
+            if (fontDialog.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.SelectionFont = fontDialog.Font;
+            }
+        }
+
+        private void toolStripButton8_Click(object sender, EventArgs e)
+        {
+            FontDialog fontDialog = new FontDialog();
+
+            if (fontDialog.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.SelectionFont = fontDialog.Font;
+            }
+        }
+
+        private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.SelectionColor = colorDialog.Color;
+            }
+        }
+
+        private void toolStripButton9_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.SelectionColor = colorDialog.Color;
+            }
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
