@@ -2,7 +2,7 @@ namespace Ejercicio8_Bloc_de_notas
 {
     public partial class Form1 : Form
     {
-
+       
         public Form1()
         {
             InitializeComponent();
@@ -105,28 +105,68 @@ namespace Ejercicio8_Bloc_de_notas
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            bool primeraGuardado;
+            bool archivoGuardado = false;
+            string nombreArchivo = "";
 
+            SaveFileDialog guardarDialogo = new SaveFileDialog();
+            guardarDialogo.Filter = "Archivos de texto (*.txt; *.rtf)|*.txt;*.rtf";
 
-
-
-            if (primeraGuardado = true)
+            if (!archivoGuardado)
             {
-                SaveFileDialog guardarDialogo = new SaveFileDialog();
-                guardarDialogo.Filter = "Archivos de texto (*.txt; *.rtf)|*.txt;*.rtf";
-                string nombreFichero = guardarDialogo.FileName;
+
                 if (guardarDialogo.ShowDialog() == DialogResult.OK)
                 {
-                    richTextBox1.SaveFile(nombreFichero);
 
+                    nombreArchivo = guardarDialogo.FileName;
+                    archivoGuardado = true;
                 }
             }
-            else
+
+            if (archivoGuardado)
             {
 
+                if (nombreArchivo.EndsWith(".rtf", StringComparison.OrdinalIgnoreCase))
+                {
+                    richTextBox1.SaveFile(nombreArchivo, RichTextBoxStreamType.RichText);
+                }
+                else
+                {
+                    richTextBox1.SaveFile(nombreArchivo, RichTextBoxStreamType.PlainText);
+                }
+            }
+        }
+
+        private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool archivoGuardado = false;
+            string nombreArchivo = "";
+
+            SaveFileDialog guardarDialogo = new SaveFileDialog();
+            guardarDialogo.Filter = "Archivos de texto (*.txt; *.rtf)|*.txt;*.rtf";
+
+            if (!archivoGuardado)
+            {
+
+                if (guardarDialogo.ShowDialog() == DialogResult.OK)
+                {
+
+                    nombreArchivo = guardarDialogo.FileName;
+                    archivoGuardado = true;
+                }
             }
 
+            if (archivoGuardado)
+            {
 
+                if (nombreArchivo.EndsWith(".rtf", StringComparison.OrdinalIgnoreCase))
+                {
+                    richTextBox1.SaveFile(nombreArchivo, RichTextBoxStreamType.RichText);
+                }
+                else
+                {
+                    richTextBox1.SaveFile(nombreArchivo, RichTextBoxStreamType.PlainText);
+                }
+            }
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -191,6 +231,11 @@ namespace Ejercicio8_Bloc_de_notas
         {
             richTextBox1.Paste();
         }
+        private void toolStripButton7_Click(object sender, EventArgs e)
+        {
+           
+
+        }
 
         private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -237,6 +282,9 @@ namespace Ejercicio8_Bloc_de_notas
 
         }
 
-        
+        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

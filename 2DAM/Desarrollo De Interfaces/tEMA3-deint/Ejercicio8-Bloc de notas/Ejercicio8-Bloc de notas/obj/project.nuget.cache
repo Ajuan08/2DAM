@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d4uRUdMnPbqrASrRe9sAg5J4QD/nQaEiaH8Gmb7I/9LKSB4m5OWrh+lGMEs6enrudis+GAMKmoKMYxlztnQmTg==",
+  "dgSpecHash": "b/HFWft2WK8r7Odh7mOX7DwA5xVh7T5sDgCn45ElXSAUaXailHWfqxr0bR/D8B5HYqc2sra6sVqfa0bWsQ7ctg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\anton\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\tEMA3-deint\\Ejercicio8-Bloc de notas\\Ejercicio8-Bloc de notas\\Ejercicio8-Bloc de notas.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\tEMA3-deint\\Ejercicio8-Bloc de notas\\Ejercicio8-Bloc de notas\\Ejercicio8-Bloc de notas.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

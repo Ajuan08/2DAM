@@ -1,3 +1,8 @@
-<div >
-    Contenido de Lista de Libros
-</div>
+<div *ngFor="let libro of libros">
+    <h3>{{libro.titulo}}</h3>
+    <p>Autor: {{libro.autor}}</p>
+    <p>ISBN: {{libro.ISBN}}</p>
+    <p>Fecha de préstamo: {{libro.fecha_prestamo}}</p>
+    <hr>
+  </div>
+  

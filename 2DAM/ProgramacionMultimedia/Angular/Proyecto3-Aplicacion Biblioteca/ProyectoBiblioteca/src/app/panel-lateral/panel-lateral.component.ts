@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LibrosService } from '../libros.service';
 
 @Component({
   selector: 'app-panel-lateral',
@@ -7,9 +8,14 @@ import { Component } from '@angular/core';
 })
 export class PanelLateralComponent {
   mostrarComponentes = false;
+  librosFiltrados: any = [];
+  inputBusqueda = '';
 
-  login(){
-    this.mostrarComponentes = true;
+  constructor(private librosService: LibrosService){}
+  buscarLibros() {
+    this.librosFiltrados = this.librosService.buscarLibros(this.inputBusqueda);
   }
+
+  
 }
 
