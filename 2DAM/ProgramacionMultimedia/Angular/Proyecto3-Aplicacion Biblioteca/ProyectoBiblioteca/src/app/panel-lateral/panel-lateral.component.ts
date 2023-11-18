@@ -8,14 +8,10 @@ import { LibrosService } from '../libros.service';
 })
 export class PanelLateralComponent {
   mostrarComponentes = false;
-  librosFiltrados: any = [];
-  inputBusqueda = '';
 
-  constructor(private librosService: LibrosService){}
-  buscarLibros() {
-    this.librosFiltrados = this.librosService.buscarLibros(this.inputBusqueda);
+  constructor(private librosService: LibrosService) {}
+
+  buscarLibros(filtrar: string) {
+    this.librosService.obtenerLibrosFiltrados(filtrar);
   }
-
-  
 }
-

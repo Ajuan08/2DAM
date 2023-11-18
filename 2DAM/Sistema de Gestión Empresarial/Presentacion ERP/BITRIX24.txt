@@ -1,0 +1,44 @@
+BITRIX24
+
+VENTAJAS
+
+Proporciona un conjunto básico de herramientas de forma gratuita, lo que puede ser atractivo para pequeñas empresas con presupuestos limitados.
+La integración de funciones CRM en Bitrix24 facilita la gestión de las relaciones con los clientes junto con otras actividades empresariales.
+Ofrece una variedad de herramientas, incluyendo chat, videoconferencia, gestión de tareas y más, en una única plataforma.
+permite cierto grado de personalización para adaptarse a las necesidades específicas de una empresa.
+
+DESVENTAJAS
+
+Para grandes empresas con necesidades más complejas de ERP,puede no ofrecer la profundidad y amplitud de funcionalidades que algunos sistemas ERP proporcionan.
+Puede haber una curva de aprendizaje para algunos usuarios al principio, especialmente si no están familiarizados con plataformas de colaboración empresarial.
+A medida que las empresas crecen, podrían encontrarse con que Bitrix24 tiene ciertas limitaciones para satisfacer sus necesidades empresariales en expansión.
+Puede ser más adecuado para ciertos sectores o empresas con necesidades específicas de colaboración
+
+
+----------------MODULOS ESENCIALES------------------------
+
+CRM:
+
+--Contribución a la Integración: Facilita la gestión de clientes y clientes potenciales, integrando datos clave en un solo lugar.
+--Flujo de Trabajo Eficiente: Permite un seguimiento con los clientes, desde la primera interacción hasta las ventas y el soporte postventa.
+
+Comunicación y Colaboración:
+
+--Contribución a la Integración: Ofrece herramientas de comunicación integradas, como chat, videollamadas y redes sociales internas.
+--Flujo de Trabajo Eficiente: Mejora la comunicación interna, reduciendo la dependencia de correos electrónicos y fomentando la colaboración en tiempo real.
+
+Flujo de Trabajo y Automatización:
+
+--Contribución a la Integración: Permite la automatización de tareas y procesos.
+--Flujo de Trabajo Eficiente: Optimiza los procesos empresariales al eliminar tareas manuales repetitivas.
+
+
+----------Personalización y Flexibilidad-----------
+
+Roles y Permisos Configurables:
+
+Permite configurar roles y permisos de usuario de manera detallada. Esto significa que las empresas pueden controlar quién tiene acceso a qué información y funciones dentro de la plataforma.
+
+Plantillas Personalizadas:
+
+La creación de plantillas personalizadas para documentos y procesos facilita a las empresas la estandarización y eficiencia en la generación de informes, propuestas y otros documentos comerciales.

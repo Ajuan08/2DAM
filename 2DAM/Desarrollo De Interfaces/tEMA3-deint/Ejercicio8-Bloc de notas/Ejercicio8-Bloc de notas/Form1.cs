@@ -2,7 +2,7 @@ namespace Ejercicio8_Bloc_de_notas
 {
     public partial class Form1 : Form
     {
-       
+
         public Form1()
         {
             InitializeComponent();
@@ -233,8 +233,57 @@ namespace Ejercicio8_Bloc_de_notas
         }
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
-           
+            string search = InputBox("Buscar", "Introduce la palabra :");
 
+            int inicio = richTextBox1.Find(search, 0, richTextBox1.TextLength, RichTextBoxFinds.None);
+
+            if (inicio != -1)
+            {
+                richTextBox1.Select(inicio, search.Length);
+            }
+            else
+            {
+                MessageBox.Show("La palabra no se encontró.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string search = InputBox("Buscar", "Introduce la palabra :");
+
+            int inicio = richTextBox1.Find(search, 0, richTextBox1.TextLength, RichTextBoxFinds.None);
+
+            if (inicio != -1)
+            {
+                richTextBox1.Select(inicio, search.Length);
+            }
+            else
+            {
+                MessageBox.Show("La palabra no se encontró.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private string InputBox(string titulo, string prompt)
+        {
+
+            Form promptForm = new Form();
+            promptForm.Width = 400;
+            promptForm.Height = 200;
+            promptForm.Text = titulo;
+
+            Label label = new Label() { Left = 50, Top = 20 };
+            TextBox textBox = new TextBox() { Left = 50, Top = 50, Width = 300 };
+            Button okButton = new Button() { Text = "OK", Left = 150, Width = 50, Top = 80 };
+            okButton.Click += (sender, e) => { promptForm.Close(); };
+
+            promptForm.Controls.Add(label);
+            promptForm.Controls.Add(textBox);
+            promptForm.Controls.Add(okButton);
+
+            promptForm.ShowDialog();
+
+            return textBox.Text;
         }
 
         private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -286,5 +335,7 @@ namespace Ejercicio8_Bloc_de_notas
         {
 
         }
+
+        
     }
 }

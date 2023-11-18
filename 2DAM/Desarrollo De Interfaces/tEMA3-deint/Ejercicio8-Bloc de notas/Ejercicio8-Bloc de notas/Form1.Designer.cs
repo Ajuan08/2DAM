@@ -40,7 +40,6 @@
             copiarToolStripMenuItem = new ToolStripMenuItem();
             pegarToolStripMenuItem = new ToolStripMenuItem();
             buscarToolStripMenuItem = new ToolStripMenuItem();
-            toolStripTextBox1 = new ToolStripTextBox();
             fuenteToolStripMenuItem = new ToolStripMenuItem();
             colorToolStripMenuItem = new ToolStripMenuItem();
             toolStrip1 = new ToolStrip();
@@ -137,16 +136,10 @@
             // 
             // buscarToolStripMenuItem
             // 
-            buscarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripTextBox1 });
             buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
             buscarToolStripMenuItem.Size = new Size(180, 22);
             buscarToolStripMenuItem.Text = "Buscar";
-            // 
-            // toolStripTextBox1
-            // 
-            toolStripTextBox1.Name = "toolStripTextBox1";
-            toolStripTextBox1.Size = new Size(100, 23);
-            toolStripTextBox1.Click += toolStripTextBox1_Click;
+            buscarToolStripMenuItem.Click += buscarToolStripMenuItem_Click;
             // 
             // fuenteToolStripMenuItem
             // 
@@ -336,6 +329,5 @@
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private RichTextBox richTextBox1;
-        private ToolStripTextBox toolStripTextBox1;
     }
 }

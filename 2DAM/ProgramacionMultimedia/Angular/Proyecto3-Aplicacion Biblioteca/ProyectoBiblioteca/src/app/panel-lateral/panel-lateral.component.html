@@ -1,5 +1,6 @@
     <div [ngClass]="'busqueda'">
-      <input type="text" placeholder="Buscar libros" />
-      <button (click)="buscarLibros()">Buscar</button>
+      <label for="txtBox">Filtro:</label>
+      <input #inputText type="text" placeholder="Buscar libros" />
+      <button (click)="buscarLibros(inputText.value)">Buscar</button>
     </div>
         

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LibrosService } from '../libros.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-lista-libros',
@@ -9,9 +10,11 @@ import { LibrosService } from '../libros.service';
 export class ListaLibrosComponent {
   mostrarComponentes = false;
   libros:any = [];
+  observable: Observable<any[]>;
 
   constructor(private librosService: LibrosService){
-    this.libros = this.librosService.getLibros();
+    this.libros = this.librosService.libros;
+    this.observable = this.librosService.subject;
   }
 
   login(){
