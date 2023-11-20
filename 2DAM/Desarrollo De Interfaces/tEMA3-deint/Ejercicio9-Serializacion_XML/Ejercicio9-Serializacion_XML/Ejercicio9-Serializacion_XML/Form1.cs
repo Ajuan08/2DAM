@@ -7,6 +7,7 @@ namespace Ejercicio9_Serializacion_XML
         {
             InitializeComponent();
             banco = new Banco();
+            MostrarClientesEnDataGridView();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -26,7 +27,6 @@ namespace Ejercicio9_Serializacion_XML
             string direccion = textBoxDireccion.Text;
             int edad, telefono, numeroCuenta;
 
-            
             if (string.IsNullOrWhiteSpace(dni) || string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(direccion) ||
                 !int.TryParse(textBoxEdad.Text, out edad) || !int.TryParse(textBoxTelefono.Text, out telefono) ||
                 !int.TryParse(textBoxNCuenta.Text, out numeroCuenta))
@@ -35,7 +35,6 @@ namespace Ejercicio9_Serializacion_XML
                 return;
             }
 
-            
             Cliente nuevoCliente = new Cliente
             {
                 DNI = dni,
@@ -47,8 +46,31 @@ namespace Ejercicio9_Serializacion_XML
             };
             banco.Clientes.Add(nuevoCliente);
             LimpiarCamposFormulario();
-            MessageBox.Show("Cliente agregado.");
+
+            MostrarClientesEnDataGridView();
         }
+
+        private void MostrarClientesEnDataGridView()
+        {
+            {
+                if (dataGridView1.Columns.Count == 0)
+                {
+                    dataGridView1.Columns.Add("DNI", "DNI");
+                    dataGridView1.Columns.Add("Nombre", "Nombre");
+                    dataGridView1.Columns.Add("Direccion", "Dirección");
+                    dataGridView1.Columns.Add("Edad", "Edad");
+                    dataGridView1.Columns.Add("Telefono", "Teléfono");
+                    dataGridView1.Columns.Add("NumeroCuentaCorriente", "Nº Cuenta Corriente");
+                }
+                dataGridView1.Rows.Clear();
+
+                foreach (Cliente cliente in banco.Clientes)
+                {
+                    dataGridView1.Rows.Add(cliente.DNI, cliente.Nombre, cliente.Direccion, cliente.Edad, cliente.Telefono, cliente.NumeroCuentaCorriente);
+                }
+            }
+        }
+
 
         private void LimpiarCamposFormulario()
         {
@@ -58,6 +80,21 @@ namespace Ejercicio9_Serializacion_XML
             textBoxEdad.Text = "";
             textBoxTelefono.Text = "";
             textBoxNCuenta.Text = "";
+        }
+
+        private void buttonModificarCliente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEliminarCliente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

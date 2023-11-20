@@ -19,4 +19,6 @@ yargs.command({
     handler(argv) {
         notes.addNote(argv.title, argv.body)
     }
+
+    
 })

@@ -43,7 +43,8 @@
             buttonAñadirCliente = new Button();
             buttonModificarCliente = new Button();
             buttonEliminarCliente = new Button();
-            buttonMostrarCliente = new Button();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dni
@@ -152,7 +153,7 @@
             // 
             // buttonAñadirCliente
             // 
-            buttonAñadirCliente.Location = new Point(620, 92);
+            buttonAñadirCliente.Location = new Point(645, 55);
             buttonAñadirCliente.Name = "buttonAñadirCliente";
             buttonAñadirCliente.Size = new Size(119, 23);
             buttonAñadirCliente.TabIndex = 12;
@@ -162,37 +163,40 @@
             // 
             // buttonModificarCliente
             // 
-            buttonModificarCliente.Location = new Point(620, 165);
+            buttonModificarCliente.Location = new Point(645, 122);
             buttonModificarCliente.Name = "buttonModificarCliente";
             buttonModificarCliente.Size = new Size(119, 22);
             buttonModificarCliente.TabIndex = 13;
             buttonModificarCliente.Text = "Modificar Cliente";
             buttonModificarCliente.UseVisualStyleBackColor = true;
+            buttonModificarCliente.Click += buttonModificarCliente_Click;
             // 
             // buttonEliminarCliente
             // 
-            buttonEliminarCliente.Location = new Point(620, 231);
+            buttonEliminarCliente.Location = new Point(645, 180);
             buttonEliminarCliente.Name = "buttonEliminarCliente";
             buttonEliminarCliente.Size = new Size(119, 22);
             buttonEliminarCliente.TabIndex = 14;
             buttonEliminarCliente.Text = "Eliminar Cliente";
             buttonEliminarCliente.UseVisualStyleBackColor = true;
+            buttonEliminarCliente.Click += buttonEliminarCliente_Click;
             // 
-            // buttonMostrarCliente
+            // dataGridView1
             // 
-            buttonMostrarCliente.Location = new Point(620, 306);
-            buttonMostrarCliente.Name = "buttonMostrarCliente";
-            buttonMostrarCliente.Size = new Size(119, 22);
-            buttonMostrarCliente.TabIndex = 15;
-            buttonMostrarCliente.Text = "Mostrar Cliente";
-            buttonMostrarCliente.UseVisualStyleBackColor = true;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(243, 238);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(521, 200);
+            dataGridView1.TabIndex = 16;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(buttonMostrarCliente);
+            Controls.Add(dataGridView1);
             Controls.Add(buttonEliminarCliente);
             Controls.Add(buttonModificarCliente);
             Controls.Add(buttonAñadirCliente);
@@ -210,6 +214,7 @@
             Controls.Add(dni);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -231,6 +236,6 @@
         private Button buttonAñadirCliente;
         private Button buttonModificarCliente;
         private Button buttonEliminarCliente;
-        private Button buttonMostrarCliente;
+        private DataGridView dataGridView1;
     }
 }
