@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LibrosService } from '../libros.service';
 import { Observable } from 'rxjs';
 
@@ -7,17 +7,27 @@ import { Observable } from 'rxjs';
   templateUrl: './lista-libros.component.html',
   styleUrls: ['./lista-libros.component.css']
 })
-export class ListaLibrosComponent {
+export class ListaLibrosComponent implements OnInit {
   mostrarComponentes = false;
-  libros:any = [];
+  libros: any = [];
   observable: Observable<any[]>;
 
-  constructor(private librosService: LibrosService){
-    this.libros = this.librosService.libros;
+  constructor(private librosService: LibrosService) {
     this.observable = this.librosService.subject;
   }
 
-  login(){
+  ngOnInit() {
+    this.librosService.subject.subscribe(
+      libros => {
+        this.libros = libros;
+      },
+      error => {
+        console.error('Error al obtener libros', error);
+      }
+    );
+  }
+
+  login() {
     this.mostrarComponentes = true;
   }
 }

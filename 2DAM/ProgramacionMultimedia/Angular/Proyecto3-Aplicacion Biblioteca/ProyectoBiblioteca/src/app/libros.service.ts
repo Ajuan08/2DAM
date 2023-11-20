@@ -28,10 +28,12 @@ export class LibrosService {
     return this.getLibros(this._libros);
   }
 
-  public obtenerLibrosFiltrados(filtrar: string): void {
+  public obtenerLibrosFiltrados(filtrar: string): Observable<Object[]> {
     let librosFiltrados: Libro[] = this._libros.filter(libro => libro.titulo.includes(filtrar));
-    this._subject.next(this.getLibros(librosFiltrados))
+    this._subject.next(this.getLibros(librosFiltrados));
+    return this.subject; 
   }
+  
   
 
   public getLibros(libros: Libro[]): Object[] {

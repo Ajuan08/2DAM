@@ -8,10 +8,18 @@ import { LibrosService } from '../libros.service';
 })
 export class PanelLateralComponent {
   mostrarComponentes = false;
+  librosFiltrados!: Object[];
 
   constructor(private librosService: LibrosService) {}
 
   buscarLibros(filtrar: string) {
-    this.librosService.obtenerLibrosFiltrados(filtrar);
+    this.librosService.obtenerLibrosFiltrados(filtrar).subscribe(
+      libros => {
+        this.librosFiltrados = libros;
+      },
+      error => {
+        console.error('Error al obtener libros filtrados', error);
+      }
+    );
   }
 }
