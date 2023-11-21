@@ -82,12 +82,39 @@ namespace Ejercicio9_Serializacion_XML
             textBoxNCuenta.Text = "";
         }
 
-        private void buttonModificarCliente_Click(object sender, EventArgs e)
+        private void comboBoxModificar_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+            string dniSeleccionado = comboBoxModificar.Text;
+
+            
+            
+
+            if (banco.buscarClientePorDNI(dniCliente) != null)
+            {
+
+                textBoxDni.Text = banco.buscarClientePorDNI(dniCliente).Dni;
+            }
+            else
+            {
+                MessageBox.Show("No se encontró ningún cliente con el DNI seleccionado.");
+            }
         }
 
-        private void buttonEliminarCliente_Click(object sender, EventArgs e)
+        private void MostrarDatosCliente(Cliente cliente)
+        {
+           
+            textBoxDni.Text = cliente.DNI;
+            textBoxNombre.Text = cliente.Nombre;
+            textBoxDireccion.Text = cliente.Direccion;
+            textBoxEdad.Text = cliente.Edad.ToString();
+            textBoxTelefono.Text = cliente.Telefono.ToString();
+            textBoxNCuenta.Text = cliente.NumeroCuentaCorriente.ToString();
+        }
+
+
+
+        private void comboBoxEliminar_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
@@ -96,5 +123,12 @@ namespace Ejercicio9_Serializacion_XML
         {
 
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

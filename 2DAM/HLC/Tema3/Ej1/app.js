@@ -40,10 +40,15 @@ yargs.command({
             describe: 'Total',
             demandOption: true,
             type: 'string'
+        },
+        nombreCliente: {
+            describe: 'Nombre del Cliente',
+            demandOption: true,
+            type: 'string'
         }
     },
     handler(argv) {
-        facturas.addFactura(argv.idCliente, argv.idFactura, argv.Total);
+        facturas.addFactura(argv.idCliente, argv.idFactura, argv.Total, argv.nombreCliente);
     }
 })
 
@@ -79,7 +84,7 @@ yargs.command({
 })
 
 yargs.command({
-    command: 'borraFactura',
+    command: 'borrarFactura',
     describe: 'Elimina una factura',
     builder: {
       idFactura: {
@@ -89,23 +94,25 @@ yargs.command({
       }
     },
     handler(argv) {
-        facturas.borraFactura(argv.idFactura);
+        facturas.borrarFactura(argv.idFactura);
     }
-  });
+  })
   
+
   yargs.command({
     command: 'listaFacturasCliente',
     describe: 'Lista las facturas de un cliente determinado',
     builder: {
-      idCliente: {
-        describe: 'ID del cliente',
-        demandOption: true,
-        type: 'number'
-      }
+        idCliente: {
+            describe: 'ID del cliente',
+            demandOption: true,
+            type: 'number'
+        },
     },
     handler(argv) {
-        clientes.listaFacturasCliente(argv.idCliente);
+        facturas.listaFacturasCliente(argv.idCliente);
     }
-  });
+});
+
   
   yargs.parse();

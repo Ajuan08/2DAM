@@ -1,10 +1,6 @@
 class Clientes{
     fs = require('fs');
 
-    constructor(id, name){
-        this.addCliente(id, name)
-    }
-
     addCliente(id, name){
         const cliente = this.cargarClientes()
         const clienteDuplicado = cliente.find((cliente) => cliente.id === id)
@@ -19,16 +15,17 @@ class Clientes{
         }
     }
 
-    borrarCliente = (id) => {
-        const cliente = this.cargarClientes()
-        const clientesToKeep = cliente.filter((cliente) => cliente.id === id)
+    borrarCliente = (idCliente) => {
+        let clientes = this.cargarClientes();
     
-        if (cliente.length > clientesToKeep.length) {
-            console.log('Cliente Borrado!')
-            this.guardarClientes(clientesToKeep)
+        const clientesFiltrados = clientes.filter((cliente) => cliente.id !== idCliente);
+    
+        if (clientes.length > clientesFiltrados.length) {
+            console.log('Cliente Borrado!');
+            this.guardarClientes(clientesFiltrados);
         } else {
-            console.log('El Cliente no se ha encontrado!')
-        }    
+            console.log('El Cliente no se ha encontrado.');
+        }
     }
 
     mostrarListaClientes = () => {
@@ -37,7 +34,8 @@ class Clientes{
         console.log('Estos son tus Clientes')
     
         cliente.forEach((cliente) => {
-            console.log("ID:" +cliente.id+ "Nombre:"+cliente.name)
+            console.log("ID:"+cliente.id+"\nNombre: "+ cliente.name)
+            console.log("------------------------------------------------");
         })
     }
 
@@ -64,5 +62,6 @@ class Clientes{
             return []
         }
     }
+
 }
 module.exports = new Clientes();

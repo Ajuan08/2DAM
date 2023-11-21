@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1PaRQRDvrci7pYyyOlxlpTgm7kqcupDIruA25dStzpKWSXx7x9M2S7+tH21CUZ4uBekTu7oZbRUf+T8OwlImYw==",
+  "dgSpecHash": "1W4m/nvfQTaTXBZQIbPVkB8hxrJfOWdtcjpH/Y1VITWAQqQTg3NfnmTn98jqKO1P5ThSLKJzlLeLmu4ICk84oQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\tEMA3-deint\\Ejercicio9-Serializacion_XML\\Ejercicio9-Serializacion_XML\\Ejercicio9-Serializacion_XML\\Ejercicio9-Serializacion_XML.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dam\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

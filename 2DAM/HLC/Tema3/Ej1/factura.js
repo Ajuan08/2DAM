@@ -1,9 +1,6 @@
 class Facturas{
     fs = require('fs');
 
-    constructor(id, idCliente, nombreCliente, total){
-        this.addFactura(id, idCliente, nombreCliente, total);
-    }
 
     addFactura(id, idCliente, nombreCliente, total){
         const factura = this.cargarFactura()
@@ -17,7 +14,7 @@ class Facturas{
                 total: total
             })
             this.guardarFactura(factura)
-            console.log('Se ha añadido un nuevo factura')
+            console.log('Se ha añadido una nueva factura')
         }
     }
 
@@ -67,5 +64,15 @@ class Facturas{
             return []
         }
     }
+
+    listaFacturasCliente(id)
+    {
+        const factura = this.cargarFactura()
+        const factu = factura.filter((factu) => factu.idCliente == id);
+        factu.forEach((factu) =>{
+            console.log(factu)})
+    }
+
+    
 }
 module.exports = new Facturas();
