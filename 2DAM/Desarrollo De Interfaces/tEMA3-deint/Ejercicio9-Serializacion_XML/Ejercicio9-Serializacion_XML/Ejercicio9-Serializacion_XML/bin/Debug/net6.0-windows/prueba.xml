@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Cliente>
+    <DNI>222</DNI>
+    <Nombre>sss</Nombre>
+    <Direccion>ss</Direccion>
+    <Edad>22222</Edad>
+    <Telefono>222</Telefono>
+    <NumeroCuentaCorriente>222</NumeroCuentaCorriente>
+  </Cliente>
+  <Cliente>
+    <DNI>333</DNI>
+    <Nombre>sss</Nombre>
+    <Direccion>sss</Direccion>
+    <Edad>33</Edad>
+    <Telefono>333</Telefono>
+    <NumeroCuentaCorriente>333</NumeroCuentaCorriente>
+  </Cliente>
+  <Cliente>
+    <DNI>44444</DNI>
+    <Nombre>aaa</Nombre>
+    <Direccion>aaa</Direccion>
+    <Edad>44</Edad>
+    <Telefono>444</Telefono>
+    <NumeroCuentaCorriente>444</NumeroCuentaCorriente>
+  </Cliente>
+</ArrayOfCliente>

@@ -1,13 +1,26 @@
+using System.Xml;
+using System.Xml.Serialization;
+
 namespace Ejercicio9_Serializacion_XML
 {
     public partial class Form1 : Form
     {
+        string rutaArchivo = "prueba.xml";
         private Banco banco;
         public Form1()
         {
             InitializeComponent();
             banco = new Banco();
             MostrarClientesEnDataGridView();
+        }
+
+        private void InicializarComboBoxClientes()
+        {
+
+            foreach (Cliente cliente in banco.Clientes)
+            {
+                comboBoxModificar.Items.Add(cliente.DNI);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -45,6 +58,12 @@ namespace Ejercicio9_Serializacion_XML
                 NumeroCuentaCorriente = numeroCuenta
             };
             banco.Clientes.Add(nuevoCliente);
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Cliente>));
+
+            using (FileStream fs = new FileStream(rutaArchivo, FileMode.Create))
+            {
+                serializer.Serialize(fs, banco.Clientes);
+            }
             LimpiarCamposFormulario();
 
             MostrarClientesEnDataGridView();
@@ -52,6 +71,16 @@ namespace Ejercicio9_Serializacion_XML
 
         private void MostrarClientesEnDataGridView()
         {
+            if (File.Exists(rutaArchivo))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Cliente>));
+
+                using (FileStream fs = new FileStream(rutaArchivo, FileMode.Open))
+                {
+                    List<Cliente> clientes = (List<Cliente>)serializer.Deserialize(fs);
+                    banco.Clientes = clientes;
+                }
+            }
             {
                 if (dataGridView1.Columns.Count == 0)
                 {
@@ -85,33 +114,8 @@ namespace Ejercicio9_Serializacion_XML
         private void comboBoxModificar_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            string dniSeleccionado = comboBoxModificar.Text;
 
-            
-            
-
-            if (banco.buscarClientePorDNI(dniCliente) != null)
-            {
-
-                textBoxDni.Text = banco.buscarClientePorDNI(dniCliente).Dni;
-            }
-            else
-            {
-                MessageBox.Show("No se encontró ningún cliente con el DNI seleccionado.");
-            }
         }
-
-        private void MostrarDatosCliente(Cliente cliente)
-        {
-           
-            textBoxDni.Text = cliente.DNI;
-            textBoxNombre.Text = cliente.Nombre;
-            textBoxDireccion.Text = cliente.Direccion;
-            textBoxEdad.Text = cliente.Edad.ToString();
-            textBoxTelefono.Text = cliente.Telefono.ToString();
-            textBoxNCuenta.Text = cliente.NumeroCuentaCorriente.ToString();
-        }
-
 
 
         private void comboBoxEliminar_SelectedIndexChanged(object sender, EventArgs e)
@@ -129,6 +133,55 @@ namespace Ejercicio9_Serializacion_XML
 
         }
 
-       
+        private void CargarClientesDesdeXML()
+        {
+            if (File.Exists(rutaArchivo))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Cliente>));
+
+                using (FileStream fs = new FileStream(rutaArchivo, FileMode.Open))
+                {
+                    List<Cliente> clientes = (List<Cliente>)serializer.Deserialize(fs);
+                    banco.Clientes = clientes;
+                }
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            CargarClientesDesdeXML();
+
+            foreach (var cliente in banco.Clientes)
+            {
+                comboBoxModificar.Items.Add(cliente.DNI);
+                comboBoxEliminar.Items.Add(cliente.DNI);
+            }
+
+
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            string dni = comboBoxEliminar.SelectedItem.ToString();
+            
+            banco.eliminarClienteDNI(dni);
+            foreach (var item in banco.Clientes)
+            {
+                MessageBox.Show(item.DNI);
+            }
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(rutaArchivo);
+            XmlNode nodoCliente = xmlDoc.SelectSingleNode($"//Cliente[Dni='{dni}']");
+
+           if(nodoCliente != null )
+            {
+                XmlNode nodoPadre = nodoCliente.ParentNode;
+                nodoPadre.RemoveChild(nodoCliente);
+                xmlDoc.Save(rutaArchivo);
+            }
+            
+            
+
+        }
     }
 }

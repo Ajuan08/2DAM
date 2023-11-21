@@ -46,6 +46,8 @@
             labelModificar = new Label();
             comboBoxEliminar = new ComboBox();
             labelEliminar = new Label();
+            buttonModificar = new Button();
+            buttonEliminar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -155,7 +157,7 @@
             // 
             // buttonAñadirCliente
             // 
-            buttonAñadirCliente.Location = new Point(543, 181);
+            buttonAñadirCliente.Location = new Point(532, 209);
             buttonAñadirCliente.Name = "buttonAñadirCliente";
             buttonAñadirCliente.Size = new Size(119, 23);
             buttonAñadirCliente.TabIndex = 12;
@@ -210,11 +212,32 @@
             labelEliminar.TabIndex = 20;
             labelEliminar.Text = "Borrar Cliente:";
             // 
+            // buttonModificar
+            // 
+            buttonModificar.Location = new Point(465, 170);
+            buttonModificar.Name = "buttonModificar";
+            buttonModificar.Size = new Size(75, 23);
+            buttonModificar.TabIndex = 21;
+            buttonModificar.Text = "Modificar";
+            buttonModificar.UseVisualStyleBackColor = true;
+            // 
+            // buttonEliminar
+            // 
+            buttonEliminar.Location = new Point(649, 170);
+            buttonEliminar.Name = "buttonEliminar";
+            buttonEliminar.Size = new Size(75, 23);
+            buttonEliminar.TabIndex = 22;
+            buttonEliminar.Text = "Eliminar";
+            buttonEliminar.UseVisualStyleBackColor = true;
+            buttonEliminar.Click += buttonEliminar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(880, 540);
+            Controls.Add(buttonEliminar);
+            Controls.Add(buttonModificar);
             Controls.Add(labelEliminar);
             Controls.Add(comboBoxEliminar);
             Controls.Add(labelModificar);
@@ -235,6 +258,7 @@
             Controls.Add(dni);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -260,5 +284,7 @@
         private Label labelModificar;
         private ComboBox comboBoxEliminar;
         private Label labelEliminar;
+        private Button buttonModificar;
+        private Button buttonEliminar;
     }
 }

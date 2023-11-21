@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace Ejercicio9_Serializacion_XML
 {
-    internal class Cliente
+    public class Cliente
     {
         [XmlElement("DNI")]
         public string DNI { get; set; }
