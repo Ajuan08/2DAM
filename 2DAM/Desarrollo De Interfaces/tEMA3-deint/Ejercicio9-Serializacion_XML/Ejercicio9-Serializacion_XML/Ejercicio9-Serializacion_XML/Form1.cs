@@ -1,3 +1,5 @@
+using System.Data;
+using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Serialization;
 
@@ -5,132 +7,66 @@ namespace Ejercicio9_Serializacion_XML
 {
     public partial class Form1 : Form
     {
-        string rutaArchivo = "prueba.xml";
-        private Banco banco;
+        Banco banco = new Banco();
+        string rutaArchivo = Directory.GetCurrentDirectory() + "/prueba.xml"; 
+
         public Form1()
         {
             InitializeComponent();
-            banco = new Banco();
-            MostrarClientesEnDataGridView();
         }
 
-        private void InicializarComboBoxClientes()
+        private void Form_Load(object sender, EventArgs e)
         {
+            CargarClientesDesdeXML();
+            actualizarTabla();
+            cargarComboBox();
+        }
 
-            foreach (Cliente cliente in banco.Clientes)
+        private void actualizarTabla()
+        {
+            DataSet dataSet = new DataSet();
+
+            dataSet.ReadXml(rutaArchivo);
+
+            if (dataSet.Tables.Count > 0)
             {
-                comboBoxModificar.Items.Add(cliente.DNI);
+                dataGridView1.DataSource = dataSet.Tables[0];
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nombre_Click(object sender, EventArgs e)
-        {
+            else
+            {
+                MessageBox.Show("No se encontraron datos en el archivo XML.", "Información");
+            }
 
         }
+
+
 
         private void buttonAñadirCliente_Click(object sender, EventArgs e)
         {
             string dni = textBoxDni.Text;
-            string nombre = textBoxNombre.Text;
-            string direccion = textBoxDireccion.Text;
-            int edad, telefono, numeroCuenta;
-
-            if (string.IsNullOrWhiteSpace(dni) || string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(direccion) ||
-                !int.TryParse(textBoxEdad.Text, out edad) || !int.TryParse(textBoxTelefono.Text, out telefono) ||
-                !int.TryParse(textBoxNCuenta.Text, out numeroCuenta))
+            if (comprobarDni(dni))
             {
-                MessageBox.Show("Por favor, ingresa datos válidos en todos los campos.");
-                return;
+
+                Cliente nuevoCliente = new Cliente(textBoxDni.Text, textBoxNombre.Text, textBoxDireccion.Text, int.Parse(textBoxEdad.Text), int.Parse(textBoxTelefono.Text), int.Parse(textBoxNCuenta.Text));
+                banco.agregarCliente(nuevoCliente);
+
+                GuardarClientesEnXML();
+                actualizarTabla();
+                cargarComboBox();
             }
-
-            Cliente nuevoCliente = new Cliente
+            else
             {
-                DNI = dni,
-                Nombre = nombre,
-                Direccion = direccion,
-                Edad = edad,
-                Telefono = telefono,
-                NumeroCuentaCorriente = numeroCuenta
-            };
-            banco.Clientes.Add(nuevoCliente);
+                MessageBox.Show("El DNI ya existe");
+            }
+        }
+        private void GuardarClientesEnXML()
+        {
             XmlSerializer serializer = new XmlSerializer(typeof(List<Cliente>));
 
             using (FileStream fs = new FileStream(rutaArchivo, FileMode.Create))
             {
-                serializer.Serialize(fs, banco.Clientes);
+                serializer.Serialize(fs, banco.getClientes());
             }
-            LimpiarCamposFormulario();
-
-            MostrarClientesEnDataGridView();
-        }
-
-        private void MostrarClientesEnDataGridView()
-        {
-            if (File.Exists(rutaArchivo))
-            {
-                XmlSerializer serializer = new XmlSerializer(typeof(List<Cliente>));
-
-                using (FileStream fs = new FileStream(rutaArchivo, FileMode.Open))
-                {
-                    List<Cliente> clientes = (List<Cliente>)serializer.Deserialize(fs);
-                    banco.Clientes = clientes;
-                }
-            }
-            {
-                if (dataGridView1.Columns.Count == 0)
-                {
-                    dataGridView1.Columns.Add("DNI", "DNI");
-                    dataGridView1.Columns.Add("Nombre", "Nombre");
-                    dataGridView1.Columns.Add("Direccion", "Dirección");
-                    dataGridView1.Columns.Add("Edad", "Edad");
-                    dataGridView1.Columns.Add("Telefono", "Teléfono");
-                    dataGridView1.Columns.Add("NumeroCuentaCorriente", "Nº Cuenta Corriente");
-                }
-                dataGridView1.Rows.Clear();
-
-                foreach (Cliente cliente in banco.Clientes)
-                {
-                    dataGridView1.Rows.Add(cliente.DNI, cliente.Nombre, cliente.Direccion, cliente.Edad, cliente.Telefono, cliente.NumeroCuentaCorriente);
-                }
-            }
-        }
-
-
-        private void LimpiarCamposFormulario()
-        {
-            textBoxDni.Text = "";
-            textBoxNombre.Text = "";
-            textBoxDireccion.Text = "";
-            textBoxEdad.Text = "";
-            textBoxTelefono.Text = "";
-            textBoxNCuenta.Text = "";
-        }
-
-        private void comboBoxModificar_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
-
-        private void comboBoxEliminar_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void CargarClientesDesdeXML()
@@ -142,46 +78,80 @@ namespace Ejercicio9_Serializacion_XML
                 using (FileStream fs = new FileStream(rutaArchivo, FileMode.Open))
                 {
                     List<Cliente> clientes = (List<Cliente>)serializer.Deserialize(fs);
-                    banco.Clientes = clientes;
+                    banco.setClientes(clientes);
                 }
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void cargarComboBox()
         {
-            CargarClientesDesdeXML();
-
-            foreach (var cliente in banco.Clientes)
+            comboBoxDni.Items.Clear();
+            comboBoxEliminar.Items.Clear();
+            foreach (Cliente cliente in banco.getClientes())
             {
-                comboBoxModificar.Items.Add(cliente.DNI);
-                comboBoxEliminar.Items.Add(cliente.DNI);
+                string dni = cliente.DNI;
+                comboBoxDni.Items.Add(dni);
+                comboBoxEliminar.Items.Add(dni);
+            }
+        }
+
+        private Boolean comprobarDni(string dni)
+        {
+            foreach (var cliente in banco.getClientes())
+            {
+                if (cliente.DNI == dni)
+                {
+                    return false;
+                }
             }
 
+            return Regex.IsMatch(dni, @"^\d{8}[A-Z]$");
 
         }
 
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
-            string dni = comboBoxEliminar.SelectedItem.ToString();
-            
-            banco.eliminarClienteDNI(dni);
-            foreach (var item in banco.Clientes)
-            {
-                MessageBox.Show(item.DNI);
-            }
+            string dniCliente = comboBoxEliminar.Text;
+
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load(rutaArchivo);
-            XmlNode nodoCliente = xmlDoc.SelectSingleNode($"//Cliente[Dni='{dni}']");
 
-           if(nodoCliente != null )
+            XmlNode nodoCliente = xmlDoc.SelectSingleNode($"//Cliente[Dni='{dniCliente}']");
+            if (nodoCliente != null)
             {
                 XmlNode nodoPadre = nodoCliente.ParentNode;
                 nodoPadre.RemoveChild(nodoCliente);
                 xmlDoc.Save(rutaArchivo);
+                actualizarTabla();
             }
-            
-            
+            cargarComboBox();
+        }
+        private void buttonModificar_Click(object sender, EventArgs e)
+        {
+
+            Cliente nuevoCliente = new Cliente(textBoxDni.Text, textBoxNombre.Text, textBoxDireccion.Text, int.Parse(textBoxEdad.Text), int.Parse(textBoxTelefono.Text), int.Parse(textBoxNCuenta.Text));
+            banco.setCliente(nuevoCliente);
+
+            GuardarClientesEnXML();
+            actualizarTabla();
+            cargarComboBox();
+        }
+
+        private void comboDni_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string dniCliente = comboBoxDni.Text;
+            if (banco.buscarClientePorDni(dniCliente) != null)
+            {
+                textBoxDni.Text = banco.buscarClientePorDni(dniCliente).DNI;
+                textBoxDireccion.Text = banco.buscarClientePorDni(dniCliente).Direccion;
+                textBoxEdad.Text = banco.buscarClientePorDni(dniCliente).Edad.ToString();
+                textBoxNombre.Text = banco.buscarClientePorDni(dniCliente).Nombre;
+                textBoxNCuenta.Text = banco.buscarClientePorDni(dniCliente).NumeroCuentaCorriente.ToString();
+                textBoxTelefono.Text = banco.buscarClientePorDni(dniCliente).Telefono.ToString();
+
+            }
 
         }
     }
+
 }

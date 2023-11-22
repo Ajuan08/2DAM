@@ -24,4 +24,20 @@
     <Telefono>444</Telefono>
     <NumeroCuentaCorriente>444</NumeroCuentaCorriente>
   </Cliente>
+  <Cliente>
+    <DNI>555</DNI>
+    <Nombre>aaaaa</Nombre>
+    <Direccion>aa</Direccion>
+    <Edad>55</Edad>
+    <Telefono>555</Telefono>
+    <NumeroCuentaCorriente>555</NumeroCuentaCorriente>
+  </Cliente>
+  <Cliente>
+    <DNI>666</DNI>
+    <Nombre>sss</Nombre>
+    <Direccion>sss</Direccion>
+    <Edad>6666</Edad>
+    <Telefono>666</Telefono>
+    <NumeroCuentaCorriente>66666</NumeroCuentaCorriente>
+  </Cliente>
 </ArrayOfCliente>

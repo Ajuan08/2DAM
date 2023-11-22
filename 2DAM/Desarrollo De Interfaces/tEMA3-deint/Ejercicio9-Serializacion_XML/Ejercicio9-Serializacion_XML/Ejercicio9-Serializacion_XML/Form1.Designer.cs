@@ -42,25 +42,23 @@
             textBoxNCuenta = new TextBox();
             buttonAñadirCliente = new Button();
             dataGridView1 = new DataGridView();
-            comboBoxModificar = new ComboBox();
+            comboBoxDni = new ComboBox();
             labelModificar = new Label();
-            comboBoxEliminar = new ComboBox();
-            labelEliminar = new Label();
             buttonModificar = new Button();
             buttonEliminar = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            comboBoxEliminar = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dni
             // 
-            dni.AutoSize = true;
-            dni.Location = new Point(35, 63);
+            dni.Location = new Point(0, 0);
             dni.Name = "dni";
-            dni.Size = new Size(33, 15);
-            dni.TabIndex = 0;
-            dni.Text = "DNI: ";
-            dni.TextAlign = ContentAlignment.TopCenter;
-            dni.Click += label1_Click;
+            dni.Size = new Size(100, 23);
+            dni.TabIndex = 27;
             // 
             // textBoxDni
             // 
@@ -71,14 +69,10 @@
             // 
             // nombre
             // 
-            nombre.AutoSize = true;
-            nombre.Location = new Point(218, 63);
+            nombre.Location = new Point(0, 0);
             nombre.Name = "nombre";
-            nombre.Size = new Size(54, 15);
-            nombre.TabIndex = 2;
-            nombre.Text = "Nombre:";
-            nombre.TextAlign = ContentAlignment.TopCenter;
-            nombre.Click += nombre_Click;
+            nombre.Size = new Size(100, 23);
+            nombre.TabIndex = 26;
             // 
             // textBoxNombre
             // 
@@ -157,7 +151,7 @@
             // 
             // buttonAñadirCliente
             // 
-            buttonAñadirCliente.Location = new Point(532, 209);
+            buttonAñadirCliente.Location = new Point(530, 198);
             buttonAñadirCliente.Name = "buttonAñadirCliente";
             buttonAñadirCliente.Size = new Size(119, 23);
             buttonAñadirCliente.TabIndex = 12;
@@ -167,54 +161,28 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(243, 238);
+            dataGridView1.Location = new Point(261, 272);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(507, 267);
-            dataGridView1.TabIndex = 16;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.Size = new Size(537, 223);
+            dataGridView1.TabIndex = 25;
             // 
-            // comboBoxModificar
+            // comboBoxDni
             // 
-            comboBoxModificar.FormattingEnabled = true;
-            comboBoxModificar.Location = new Point(445, 63);
-            comboBoxModificar.Name = "comboBoxModificar";
-            comboBoxModificar.Size = new Size(121, 23);
-            comboBoxModificar.TabIndex = 17;
-            comboBoxModificar.SelectedIndexChanged += comboBoxModificar_SelectedIndexChanged;
+            comboBoxDni.Location = new Point(475, 92);
+            comboBoxDni.Name = "comboBoxDni";
+            comboBoxDni.Size = new Size(121, 23);
+            comboBoxDni.TabIndex = 24;
             // 
             // labelModificar
             // 
-            labelModificar.AutoSize = true;
-            labelModificar.Location = new Point(465, 28);
+            labelModificar.Location = new Point(0, 0);
             labelModificar.Name = "labelModificar";
-            labelModificar.Size = new Size(101, 15);
-            labelModificar.TabIndex = 18;
-            labelModificar.Text = "Modificar Cliente:";
-            labelModificar.Click += label1_Click_1;
-            // 
-            // comboBoxEliminar
-            // 
-            comboBoxEliminar.FormattingEnabled = true;
-            comboBoxEliminar.Location = new Point(629, 63);
-            comboBoxEliminar.Name = "comboBoxEliminar";
-            comboBoxEliminar.Size = new Size(121, 23);
-            comboBoxEliminar.TabIndex = 19;
-            comboBoxEliminar.SelectedIndexChanged += comboBoxEliminar_SelectedIndexChanged;
-            // 
-            // labelEliminar
-            // 
-            labelEliminar.AutoSize = true;
-            labelEliminar.Location = new Point(649, 28);
-            labelEliminar.Name = "labelEliminar";
-            labelEliminar.Size = new Size(82, 15);
-            labelEliminar.TabIndex = 20;
-            labelEliminar.Text = "Borrar Cliente:";
+            labelModificar.Size = new Size(100, 23);
+            labelModificar.TabIndex = 23;
             // 
             // buttonModificar
             // 
-            buttonModificar.Location = new Point(465, 170);
+            buttonModificar.Location = new Point(465, 150);
             buttonModificar.Name = "buttonModificar";
             buttonModificar.Size = new Size(75, 23);
             buttonModificar.TabIndex = 21;
@@ -223,7 +191,7 @@
             // 
             // buttonEliminar
             // 
-            buttonEliminar.Location = new Point(649, 170);
+            buttonEliminar.Location = new Point(649, 150);
             buttonEliminar.Name = "buttonEliminar";
             buttonEliminar.Size = new Size(75, 23);
             buttonEliminar.TabIndex = 22;
@@ -231,17 +199,56 @@
             buttonEliminar.UseVisualStyleBackColor = true;
             buttonEliminar.Click += buttonEliminar_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(521, 62);
+            label1.Name = "label1";
+            label1.Size = new Size(146, 15);
+            label1.TabIndex = 28;
+            label1.Text = "Modificar/Eliminar Cliente";
+            label1.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(40, 51);
+            label2.Name = "label2";
+            label2.Size = new Size(30, 15);
+            label2.TabIndex = 29;
+            label2.Text = "DNI:";
+            label2.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(218, 51);
+            label3.Name = "label3";
+            label3.Size = new Size(54, 15);
+            label3.TabIndex = 30;
+            label3.Text = "Nombre:";
+            label3.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // comboBoxEliminar
+            // 
+            comboBoxEliminar.Location = new Point(634, 92);
+            comboBoxEliminar.Name = "comboBoxEliminar";
+            comboBoxEliminar.Size = new Size(121, 23);
+            comboBoxEliminar.TabIndex = 31;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(880, 540);
+            Controls.Add(comboBoxEliminar);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(buttonEliminar);
             Controls.Add(buttonModificar);
-            Controls.Add(labelEliminar);
-            Controls.Add(comboBoxEliminar);
             Controls.Add(labelModificar);
-            Controls.Add(comboBoxModificar);
+            Controls.Add(comboBoxDni);
             Controls.Add(dataGridView1);
             Controls.Add(buttonAñadirCliente);
             Controls.Add(textBoxNCuenta);
@@ -257,8 +264,7 @@
             Controls.Add(textBoxDni);
             Controls.Add(dni);
             Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
+            Text = "v";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -280,11 +286,13 @@
         private TextBox textBoxNCuenta;
         private Button buttonAñadirCliente;
         private DataGridView dataGridView1;
-        private ComboBox comboBoxModificar;
+        private ComboBox comboBoxDni;
         private Label labelModificar;
-        private ComboBox comboBoxEliminar;
-        private Label labelEliminar;
         private Button buttonModificar;
         private Button buttonEliminar;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private ComboBox comboBoxEliminar;
     }
 }

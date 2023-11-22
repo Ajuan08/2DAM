@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalacion Serializacion", "Instalacion Serializacion\Instalacion Serializacion.vdproj", "{B8F4D62C-FB94-424E-81C6-8A9091F67D11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8F4D62C-FB94-424E-81C6-8A9091F67D11}.Debug|Default.ActiveCfg = Debug
+		{B8F4D62C-FB94-424E-81C6-8A9091F67D11}.Debug|Default.Build.0 = Debug
+		{B8F4D62C-FB94-424E-81C6-8A9091F67D11}.Release|Default.ActiveCfg = Release
+		{B8F4D62C-FB94-424E-81C6-8A9091F67D11}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEA47F4A-9B46-43CE-A07B-6E220AF3D5FD}
+	EndGlobalSection
+EndGlobal

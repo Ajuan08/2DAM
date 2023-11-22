@@ -47,7 +47,33 @@ private void btRegistrarActionPerformed(java.awt.event.ActionEvent evt) {
  
  
  
-}										
+}
+
+private void btBorrarActionPerformed(java.awt.event.ActionEvent evt) {										
+ 
+	
+
+  //  DAOVehiculoImpl.getInstance().insertarVehiculo(new Vehiculo(txtMatricula.getText(), ))
+
+    
+
+ 
+ 
+ 
+}
+
+private void btModificarActionPerformed(java.awt.event.ActionEvent evt) {										
+ 
+	
+
+  //  DAOVehiculoImpl.getInstance().insertarVehiculo(new Vehiculo(txtMatricula.getText(), ))
+
+   
+
+ 
+ 
+ 
+}
  
  
  
@@ -88,7 +114,9 @@ public void setTxtModelo(javax.swing.JTextField txtModelo) {
 
 				
  
-private javax.swing.JButton btLeer;
+private javax.swing.JButton btModificar;
+
+private javax.swing.JButton btBorrar;
  
 private javax.swing.JButton btRegistrar;
  
@@ -162,7 +190,9 @@ private void inicializarPanel() {
  
 	 btRegistrar = new javax.swing.JButton();
  
-	 btLeer = new javax.swing.JButton();
+	 btModificar = new javax.swing.JButton();
+         
+         btBorrar = new javax.swing.JButton();
  
  
  
@@ -247,14 +277,40 @@ private void inicializarPanel() {
 		 }
  
 	 });
+         
+         btBorrar.setText("Borrar");
+ 
+	 btBorrar.setActionCommand("btBorrar");
+ 
+	 btBorrar.setName("btBorrar");
+ 
+	 btBorrar.addActionListener(new java.awt.event.ActionListener() {
+ 
+		 public void actionPerformed(java.awt.event.ActionEvent evt) {
+ 
+			 btBorrarActionPerformed(evt);
+ 
+		 }
+ 
+	 });
  
  
  
-	 btLeer.setText("Leer");
+	 btModificar.setText("Modificar");
  
-	 btLeer.setToolTipText("");
+	 btModificar.setActionCommand("btModificar");
  
-	 btLeer.setName("btLeer"); // NOI18N
+	 btModificar.setName("btModificar");
+ 
+	 btModificar.addActionListener(new java.awt.event.ActionListener() {
+ 
+		 public void actionPerformed(java.awt.event.ActionEvent evt) {
+ 
+			 btModificarActionPerformed(evt);
+ 
+		 }
+ 
+	 });
  
  
  
@@ -279,7 +335,8 @@ private void inicializarPanel() {
 	 					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
 	 					.addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
 	 						.addComponent(btRegistrar, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-	 						.addComponent(btLeer, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                                        .addComponent(btBorrar, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+	 						.addComponent(btModificar, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
 	 			.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 	 );
 	 layout.setVerticalGroup(
@@ -303,7 +360,11 @@ private void inicializarPanel() {
 	 						.addComponent(txtMatricula, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
 	 				.addGroup(layout.createSequentialGroup()
 	 					.addGap(15)
-	 					.addComponent(btLeer)))
+	 					.addComponent(btModificar)
+                                        .addGroup(layout.createSequentialGroup()
+	 					.addGap(15)
+	 					.addComponent(btBorrar))))
+                                        
 	 			.addGap(26)
 	 			.addComponent(jScrollPane1, GroupLayout.PREFERRED_SIZE, 181, GroupLayout.PREFERRED_SIZE)
 	 			.addContainerGap(32, Short.MAX_VALUE))
