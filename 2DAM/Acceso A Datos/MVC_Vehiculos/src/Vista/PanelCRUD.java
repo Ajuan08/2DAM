@@ -5,6 +5,7 @@ import javax.swing.GroupLayout;
 import javax.swing.LayoutStyle;
 
 import Controller.ControllerCRUD;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -55,25 +56,31 @@ private void btBorrarActionPerformed(java.awt.event.ActionEvent evt) {
 
   //  DAOVehiculoImpl.getInstance().insertarVehiculo(new Vehiculo(txtMatricula.getText(), ))
 
-    
+    //ControllerCRUD.modificarVehiculo(this,tablaVehiculos);
 
  
  
  
 }
 
-private void btModificarActionPerformed(java.awt.event.ActionEvent evt) {										
- 
-	
-
-  //  DAOVehiculoImpl.getInstance().insertarVehiculo(new Vehiculo(txtMatricula.getText(), ))
-
-   
-
- 
- 
- 
+private void btModificarActionPerformed(java.awt.event.ActionEvent evt) {                                          
+    int filaSeleccionada = tablaVehiculos.getSelectedRow();
+    if (filaSeleccionada != -1) {
+        String matricula = (String) tablaVehiculos.getValueAt(filaSeleccionada, 2);
+        String nuevaMarca = JOptionPane.showInputDialog("Introduce la nueva marca:");
+        String nuevoModelo = JOptionPane.showInputDialog("Introduce el nuevo modelo:");
+        if (nuevaMarca != null && nuevoModelo != null) {
+            if (ControllerCRUD.modificarVehiculo(matricula, nuevaMarca, nuevoModelo, tablaVehiculos)) {
+                JOptionPane.showMessageDialog(this, "Vehículo modificado correctamente.");
+            } else {
+                JOptionPane.showMessageDialog(this, "Error al intentar modificar el vehículo.");
+            }
+        }
+    } else {
+        JOptionPane.showMessageDialog(this, "Seleccione un vehículo para modificar.");
+    }
 }
+
  
  
  

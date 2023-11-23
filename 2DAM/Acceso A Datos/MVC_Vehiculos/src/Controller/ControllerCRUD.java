@@ -77,7 +77,10 @@ public class ControllerCRUD
 		}
      return insertado;		
 	}
-	
+        
+       public static boolean modificarVehiculo(String matricula, String nuevaMarca, String nuevoModelo, JTable tablaVehiculos) {
+            return false;
+       }
 	
 	
 
