@@ -1,0 +1,15 @@
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\obj\Debug\net8.0\Ejercicio2Exam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\obj\Debug\net8.0\Ejercicio2Exam.AssemblyInfoInputs.cache
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\obj\Debug\net8.0\Ejercicio2Exam.AssemblyInfo.cs
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\obj\Debug\net8.0\Ejercicio2Exam.csproj.CoreCompileInputs.cache
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\obj\Debug\net8.0\Ejercicio2Exam.sourcelink.json
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\bin\Debug\net8.0\Ejercicio2Exam.exe
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\bin\Debug\net8.0\Ejercicio2Exam.deps.json
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\bin\Debug\net8.0\Ejercicio2Exam.runtimeconfig.json
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\bin\Debug\net8.0\Ejercicio2Exam.dll
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\bin\Debug\net8.0\Ejercicio2Exam.pdb
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\obj\Debug\net8.0\Ejercicio2Exam.dll
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\obj\Debug\net8.0\refint\Ejercicio2Exam.dll
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\obj\Debug\net8.0\Ejercicio2Exam.pdb
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\obj\Debug\net8.0\Ejercicio2Exam.genruntimeconfig.cache
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema2-DEINT\Examen\Ejercicio2Exam\obj\Debug\net8.0\ref\Ejercicio2Exam.dll
