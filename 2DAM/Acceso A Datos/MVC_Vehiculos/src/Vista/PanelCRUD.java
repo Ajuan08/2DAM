@@ -130,7 +130,9 @@ private void btRegistrarActionPerformed(java.awt.event.ActionEvent evt) {
 		txtMarca.setText("");
 		txtModelo.setText("");
 		txtMatricula.setText("");
-	}
+	}else{
+            System.err.println("Se ha producido un error");
+        }
 
     
 
