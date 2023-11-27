@@ -11,6 +11,8 @@ private String modelo;
 
 private String matricula;
 
+private int idCliente;
+
 public Vehiculo() {
 	
 
@@ -21,6 +23,15 @@ public Vehiculo(String marca, String modelo, String matricula) {
 	this.marca = marca;
 	this.modelo = modelo;
 	this.matricula = matricula;
+	this.idCliente = 0;
+}
+
+public Vehiculo(String marca, String modelo, String matricula, int idCliente) {
+	
+	this.marca = marca;
+	this.modelo = modelo;
+	this.matricula = matricula;
+	this.idCliente = idCliente;
 }
 
 public String getMarca() {
@@ -45,6 +56,14 @@ public String getMatricula() {
 
 public void setMatricula(String matricula) {
 	this.matricula = matricula;
+}
+
+public int getIdCliente() {
+	return idCliente;
+}
+
+public void setIdCliente(int idCliente) {
+	this.idCliente = idCliente;
 }
 
 @Override
