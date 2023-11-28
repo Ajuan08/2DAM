@@ -11,11 +11,13 @@ namespace Jardineria.Conexion
     class Conexion
     {
         private string cadenaConexion = "Data Source=DAM2-19; Initial Catalog=db.Sistema; Integrated Security = True";
+        private string cadenaConexion2 = "Data Source=AJUAN; Initial Catalog=db.Sistema; Integrated Security = True";
         SqlConnection sqlConnection;
 
         public SqlConnection EstablecerConexion()
         {
             sqlConnection = new SqlConnection(cadenaConexion);
+            sqlConnection = new SqlConnection(cadenaConexion2);
             return sqlConnection;
         }
         public bool EjecutarComandoSinRetornarDatos(string strComando)
