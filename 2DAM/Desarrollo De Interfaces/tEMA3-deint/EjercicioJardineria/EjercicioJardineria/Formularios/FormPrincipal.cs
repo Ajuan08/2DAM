@@ -27,5 +27,20 @@ namespace EjercicioJardineria
         {
             new EliminarGama().ShowDialog();
         }
+
+        private void consultarPedidosEntregados_Click(object sender, EventArgs e)
+        {
+            new ConsultarPedidosEntregados().ShowDialog();
+        }
+
+        private void consultarClientesNoPagan_Click(object sender, EventArgs e)
+        {
+            new ConsultarClientesQueNoPagan().ShowDialog();
+        }
+
+        private void consultarPrecioMasCaroYBarato_Click(object sender, EventArgs e)
+        {
+            new ConsultarPrecioMasCaroYBarato().ShowDialog();
+        }
     }
 }

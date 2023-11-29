@@ -64,6 +64,7 @@
             consultarPedidosEntregados.TabIndex = 2;
             consultarPedidosEntregados.Text = "Consultar Pedidos Entregados";
             consultarPedidosEntregados.UseVisualStyleBackColor = true;
+            consultarPedidosEntregados.Click += consultarPedidosEntregados_Click;
             // 
             // consultarEmpleadosJefeDeterminado
             // 
@@ -82,6 +83,7 @@
             consultarClientesNoPagan.TabIndex = 4;
             consultarClientesNoPagan.Text = "Consultar Clientes que no pagan";
             consultarClientesNoPagan.UseVisualStyleBackColor = true;
+            consultarClientesNoPagan.Click += consultarClientesNoPagan_Click;
             // 
             // consultarPrecioMasCaroYBarato
             // 
@@ -91,6 +93,7 @@
             consultarPrecioMasCaroYBarato.TabIndex = 5;
             consultarPrecioMasCaroYBarato.Text = "Consultar Precio del producto mas caro y mas barato";
             consultarPrecioMasCaroYBarato.UseVisualStyleBackColor = true;
+            consultarPrecioMasCaroYBarato.Click += consultarPrecioMasCaroYBarato_Click;
             // 
             // FormPrincipal
             // 

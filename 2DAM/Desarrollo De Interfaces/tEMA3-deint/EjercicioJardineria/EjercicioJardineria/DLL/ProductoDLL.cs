@@ -1,6 +1,8 @@
 ﻿using Jardineria.Conexion;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +26,29 @@ namespace EjercicioJardineria.DLL
         public bool eliminarGama(string gama)
         {
             return conexion.EjecutarComandoSinRetornarDatos($"Delete from gama_producto where gama = '{gama}' ");
+        }
+
+        public static DataSet ConsultarPedidosEntregados(int mes)
+        {
+            Conexion conexion = new Conexion();
+            DataSet resultado = conexion.EjecutarSentencia($"SELECT codigo_pedido, fecha_pedido, fecha_esperada, fecha_entrega, estado, comentarios, codigo_cliente FROM pedido WHERE MONTH(fecha_entrega)={mes}");
+            return resultado;
+        }
+
+        public static DataSet ConsultarClientesQueNoPagan()
+        {
+            Conexion conexion = new Conexion();
+            DataSet resultado = conexion.EjecutarSentencia($"SELECT nombre_cliente FROM (SELECT nombre_cliente, cliente.codigo_cliente FROM pedido JOIN cliente ON pedido.codigo_cliente=cliente.codigo_cliente) AS clientes_pedidos JOIN pago ON clientes_pedidos.codigo_cliente=pago.codigo_cliente");
+
+            return resultado;
+        }
+
+        public static DataSet ConsultarPrecioMasBaratoYMasCaro()
+        {
+            Conexion conexion = new Conexion();
+            DataSet resultado = conexion.EjecutarSentencia("SELECT MAX(precio_venta) 'Precio más caro', MIN(precio_venta) 'Precio más barato' FROM producto");
+
+            return resultado;
         }
     }
 }
