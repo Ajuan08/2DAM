@@ -10,14 +10,14 @@ namespace Jardineria.Conexion
 {
     class Conexion
     {
-        private string cadenaConexion = "Data Source=DAM2-19; Initial Catalog=db.Sistema; Integrated Security = True";
-        private string cadenaConexion2 = "Data Source=AJUAN; Initial Catalog=db.Sistema; Integrated Security = True";
+        private string cadenaConexion = "Data Source=DAM2-19; Initial Catalog=jardineria; Integrated Security = True";
+        private string cadenaConexion2 = "Data Source=AJUAN; Initial Catalog=jardineria; Integrated Security = True";
         SqlConnection sqlConnection;
 
         public SqlConnection EstablecerConexion()
         {
             sqlConnection = new SqlConnection(cadenaConexion);
-            sqlConnection = new SqlConnection(cadenaConexion2);
+            //sqlConnection = new SqlConnection(cadenaConexion2);
             return sqlConnection;
         }
         public bool EjecutarComandoSinRetornarDatos(string strComando)
@@ -38,14 +38,14 @@ namespace Jardineria.Conexion
             }
         }
 
-        public DataSet EjecutarSentencia(SqlCommand sqlComando)
+        public DataSet EjecutarSentencia(string sqlComando)
         {
             DataSet ds = new DataSet();
             SqlDataAdapter adapter = new SqlDataAdapter();
             try
             {
                 SqlCommand sqlCommand = new SqlCommand();
-                sqlCommand = sqlComando;
+                sqlCommand.CommandText = sqlComando;
                 sqlCommand.Connection = EstablecerConexion();
                 adapter.SelectCommand = sqlCommand;
                 sqlConnection.Open();

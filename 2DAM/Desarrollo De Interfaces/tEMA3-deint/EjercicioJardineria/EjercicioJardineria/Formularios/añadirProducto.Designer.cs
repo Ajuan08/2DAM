@@ -33,7 +33,6 @@
             label2 = new Label();
             textBoxNombre = new TextBox();
             label3 = new Label();
-            comboBoxGama = new ComboBox();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
@@ -47,6 +46,7 @@
             textBoxPrecioVenta = new TextBox();
             textBoxPrecioProveedor = new TextBox();
             buttonAñadirProducto = new Button();
+            comboBoxGama = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -65,6 +65,7 @@
             textBoxCodProd.Name = "textBoxCodProd";
             textBoxCodProd.Size = new Size(120, 23);
             textBoxCodProd.TabIndex = 1;
+            textBoxCodProd.TextChanged += textBoxCodProd_TextChanged;
             // 
             // label2
             // 
@@ -81,6 +82,7 @@
             textBoxNombre.Name = "textBoxNombre";
             textBoxNombre.Size = new Size(120, 23);
             textBoxNombre.TabIndex = 3;
+            textBoxNombre.TextChanged += textBoxNombre_TextChanged;
             // 
             // label3
             // 
@@ -90,14 +92,6 @@
             label3.Size = new Size(43, 15);
             label3.TabIndex = 4;
             label3.Text = "Gama*";
-            // 
-            // comboBoxGama
-            // 
-            comboBoxGama.FormattingEnabled = true;
-            comboBoxGama.Location = new Point(420, 79);
-            comboBoxGama.Name = "comboBoxGama";
-            comboBoxGama.Size = new Size(121, 23);
-            comboBoxGama.TabIndex = 6;
             // 
             // label4
             // 
@@ -159,6 +153,7 @@
             textBoxDimensiones.Name = "textBoxDimensiones";
             textBoxDimensiones.Size = new Size(120, 23);
             textBoxDimensiones.TabIndex = 13;
+            textBoxDimensiones.TextChanged += textBoxDimensiones_TextChanged;
             // 
             // textBoxProveedor
             // 
@@ -166,6 +161,7 @@
             textBoxProveedor.Name = "textBoxProveedor";
             textBoxProveedor.Size = new Size(120, 23);
             textBoxProveedor.TabIndex = 14;
+            textBoxProveedor.TextChanged += textBoxProveedor_TextChanged;
             // 
             // textBoxDescripcion
             // 
@@ -173,6 +169,7 @@
             textBoxDescripcion.Name = "textBoxDescripcion";
             textBoxDescripcion.Size = new Size(120, 23);
             textBoxDescripcion.TabIndex = 15;
+            textBoxDescripcion.TextChanged += textBoxDescripcion_TextChanged;
             // 
             // textBoxCantStock
             // 
@@ -180,6 +177,7 @@
             textBoxCantStock.Name = "textBoxCantStock";
             textBoxCantStock.Size = new Size(120, 23);
             textBoxCantStock.TabIndex = 16;
+            textBoxCantStock.TextChanged += textBoxCantStock_TextChanged;
             // 
             // textBoxPrecioVenta
             // 
@@ -187,6 +185,7 @@
             textBoxPrecioVenta.Name = "textBoxPrecioVenta";
             textBoxPrecioVenta.Size = new Size(120, 23);
             textBoxPrecioVenta.TabIndex = 17;
+            textBoxPrecioVenta.TextChanged += textBoxPrecioVenta_TextChanged;
             // 
             // textBoxPrecioProveedor
             // 
@@ -194,6 +193,7 @@
             textBoxPrecioProveedor.Name = "textBoxPrecioProveedor";
             textBoxPrecioProveedor.Size = new Size(120, 23);
             textBoxPrecioProveedor.TabIndex = 18;
+            textBoxPrecioProveedor.TextChanged += textBoxPrecioProveedor_TextChanged;
             // 
             // buttonAñadirProducto
             // 
@@ -203,12 +203,23 @@
             buttonAñadirProducto.TabIndex = 19;
             buttonAñadirProducto.Text = "AÑADIR PRODUCTO";
             buttonAñadirProducto.UseVisualStyleBackColor = true;
+            buttonAñadirProducto.Click += buttonAñadirProducto_Click;
+            // 
+            // comboBoxGama
+            // 
+            comboBoxGama.FormattingEnabled = true;
+            comboBoxGama.Location = new Point(419, 79);
+            comboBoxGama.Name = "comboBoxGama";
+            comboBoxGama.Size = new Size(121, 23);
+            comboBoxGama.TabIndex = 20;
+            comboBoxGama.SelectedIndexChanged += comboBoxGama_SelectedIndexChanged;
             // 
             // añadirProducto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(comboBoxGama);
             Controls.Add(buttonAñadirProducto);
             Controls.Add(textBoxPrecioProveedor);
             Controls.Add(textBoxPrecioVenta);
@@ -222,7 +233,6 @@
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(comboBoxGama);
             Controls.Add(label3);
             Controls.Add(textBoxNombre);
             Controls.Add(label2);
@@ -230,6 +240,7 @@
             Controls.Add(label1);
             Name = "añadirProducto";
             Text = "añadirProducto";
+            Load += añadirProducto_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -241,7 +252,6 @@
         private Label label2;
         private TextBox textBoxNombre;
         private Label label3;
-        private ComboBox comboBoxGama;
         private Label label4;
         private Label label5;
         private Label label6;
@@ -255,5 +265,6 @@
         private TextBox textBoxPrecioVenta;
         private TextBox textBoxPrecioProveedor;
         private Button buttonAñadirProducto;
+        private ComboBox comboBoxGama;
     }
 }

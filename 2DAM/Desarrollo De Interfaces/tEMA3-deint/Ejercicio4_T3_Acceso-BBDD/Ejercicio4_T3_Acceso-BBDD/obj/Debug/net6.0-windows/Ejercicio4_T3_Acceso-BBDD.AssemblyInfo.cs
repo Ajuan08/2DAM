@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ejercicio4_T3_Acceso-BBDD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+837a4dcdf56aceafb359b0973ed16843a4ead82b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ejercicio4_T3_Acceso-BBDD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ejercicio4_T3_Acceso-BBDD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

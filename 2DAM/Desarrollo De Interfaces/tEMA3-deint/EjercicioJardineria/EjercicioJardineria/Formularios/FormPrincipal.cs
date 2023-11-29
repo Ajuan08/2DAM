@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EjercicioJardineria.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace EjercicioJardineria
         public FormPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void añadirProductos_Click(object sender, EventArgs e)
+        {
+            new añadirProducto().ShowDialog();
+        }
+
+        private void eliminarGama_Click(object sender, EventArgs e)
+        {
+            new EliminarGama().ShowDialog();
         }
     }
 }

@@ -44,6 +44,7 @@
             añadirProductos.TabIndex = 0;
             añadirProductos.Text = "AñadirProductos";
             añadirProductos.UseVisualStyleBackColor = true;
+            añadirProductos.Click += añadirProductos_Click;
             // 
             // eliminarGama
             // 
@@ -53,6 +54,7 @@
             eliminarGama.TabIndex = 1;
             eliminarGama.Text = "Eliminar Gama";
             eliminarGama.UseVisualStyleBackColor = true;
+            eliminarGama.Click += eliminarGama_Click;
             // 
             // consultarPedidosEntregados
             // 
