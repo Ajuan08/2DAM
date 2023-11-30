@@ -25,9 +25,9 @@ namespace EjercicioJardineria.Formularios
         {
             int mes = comboBoxMes.SelectedIndex;
 
-            if (mes >= 1)
+            if (mes <= 1)
             {
-                DataSet pedidos = ProductoDLL.ConsultarPedidosEntregados(mes);
+                DataSet pedidos = ProductoDLL.ConsultarPedidosEntregados();
 
                 dataGridView1.DataSource = pedidos.Tables[0];
             }

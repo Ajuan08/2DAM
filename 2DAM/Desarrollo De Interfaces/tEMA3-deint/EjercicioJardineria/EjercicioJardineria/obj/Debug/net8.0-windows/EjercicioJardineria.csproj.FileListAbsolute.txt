@@ -55,3 +55,7 @@ S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\EjercicioJardineria\Eje
 S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\EjercicioJardineria\EjercicioJardineria\obj\Debug\net8.0-windows\EjercicioJardineria.Formularios.ConsultarPedidosEntregados.resources
 S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\EjercicioJardineria\EjercicioJardineria\obj\Debug\net8.0-windows\EjercicioJardineria.Formularios.ConsultarClientesQueNoPagan.resources
 S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\EjercicioJardineria\EjercicioJardineria\obj\Debug\net8.0-windows\EjercicioJardineria.Formularios.ConsultarPrecioMasCaroYBarato.resources
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\EjercicioJardineria\EjercicioJardineria\obj\Debug\net8.0-windows\EjercicioJardineria.Formularios.ConsultarClientesQueNoPagan.resources
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\EjercicioJardineria\EjercicioJardineria\obj\Debug\net8.0-windows\EjercicioJardineria.Formularios.ConsultarEmpleadosJefeDeterminado.resources
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\EjercicioJardineria\EjercicioJardineria\obj\Debug\net8.0-windows\EjercicioJardineria.Formularios.ConsultarPedidosEntregados.resources
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\EjercicioJardineria\EjercicioJardineria\obj\Debug\net8.0-windows\EjercicioJardineria.Formularios.ConsultarPrecioMasCaroYBarato.resources

@@ -28,10 +28,11 @@ namespace EjercicioJardineria.DLL
             return conexion.EjecutarComandoSinRetornarDatos($"Delete from gama_producto where gama = '{gama}' ");
         }
 
-        public static DataSet ConsultarPedidosEntregados(int mes)
+        public static DataSet ConsultarPedidosEntregados()
         {
             Conexion conexion = new Conexion();
-            DataSet resultado = conexion.EjecutarSentencia($"SELECT codigo_pedido, fecha_pedido, fecha_esperada, fecha_entrega, estado, comentarios, codigo_cliente FROM pedido WHERE MONTH(fecha_entrega)={mes}");
+            DataSet resultado = conexion.EjecutarSentencia($"SELECT codigo_pedido, fecha_pedido, fecha_esperada, fecha_entrega, estado, comentarios, codigo_cliente FROM pedido WHERE fecha_entrega=fecha_entrega");
+
             return resultado;
         }
 
@@ -49,6 +50,21 @@ namespace EjercicioJardineria.DLL
             DataSet resultado = conexion.EjecutarSentencia("SELECT MAX(precio_venta) 'Precio más caro', MIN(precio_venta) 'Precio más barato' FROM producto");
 
             return resultado;
+        }
+
+        public List<string> ConsultarEmpleadoJefeDeterminado(int codigoJefe)
+        {
+            List<string> resultados = new List<string>();
+            Conexion conexion = new Conexion();
+            DataSet resultado = conexion.EjecutarSentencia($"SELECT * FROM empleado where codigo_jefe = {codigoJefe}");
+
+            foreach (DataRow row in resultado.Tables[0].Rows)
+            {
+                string datosEmpleado = $"{row["nombre"]} {row["apellido1"]} {row["apellido2"]} {row["email"]}";
+                resultados.Add(datosEmpleado);
+            }
+
+            return resultados;
         }
     }
 }

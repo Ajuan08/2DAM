@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CQFwQdHlYoq/8E7i3eTJOAEHllD8pyWYAIZJFL/H2y/Rl7JkSijWU6JgC200oJ8Z9PoV6Y/6oy4oTFcTeeqGWg==",
+  "dgSpecHash": "6o2j0HmIfsm4+YY1ddPdy4ZSwoWlyCEFnEGyLQZgFPGGQdoR+6uzL/Tsx41NrYtfr6r0CCu7Q9F02d9S8wEvcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dam\\source\\repos\\DesarrolloInterfaces\\Tema2-DEINT\\T2_E6_LINQ\\TestAlumno\\TestAlumno.csproj",
+  "projectFilePath": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema2-DEINT\\T2_E6_LINQ\\TestAlumno\\TestAlumno.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dam\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\dam\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

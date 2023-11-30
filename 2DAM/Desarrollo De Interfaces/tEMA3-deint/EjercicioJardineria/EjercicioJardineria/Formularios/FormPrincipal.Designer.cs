@@ -74,6 +74,7 @@
             consultarEmpleadosJefeDeterminado.TabIndex = 3;
             consultarEmpleadosJefeDeterminado.Text = "Consultar empleados de un jefe determinado";
             consultarEmpleadosJefeDeterminado.UseVisualStyleBackColor = true;
+            consultarEmpleadosJefeDeterminado.Click += consultarEmpleadosJefeDeterminado_Click;
             // 
             // consultarClientesNoPagan
             // 

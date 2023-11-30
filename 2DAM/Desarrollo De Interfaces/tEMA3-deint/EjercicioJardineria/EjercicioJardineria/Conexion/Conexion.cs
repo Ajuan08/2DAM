@@ -16,8 +16,8 @@ namespace Jardineria.Conexion
 
         public SqlConnection EstablecerConexion()
         {
-            //sqlConnection = new SqlConnection(cadenaConexion);
-            sqlConnection = new SqlConnection(cadenaConexion2);
+            sqlConnection = new SqlConnection(cadenaConexion);
+            //sqlConnection = new SqlConnection(cadenaConexion2);
             return sqlConnection;
         }
         public bool EjecutarComandoSinRetornarDatos(string strComando)

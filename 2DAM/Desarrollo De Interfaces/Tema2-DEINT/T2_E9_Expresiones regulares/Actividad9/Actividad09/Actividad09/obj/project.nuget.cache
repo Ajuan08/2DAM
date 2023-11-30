@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "dBS6wmdFa9iSK1UUwBPES2VGo7g0XXiPXKPyOZOdl4Nwqhd2nr5QWQy3Fara+ptyFbrwG3EK1/McLX9dol8tFw==",
+  "dgSpecHash": "VvoaaqPmp9GH7CJfaC0aiVxbGsDuJyVX4dzN0J/xPP+ivxm8C+T7ybLM5fMsczcypuc6gd0H+978qu6P0TumIw==",
   "success": true,
-  "projectFilePath": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema2-DEINT\\T2_E9_Expresiones regulares\\Actividad9\\Actividad09\\Actividad09\\Actividad9.csproj",
+  "projectFilePath": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema2-DEINT\\T2_E9_Expresiones regulares\\Actividad9\\Actividad09\\Actividad09\\Actividad9.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+    "C:\\Users\\dam\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\dam\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\dam\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\dam\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

@@ -42,5 +42,10 @@ namespace EjercicioJardineria
         {
             new ConsultarPrecioMasCaroYBarato().ShowDialog();
         }
+
+        private void consultarEmpleadosJefeDeterminado_Click(object sender, EventArgs e)
+        {
+            new ConsultarEmpleadosJefeDeterminado().ShowDialog();
+        }
     }
 }

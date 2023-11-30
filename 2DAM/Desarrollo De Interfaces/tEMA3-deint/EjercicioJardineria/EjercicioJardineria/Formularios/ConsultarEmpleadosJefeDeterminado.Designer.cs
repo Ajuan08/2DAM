@@ -31,7 +31,7 @@
             comboBoxCodJefe = new ComboBox();
             buttonBuscar = new Button();
             label1 = new Label();
-            listView1 = new ListView();
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
             // comboBoxCodJefe
@@ -50,6 +50,7 @@
             buttonBuscar.TabIndex = 6;
             buttonBuscar.Text = "Buscar";
             buttonBuscar.UseVisualStyleBackColor = true;
+            buttonBuscar.Click += buttonBuscar_Click;
             // 
             // label1
             // 
@@ -60,25 +61,26 @@
             label1.TabIndex = 5;
             label1.Text = "Código del Jefe";
             // 
-            // listView1
+            // listBox1
             // 
-            listView1.Location = new Point(116, 137);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(527, 247);
-            listView1.TabIndex = 9;
-            listView1.UseCompatibleStateImageBehavior = false;
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(127, 127);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(560, 274);
+            listBox1.TabIndex = 10;
             // 
             // ConsultarEmpleadosJefeDeterminado
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(listView1);
+            Controls.Add(listBox1);
             Controls.Add(comboBoxCodJefe);
             Controls.Add(buttonBuscar);
             Controls.Add(label1);
             Name = "ConsultarEmpleadosJefeDeterminado";
-            Text = "ConsultarEmpleadosJefeDeterminado";
+            Load += ConsultarEmpleadosJefeDeterminado_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -88,6 +90,6 @@
         private ComboBox comboBoxCodJefe;
         private Button buttonBuscar;
         private Label label1;
-        private ListView listView1;
+        private ListBox listBox1;
     }
 }

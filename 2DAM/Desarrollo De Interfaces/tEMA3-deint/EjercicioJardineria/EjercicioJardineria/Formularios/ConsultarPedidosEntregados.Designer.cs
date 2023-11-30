@@ -40,9 +40,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(169, 50);
             label1.Name = "label1";
-            label1.Size = new Size(95, 15);
+            label1.Size = new Size(93, 15);
             label1.TabIndex = 1;
-            label1.Text = "Introduce el mes";
+            label1.Text = "Elige una fecha: ";
             // 
             // buttonBuscar
             // 

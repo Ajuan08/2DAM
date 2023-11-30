@@ -1,12 +1,12 @@
 <h3>LOGIN</h3>
 <form id="formularioLogin">
     <label for="usuario">Usuario: </label>
-    <input type="text" id="usuario">
+    <input type="text" id="usuario"[(ngModel)]="usuario">
     <br>
     <br>
     <label for="contraseña">Contraseña: </label>
     <input type="text" id="contraseña">
     <br>
     <br>
-    <button>Login</button>
+    <button (click)="login(usuario)">Login</button>
 </form>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServicioLoginService } from '../Servicios/servicio-login.service';
 
 @Component({
   selector: 'app-preguntas',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./preguntas.component.css']
 })
 export class PreguntasComponent {
-
+ usuario: string
+  constructor(private ServicioLoginService: ServicioLoginService){
+    this.usuario = ServicioLoginService.obtenerUsuario();
+  }
 }
