@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dam\\.nuget\\packages\\": {},
+    "C:\\Users\\anton\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\tEMA3-deint\\Ejercicio1Ficheros\\Ejercicio1-4\\Ejercicio1-4.csproj",
+      "projectUniqueName": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\tEMA3-deint\\Ejercicio1Ficheros\\Ejercicio1-4\\Ejercicio1-4.csproj",
       "projectName": "Ejercicio1-4",
-      "projectPath": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\tEMA3-deint\\Ejercicio1Ficheros\\Ejercicio1-4\\Ejercicio1-4.csproj",
-      "packagesPath": "C:\\Users\\dam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\tEMA3-deint\\Ejercicio1Ficheros\\Ejercicio1-4\\obj\\",
+      "projectPath": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\tEMA3-deint\\Ejercicio1Ficheros\\Ejercicio1-4\\Ejercicio1-4.csproj",
+      "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
+      "outputPath": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\tEMA3-deint\\Ejercicio1Ficheros\\Ejercicio1-4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

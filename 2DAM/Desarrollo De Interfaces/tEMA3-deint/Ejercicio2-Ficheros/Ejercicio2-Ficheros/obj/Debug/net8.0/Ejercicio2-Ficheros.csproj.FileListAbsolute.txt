@@ -1,0 +1,15 @@
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\bin\Debug\net8.0\Ejercicio2-Ficheros.exe
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\bin\Debug\net8.0\Ejercicio2-Ficheros.deps.json
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\bin\Debug\net8.0\Ejercicio2-Ficheros.runtimeconfig.json
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\bin\Debug\net8.0\Ejercicio2-Ficheros.dll
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\bin\Debug\net8.0\Ejercicio2-Ficheros.pdb
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\obj\Debug\net8.0\Ejercicio2-Ficheros.GeneratedMSBuildEditorConfig.editorconfig
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\obj\Debug\net8.0\Ejercicio2-Ficheros.AssemblyInfoInputs.cache
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\obj\Debug\net8.0\Ejercicio2-Ficheros.AssemblyInfo.cs
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\obj\Debug\net8.0\Ejercicio2-Ficheros.csproj.CoreCompileInputs.cache
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\obj\Debug\net8.0\Ejercicio2-Ficheros.sourcelink.json
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\obj\Debug\net8.0\Ejercicio2-Ficheros.dll
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\obj\Debug\net8.0\refint\Ejercicio2-Ficheros.dll
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\obj\Debug\net8.0\Ejercicio2-Ficheros.pdb
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\obj\Debug\net8.0\Ejercicio2-Ficheros.genruntimeconfig.cache
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio2-Ficheros\Ejercicio2-Ficheros\obj\Debug\net8.0\ref\Ejercicio2-Ficheros.dll
