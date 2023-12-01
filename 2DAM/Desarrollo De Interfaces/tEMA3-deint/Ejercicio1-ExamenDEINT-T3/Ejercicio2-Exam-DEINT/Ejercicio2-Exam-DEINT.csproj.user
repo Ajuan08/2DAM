@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Formularios\AgregarMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\AgregarVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\ModificarEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\VisualizarInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\VisualizarMantenimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

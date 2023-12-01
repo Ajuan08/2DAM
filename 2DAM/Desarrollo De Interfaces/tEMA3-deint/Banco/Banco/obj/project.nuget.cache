@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "K2ioprz2WCJsTZctj9PyP1Lp9kOSe9GgjfuPi/6VMY2kEi0XRtDoGI4ciAurQpeRb5MlVsZICUkZg43GTRwqcQ==",
+  "dgSpecHash": "2GfwLOuonaviIaSn8BNcqupeqB3DDXUSZ0+JmGlZErrqNwn2j5woGJscv+uyyi3tzavlZjkJT36uqN5nVU/+0w==",
   "success": true,
-  "projectFilePath": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\tEMA3-deint\\Banco\\Banco\\Banco.csproj",
+  "projectFilePath": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\tEMA3-deint\\Banco\\Banco\\Banco.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\anton\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\dam\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

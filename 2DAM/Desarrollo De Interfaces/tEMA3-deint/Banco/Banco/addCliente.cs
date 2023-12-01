@@ -56,7 +56,7 @@ namespace Banco
 
         private void textDireccion_Validating(object sender, CancelEventArgs e)
         {
-            if (textNombre.Text == "")
+            if (string.IsNullOrEmpty(textDireccion.Text))
             {
                 MessageBox.Show("Por favor, ingrese una Dirección.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 e.Cancel = true;

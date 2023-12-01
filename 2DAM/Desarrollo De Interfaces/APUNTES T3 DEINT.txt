@@ -113,3 +113,20 @@ else
     Console.WriteLine("El directorio no existe.");
 }
 
+---------COMBOBOX BASE DATOS--------
+private void EliminarGama_Load(object sender, EventArgs e)
+{
+    DataSet dataSet = conexion.EjecutarSentencia("select gama from gama_producto");
+    DataTable datos = dataSet.Tables[0];
+    foreach (DataRow item in datos.Rows)
+    {
+        comboBoxGama.Items.Add(item[0]);
+    }
+    dataGridView1.DataSource = datos;
+}
+
+------------COMANDOS SQL-----------------
+INSERT INTO 'Nombre_Tabla'(columna1, columna2...) values (valorColumna1,valorColumna2...)
+DELETE FROM 'Nombre_Tabla' WHERE condicion
+UPDATE 'Nombre_Tabla' SET columna1 = valorNuevo
+
