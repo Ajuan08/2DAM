@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
+import {HttpClientModule} from '@angular/common/http';
+import { JuegoComponent } from './juego/juego.component';
+import { RespuestaComponent } from './respuesta/respuesta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistroComponent,
-    PreguntasComponent
+    PreguntasComponent,
+    JuegoComponent,
+    RespuestaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

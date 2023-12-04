@@ -4,12 +4,13 @@ import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
 import { LoginGuard } from './login-guard.guard';
+import { JuegoComponent } from './juego/juego.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegistroComponent},
-  { path: 'preguntas', component: PreguntasComponent,canActivate :[LoginGuard]}
+  { path: 'preguntas', component: JuegoComponent,canActivate :[LoginGuard]}
 ];
 
 @NgModule({

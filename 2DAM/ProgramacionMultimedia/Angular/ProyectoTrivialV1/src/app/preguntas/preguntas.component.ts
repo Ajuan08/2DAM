@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { PreguntasService } from 'src/services/preguntasService/preguntas.service';
 
 @Component({
   selector: 'app-preguntas',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./preguntas.component.css']
 })
 export class PreguntasComponent {
-
+ @Input() pregunta: string;
 }
