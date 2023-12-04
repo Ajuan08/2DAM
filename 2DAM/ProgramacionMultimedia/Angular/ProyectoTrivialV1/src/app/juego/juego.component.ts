@@ -13,6 +13,8 @@ export class JuegoComponent {
   questions: any[];
   numeroPregunta: number = 0;
   question:any;
+  
+
   getQuestion():any{
     this.question = this.questions[this.numeroPregunta].question;
     this.numeroPregunta++;

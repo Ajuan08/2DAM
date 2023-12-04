@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { PreguntasService } from 'src/services/preguntasService/preguntas.service';
 
 @Component({
   selector: 'app-preguntas',
