@@ -1,16 +1,21 @@
 import { CanActivate } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { ServicioLoginService } from './Servicios/servicio-login.service';
-
+import { ServicioLogin } from './Servicios/servicio-login.service';
+/*
 @Injectable({
   providedIn: 'root',
 })
-export class LoginGuard implements CanActivate {
-  constructor(private router: Router, private servicioLoginService: ServicioLoginService) {}
 
+export class LoginGuard implements CanActivate {
+  constructor(private router: Router, private servicioLogin: ServicioLogin) {}
+
+  
   canActivate(): boolean {
-    if (this.servicioLoginService.isLoggedInUser()) {
+    const usuario = route.queryParams['usuario'];
+    const contrasena = route.queryParams['contrasena'];
+
+    if (this.servicioLogin.login(usuario, contrasena)) {
       return true;
     } else {
       this.router.navigate(['/login']);
@@ -18,3 +23,5 @@ export class LoginGuard implements CanActivate {
     }
   }
 }
+
+*/

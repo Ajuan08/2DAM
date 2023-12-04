@@ -1,12 +1,21 @@
-<h3>LOGIN</h3>
-<form id="formularioLogin">
-    <label for="usuario">Usuario: </label>
-    <input type="text" id="usuario"[(ngModel)]="usuario">
-    <br>
-    <br>
-    <label for="contraseña">Contraseña: </label>
-    <input type="text" id="contraseña">
-    <br>
-    <br>
-    <button (click)="login(usuario)">Login</button>
-</form>
+<div class="general">
+    <h2>TRIVIAL</h2>
+    <div class="wrapper">
+        <div class="container">
+            <form class="form">
+                <label for="usuario">Usuario:</label>
+                <input type="text" #usuario id="usuario" name="usuario">
+        
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" #contrasena id="contrasena" name="contrasena">
+
+                <div *ngIf="error">
+                    <p class="error">{{errorText}}</p>
+                </div>
+        
+                <button type="button" (click)="login(usuario.value, contrasena.value)">Iniciar sesión</button>
+            </form>
+        </div>
+    <a (click)="irRegistro()">¿No tienes una cuenta? Regístrate</a>
+    </div>
+</div>

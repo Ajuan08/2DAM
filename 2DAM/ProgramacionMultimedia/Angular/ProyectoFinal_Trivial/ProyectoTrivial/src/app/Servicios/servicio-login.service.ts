@@ -1,23 +1,26 @@
 import { Injectable } from '@angular/core';
+import { UsuariosService } from './usuarios.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ServicioLoginService {
+export class ServicioLogin {
 
-  private isLoggedIn = false;
-  private usuario = '';
+  constructor(private UsuariosService : UsuariosService) { }
 
-  login(usuario: string): void {
-    this.isLoggedIn = true;
-    this.usuario = usuario;
+  registro(usuario: string, contrasena: string): boolean {
+    return this.UsuariosService.anadirUsuario(usuario, contrasena);
   }
 
-  isLoggedInUser(): boolean {
-    return this.isLoggedIn;
-  }
+  login(usuario: string, contrasena: string): boolean {
+    let usu: any = this.UsuariosService.obtenerUsuario(usuario);
 
-  obtenerUsuario(): string {
-    return this.usuario;
+    if (usu) {
+      if (usu.contrasena == contrasena) {
+        return true;
+      }
+    }
+
+    return false;
   }
 }
