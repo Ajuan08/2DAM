@@ -6,5 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./preguntas.component.css']
 })
 export class PreguntasComponent {
- @Input() pregunta: string;
+  @Input() pregunta: string;
+  @Input() respuestas: string[];
 }

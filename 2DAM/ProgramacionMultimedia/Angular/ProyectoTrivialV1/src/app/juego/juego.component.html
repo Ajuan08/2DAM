@@ -1,1 +1,10 @@
-<app-preguntas [pregunta]="this.getQuestion()"></app-preguntas>
+<div class="container">
+    <h2>JUEGO TRIVIAL</h2>
+    <h3>PREGUNTAS</h3>
+    <app-preguntas [pregunta]="getQuestion()" [respuestas]="getRespuestas()"></app-preguntas>
+    <app-respuesta [respuesta]="selectedAnswer" (respuestaSeleccionada)="seleccionRespuesta($event)" 
+        (obtenerSiguientePregunta)="obtenerSiguientePregunta()"></app-respuesta>
+    <div *ngIf="resultado !== null">
+      <p>{{ resultado ? '¡Correcto!' : 'Incorrecto' }}</p>
+    </div>
+</div>
