@@ -1,4 +1,7 @@
-<p>{{pregunta}}</p>
-<ul>
-  <li *ngFor="let respuesta of respuestas">{{ respuesta }}</li>
-</ul>
+<p>{{ pregunta }}</p>
+
+<div *ngFor="let respuesta of respuestas">
+  <label>
+    <input type="radio">{{ respuesta }}
+  </label>
+</div>
