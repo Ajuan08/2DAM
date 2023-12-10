@@ -1,0 +1,9 @@
+<div class="question-container" *ngIf="question">
+    <p class="question-text">{{tituloPregunta}}</p>
+    <div class="answers-container">
+      <div class="answer-box" (click)="checkAnswer(answer)" *ngFor="let answer of answers">
+        {{answer}}
+      </div>
+    </div>
+</div>
+  

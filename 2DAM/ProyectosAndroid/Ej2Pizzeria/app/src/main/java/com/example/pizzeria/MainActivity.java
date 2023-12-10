@@ -1,12 +1,18 @@
 package com.example.pizzeria;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.pizzeria.DBHelper.DBHelper;
+
 public abstract class MainActivity extends AppCompatActivity {
+
+    DBHelper dbHelper;
+    protected SQLiteDatabase db;
     protected int color1 = R.color.colorFondo1;
     protected int color2 = R.color.colorFondo2;
 
@@ -14,11 +20,16 @@ public abstract class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutRes());
+
+        dbHelper = new DBHelper(this);
+        db = dbHelper.getWritableDatabase();
+
         int colorFondo = getColorFondo();
         changeBackgroundColor(colorFondo);
     }
 
     protected abstract int getLayoutRes();
+
     protected boolean isColorFondo2() {
         return getBackgroundColorPreference();
     }
@@ -56,5 +67,11 @@ public abstract class MainActivity extends AppCompatActivity {
     boolean getFavPreference() {
         SharedPreferences sharedPreferences = getSharedPreferences("configuracion", MODE_PRIVATE);
         return sharedPreferences.getBoolean("fav", false);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        dbHelper.close();
     }
 }

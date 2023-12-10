@@ -1,0 +1,4 @@
+<div id="game-container">
+    <questionPanel [question]="question" (checkAnswerEvent)="checkAnswer($event)"></questionPanel>
+    <scoreboardPanel [preguntasAcertadasCount]="scoreboard.preguntasAcertadas" [respuestaIncorrectaCount]="scoreboard.respuestaIncorrecta"></scoreboardPanel>
+</div>

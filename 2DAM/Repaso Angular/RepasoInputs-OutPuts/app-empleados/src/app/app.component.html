@@ -1,0 +1,34 @@
+<div>
+  <h1>{{titulo}}</h1>
+
+  <form>
+    <div>
+      <label for="nombre">Nombre: </label>
+      <input type="text" id="nombre"  placeholder="Nombre"[(ngModel)]="cuadroNombre" name="nombre">
+    </div>
+
+    <div>
+      <label for="apellido">Apellido: </label>
+      <input type="text" id="apellido"  placeholder="Apellido"[(ngModel)]="cuadroApellido" name="apellido">
+    </div>
+
+    <div>
+      <label for="cargo">Cargo: </label>
+      <input type="text" id="cargo"  placeholder="Cargo"[(ngModel)]="cuadroCargo" name="cargo">
+    </div>
+
+    <div>
+      <label for="salario">Salario: </label>
+      <input type="text" id="salario"  placeholder="Salario"[(ngModel)]="cuadroSalario" name="salario">
+    </div>
+
+    <button type="submit" (click)="agregarEmpleado()">Agregar</button>
+   
+  </form>
+</div>
+
+<br>
+<br>
+
+<app-empleado-hijo-c *ngFor="let empleado of empleados" [empleadoDeLista]="empleado"></app-empleado-hijo-c>
+

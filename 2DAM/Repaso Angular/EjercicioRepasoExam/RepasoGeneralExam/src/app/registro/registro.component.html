@@ -1,0 +1,20 @@
+<form>
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" #nombre required>
+    </div>
+    <div>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" #apellido required>
+    </div>
+    <div>
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" #usuario required>
+    </div>
+    <div>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" #contrasena required>
+    </div>
+    <button type="submit"(click)="registro(nombre.value,apellido.value,usuario.value,contrasena.value)">Registro</button>
+    <button type="submit" (click)="irLogin()">Volver</button>
+</form>

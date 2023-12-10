@@ -1,5 +1,6 @@
 package com.example.pizzeria;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,7 @@ import java.util.ArrayList;
 public class PizzasPredeterminada extends MainActivity implements View.OnClickListener {
 
     ArrayList<String> ingredientes = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,5 +57,13 @@ public class PizzasPredeterminada extends MainActivity implements View.OnClickLi
                 break;
 
         }
+    }
+
+    private void savePizzaToDatabase(String nombrePizza, ArrayList<String> ingredientes) {
+        ContentValues values = new ContentValues();
+        values.put("nombre", nombrePizza);
+        db.insert("pizzas", null, values);
+
+        dbHelper.close();
     }
 }
