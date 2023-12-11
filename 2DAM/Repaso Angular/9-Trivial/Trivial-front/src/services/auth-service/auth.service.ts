@@ -17,7 +17,7 @@ export class AuthService {
     let user: any = this.usersService.getUser(username);
 
     if (user) {
-      if (user.password == password) {
+      if (user.password == password && user.username == username) {
         this.isLoggedIn = true;
         return true;
       }
