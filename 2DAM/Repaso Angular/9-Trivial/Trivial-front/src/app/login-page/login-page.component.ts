@@ -17,6 +17,7 @@ export class LoginPageComponent {
     this.router.navigate(['/signupPage']);
   }
 
+
   logInUser(username: string, password: string) {
     if (username && password) {
       if (password.length >= 8) {

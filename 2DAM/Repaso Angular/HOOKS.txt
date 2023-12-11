@@ -1,0 +1,27 @@
+En Angular, los componentes pasan por varios estados o fases durante su ciclo de vida. Estos estados permiten ejecutar lógica en momentos específicos del ciclo de vida del componente. Aquí tienes los principales eventos del ciclo de vida de un componente:
+
+1. ngOnChanges
+Este método se llama cuando se detectan cambios en las propiedades de entrada (@Input) del componente. Se ejecuta antes de ngOnInit.
+
+2. ngOnInit
+Es invocado una vez, justo después de que Angular haya inicializado las propiedades del componente. Es un buen lugar para realizar inicializaciones adicionales.
+
+3. ngDoCheck
+Se llama durante cada detección de cambios en la aplicación. Aquí se pueden realizar acciones de detección de cambios personalizados.
+
+4. ngAfterContentInit
+Se activa después de que Angular proyecta contenido en el componente. Es un buen lugar para realizar acciones después de que el contenido proyectado haya sido inicializado.
+
+5. ngAfterContentChecked
+Se llama después de cada verificación del contenido proyectado.
+
+6. ngAfterViewInit
+Se ejecuta después de que Angular haya inicializado las vistas y las vistas secundarias del componente.
+
+7. ngAfterViewChecked
+Se llama después de cada verificación de la vista y las vistas secundarias.
+
+8. ngOnDestroy
+Se invoca justo antes de que Angular destruya el componente. Es un buen lugar para realizar limpiezas, como cancelar suscripciones o liberar recursos.
+
+Estos métodos son implementaciones de la interfaz OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, y OnDestroy.
