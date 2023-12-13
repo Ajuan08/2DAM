@@ -18,9 +18,9 @@ public class BD1 {
     static Connection conn=null;
     static Statement st=null;
     static ResultSet rs=null;
-    static String bd="db_vehiculos";
-    static String login="root";
-    static String password="";  
+    static String bd="examen";
+    static String login="examen";
+    static String password="examen";  
     static String url="jdbc:mysql://localhost/"+bd;
     
 //    public BD1() {

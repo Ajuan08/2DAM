@@ -6,7 +6,7 @@ package JUnit;
 
 /**
  *
- * @author santi
+ * @author antonio juan
  */
 
 //COMENTARIO:

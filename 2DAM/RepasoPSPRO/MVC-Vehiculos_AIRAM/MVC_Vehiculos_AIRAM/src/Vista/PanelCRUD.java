@@ -114,7 +114,7 @@ public class PanelCRUD extends javax.swing.JPanel {
             this.txtModelo = txtModelo;
     }
 
-private javax.swing.JButton btLeer;
+
  
 private javax.swing.JButton btRegistrar;
 
@@ -190,8 +190,6 @@ private void inicializarPanel() {
 	 txtMatricula = new javax.swing.JTextField();
  
 	 btRegistrar = new javax.swing.JButton();
- 
-	 btLeer = new javax.swing.JButton();
          
          btSeleccionar = new javax.swing.JButton();
          
@@ -287,16 +285,6 @@ private void inicializarPanel() {
                 }
             }
 	 });
- 
-	 btLeer.setText("Leer");
-         btLeer.setActionCommand("btLeer");
-	 btLeer.setName("btLeer"); // NOI18N
-         btLeer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                    btLeerActionPerformed(evt);
-            }
-	 });
-         
          btSeleccionar.setText("Seleccionar");
          btSeleccionar.setActionCommand("btSeleccionar");
 	 btSeleccionar.setName("btLeer"); // NOI18N
@@ -329,7 +317,6 @@ private void inicializarPanel() {
 	 					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
 	 					.addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
 	 						.addComponent(btRegistrar, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-	 						.addComponent(btLeer, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                         .addComponent(btModificar, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                         .addComponent(btBorrar, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                         .addComponent(btSeleccionar, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -355,8 +342,6 @@ private void inicializarPanel() {
 	 						.addComponent(jLabelMatricula)
 	 						.addComponent(txtMatricula, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
                                             .addGroup(layout.createSequentialGroup()
-	 					.addGap(15)
-	 					.addComponent(btLeer)
                                                 .addGap(15)
                                                 .addComponent(btModificar)
                                                 .addGap(15)

@@ -17,10 +17,10 @@ public class ControllerCRUD
         ResultSet rs = TestVehiculos.TestVehiculos.bdConnection.consulta();
 
         DefaultTableModel modelo=new DefaultTableModel();
+        modelo.addColumn("ID");
         modelo.addColumn("Marca");
         modelo.addColumn("Modelo");
         modelo.addColumn("Matricula");
-        modelo.addColumn("ID");
         
         Object[] registroLeido = new Object[4];
         while(rs.next()) {
@@ -36,7 +36,9 @@ public class ControllerCRUD
 	
 	
     public static void insertarVehiculo( PanelCRUD frmVehiculo, JTable tablaVehiculos) throws SQLException
-    { 
+            
+            
+    {  
         String marca = frmVehiculo.getTxtMarca().getText();
         String modelo = frmVehiculo.getTxtModelo().getText();
         String matricula = frmVehiculo.getTxtMatricula().getText();
