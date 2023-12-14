@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Configurar">
+
+    <Button
+        android:id="@+id/buttonListarPalabras"
+        android:layout_width="158dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="onClick"
+        android:text="@string/buttonListarPalabras"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVolverInicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDificultad" />
+
+    <Button
+        android:id="@+id/buttonDificultad"
+        android:layout_width="158dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
+        android:onClick="onClick"
+        android:text="@string/buttonDificultad"
+        app:layout_constraintBottom_toTopOf="@+id/buttonListarPalabras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonVolverInicio"
+        android:layout_width="158dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="309dp"
+        android:onClick="onClick"
+        android:text="@string/buttonVolverInicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonListarPalabras" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="61dp"
+        android:text="CONFIGURAR"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDificultad"
+        app:layout_constraintStart_toStartOf="@+id/buttonDificultad"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

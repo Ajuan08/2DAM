@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaginaPrincipal"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="78dp">
+
+    <Button
+        android:id="@+id/buttonSalir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="266dp"
+        android:onClick="onClick"
+        android:text="@string/buttonSalir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConfigurar" />
+
+    <Button
+        android:id="@+id/buttonConfigurar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:onClick="onClick"
+        android:text="@string/buttonConfigurar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSalir"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSalir"
+        app:layout_constraintStart_toStartOf="@+id/buttonSalir"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPuntuaciones" />
+
+    <Button
+        android:id="@+id/buttonPuntuaciones"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onClick"
+        android:text="@string/buttonPuntuaciones"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConfigurar"
+        app:layout_constraintEnd_toEndOf="@+id/buttonConfigurar"
+        app:layout_constraintStart_toStartOf="@+id/buttonConfigurar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonJugar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="358dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="42dp"
+        android:text="EXAMEN ANDROID BRAIN TEST"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonJugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonJugar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:onClick="onClick"
+        android:text="@string/buttonJugar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPuntuaciones"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPuntuaciones"
+        app:layout_constraintStart_toStartOf="@+id/buttonPuntuaciones"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

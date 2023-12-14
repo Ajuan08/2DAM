@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EXAMENANDROID</string>
+    <string name="buttonJugar">Jugar</string>
+    <string name="buttonPuntuaciones">Puntuaciones</string>
+    <string name="buttonConfigurar">Configurar</string>
+    <string name="buttonSalir">Salir</string>
+    <string name="buttonDificultadMalo" />
+    <string name="buttonDificultad">Dificultad</string>
+    <string name="buttonListarPalabras">ListarPalabras</string>
+    <string name="buttonVolverInicio">VolverInicio</string>
+    <string name="buttonVolverConfigMalo" />
+    <string name="buttonVolverConfig">VolverConfig</string>
+    <string name="buttonModificar">Modificar</string>
+    <string name="buttonBorrar">Borrar</string>
+    <string name="buttonSiguiente">Siguiente</string>
+    <string name="buttonValidarMalo" />
+    <string name="buttonValidar">Validar</string>
+</resources>
