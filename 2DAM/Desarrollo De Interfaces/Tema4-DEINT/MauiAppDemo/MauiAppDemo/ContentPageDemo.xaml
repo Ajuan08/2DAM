@@ -4,8 +4,8 @@
              x:Class="MauiAppDemo.ContentPageDemo"
              Title="ContentPageDemo">
     <VerticalStackLayout>
-        
-       <Grid>
+
+        <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width=".7*"></ColumnDefinition>
                 <ColumnDefinition Width=".3*"></ColumnDefinition>
@@ -16,7 +16,7 @@
                 <RowDefinition Height="20"></RowDefinition>
                 <RowDefinition Height="20"></RowDefinition>
                 <RowDefinition Height="20"></RowDefinition>
-             </Grid.RowDefinitions>
+            </Grid.RowDefinitions>
 
             <Label Text="total de personas" TextTransform="Uppercase" Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" TextColor="Green"></Label>
             <Label Text="0.00€" Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" VerticalOptions="Center" Padding="20" FontSize="24"></Label>
@@ -26,7 +26,5 @@
             <Label Text="0.00€" Grid.Column="1" Grid.Row="4"></Label>
 
         </Grid>
-        
-
     </VerticalStackLayout>
 </ContentPage>

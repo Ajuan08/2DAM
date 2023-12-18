@@ -1,4 +1,7 @@
-﻿namespace MauiAppDemo
+﻿using MauiAppDemo.Controller;
+using MauiAppDemo.Layout_Diseno;
+
+namespace MauiAppDemo
 {
     public partial class App : Application
     {
@@ -6,7 +9,7 @@
         {
             InitializeComponent();
 
-            MainPage = new ContentPageDemo();
+            MainPage = new ControlesDePresentacionDemo();
         }
     }
 }
