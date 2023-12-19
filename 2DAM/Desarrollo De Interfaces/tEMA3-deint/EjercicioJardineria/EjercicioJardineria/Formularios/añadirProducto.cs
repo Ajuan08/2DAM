@@ -130,7 +130,7 @@ namespace EjercicioJardineria.Formularios
             try
             {
                 ProductoDLL productoDLL = new ProductoDLL();
-                productoDLL.(CodigoProducto, Nombre, Gama, Dimensiones, Proveedor, Descripcion, CantidadStock, PrecioVenta, PrecioProveedor);
+                productoDLL.añadirProductos(CodigoProducto, Nombre, Gama, Dimensiones, Proveedor, Descripcion, CantidadStock, PrecioVenta, PrecioProveedor);
                 MessageBox.Show("Se ha añadido correctamente");
             }
             catch (Exception ex)
