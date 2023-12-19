@@ -37,3 +37,4 @@ C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejerc
 S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio9-Serializacion_XML\Ejercicio9-Serializacion_XML\Ejercicio9-Serializacion_XML\obj\Debug\net6.0-windows\Ejercicio9-Serializacion_XML.csproj.AssemblyReference.cache
 S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio9-Serializacion_XML\Ejercicio9-Serializacion_XML\Ejercicio9-Serializacion_XML\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio9-Serializacion_XML\Ejercicio9-Serializacion_XML\Ejercicio9-Serializacion_XML\obj\Debug\net6.0-windows\Ejercicio9-Serializacion_XML.csproj.CopyComplete
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\tEMA3-deint\Ejercicio9-Serializacion_XML\Ejercicio9-Serializacion_XML\Ejercicio9-Serializacion_XML\obj\Debug\net6.0-windows\Ejercicio9-Serializacion_XML.sourcelink.json

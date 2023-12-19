@@ -1,43 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfCliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Cliente>
-    <DNI>222</DNI>
-    <Nombre>sss</Nombre>
-    <Direccion>ss</Direccion>
-    <Edad>22222</Edad>
-    <Telefono>222</Telefono>
-    <NumeroCuentaCorriente>222</NumeroCuentaCorriente>
+    <DNI>12345678A</DNI>
+    <Nombre>AAA</Nombre>
+    <Direccion>aaaa</Direccion>
+    <Edad>12</Edad>
+    <Telefono>123456789</Telefono>
+    <NumeroCuentaCorriente>1234</NumeroCuentaCorriente>
   </Cliente>
   <Cliente>
-    <DNI>333</DNI>
-    <Nombre>sss</Nombre>
-    <Direccion>sss</Direccion>
-    <Edad>33</Edad>
-    <Telefono>333</Telefono>
-    <NumeroCuentaCorriente>333</NumeroCuentaCorriente>
-  </Cliente>
-  <Cliente>
-    <DNI>44444</DNI>
-    <Nombre>aaa</Nombre>
-    <Direccion>aaa</Direccion>
-    <Edad>44</Edad>
-    <Telefono>444</Telefono>
-    <NumeroCuentaCorriente>444</NumeroCuentaCorriente>
-  </Cliente>
-  <Cliente>
-    <DNI>555</DNI>
-    <Nombre>aaaaa</Nombre>
-    <Direccion>aa</Direccion>
-    <Edad>55</Edad>
-    <Telefono>555</Telefono>
-    <NumeroCuentaCorriente>555</NumeroCuentaCorriente>
-  </Cliente>
-  <Cliente>
-    <DNI>666</DNI>
-    <Nombre>sss</Nombre>
-    <Direccion>sss</Direccion>
-    <Edad>6666</Edad>
-    <Telefono>666</Telefono>
-    <NumeroCuentaCorriente>66666</NumeroCuentaCorriente>
+    <DNI>12345678E</DNI>
+    <Nombre>EEEE</Nombre>
+    <Direccion>aaaa</Direccion>
+    <Edad>12</Edad>
+    <Telefono>123456789</Telefono>
+    <NumeroCuentaCorriente>1234</NumeroCuentaCorriente>
   </Cliente>
 </ArrayOfCliente>
