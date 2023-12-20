@@ -33,7 +33,7 @@ namespace RepasoExamenSilvia
         {
             XmlSerializer serializer = new XmlSerializer(typeof(Proyecto));
 
-            using (FileStream stream = new FileStream(Nombre+"\\archivo.xml",FileMode.Create))
+            using (FileStream stream = new FileStream(Nombre + "\\archivo.xml", FileMode.Create))
             {
                 serializer.Serialize(stream, this);
             }

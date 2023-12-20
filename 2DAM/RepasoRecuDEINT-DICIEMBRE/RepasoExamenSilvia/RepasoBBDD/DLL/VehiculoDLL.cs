@@ -25,6 +25,7 @@ namespace RepasoBBDD.DLL
             return instance;
         }
 
+
         public void anadirVehiculo(int codigo, string matricula,string modelo, string marca,int año, string estado)
         {
             conexion.EjecutarComandoSinRetornarDatos($"INSERT INTO vehiculo(codigo,matricula,modelo,marca,año_fabricacion,estado) VALUES({codigo},'{matricula}','{modelo}','{marca}',{año},'{estado}')");
