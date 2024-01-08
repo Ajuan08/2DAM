@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ejercicio1-ColorPicker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c7aab564d9c4bb7458af55780d8626b451dd4529")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b4bcfbca966bbdbb68f796374a502dfdd21f9af1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ejercicio1-ColorPicker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ejercicio1-ColorPicker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

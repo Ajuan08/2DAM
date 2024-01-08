@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjercicioPropinas.PaginaInicio"
+             Title="PaginaInicio">
+    <VerticalStackLayout>
+        <Grid BackgroundColor="Gray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".7*"></ColumnDefinition>
+                <ColumnDefinition Width=".3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label Text="total de personas" TextTransform="Uppercase" Grid.Column="0" Grid.Row="0"  Grid.ColumnSpan="2" HorizontalOptions="Center" TextColor="Blue"></Label>
+            <Label Text="0.00€" Grid.Column="0" Grid.Row="1"  Grid.RowSpan="4" VerticalOptions="Center" Padding="20" FontSize="24"></Label>
+            <Label Text="SUBTOTAL" Grid.Column="1" Grid.Row="1" ></Label>
+            <Label Text="0.00€" Grid.Column="1" Grid.Row="2"></Label>
+            <Label Text="PROPINA" Grid.Column="1" Grid.Row="3"></Label>
+            <Label Text="0.00€" Grid.Column="1" Grid.Row="4"></Label>
+
+        </Grid>
+        <HorizontalStackLayout Margin="20">
+          <Label Text="Introduce tu cuenta: €" VerticalOptions="Center" HorizontalOptions="Start" />
+          <Entry Placeholder="0.0"  VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Margin="20">
+            <Label Text="Elige tu propina" VerticalOptions="Center" HorizontalOptions="Start" />
+            <Button Text="10%" VerticalOptions="Center" />
+            <Button Text="15%" VerticalOptions="Center" />
+            <Button Text="20%" VerticalOptions="Center" />
+            <Slider x:Name="slider" Minimum="0" Maximum="100" VerticalOptions="Center" HorizontalOptions="Center" />
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

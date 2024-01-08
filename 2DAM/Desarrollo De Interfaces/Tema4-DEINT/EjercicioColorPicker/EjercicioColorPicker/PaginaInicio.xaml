@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjercicioColorPicker.PaginaInicio"
+             Title="PaginaInicio">
+    <VerticalStackLayout>
+        <Label Text="Ejercicio1-COLOR PICKER" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label Text="Red Value:" VerticalOptions="Center" HorizontalOptions="Start"  />
+        <Slider x:Name="sliderRed" Minimum="0" Maximum="255"  MinimumTrackColor="Red" ValueChanged="slider_ValueChanged" />
+        <Label Text="Blue Value:" VerticalOptions="Center" HorizontalOptions="Start" />
+        <Slider x:Name="sliderBlue" Minimum="0" Maximum="255"  MinimumTrackColor="Blue" ValueChanged="slider_ValueChanged" />
+        <Label Text="Green Value:" VerticalOptions="Center" HorizontalOptions="Start" />
+        <Slider x:Name="sliderGreen" Minimum="0" Maximum="255" MinimumTrackColor="Green" ValueChanged="slider_ValueChanged" />
+
+        <Label x:Name="hexName" Text="HEX VALUE: #000000" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Button Text="Color Aleatorio" Clicked="buttonRandom_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

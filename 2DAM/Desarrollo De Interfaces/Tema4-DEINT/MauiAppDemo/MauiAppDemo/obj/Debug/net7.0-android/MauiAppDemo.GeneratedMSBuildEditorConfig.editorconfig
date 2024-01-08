@@ -1,13 +1,13 @@
 is_global = true
 build_property.EnableAotAnalyzer = 
-build_property.EnableSingleFileAnalyzer = 
-build_property.EnableTrimAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.TargetFramework = net7.0-android
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 
-build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = false
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
@@ -15,3 +15,57 @@ build_property.RootNamespace = MauiAppDemo
 build_property.ProjectDir = C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MauiAppDemo\MauiAppDemo\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/ContentPageDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.ContentPageDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = ContentPageDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = ContentPageDemo.xaml
+
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/Controller/ControlesDePresentacionDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.Controller.ControlesDePresentacionDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = Controller\ControlesDePresentacionDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = Controller\ControlesDePresentacionDemo.xaml
+
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/Layout-Diseno/AbsoluteLayoutDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.Layout_Diseno.AbsoluteLayoutDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = Layout-Diseno\AbsoluteLayoutDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = Layout-Diseno\AbsoluteLayoutDemo.xaml
+
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/Layout-Diseno/FlexLayoutDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.Layout_Diseno.FlexLayoutDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = Layout-Diseno\FlexLayoutDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = Layout-Diseno\FlexLayoutDemo.xaml
+
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
