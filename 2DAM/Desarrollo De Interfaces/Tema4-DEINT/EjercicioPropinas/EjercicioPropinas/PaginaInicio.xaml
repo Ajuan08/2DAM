@@ -10,33 +10,53 @@
                 <ColumnDefinition Width=".3*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="20"></RowDefinition>
-                <RowDefinition Height="20"></RowDefinition>
-                <RowDefinition Height="20"></RowDefinition>
-                <RowDefinition Height="20"></RowDefinition>
-                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Label Text="total de personas" TextTransform="Uppercase" Grid.Column="0" Grid.Row="0"  Grid.ColumnSpan="2" HorizontalOptions="Center" TextColor="Blue"></Label>
-            <Label Text="0.00€" Grid.Column="0" Grid.Row="1"  Grid.RowSpan="4" VerticalOptions="Center" Padding="20" FontSize="24"></Label>
+            <Label Text="total por personas" TextTransform="Uppercase" Grid.Column="0" Grid.Row="0"  Grid.ColumnSpan="2" HorizontalOptions="Center" TextColor="Blue"></Label>
+            <Label x:Name="totalPorPersonasLabel" Text="0.00€" Grid.Column="0" Grid.Row="1"  Grid.RowSpan="4" VerticalOptions="Center" Padding="20" FontSize="24"></Label>
             <Label Text="SUBTOTAL" Grid.Column="1" Grid.Row="1" ></Label>
-            <Label Text="0.00€" Grid.Column="1" Grid.Row="2"></Label>
+            <Label x:Name="subtotalLabel" Text="0.00€" Grid.Column="1" Grid.Row="2"></Label>
             <Label Text="PROPINA" Grid.Column="1" Grid.Row="3"></Label>
-            <Label Text="0.00€" Grid.Column="1" Grid.Row="4"></Label>
+            <Label x:Name="propinaLabel" Text="0.00€" Grid.Column="1" Grid.Row="4"></Label>
 
         </Grid>
-        <HorizontalStackLayout Margin="20">
-          <Label Text="Introduce tu cuenta: €" VerticalOptions="Center" HorizontalOptions="Start" />
-          <Entry Placeholder="0.0"  VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
-        </HorizontalStackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
+            </Grid.RowDefinitions>
 
-        <HorizontalStackLayout Margin="20">
-            <Label Text="Elige tu propina" VerticalOptions="Center" HorizontalOptions="Start" />
-            <Button Text="10%" VerticalOptions="Center" />
-            <Button Text="15%" VerticalOptions="Center" />
-            <Button Text="20%" VerticalOptions="Center" />
-            <Slider x:Name="slider" Minimum="0" Maximum="100" VerticalOptions="Center" HorizontalOptions="Center" />
-        </HorizontalStackLayout>
+            <Label Text="Introduce tu cuenta: €" Grid.Column="0" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Start" />
+            <Entry Placeholder="0.0" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
 
+            <Label Text="Elige tu propina" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Start" />
+            <Button Text="10%" Grid.Column="1" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Button Text="15%" Grid.Column="2" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Button Text="20%" Grid.Column="3" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Slider x:Name="slider" Minimum="0" Maximum="100" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="5"/>
+            <Label Text="Propina: 0%" Grid.Column="0" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Start" />
+            <Label Text="Número de personas" Grid.Column="0" Grid.Row="5" VerticalOptions="Center" HorizontalOptions="Start" />
+            <Button Text="-" Grid.Column="1" Grid.Row="5" VerticalOptions="Center" HorizontalOptions="Center"  Clicked="BotonRestar_Clicked"/>
+            <Entry x:Name="entradaCuentas"  Text="1" Grid.Column="2" Grid.Row="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            <Button Text="+" Grid.Column="3" Grid.Row="5" VerticalOptions="Center" HorizontalOptions="Center" Clicked="BotonSumar_Clicked"/>
+
+
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>

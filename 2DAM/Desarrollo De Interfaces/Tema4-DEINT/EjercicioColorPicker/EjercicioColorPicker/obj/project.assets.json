@@ -32930,24 +32930,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dam\\.nuget\\packages\\": {},
+    "C:\\Users\\anton\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\EjercicioColorPicker\\EjercicioColorPicker\\EjercicioColorPicker.csproj",
+      "projectUniqueName": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\EjercicioColorPicker\\EjercicioColorPicker\\EjercicioColorPicker.csproj",
       "projectName": "EjercicioColorPicker",
-      "projectPath": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\EjercicioColorPicker\\EjercicioColorPicker\\EjercicioColorPicker.csproj",
-      "packagesPath": "C:\\Users\\dam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\EjercicioColorPicker\\EjercicioColorPicker\\obj\\",
+      "projectPath": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\EjercicioColorPicker\\EjercicioColorPicker\\EjercicioColorPicker.csproj",
+      "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
+      "outputPath": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\EjercicioColorPicker\\EjercicioColorPicker\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
