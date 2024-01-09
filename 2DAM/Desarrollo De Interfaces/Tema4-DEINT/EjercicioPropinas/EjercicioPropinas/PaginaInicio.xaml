@@ -43,14 +43,14 @@
             </Grid.RowDefinitions>
 
             <Label Text="Introduce tu cuenta: €" Grid.Column="0" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Start" />
-            <Entry Placeholder="0.0" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="entryCuenta" Placeholder="0.0" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
 
             <Label Text="Elige tu propina" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Start" />
-            <Button Text="10%" Grid.Column="1" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" />
-            <Button Text="15%" Grid.Column="2" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" />
-            <Button Text="20%" Grid.Column="3" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" />
-            <Slider x:Name="slider" Minimum="0" Maximum="100" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="5"/>
-            <Label Text="Propina: 0%" Grid.Column="0" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Start" />
+            <Button Text="10%" Grid.Column="1" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="BotonPropina_Clicked" />
+            <Button Text="15%" Grid.Column="2" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="BotonPropina_Clicked" />
+            <Button Text="20%" Grid.Column="3" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="BotonPropina_Clicked" />
+            <Slider x:Name="slider" Minimum="0" Maximum="100" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="5" ValueChanged="Slider_ValueChanged"/>
+            <Label x:Name="labelPorcentaje" Text="Propina: 0%" Grid.Column="0" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Start" />
             <Label Text="Número de personas" Grid.Column="0" Grid.Row="5" VerticalOptions="Center" HorizontalOptions="Start" />
             <Button Text="-" Grid.Column="1" Grid.Row="5" VerticalOptions="Center" HorizontalOptions="Center"  Clicked="BotonRestar_Clicked"/>
             <Entry x:Name="entradaCuentas"  Text="1" Grid.Column="2" Grid.Row="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>

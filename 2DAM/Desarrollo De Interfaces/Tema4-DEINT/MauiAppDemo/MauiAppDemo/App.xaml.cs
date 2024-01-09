@@ -9,7 +9,7 @@ namespace MauiAppDemo
         {
             InitializeComponent();
 
-            MainPage = new ControlesDePresentacionDemo();
+            MainPage = new TabbedPageDemo();
         }
     }
 }

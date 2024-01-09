@@ -48,6 +48,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.Layout_Diseno.
 build_metadata.AdditionalFiles.TargetPath = Layout-Diseno\FlexLayoutDemo.xaml
 build_metadata.AdditionalFiles.RelativePath = Layout-Diseno\FlexLayoutDemo.xaml
 
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/Layout-Diseno/FluoutPageDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.Layout_Diseno.FluoutPageDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = Layout-Diseno\FluoutPageDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = Layout-Diseno\FluoutPageDemo.xaml
+
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/Layout-Diseno/TabbedPageDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.Layout_Diseno.TabbedPageDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = Layout-Diseno\TabbedPageDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = Layout-Diseno\TabbedPageDemo.xaml
+
 [C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/MauiAppDemo/MauiAppDemo/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiAppDemo.MainPage.xaml
