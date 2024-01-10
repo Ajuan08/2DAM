@@ -1,0 +1,5 @@
+# Created at 2024-01-10T21:51:38.270
+Boot Manifest-JAR contains absolute paths in classpath 'S:\GitHub\2DAM\2DAM\RepasoPSPRO\REPASOPSRORECU\Repaso2RecuPSPRO\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
