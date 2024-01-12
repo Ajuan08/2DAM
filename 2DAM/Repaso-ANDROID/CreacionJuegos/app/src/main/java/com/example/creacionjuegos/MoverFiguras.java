@@ -2,6 +2,7 @@ package com.example.creacionjuegos;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -30,7 +31,7 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
 
     @Override
     public void onDraw(Canvas canvas){
-
+        setBackgroundColor(Color.BLACK);
     }
 
     @Override
