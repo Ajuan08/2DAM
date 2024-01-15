@@ -19,8 +19,18 @@ public class Hilo extends Thread {
 
     public void run(){
 
-        Canvas canvas = null;
-        view.onDraw(canvas);
+        Canvas canvas;
+        while(run){
+            canvas = null;
+            try{
+                canvas = sh.lockCanvas(null);
+                st.postInvalidate();
+            }finally{
+                if(canvas != null){
+                    sh.unlockCanvasAndPost(canvas);
+                }
+            }
+        }
 
 
     }

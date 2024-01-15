@@ -28,10 +28,17 @@
                 HorizontalOptions="Center"
                 FontAttributes="Bold" />
 
+            <StackLayout BindableLayout.ItemsSource="{Binding ListaPalabrasAbecedario}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Button Text="{Binding}" Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.ButtonCommand}" />
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+
             <Button
                 x:Name="CounterBtn"
                 Text="Reiniciar" 
-                Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
         </VerticalStackLayout>
     </ScrollView>
