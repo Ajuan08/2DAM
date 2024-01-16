@@ -4,43 +4,24 @@
              x:Class="EjercicioAhorcado.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+        <VerticalStackLayout>
+            <Label  Text="Errores: 0 de 5" HorizontalOptions="Center" FontAttributes="Bold" />
 
-            <Label 
-                Text="Errores: 0 de 5"
-                HorizontalOptions="Center"
-                FontAttributes="Bold" />
+            <Image Source="img0.jpg" HeightRequest="185" />
 
-            <Image
-                Source="img0.jpg"
-                HeightRequest="185"/>
+            <Label  Text="Has Ganado!"  HorizontalOptions="Center" FontAttributes="Bold" />
 
-            <Label
-                Text="- - - - - -"
-                HorizontalOptions="Center"
-                FontSize="Medium"
-                FontAttributes="Bold" />
+            <Button  x:Name="CounterBtn"  Text="Reiniciar" HorizontalOptions="Center" />
 
-            <Label
-                Text="Has Ganado!"
-                HorizontalOptions="Center"
-                FontAttributes="Bold" />
-
-            <StackLayout BindableLayout.ItemsSource="{Binding ListaPalabrasAbecedario}">
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" BindableLayout.ItemsSource="{Binding letras}">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
-                        <Button Text="{Binding}" Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.ButtonCommand}" />
+                        <StackLayout>
+                            <Button  Text="{Binding}" BackgroundColor="Purple" />
+                        </StackLayout>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
-            </StackLayout>
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Reiniciar" 
-                HorizontalOptions="Center" />
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

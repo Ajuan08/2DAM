@@ -1,4 +1,6 @@
-﻿namespace EjercicioAhorcado
+﻿using EjercicioAhorcado.MVVM.ViewModels;
+
+namespace EjercicioAhorcado
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new MainPage();
         }
     }
 }

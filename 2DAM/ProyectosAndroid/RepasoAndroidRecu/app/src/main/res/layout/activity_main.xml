@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="37dp"
+        android:onClick="onClick"
+        android:text="Salir"
+        app:layout_constraintStart_toStartOf="@+id/buttonConfiguracion"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConfiguracion" />
+
+    <Button
+        android:id="@+id/buttonPuntuaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:onClick="onClick"
+        android:text="Puntuaciones"
+        app:layout_constraintStart_toStartOf="@+id/buttonConfiguracion"
+        app:layout_constraintTop_toBottomOf="@+id/buttonJugar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="3dp"
+        android:text="Hello World!"
+        app:layout_constraintEnd_toEndOf="@+id/buttonJugar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonJugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="47dp"
+        android:onClick="onClick"
+        android:text="Jugar"
+        app:layout_constraintStart_toStartOf="@+id/buttonPuntuaciones"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonConfiguracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="Configuracion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPuntuaciones" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
