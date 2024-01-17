@@ -29,9 +29,18 @@ public class SingleTouchTest extends Activity implements View.OnTouchListener {
         switch (event.getAction()){
             case MotionEvent.ACTION_DOWN:
                 builder.append("down,");
+                if(rectan.esDentro()){
+                    dentro = true;
+                    IniX = event.getX();
+                    IniY = event.getY();
+                }
                 break;
             case MotionEvent.ACTION_MOVE:
                 builder.append("move,");
+                if(dentro){
+                    rectan.setX(rectan.getX() + (event.getX() - IniX);
+                    rectan.setY(rectan.getY() + (event.getY() - IniY));
+                }
                 break;
             case MotionEvent.ACTION_CANCEL:
                 builder.append("cancel,");

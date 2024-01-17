@@ -75,7 +75,7 @@ public class DB extends SQLiteOpenHelper {
 
     public void insertarPalabra(SQLiteDatabase db, String pablabra) {
         ContentValues values = new ContentValues();
-        values.put("pablabra", pablabra);
+        values.put("palabra", pablabra);
         db.insert(TABLE_PALABRAS, null, values);
     }
 
