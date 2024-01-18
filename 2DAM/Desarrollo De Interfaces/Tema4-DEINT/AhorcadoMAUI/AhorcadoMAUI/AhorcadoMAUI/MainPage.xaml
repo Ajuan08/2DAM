@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AhorcadoMAUI.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="{Binding ContadorErrores, StringFormat='Errores: {0} / 6'}" FontSize="Large" HorizontalOptions="Center" />
+            <Image MaximumHeightRequest="200" Source="{Binding Imagen}"/>
+            <Label Text="{Binding Palabra}" FontSize="Large" HorizontalOptions="Center" />
+            <Label Text="{Binding Mensaje}" FontSize="Large" HorizontalOptions="Center" />
+            <Button Text="Reset" Clicked="resetButtonPressed" WidthRequest="100" HorizontalOptions="Center" />
+            <FlexLayout x:Name="flexLayout" Wrap="Wrap" Direction="Row" AlignItems="Center" JustifyContent="SpaceBetween" BindableLayout.ItemsSource="{Binding Letras}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Button Text="{Binding}" Clicked="letterButtonPressed" />
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </FlexLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

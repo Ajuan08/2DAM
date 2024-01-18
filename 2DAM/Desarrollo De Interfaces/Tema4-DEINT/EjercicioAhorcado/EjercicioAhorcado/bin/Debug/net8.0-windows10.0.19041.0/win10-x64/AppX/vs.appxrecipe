@@ -30,273 +30,273 @@
     <AppXManifest Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-15T17:48:19.826</Modified>
+      <Modified>2024-01-18T13:31:24.799</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-15T17:48:19.742</Modified>
+      <Modified>2024-01-18T13:31:24.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\EjercicioAhorcado.runtimeconfig.json">
       <PackagePath>EjercicioAhorcado.runtimeconfig.json</PackagePath>
-      <Modified>2024-01-15T16:18:10.992</Modified>
+      <Modified>2024-01-18T13:31:24.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\EjercicioAhorcado.dll">
       <PackagePath>EjercicioAhorcado.dll</PackagePath>
-      <Modified>2024-01-15T17:48:19.513</Modified>
+      <Modified>2024-01-18T13:31:23.169</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>EjercicioAhorcado.exe</PackagePath>
-      <Modified>2024-01-15T17:48:19.516</Modified>
+      <Modified>2024-01-18T13:31:23.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-01-15T16:04:08.656</Modified>
+      <Modified>2024-01-17T17:03:40.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.414</Modified>
+      <Modified>2024-01-17T17:03:42.559</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.415</Modified>
+      <Modified>2024-01-17T17:03:42.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.415</Modified>
+      <Modified>2024-01-17T17:03:42.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.415</Modified>
+      <Modified>2024-01-17T17:03:42.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.416</Modified>
+      <Modified>2024-01-17T17:03:42.561</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-01-15T16:04:10.395</Modified>
+      <Modified>2024-01-17T17:03:42.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-01-15T16:04:10.395</Modified>
+      <Modified>2024-01-17T17:03:42.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-01-15T16:04:10.396</Modified>
+      <Modified>2024-01-17T17:03:42.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.396</Modified>
+      <Modified>2024-01-17T17:03:42.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.397</Modified>
+      <Modified>2024-01-17T17:03:42.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.397</Modified>
+      <Modified>2024-01-17T17:03:42.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.397</Modified>
+      <Modified>2024-01-17T17:03:42.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.398</Modified>
+      <Modified>2024-01-17T17:03:42.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.398</Modified>
+      <Modified>2024-01-17T17:03:42.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.399</Modified>
+      <Modified>2024-01-17T17:03:42.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.399</Modified>
+      <Modified>2024-01-17T17:03:42.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.399</Modified>
+      <Modified>2024-01-17T17:03:42.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.399</Modified>
+      <Modified>2024-01-17T17:03:42.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.400</Modified>
+      <Modified>2024-01-17T17:03:42.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.400</Modified>
+      <Modified>2024-01-17T17:03:42.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.400</Modified>
+      <Modified>2024-01-17T17:03:42.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.400</Modified>
+      <Modified>2024-01-17T17:03:42.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.401</Modified>
+      <Modified>2024-01-17T17:03:42.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.402</Modified>
+      <Modified>2024-01-17T17:03:42.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.402</Modified>
+      <Modified>2024-01-17T17:03:42.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.402</Modified>
+      <Modified>2024-01-17T17:03:42.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.403</Modified>
+      <Modified>2024-01-17T17:03:42.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.403</Modified>
+      <Modified>2024-01-17T17:03:42.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.403</Modified>
+      <Modified>2024-01-17T17:03:42.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.403</Modified>
+      <Modified>2024-01-17T17:03:42.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.403</Modified>
+      <Modified>2024-01-17T17:03:42.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.404</Modified>
+      <Modified>2024-01-17T17:03:42.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.404</Modified>
+      <Modified>2024-01-17T17:03:42.551</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.404</Modified>
+      <Modified>2024-01-17T17:03:42.552</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.406</Modified>
+      <Modified>2024-01-17T17:03:42.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.406</Modified>
+      <Modified>2024-01-17T17:03:42.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.406</Modified>
+      <Modified>2024-01-17T17:03:42.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.406</Modified>
+      <Modified>2024-01-17T17:03:42.554</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.407</Modified>
+      <Modified>2024-01-17T17:03:42.554</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.407</Modified>
+      <Modified>2024-01-17T17:03:42.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.407</Modified>
+      <Modified>2024-01-17T17:03:42.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.407</Modified>
+      <Modified>2024-01-17T17:03:42.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.407</Modified>
+      <Modified>2024-01-17T17:03:42.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.408</Modified>
+      <Modified>2024-01-17T17:03:42.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.408</Modified>
+      <Modified>2024-01-17T17:03:42.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.408</Modified>
+      <Modified>2024-01-17T17:03:42.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.410</Modified>
+      <Modified>2024-01-17T17:03:42.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.410</Modified>
+      <Modified>2024-01-17T17:03:42.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.410</Modified>
+      <Modified>2024-01-17T17:03:42.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.410</Modified>
+      <Modified>2024-01-17T17:03:42.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.411</Modified>
+      <Modified>2024-01-17T17:03:42.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.412</Modified>
+      <Modified>2024-01-17T17:03:42.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-01-15T16:04:10.412</Modified>
+      <Modified>2024-01-17T17:03:42.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img0.scale-100.jpg">
       <PackagePath>img0.scale-100.jpg</PackagePath>
-      <Modified>2024-01-15T16:04:10.412</Modified>
+      <Modified>2024-01-17T17:03:42.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img1.scale-100.jpg">
       <PackagePath>img1.scale-100.jpg</PackagePath>
-      <Modified>2024-01-15T16:04:10.412</Modified>
+      <Modified>2024-01-17T17:03:42.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img2.scale-100.jpg">
       <PackagePath>img2.scale-100.jpg</PackagePath>
-      <Modified>2024-01-15T16:04:10.413</Modified>
+      <Modified>2024-01-17T17:03:42.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img3.scale-100.jpg">
       <PackagePath>img3.scale-100.jpg</PackagePath>
-      <Modified>2024-01-15T16:04:10.413</Modified>
+      <Modified>2024-01-17T17:03:42.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img4.scale-100.jpg">
       <PackagePath>img4.scale-100.jpg</PackagePath>
-      <Modified>2024-01-15T16:04:10.413</Modified>
+      <Modified>2024-01-17T17:03:42.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img5.scale-100.jpg">
       <PackagePath>img5.scale-100.jpg</PackagePath>
-      <Modified>2024-01-15T16:04:10.413</Modified>
+      <Modified>2024-01-17T17:03:42.559</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img6.scale-100.jpg">
       <PackagePath>img6.scale-100.jpg</PackagePath>
-      <Modified>2024-01-15T16:04:10.414</Modified>
+      <Modified>2024-01-17T17:03:42.559</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioAhorcado\EjercicioAhorcado\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\EjercicioAhorcado.deps.json">
       <PackagePath>EjercicioAhorcado.deps.json</PackagePath>
-      <Modified>2024-01-15T17:47:23.928</Modified>
+      <Modified>2024-01-18T13:31:24.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

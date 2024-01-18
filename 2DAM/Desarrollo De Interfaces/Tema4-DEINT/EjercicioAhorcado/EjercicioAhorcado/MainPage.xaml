@@ -5,19 +5,21 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            <Label  Text="Errores: 0 de 5" HorizontalOptions="Center" FontAttributes="Bold" />
+            <Label Text="Errores: 0 de 5" HorizontalOptions="Center" FontAttributes="Bold" />
 
-            <Image Source="img0.jpg" HeightRequest="185" />
+            
+            <Image x:Name="imagen" Source="img0.jpg" HeightRequest="185" />
 
-            <Label  Text="Has Ganado!"  HorizontalOptions="Center" FontAttributes="Bold" />
+            
+            <Label x:Name="palabraOcultaLabel" Text="" HorizontalOptions="Center" FontAttributes="Bold" />
 
-            <Button  x:Name="CounterBtn"  Text="Reiniciar" HorizontalOptions="Center" />
+            <Button x:Name="CounterBtn" Text="Reiniciar" HorizontalOptions="Center" />
 
             <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" BindableLayout.ItemsSource="{Binding letras}">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
                         <StackLayout>
-                            <Button  Text="{Binding}" BackgroundColor="Purple" />
+                            <Button Text="{Binding}" BackgroundColor="Purple" Clicked="LetraButtonClicked" />
                         </StackLayout>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>

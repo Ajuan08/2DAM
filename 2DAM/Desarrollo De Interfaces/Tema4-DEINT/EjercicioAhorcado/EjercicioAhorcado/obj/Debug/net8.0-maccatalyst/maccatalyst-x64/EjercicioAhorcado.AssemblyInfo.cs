@@ -14,11 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EjercicioAhorcado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+89877c4717a7ae046dc8752869f0534ff20e679e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+def0819d1c7e60da24b476ff411b4c80dd5d29b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("EjercicioAhorcado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EjercicioAhorcado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-[assembly: System.Runtime.Versioning.TargetPlatformAttribute("MacCatalyst17.0")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("MacCatalyst17.2")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("MacCatalyst13.1")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
