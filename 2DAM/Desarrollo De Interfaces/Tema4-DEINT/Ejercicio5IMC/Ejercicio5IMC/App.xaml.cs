@@ -1,4 +1,6 @@
-﻿namespace Ejercicio5IMC
+﻿using Ejercicio5IMC.MVVM.View;
+
+namespace Ejercicio5IMC
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new IMCView();
         }
     }
 }

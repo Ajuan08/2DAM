@@ -28,11 +28,16 @@ public class SingleTouchTest extends Activity implements View.OnTouchListener {
         builder.setLength(0);
         switch (event.getAction()){
             case MotionEvent.ACTION_DOWN:
-                builder.append("down,");
-                if(rectan.esDentro()){
-                    dentro = true;
-                    IniX = event.getX();
-                    IniY = event.getY();
+                for(Figura f: figuras){
+                    int distanciax = (int) (event.getX() - f.getXpos());
+                    int distanciay = (int) (event.getY() - f.getYpos());
+                    if(f instanceof Circulo){
+                        Circulo circ = (Circulo) f;
+                        if(Math.pow(circ.getRadio(),2) > Math.pow(distanciax,2) + Math.pow(distanciay,2)){
+                           figura
+                        }
+                    }
+
                 }
                 break;
             case MotionEvent.ACTION_MOVE:

@@ -3,6 +3,7 @@ package com.example.creacionjuegos;
 public class Rectangulo extends Figura{
     private int Ancho;
     private int Alto;
+    private float radio;
 
    public Rectangulo(){
 
@@ -12,6 +13,17 @@ public class Rectangulo extends Figura{
         super(xpos, ypos);
         Ancho = ancho;
         Alto = alto;
+    }
+
+    public boolean estaDentro(int posx, int posy){
+        boolean dentro = false;
+        int distanciaX = posx - getXpos();
+        int distanciaY = posy - getYpos();
+
+        if(distanciaX > 0 && distanciaX < Ancho && distanciaY > 0 && distanciaY < Alto){
+            dentro = true;
+        }
+        return dentro;
     }
 
     public int getAncho() {

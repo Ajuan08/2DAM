@@ -9,11 +9,11 @@
             <Image MaximumHeightRequest="200" Source="{Binding Imagen}"/>
             <Label Text="{Binding Palabra}" FontSize="Large" HorizontalOptions="Center" />
             <Label Text="{Binding Mensaje}" FontSize="Large" HorizontalOptions="Center" />
-            <Button Text="Reset" Clicked="resetButtonPressed" WidthRequest="100" HorizontalOptions="Center" />
+            <Button Text="Reset" Clicked="botonReset" WidthRequest="100" HorizontalOptions="Center" />
             <FlexLayout x:Name="flexLayout" Wrap="Wrap" Direction="Row" AlignItems="Center" JustifyContent="SpaceBetween" BindableLayout.ItemsSource="{Binding Letras}">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
-                        <Button Text="{Binding}" Clicked="letterButtonPressed" />
+                        <Button Text="{Binding}" Clicked="botonLetraPresionado" />
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
             </FlexLayout>

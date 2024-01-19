@@ -49,7 +49,7 @@ namespace AhorcadoMAUI
             }
         }
 
-        private void letterButtonPressed(object sender, EventArgs e)
+        private void botonLetraPresionado(object sender, EventArgs e)
         {
             Button botonPresionado = (Button)sender;
             char letraSeleccionada = Convert.ToChar(botonPresionado.Text);
@@ -104,7 +104,7 @@ namespace AhorcadoMAUI
             }
         }
 
-        private void resetButtonPressed(object sender, EventArgs e)
+        private void botonReset(object sender, EventArgs e)
         {
             startGame();
         }

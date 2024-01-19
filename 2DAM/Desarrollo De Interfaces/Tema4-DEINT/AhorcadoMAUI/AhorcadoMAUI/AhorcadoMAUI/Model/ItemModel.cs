@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace AhorcadoMAUI.Model
 {
+    
     class ItemModel : INotifyPropertyChanged
     {
         private string _imagen;
