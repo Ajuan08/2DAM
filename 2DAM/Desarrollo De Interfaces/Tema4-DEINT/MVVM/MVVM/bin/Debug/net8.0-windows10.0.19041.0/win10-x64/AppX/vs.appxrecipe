@@ -30,265 +30,265 @@
     <AppXManifest Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-17T09:13:00.620</Modified>
+      <Modified>2024-01-22T09:50:48.389</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-17T09:13:00.431</Modified>
+      <Modified>2024-01-22T09:50:48.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MVVM.runtimeconfig.json">
       <PackagePath>MVVM.runtimeconfig.json</PackagePath>
-      <Modified>2024-01-17T09:13:00.225</Modified>
+      <Modified>2024-01-22T09:50:48.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MVVM.dll">
       <PackagePath>MVVM.dll</PackagePath>
-      <Modified>2024-01-17T09:12:59.119</Modified>
+      <Modified>2024-01-22T09:50:47.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MVVM.exe</PackagePath>
-      <Modified>2024-01-17T09:12:59.153</Modified>
+      <Modified>2024-01-22T09:50:47.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-01-17T08:22:41.342</Modified>
+      <Modified>2024-01-22T08:31:19.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.547</Modified>
+      <Modified>2024-01-22T08:31:22.263</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.547</Modified>
+      <Modified>2024-01-22T08:31:22.264</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.547</Modified>
+      <Modified>2024-01-22T08:31:22.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.547</Modified>
+      <Modified>2024-01-22T08:31:22.266</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.547</Modified>
+      <Modified>2024-01-22T08:31:22.266</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-01-17T08:22:44.500</Modified>
+      <Modified>2024-01-22T08:31:22.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-01-17T08:22:44.500</Modified>
+      <Modified>2024-01-22T08:31:22.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-01-17T08:22:44.500</Modified>
+      <Modified>2024-01-22T08:31:22.231</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.500</Modified>
+      <Modified>2024-01-22T08:31:22.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.500</Modified>
+      <Modified>2024-01-22T08:31:22.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.236</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.236</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.244</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.245</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.516</Modified>
+      <Modified>2024-01-22T08:31:22.245</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.245</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.246</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.247</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.248</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.248</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.249</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.250</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.254</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.254</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.256</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.256</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.257</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.531</Modified>
+      <Modified>2024-01-22T08:31:22.258</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.547</Modified>
+      <Modified>2024-01-22T08:31:22.258</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.547</Modified>
+      <Modified>2024-01-22T08:31:22.259</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.547</Modified>
+      <Modified>2024-01-22T08:31:22.260</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.547</Modified>
+      <Modified>2024-01-22T08:31:22.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-01-17T08:22:44.547</Modified>
+      <Modified>2024-01-22T08:31:22.263</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MVVM.deps.json">
       <PackagePath>MVVM.deps.json</PackagePath>
-      <Modified>2024-01-17T09:13:00.119</Modified>
+      <Modified>2024-01-22T09:50:48.014</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

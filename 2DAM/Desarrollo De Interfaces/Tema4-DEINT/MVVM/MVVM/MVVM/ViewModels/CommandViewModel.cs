@@ -25,7 +25,5 @@ namespace MVVM.MVVM.ViewModels
             });
         }
 
-        
-
     }
 }

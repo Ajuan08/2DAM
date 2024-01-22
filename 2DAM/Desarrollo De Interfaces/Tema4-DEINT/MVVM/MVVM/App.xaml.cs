@@ -8,7 +8,7 @@ namespace MVVM
         {
             InitializeComponent();
 
-            MainPage = new FodyDemoView();
+            MainPage = new CommandView();
         }
     }
 }
