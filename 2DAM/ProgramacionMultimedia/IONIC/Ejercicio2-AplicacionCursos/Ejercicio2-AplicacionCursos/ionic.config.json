@@ -1,0 +1,7 @@
+{
+  "name": "Ejercicio2-AplicacionCursos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
