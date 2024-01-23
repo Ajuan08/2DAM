@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Practica6Calculadora")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+883f871ffc64aa8563e4e577d8d05a516b83eb36")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+27fa94688f2846394f9dff56fcef4db90b5a0c5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Practica6Calculadora")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Practica6Calculadora")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

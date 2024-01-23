@@ -356,3 +356,5 @@ S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net
 S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MVVM.csproj.Fody.CopyLocal.cache
 C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MVVM.csproj.Fody.RuntimeCopyLocal.cache
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MVVM.csproj.Fody.CopyLocal.cache
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\MVVM\MVVM\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MVVM.csproj.Fody.RuntimeCopyLocal.cache

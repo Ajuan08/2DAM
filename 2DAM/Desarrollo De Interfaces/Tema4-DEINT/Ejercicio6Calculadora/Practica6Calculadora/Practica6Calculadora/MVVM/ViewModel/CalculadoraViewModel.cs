@@ -2,78 +2,39 @@
 using System;
 using System.Windows.Input;
 using Microsoft.Maui.Controls;
+using Practica6Calculadora.MVVM.Model;
 
 namespace Practica6Calculadora.MVVM.ViewModel
 {
     [AddINotifyPropertyChangedInterface]
     public class CalculadoraViewModel
     {
-        public Command ClickCommand { get; }
-
-        private string InputActual;
-        private string Operador;
-        private double Resultado;
-
         public string LabelText { get; set; } = "0";
+        public string Resultado { get; set; } = "0";
 
-        public CalculadoraViewModel()
+        public Command<string> CalcularCommand { get; set; }
+
+        public CalculadoraViewModel() 
         {
-            ClickCommand = new Command<string>(OnClick);
-
-            InputActual = "0";
-            Operador = "+,-,*,/,%";
-            Resultado = 0;
+            CalcularCommand = new Command<string>(AnadirFormula);
         }
 
-        public void OnClick(string parameter)
+        private void AnadirFormula(string valor)
         {
-            if (parameter == "=")
+            if(LabelText == "0")
             {
-                CalcularResultado();
+                LabelText = valor;
+            }else if(valor == "=") 
+            {
+                Resultado = Calculadora.CalcularFormula(LabelText).ToString();
+                LabelText = Resultado;
+            }else if(valor == "AC" || valor == "C")
+            {
+                LabelText = "0";
             }
             else
             {
-                if (InputActual == "0" || LabelText == "0")
-                {
-                    InputActual = parameter;
-                }
-                else
-                {
-                    InputActual += parameter;
-                }
-
-                LabelText = InputActual;
-            }
-        }
-        private void CalcularResultado()
-        {
-            if (double.TryParse(InputActual, out double inputNumero))
-            {
-                switch (Operador)
-                {
-                    case "+":
-                        Resultado += inputNumero;
-                        break;
-                    case "-":
-                        Resultado -= inputNumero;
-                        break;
-                    case "*":
-                        Resultado *= inputNumero;
-                        break;
-                    case "/":
-                        Resultado /= inputNumero;
-                        break;
-                    case "%":
-                        Resultado %= inputNumero;
-                        break;
-                    default:
-                        Resultado = inputNumero;
-                        break;
-                }
-
-                LabelText = Resultado.ToString();
-                InputActual = "0";
-                Operador = "+,-,*,/,%";
+                LabelText += valor;
             }
         }
     }

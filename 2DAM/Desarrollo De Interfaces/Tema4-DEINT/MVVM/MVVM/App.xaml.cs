@@ -8,7 +8,7 @@ namespace MVVM
         {
             InitializeComponent();
 
-            MainPage = new CommandView();
+            MainPage = new PersonView();
         }
     }
 }

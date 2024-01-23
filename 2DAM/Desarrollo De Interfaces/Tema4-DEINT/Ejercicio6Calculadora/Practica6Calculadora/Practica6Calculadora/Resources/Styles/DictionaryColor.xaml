@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style x:Key="GridModoNormal" TargetType="Grid">
+        <Setter Property="BackgroundColor" Value="White" />
+    </Style>
+
+    <Style x:Key="GridModoOscuro" TargetType="Grid">
+        <Setter Property="BackgroundColor" Value="DarkGray" />
+    </Style>
+
+    <Style x:Key="BotonesNormales" TargetType="Button">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="BackgroundColor" Value="White" />
+    </Style>
+
+    <Style x:Key="BotonesNormalesOscuro" TargetType="Button">
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="Black" />
+    </Style>
+
+    <Style x:Key="OperadoresButtonNormal" TargetType="Button">
+        <Setter Property="TextColor" Value="Red" />
+        <Setter Property="BackgroundColor" Value="White" />
+    </Style>
+
+    <Style x:Key="OperadoresButtonDark" TargetType="Button">
+        <Setter Property="TextColor" Value="Red" />
+        <Setter Property="BackgroundColor" Value="Black" />
+    </Style>
+
+    <Style x:Key="BotonesCNormal" TargetType="Button">
+        <Setter Property="TextColor" Value="Yellow" />
+        <Setter Property="BackgroundColor" Value="White" />
+    </Style>
+
+    <Style x:Key="BotonesCOscuro" TargetType="Button">
+        <Setter Property="TextColor" Value="Yellow" />
+        <Setter Property="BackgroundColor" Value="Black" />
+    </Style>
+
+</ResourceDictionary>

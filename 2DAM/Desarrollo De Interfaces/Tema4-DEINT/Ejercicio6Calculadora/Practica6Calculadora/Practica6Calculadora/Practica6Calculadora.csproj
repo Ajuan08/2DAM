@@ -65,11 +65,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="MVVM\Model\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="MVVM\View\Calculadora.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\DictionaryColor.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

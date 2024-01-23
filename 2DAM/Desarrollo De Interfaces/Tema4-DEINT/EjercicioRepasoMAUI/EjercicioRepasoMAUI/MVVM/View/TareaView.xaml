@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjercicioRepasoMAUI.MVVM.View.TareaView"
+             xmlns:converters="clr-namespace:EjercicioRepasoMAUI.Converter"
+             Title="TareaView">
+
+
+    <ContentPage.Resources>
+        <converters:Converter x:Key="converter"/>
+    </ContentPage.Resources>
+    
+    <VerticalStackLayout>
+        <Label Text="Escribe el nombre de la tarea" Style="{StaticResource MyButtonStyle}" />
+        <Entry Text="{Binding Tarea.Nombre}" />
+        <Label Text="Escribe la descripcion de la tarea" Style="{StaticResource MyButtonStyle}" />
+        <Entry Text="{Binding Tarea.Descripcion}" />
+        <Switch IsToggled="{Binding Tarea.Favorito, Converter={StaticResource converter}}" />
+        <Button Text="Guardar" Command="{Binding GuardarTareaCommand}" />
+
+        <ListView ItemsSource="{Binding Tareas}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding tarea}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>
