@@ -9,7 +9,6 @@ namespace Practica6Calculadora.MVVM.ViewModel
     public class CalculadoraViewModel
     {
         public Command ClickCommand { get; }
-        public Command IgualCommand { get; }
 
         private string InputActual;
         private string Operador;
@@ -22,22 +21,60 @@ namespace Practica6Calculadora.MVVM.ViewModel
             ClickCommand = new Command<string>(OnClick);
 
             InputActual = "0";
-            Operador = string.Empty;
+            Operador = "+,-,*,/,%";
             Resultado = 0;
         }
 
         public void OnClick(string parameter)
         {
-            if (InputActual == "0" || LabelText == "0")
+            if (parameter == "=")
             {
-                InputActual = parameter;
+                CalcularResultado();
             }
             else
             {
-                InputActual += parameter;
-            }
+                if (InputActual == "0" || LabelText == "0")
+                {
+                    InputActual = parameter;
+                }
+                else
+                {
+                    InputActual += parameter;
+                }
 
-            LabelText = InputActual;
+                LabelText = InputActual;
+            }
+        }
+        private void CalcularResultado()
+        {
+            if (double.TryParse(InputActual, out double inputNumero))
+            {
+                switch (Operador)
+                {
+                    case "+":
+                        Resultado += inputNumero;
+                        break;
+                    case "-":
+                        Resultado -= inputNumero;
+                        break;
+                    case "*":
+                        Resultado *= inputNumero;
+                        break;
+                    case "/":
+                        Resultado /= inputNumero;
+                        break;
+                    case "%":
+                        Resultado %= inputNumero;
+                        break;
+                    default:
+                        Resultado = inputNumero;
+                        break;
+                }
+
+                LabelText = Resultado.ToString();
+                InputActual = "0";
+                Operador = "+,-,*,/,%";
+            }
         }
     }
 }
