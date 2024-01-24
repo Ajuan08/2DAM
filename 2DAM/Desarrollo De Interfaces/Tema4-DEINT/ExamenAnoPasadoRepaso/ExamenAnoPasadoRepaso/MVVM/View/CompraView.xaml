@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenAnoPasadoRepaso.MVVM.View.CompraView"
+             Title="CompraView">
+    <VerticalStackLayout>
+        <Image Source="nike.png" HeightRequest="150" WidthRequest="150" Aspect="AspectFit" />
+
+        <Label Text="167,31€" VerticalOptions="Center" HorizontalOptions="Center" />
+        
+
+        <Grid ColumnDefinitions="*,*,*,*,*,*,*" RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*" RowSpacing="2" ColumnSpacing="2" >
+            <Image Source="nike1.png" HeightRequest="50" WidthRequest="50" Aspect="AspectFit" Grid.Row="2" Grid.Column="0" />
+            <Image Source="nike2.png" HeightRequest="50" WidthRequest="50" Aspect="AspectFit" Grid.Row="5" Grid.Column="0" />
+            <Label Text="Nike DBREAKP" Grid.Row="0" Grid.Column="2"/>
+            <Label Text="Zapatillas hombre" Grid.Row="3" Grid.Column="2" />
+            <Label Text="{Binding Compra.precioLabelHombre}" Grid.Row="2" Grid.Column="6" />
+            <Label Text="Nike Blazer" Grid.Row="4" Grid.Column="2" />
+            <Label Text="Zapatillas mujer" Grid.Row="6" Grid.Column="2" />
+            <Label Text="{Binding Compra.precioLabelMujer}" Grid.Row="5" Grid.Column="6" />
+            <Label Text="Subtotal" Grid.Row="7" Grid.Column="0" Padding="20" />
+            <Label Text="185,90€" Grid.Row="7" Grid.Column="6" />
+            <Label Text="Descuento" Grid.Row="8" Grid.Column="0" Padding="20" />
+            <Label Text="18,59€" Grid.Row="8" Grid.Column="6" />
+            <Label Text="10%" Grid.Row="9" Grid.Column="0" />
+            <Button Text="-" WidthRequest="5" HeightRequest="5" Grid.Row="8" Grid.Column="1" />
+            <Button Text="+" WidthRequest="5" HeightRequest="5" Grid.Row="8" Grid.Column="2" />
+
+            <Label Text="Nike Store" Grid.Row="10" Grid.Column="3" Padding="20" />
+            <Label Text="www.nike.com" Grid.Row="11" Grid.Column="3" />
+        </Grid>
+
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*" RowSpacing="2" ColumnSpacing="2" Padding="50">
+
+            <Button Text="Pagar Luego" Grid.Row="1" Grid.Column="0" Command="{Binding CommandPagarLuego}" />
+            <Button Text="Pagar Ahora" Grid.Row="1" Grid.Column="2" Command="{Binding CommandPagarAhora}" />
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

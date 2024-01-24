@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AhorcadoMAUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4b8645020f2ab4572617527c6eda434386bde9ea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+69f443103fa2120f01ea72942499bbca9daf122e")]
 [assembly: System.Reflection.AssemblyProductAttribute("AhorcadoMAUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AhorcadoMAUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
