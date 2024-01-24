@@ -1,0 +1,7 @@
+Binding
+Command
+Estilos(Diccionarios, tema oscuro/claro)
+MVVM
+Fody
+Converters
+Diseño

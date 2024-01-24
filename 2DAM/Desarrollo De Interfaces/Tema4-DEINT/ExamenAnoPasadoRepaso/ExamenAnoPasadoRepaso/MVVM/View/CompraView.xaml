@@ -4,37 +4,45 @@
              x:Class="ExamenAnoPasadoRepaso.MVVM.View.CompraView"
              Title="CompraView">
     <VerticalStackLayout>
-        <Image Source="nike.png" HeightRequest="150" WidthRequest="150" Aspect="AspectFit" />
+        <Image Source="nike.png" HeightRequest="100" WidthRequest="100" TranslationY="50" ZIndex="2" />
+        <Frame CornerRadius="10" BackgroundColor="White">
+            <VerticalStackLayout>
+                <Label Text="{Binding compra.PrecioTotal, StringFormat='{}{0:C}'}" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" />
+                <Label Text="{Binding compra.FechaHoraActual}" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </Frame>
 
-        <Label Text="167,31€" VerticalOptions="Center" HorizontalOptions="Center" />
-        
+        <Frame CornerRadius="10" BackgroundColor="White">
+            <Grid RowDefinitions="*,*,*,*,*,*,*,70" ColumnDefinitions="70,50,50,*,100">
+                
+                <Image Source="nike1.png"  VerticalOptions="Center" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"/>
+                <Label Text="Nike Dbreak SP" TextColor="Gray" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" HorizontalOptions="StartAndExpand"/>
+                <Label TextColor="Black" Text="Zapatillas hombre" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" HorizontalOptions="StartAndExpand"/>
+                <Label TextColor="Black" Text="89,95 €" Grid.Column="4" Grid.Row="0" Grid.RowSpan="2" VerticalOptions="Center" FontSize="Medium" HorizontalOptions="End"/>
 
-        <Grid ColumnDefinitions="*,*,*,*,*,*,*" RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*" RowSpacing="2" ColumnSpacing="2" >
-            <Image Source="nike1.png" HeightRequest="50" WidthRequest="50" Aspect="AspectFit" Grid.Row="2" Grid.Column="0" />
-            <Image Source="nike2.png" HeightRequest="50" WidthRequest="50" Aspect="AspectFit" Grid.Row="5" Grid.Column="0" />
-            <Label Text="Nike DBREAKP" Grid.Row="0" Grid.Column="2"/>
-            <Label Text="Zapatillas hombre" Grid.Row="3" Grid.Column="2" />
-            <Label Text="{Binding Compra.precioLabelHombre}" Grid.Row="2" Grid.Column="6" />
-            <Label Text="Nike Blazer" Grid.Row="4" Grid.Column="2" />
-            <Label Text="Zapatillas mujer" Grid.Row="6" Grid.Column="2" />
-            <Label Text="{Binding Compra.precioLabelMujer}" Grid.Row="5" Grid.Column="6" />
-            <Label Text="Subtotal" Grid.Row="7" Grid.Column="0" Padding="20" />
-            <Label Text="185,90€" Grid.Row="7" Grid.Column="6" />
-            <Label Text="Descuento" Grid.Row="8" Grid.Column="0" Padding="20" />
-            <Label Text="18,59€" Grid.Row="8" Grid.Column="6" />
-            <Label Text="10%" Grid.Row="9" Grid.Column="0" />
-            <Button Text="-" WidthRequest="5" HeightRequest="5" Grid.Row="8" Grid.Column="1" />
-            <Button Text="+" WidthRequest="5" HeightRequest="5" Grid.Row="8" Grid.Column="2" />
+                <Image Source="nike2.png"  VerticalOptions="Center" Grid.Column="0" Grid.Row="2" Grid.RowSpan="2"/>
+                <Label Text="Nike Blazer" TextColor="Gray" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="StartAndExpand"/>
+                <Label TextColor="Black" Text="Zapatillas mujer" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" HorizontalOptions="StartAndExpand"/>
+                <Label TextColor="Black" Text="95,95 €" Grid.Column="4" Grid.Row="2" Grid.RowSpan="2" VerticalOptions="Center" FontSize="Medium" HorizontalOptions="End"/>
 
-            <Label Text="Nike Store" Grid.Row="10" Grid.Column="3" Padding="20" />
-            <Label Text="www.nike.com" Grid.Row="11" Grid.Column="3" />
-        </Grid>
+                <Label TextColor="Black" Text="Subtotal" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="4" VerticalOptions="Center"/>
+                <Label TextColor="Black" Text="185,90 €" Grid.Column="4" Grid.Row="4" VerticalOptions="Center" FontSize="Medium" HorizontalOptions="End"/>
 
-        <Grid ColumnDefinitions="*,*" RowDefinitions="*" RowSpacing="2" ColumnSpacing="2" Padding="50">
+                <Label Text="Descuento" Grid.Column="0" Grid.Row="5" VerticalOptions="Center" TextColor="Black"/>
+                <Button Text="-" Grid.Column="1" Grid.Row="5" BackgroundColor="LightGray" HorizontalOptions="Center" TextColor="Black" Command="{Binding BotonMenos}" ></Button>
+                <Button Text="+" Grid.Column="2" Grid.Row="5" BackgroundColor="LightGray" HorizontalOptions="Center" TextColor="Black" Command="{Binding BotonMas}" ></Button>
+                <Label TextColor="Black" Grid.Column="3" Grid.Row="5" Text="{Binding compra.PorcentajeDescuento,StringFormat='{0}%'}"  BackgroundColor="Gray" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Label Text="{Binding compra.PrecioDescuento, StringFormat='{}{0:C}'}" Grid.Column="4" Grid.Row="5" VerticalOptions="Center" TextColor="Black" FontSize="Medium" HorizontalOptions="End"/>
 
-            <Button Text="Pagar Luego" Grid.Row="1" Grid.Column="0" Command="{Binding CommandPagarLuego}" />
-            <Button Text="Pagar Ahora" Grid.Row="1" Grid.Column="2" Command="{Binding CommandPagarAhora}" />
-        </Grid>
+                <Label Text="Nike Store" Grid.Column="0"  FontAttributes="Bold" Grid.ColumnSpan="5" Grid.Row="6" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+                <Label Text="www.nike.com" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="7"  VerticalOptions="Start" HorizontalOptions="Center" TextColor="Gray"/>
+            </Grid>
+        </Frame>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button x:Name="btnPagarLuego" Command="{Binding CommandPagarLuego}" Text="Pagar Luego" WidthRequest="450" HorizontalOptions="CenterAndExpand" BackgroundColor="White" FontAttributes="Bold" TextColor="Black"/>
+            <Button x:Name="btnPagarAhora" Command="{Binding CommandPagarAhora}" Text="Pagar Ahora" WidthRequest="450" HorizontalOptions="CenterAndExpand" BackgroundColor="Black" TextColor="White"  FontAttributes="Bold"/>
+        </HorizontalStackLayout>
 
     </VerticalStackLayout>
 </ContentPage>

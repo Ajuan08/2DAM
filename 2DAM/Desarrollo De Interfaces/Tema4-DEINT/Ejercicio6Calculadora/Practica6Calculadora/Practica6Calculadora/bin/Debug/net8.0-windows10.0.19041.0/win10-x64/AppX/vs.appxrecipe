@@ -30,265 +30,265 @@
     <AppXManifest Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-23T17:45:29.610</Modified>
+      <Modified>2024-01-24T19:37:02.237</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-23T17:45:29.486</Modified>
+      <Modified>2024-01-24T19:37:02.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Practica6Calculadora.runtimeconfig.json">
       <PackagePath>Practica6Calculadora.runtimeconfig.json</PackagePath>
-      <Modified>2024-01-23T16:07:55.506</Modified>
+      <Modified>2024-01-24T19:37:01.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Practica6Calculadora.dll">
       <PackagePath>Practica6Calculadora.dll</PackagePath>
-      <Modified>2024-01-23T17:45:29.125</Modified>
+      <Modified>2024-01-24T19:37:00.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Practica6Calculadora.exe</PackagePath>
-      <Modified>2024-01-23T17:45:29.138</Modified>
+      <Modified>2024-01-24T19:37:00.434</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-01-23T15:37:38.207</Modified>
+      <Modified>2024-01-24T16:22:28.584</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.395</Modified>
+      <Modified>2024-01-24T16:22:30.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.395</Modified>
+      <Modified>2024-01-24T16:22:30.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.395</Modified>
+      <Modified>2024-01-24T16:22:30.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.395</Modified>
+      <Modified>2024-01-24T16:22:30.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.396</Modified>
+      <Modified>2024-01-24T16:22:30.163</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-01-23T15:37:40.381</Modified>
+      <Modified>2024-01-24T16:22:30.141</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-01-23T15:37:40.381</Modified>
+      <Modified>2024-01-24T16:22:30.142</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-01-23T15:37:40.382</Modified>
+      <Modified>2024-01-24T16:22:30.142</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.382</Modified>
+      <Modified>2024-01-24T16:22:30.142</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.382</Modified>
+      <Modified>2024-01-24T16:22:30.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.382</Modified>
+      <Modified>2024-01-24T16:22:30.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.383</Modified>
+      <Modified>2024-01-24T16:22:30.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.383</Modified>
+      <Modified>2024-01-24T16:22:30.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.384</Modified>
+      <Modified>2024-01-24T16:22:30.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.384</Modified>
+      <Modified>2024-01-24T16:22:30.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.384</Modified>
+      <Modified>2024-01-24T16:22:30.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.384</Modified>
+      <Modified>2024-01-24T16:22:30.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.384</Modified>
+      <Modified>2024-01-24T16:22:30.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.384</Modified>
+      <Modified>2024-01-24T16:22:30.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.384</Modified>
+      <Modified>2024-01-24T16:22:30.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.384</Modified>
+      <Modified>2024-01-24T16:22:30.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.384</Modified>
+      <Modified>2024-01-24T16:22:30.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.386</Modified>
+      <Modified>2024-01-24T16:22:30.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.386</Modified>
+      <Modified>2024-01-24T16:22:30.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.386</Modified>
+      <Modified>2024-01-24T16:22:30.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.386</Modified>
+      <Modified>2024-01-24T16:22:30.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.386</Modified>
+      <Modified>2024-01-24T16:22:30.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.386</Modified>
+      <Modified>2024-01-24T16:22:30.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.387</Modified>
+      <Modified>2024-01-24T16:22:30.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.387</Modified>
+      <Modified>2024-01-24T16:22:30.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.387</Modified>
+      <Modified>2024-01-24T16:22:30.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.387</Modified>
+      <Modified>2024-01-24T16:22:30.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.388</Modified>
+      <Modified>2024-01-24T16:22:30.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.388</Modified>
+      <Modified>2024-01-24T16:22:30.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.388</Modified>
+      <Modified>2024-01-24T16:22:30.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.388</Modified>
+      <Modified>2024-01-24T16:22:30.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.388</Modified>
+      <Modified>2024-01-24T16:22:30.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.389</Modified>
+      <Modified>2024-01-24T16:22:30.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.389</Modified>
+      <Modified>2024-01-24T16:22:30.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.389</Modified>
+      <Modified>2024-01-24T16:22:30.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.389</Modified>
+      <Modified>2024-01-24T16:22:30.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.389</Modified>
+      <Modified>2024-01-24T16:22:30.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.389</Modified>
+      <Modified>2024-01-24T16:22:30.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.390</Modified>
+      <Modified>2024-01-24T16:22:30.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.390</Modified>
+      <Modified>2024-01-24T16:22:30.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.390</Modified>
+      <Modified>2024-01-24T16:22:30.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.390</Modified>
+      <Modified>2024-01-24T16:22:30.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.391</Modified>
+      <Modified>2024-01-24T16:22:30.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.391</Modified>
+      <Modified>2024-01-24T16:22:30.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.391</Modified>
+      <Modified>2024-01-24T16:22:30.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.391</Modified>
+      <Modified>2024-01-24T16:22:30.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.391</Modified>
+      <Modified>2024-01-24T16:22:30.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.391</Modified>
+      <Modified>2024-01-24T16:22:30.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.392</Modified>
+      <Modified>2024-01-24T16:22:30.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.392</Modified>
+      <Modified>2024-01-24T16:22:30.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.392</Modified>
+      <Modified>2024-01-24T16:22:30.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.393</Modified>
+      <Modified>2024-01-24T16:22:30.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-01-23T15:37:40.394</Modified>
+      <Modified>2024-01-24T16:22:30.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio6Calculadora\Practica6Calculadora\Practica6Calculadora\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Practica6Calculadora.deps.json">
       <PackagePath>Practica6Calculadora.deps.json</PackagePath>
-      <Modified>2024-01-23T16:54:11.408</Modified>
+      <Modified>2024-01-24T19:37:01.620</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
