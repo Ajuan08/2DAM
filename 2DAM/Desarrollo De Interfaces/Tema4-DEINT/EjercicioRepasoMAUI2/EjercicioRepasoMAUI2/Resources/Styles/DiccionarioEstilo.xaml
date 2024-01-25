@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style x:Key="labelBase" TargetType="Label">
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="FontSize" Value="Large" />
+    </Style>
+
+    <Style TargetType="Label" BasedOn="{StaticResource labelBase}">
+        <Setter Property="TextColor" Value="Red" />
+    </Style>
+
+    <Style x:Key="botonModoOscuro" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="Blue" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+    <Style x:Key="botonModoNormal" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="Green" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+</ResourceDictionary>

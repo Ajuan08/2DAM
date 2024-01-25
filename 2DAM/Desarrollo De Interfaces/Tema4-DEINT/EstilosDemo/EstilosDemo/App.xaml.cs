@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new ClasesEstilo();
+            MainPage = new HerenciaEstilos();
         }
     }
 }

@@ -30,265 +30,265 @@
     <AppXManifest Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-08T17:28:17.410</Modified>
+      <Modified>2024-01-25T19:18:51.350</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-08T17:28:17.223</Modified>
+      <Modified>2024-01-25T19:18:51.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\EjercicioColorPicker.runtimeconfig.json">
       <PackagePath>EjercicioColorPicker.runtimeconfig.json</PackagePath>
-      <Modified>2024-01-08T17:28:16.907</Modified>
+      <Modified>2024-01-25T19:18:51.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\EjercicioColorPicker.dll">
       <PackagePath>EjercicioColorPicker.dll</PackagePath>
-      <Modified>2024-01-08T17:28:15.183</Modified>
+      <Modified>2024-01-25T19:18:50.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>EjercicioColorPicker.exe</PackagePath>
-      <Modified>2024-01-08T17:28:15.198</Modified>
+      <Modified>2024-01-25T19:18:50.224</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-01-08T17:08:27.309</Modified>
+      <Modified>2024-01-25T15:51:05.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.126</Modified>
+      <Modified>2024-01-25T15:51:08.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.127</Modified>
+      <Modified>2024-01-25T15:51:08.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.127</Modified>
+      <Modified>2024-01-25T15:51:08.244</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.127</Modified>
+      <Modified>2024-01-25T15:51:08.244</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.128</Modified>
+      <Modified>2024-01-25T15:51:08.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-01-08T17:08:30.109</Modified>
+      <Modified>2024-01-25T15:51:08.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-01-08T17:08:30.110</Modified>
+      <Modified>2024-01-25T15:51:08.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-01-08T17:08:30.112</Modified>
+      <Modified>2024-01-25T15:51:08.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.112</Modified>
+      <Modified>2024-01-25T15:51:08.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.113</Modified>
+      <Modified>2024-01-25T15:51:08.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.113</Modified>
+      <Modified>2024-01-25T15:51:08.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.113</Modified>
+      <Modified>2024-01-25T15:51:08.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.114</Modified>
+      <Modified>2024-01-25T15:51:08.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.115</Modified>
+      <Modified>2024-01-25T15:51:08.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.115</Modified>
+      <Modified>2024-01-25T15:51:08.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.115</Modified>
+      <Modified>2024-01-25T15:51:08.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.115</Modified>
+      <Modified>2024-01-25T15:51:08.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.115</Modified>
+      <Modified>2024-01-25T15:51:08.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.115</Modified>
+      <Modified>2024-01-25T15:51:08.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.116</Modified>
+      <Modified>2024-01-25T15:51:08.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.116</Modified>
+      <Modified>2024-01-25T15:51:08.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.116</Modified>
+      <Modified>2024-01-25T15:51:08.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.116</Modified>
+      <Modified>2024-01-25T15:51:08.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.116</Modified>
+      <Modified>2024-01-25T15:51:08.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.117</Modified>
+      <Modified>2024-01-25T15:51:08.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.117</Modified>
+      <Modified>2024-01-25T15:51:08.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.117</Modified>
+      <Modified>2024-01-25T15:51:08.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.117</Modified>
+      <Modified>2024-01-25T15:51:08.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.117</Modified>
+      <Modified>2024-01-25T15:51:08.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.118</Modified>
+      <Modified>2024-01-25T15:51:08.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.118</Modified>
+      <Modified>2024-01-25T15:51:08.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.118</Modified>
+      <Modified>2024-01-25T15:51:08.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.118</Modified>
+      <Modified>2024-01-25T15:51:08.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.119</Modified>
+      <Modified>2024-01-25T15:51:08.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.119</Modified>
+      <Modified>2024-01-25T15:51:08.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.119</Modified>
+      <Modified>2024-01-25T15:51:08.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.119</Modified>
+      <Modified>2024-01-25T15:51:08.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.119</Modified>
+      <Modified>2024-01-25T15:51:08.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.120</Modified>
+      <Modified>2024-01-25T15:51:08.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.120</Modified>
+      <Modified>2024-01-25T15:51:08.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.120</Modified>
+      <Modified>2024-01-25T15:51:08.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.120</Modified>
+      <Modified>2024-01-25T15:51:08.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.120</Modified>
+      <Modified>2024-01-25T15:51:08.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.121</Modified>
+      <Modified>2024-01-25T15:51:08.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.121</Modified>
+      <Modified>2024-01-25T15:51:08.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.121</Modified>
+      <Modified>2024-01-25T15:51:08.163</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.121</Modified>
+      <Modified>2024-01-25T15:51:08.163</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.122</Modified>
+      <Modified>2024-01-25T15:51:08.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.122</Modified>
+      <Modified>2024-01-25T15:51:08.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.122</Modified>
+      <Modified>2024-01-25T15:51:08.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.122</Modified>
+      <Modified>2024-01-25T15:51:08.236</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.123</Modified>
+      <Modified>2024-01-25T15:51:08.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.123</Modified>
+      <Modified>2024-01-25T15:51:08.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.123</Modified>
+      <Modified>2024-01-25T15:51:08.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.124</Modified>
+      <Modified>2024-01-25T15:51:08.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.124</Modified>
+      <Modified>2024-01-25T15:51:08.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.125</Modified>
+      <Modified>2024-01-25T15:51:08.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-01-08T17:08:30.126</Modified>
+      <Modified>2024-01-25T15:51:08.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\EjercicioColorPicker\EjercicioColorPicker\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\EjercicioColorPicker.deps.json">
       <PackagePath>EjercicioColorPicker.deps.json</PackagePath>
-      <Modified>2024-01-08T17:28:16.787</Modified>
+      <Modified>2024-01-25T19:18:51.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anton\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

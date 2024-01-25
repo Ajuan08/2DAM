@@ -8,35 +8,35 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AhorcadoMAUI
-build_property.ProjectDir = C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\AhorcadoMAUI\AhorcadoMAUI\AhorcadoMAUI\
+build_property.ProjectDir = S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\AhorcadoMAUI\AhorcadoMAUI\AhorcadoMAUI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/AhorcadoMAUI/AhorcadoMAUI/AhorcadoMAUI/App.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/AhorcadoMAUI/AhorcadoMAUI/AhorcadoMAUI/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AhorcadoMAUI.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/AhorcadoMAUI/AhorcadoMAUI/AhorcadoMAUI/AppShell.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/AhorcadoMAUI/AhorcadoMAUI/AhorcadoMAUI/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AhorcadoMAUI.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/AhorcadoMAUI/AhorcadoMAUI/AhorcadoMAUI/MainPage.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/AhorcadoMAUI/AhorcadoMAUI/AhorcadoMAUI/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AhorcadoMAUI.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/AhorcadoMAUI/AhorcadoMAUI/AhorcadoMAUI/Resources/Styles/Colors.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/AhorcadoMAUI/AhorcadoMAUI/AhorcadoMAUI/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AhorcadoMAUI.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/AhorcadoMAUI/AhorcadoMAUI/AhorcadoMAUI/Resources/Styles/Styles.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/AhorcadoMAUI/AhorcadoMAUI/AhorcadoMAUI/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AhorcadoMAUI.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

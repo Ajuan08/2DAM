@@ -1,1 +1,1 @@
-C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\AhorcadoMAUI\AhorcadoMAUI\AhorcadoMAUI\AhorcadoMAUI.csproj;x64
+S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\AhorcadoMAUI\AhorcadoMAUI\AhorcadoMAUI\AhorcadoMAUI.csproj;x64
