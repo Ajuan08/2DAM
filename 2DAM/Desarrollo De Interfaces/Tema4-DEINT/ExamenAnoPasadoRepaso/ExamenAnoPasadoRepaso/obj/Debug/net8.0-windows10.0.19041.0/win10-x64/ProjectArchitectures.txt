@@ -1,1 +1,1 @@
-S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\ExamenAnoPasadoRepaso\ExamenAnoPasadoRepaso\ExamenAnoPasadoRepaso.csproj;x64
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\ExamenAnoPasadoRepaso\ExamenAnoPasadoRepaso\ExamenAnoPasadoRepaso.csproj;x64

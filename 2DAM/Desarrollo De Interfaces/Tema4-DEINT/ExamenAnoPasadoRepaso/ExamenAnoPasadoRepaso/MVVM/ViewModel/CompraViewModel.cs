@@ -27,12 +27,18 @@ namespace ExamenAnoPasadoRepaso.MVVM.ViewModel
 
             BotonMas = new Command(() =>
             {
-                compra.PorcentajeDescuento += 10;
+                if(compra.PorcentajeDescuento < 100)
+                {
+                    compra.PorcentajeDescuento += 10;
+                }
             });
 
             BotonMenos = new Command(() =>
             {
-                compra.PorcentajeDescuento -= 10;
+                if (compra.PorcentajeDescuento > 0)
+                {
+                    compra.PorcentajeDescuento -= 10;
+                }
             });
 
             CommandPagarLuego = new Command(() =>
