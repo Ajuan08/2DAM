@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style TargetType="Button" >
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="TextColor" Value="Black" />
+    </Style>
+
+    <Style TargetType="Button" x:Key="botonLlamar">
+        <Setter Property="CornerRadius" Value="30" />
+        <Setter Property="TextColor" Value="Black" />
+    </Style>
+
+
+    <Style TargetType="Grid" x:Key="grid1">
+        <Setter Property="Background" Value="Orange" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="labelPequeno">
+        <Setter Property="TextColor" Value="Gray" />
+        <Setter Property="FontSize" Value="Micro" />
+    </Style>
+
+    <Style TargetType="Slider">
+        <Setter Property="BackgroundColor" Value="Gray"/>
+        <Setter Property="MinimumTrackColor" Value="Orange"/>
+    </Style>
+
+    <Style TargetType="Image">
+        <Setter Property="BackgroundColor" Value="Orange"/>
+    </Style>
+
+    <Style TargetType="Button" x:Key="botonClaro">
+        <Setter Property="BackgroundColor" Value="Black" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+
+</ResourceDictionary>

@@ -2,6 +2,8 @@ package com.example.creacionjuegos;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -22,6 +24,11 @@ public class MainActivity extends Activity {
             paint = new Paint();
         }
         protected void onDraw(Canvas canvas){
+            Bitmap bmp = BitmapFactory.decodeResource(getResources(),R.drawable.ic_launcher_background);
+            Bitmap img = bmp.createScaledBitmap(bmp,canvas.getWidth()*0.2,canvas.getHeight()*0.2,true);
+
+            Canvas.drawBitmap(img,posx,posy,null);
+
             canvas.drawRGB(255,255,255);
             paint.setColor(Color.RED);
             canvas.drawLine(0,0,canvas.getWidth()-1,getHeight()-1,paint);

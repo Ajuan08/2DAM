@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converter="clr-namespace:ExamenMAUI.Converter"
+             x:Class="ExamenMAUI.MVVM.View.PedidoView"
+             Title="PedidoView">
+
+    <ContentPage.Resources>
+        <converter:convert x:Key="EstadoPedidoConverter"/>
+    </ContentPage.Resources>
+    
+    
+    <VerticalStackLayout>
+        <Frame>
+            <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*" Style="{StaticResource grid1}">
+                <Button Text="✆" Grid.Column="0" Grid.Row="0" HorizontalOptions="StartAndExpand" Command="{Binding comando3}" Style="{StaticResource botonLlamar}" />
+                <Image  Source="image1.png" HeightRequest="185" Aspect="AspectFit" Grid.Column="1" Grid.Row="1"/>
+                <Button Text="Ayuda" Grid.Column="2" Grid.Row="0" HorizontalOptions="End" Command="{Binding comando4}"/>
+            </Grid>
+        </Frame>
+
+        <Frame>
+            <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*">
+                <Label Text="Entregado" Grid.Column="1" Grid.Row="0" HorizontalOptions="End" Grid.ColumnSpan="1" />
+                <Switch IsToggled="{Binding pedido.estadoPedido}" Grid.Column="2" Grid.Row="0" HorizontalOptions="Center"/>
+                <Label Text="{Binding pedido.fecha}" Grid.Column="2" Grid.Row="2" IsVisible="{Binding pedido.estadoPedido}" />
+                <Label Text="{Binding pedido.estadoPedido, Converter={StaticResource EstadoPedidoConverter}}" Grid.Column="0" Grid.Row="1" />
+                <Label Text="DeliciusFood te ha preparado un delicioso menú para que lo disfrutes. No olvides valorarnos" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Style="{StaticResource labelPequeno}"/>
+                <Label Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3" />
+
+                <Image Source="image2.png" HeightRequest="100" Aspect="AspectFit" Grid.Column="0" Grid.Row="4" Grid.RowSpan="2"/>
+                <Label Text="{Binding pedido.entregadoPor}" Grid.Column="1" Grid.Row="4" HorizontalOptions="Start"/>
+                <Label Text="Llama si no puedes encontrar tu pedido" Grid.Column="1" Grid.Row="5" />
+                <BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="3" />
+                <Button Text="✆" Grid.Column="2" Grid.Row="4"  HorizontalOptions="End" Command="{Binding comando3}" Style="{StaticResource botonLlamar}" />
+
+                <Label Text="{Binding pedido.calificacion}" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" HorizontalOptions="Center"/>
+                <Slider Value="{Binding pedido.calificacion}" Grid.Column="0" Grid.Row="9"  VerticalOptions="Center" Grid.ColumnSpan="2" Minimum="0" Maximum="10" />
+                <Button Text="Calificar Pedido" Grid.Column="2" Grid.Row="9" HorizontalOptions="Center" Command="{Binding comando2}" Style="{AppThemeBinding Light={StaticResource botonClaro}}" />
+
+            </Grid>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

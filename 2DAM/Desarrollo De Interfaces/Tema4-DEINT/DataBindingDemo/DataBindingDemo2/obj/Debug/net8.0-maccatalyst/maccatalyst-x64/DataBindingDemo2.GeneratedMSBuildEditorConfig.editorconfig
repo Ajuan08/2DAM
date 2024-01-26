@@ -12,47 +12,47 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DataBindingDemo2
-build_property.ProjectDir = S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\DataBindingDemo\DataBindingDemo2\
+build_property.ProjectDir = C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\DataBindingDemo\DataBindingDemo2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/App.xaml]
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DataBindingDemo2.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/AppShell.xaml]
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DataBindingDemo2.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/BindingControllers.xaml]
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/BindingControllers.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DataBindingDemo2.BindingControllers.xaml
 build_metadata.AdditionalFiles.TargetPath = BindingControllers.xaml
 build_metadata.AdditionalFiles.RelativePath = BindingControllers.xaml
 
-[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/BindingModels.xaml]
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/BindingModels.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DataBindingDemo2.BindingModels.xaml
 build_metadata.AdditionalFiles.TargetPath = BindingModels.xaml
 build_metadata.AdditionalFiles.RelativePath = BindingModels.xaml
 
-[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/MainPage.xaml]
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DataBindingDemo2.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/Resources/Styles/Colors.xaml]
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DataBindingDemo2.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/Resources/Styles/Styles.xaml]
+[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/DataBindingDemo/DataBindingDemo2/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DataBindingDemo2.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
