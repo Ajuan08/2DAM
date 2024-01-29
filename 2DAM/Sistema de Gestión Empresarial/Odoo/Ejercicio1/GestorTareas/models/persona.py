@@ -7,7 +7,7 @@ class Persona(models.Model):
     name = fields.Char(string="Nombre de la Persona", required=True)
     description = fields.Text(string="Descripción", required=True)
 
-    tarea_ids = fields.Many2many('GestorTareas.tarea', string="Tareas asignadas")
+    tarea_ids = fields.Many2many('gestor_tareas.tarea.tarea', string="Tareas asignadas")
 
     total_tareas_asignadas = fields.Integer(string="Total de Tareas Asignadas", compute='_compute_total_tareas')
 

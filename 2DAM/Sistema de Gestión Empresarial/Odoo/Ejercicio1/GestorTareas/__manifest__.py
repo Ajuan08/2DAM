@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     'name': "GestorTareas",
     'summary': "Modulo creado para la gestion de tareas ",

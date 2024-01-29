@@ -1,23 +1,22 @@
 <odoo>
     <data>
+
         <record model="ir.ui.view" id="task_manager.tree">
             <field name="name">task_manager.tree</field>
-            <field name="model">GestorTareas.tarea</field>
+            <field name="model">gestor_tareas.tarea</field>  
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
                     <field name="description"/>
                     <field name="fecha_creacion"/>
-                    <field name="fecha_limite"/>
-                    <field name="assigned_to"/>
                 </tree>
             </field>
         </record>
 
-
+        
         <record model="ir.ui.view" id="task_manager.form">
             <field name="name">task_manager.form</field>
-            <field name="model">GestorTareas.tarea</field>
+            <field name="model">gestor_tareas.tarea</field>  
             <field name="arch" type="xml">
                 <form>
                     <sheet>
@@ -25,42 +24,40 @@
                             <field name="name"/>
                             <field name="description"/>
                             <field name="fecha_creacion"/>
-                            <field name="fecha_limite"/>
-                            <field name="assigned_to"/>
                         </group>
                     </sheet>
                 </form>
             </field>
         </record>
 
- 
+        
         <record model="ir.ui.view" id="task_manager.kanban">
             <field name="name">task_manager.kanban</field>
-            <field name="model">GestorTareas.tarea</field>
+            <field name="model">gestor_tareas.tarea</field>  
             <field name="arch" type="xml">
                 <kanban>
                     <field name="name"/>
                     <field name="description"/>
-                    <field name="assigned_to"/>
                 </kanban>
             </field>
         </record>
 
         
-        <record id="action_task_tree" model="ir.actions.act_window">
+        <record model="ir.actions.act_window" id="action_task_tree">
             <field name="name">Task Tree</field>
-            <field name="res_model">GestorTareas.tarea</field>
+            <field name="res_model">gestor_tareas.tarea</field>  
             <field name="view_mode">tree,form,kanban</field>
         </record>
 
-        <record id="action_task_form" model="ir.actions.act_window">
+        <record model="ir.actions.act_window" id="action_task_form">
             <field name="name">Task Form</field>
-            <field name="res_model">GestorTareas.tarea</field>
+            <field name="res_model">gestor_tareas.tarea</field>  
             <field name="view_mode">form,tree,kanban</field>
         </record>
 
-      
+        
         <menuitem id="menu_task" name="Tasks" sequence="20"/>
+
         <menuitem id="menu_task_tree" parent="menu_task" name="Task Tree" action="action_task_tree"/>
         <menuitem id="menu_task_form" parent="menu_task" name="Task Form" action="action_task_form"/>
 
