@@ -1,17 +1,21 @@
 from odoo import models, fields, api
 
 class Tarea(models.Model):
-    _name = 'gestor_tareas.tarea'
-    _description = 'Descripcion de la Tarea'
+    _name = "tareas.tarea"
+    _description = "Gestor de Tareas - Tareas"
 
-    name = fields.Char(string="Nombre de la Tarea", required=True)
-    description = fields.Text(string="Descripción", required=True)
-    fecha_creacion = fields.Datetime(string='Fecha de Creación', default=fields.Datetime.now)
-    assigned_to = fields.Many2many('GestorTareas.persona', string="Asignado a")
+    nombre = fields.Char('Nombre', required=True)
+    descripcion = fields.Text('Descripcion')
+    fecha_creacion = fields.Datetime('Fecha Creacion', default=lambda self: fields.Datetime.now())
+    contador_personas_asignadas = fields.Integer(compute='_compute_total')
+    personas_ids = fields.Many2many('tarea.persona')
+    estado = fields.Selection([
+        ('porHacer', 'Por Hacer'),
+        ('enProgreso', 'En Progreso'),
+        ('hecho', 'Hecho')],
+        string='Estado', default='porHacer', required=True)
 
-    total_personas_asignadas = fields.Integer(string="Total de Personas Asignadas", compute='_compute_total_personas')
-
-    @api.depends('assigned_to')
-    def _compute_total_personas(self):
-        for tarea in self:
-            tarea.total_personas_asignadas = len(tarea.assigned_to)
+    @api.depends("personas_ids")
+    def _compute_total(self):
+        for record in self:
+            record.contador_personas_asignadas = len(record.personas_ids) if record.personas_ids else 0

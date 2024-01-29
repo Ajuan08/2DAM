@@ -1,65 +1,123 @@
 <odoo>
     <data>
 
-        <record model="ir.ui.view" id="task_manager.tree">
-            <field name="name">task_manager.tree</field>
-            <field name="model">gestor_tareas.tarea</field>  
+        <!-- Tarea -->
+
+        <record id="tarea_tree_view" model="ir.ui.view">
+            <field name="name">tarea.tree</field>
+            <field name="model">tareas.tarea</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="name"/>
-                    <field name="description"/>
-                    <field name="fecha_creacion"/>
+                    <field name="nombre" />
+                    <field name="descripcion" />
+                    <field name="fecha_creacion" />
+                    <field name="contador_personas_asignadas" />
+                    <field name="personas_ids" widget="many2many_tags" />
+                    <field name="estado" />
                 </tree>
             </field>
         </record>
 
-        
-        <record model="ir.ui.view" id="task_manager.form">
-            <field name="name">task_manager.form</field>
-            <field name="model">gestor_tareas.tarea</field>  
+        <record id="tarea_form_view" model="ir.ui.view">
+            <field name="name">tarea.form</field>
+            <field name="model">tareas.tarea</field>
             <field name="arch" type="xml">
                 <form>
-                    <sheet>
-                        <group>
-                            <field name="name"/>
-                            <field name="description"/>
-                            <field name="fecha_creacion"/>
-                        </group>
-                    </sheet>
+                    <group>
+                        <field name="nombre" />
+                        <field name="descripcion" />
+                        <field name="fecha_creacion" />
+                        <field name="contador_personas_asignadas" />
+                        <field name="personas_ids" widget="many2many_tags" />
+                        <field name="estado" />
+                    </group>
                 </form>
             </field>
         </record>
 
-        
-        <record model="ir.ui.view" id="task_manager.kanban">
-            <field name="name">task_manager.kanban</field>
-            <field name="model">gestor_tareas.tarea</field>  
+        <record id="tarea_kanban_view" model="ir.ui.view">
+            <field name="name">tarea.kanban</field>
+            <field name="model">tareas.tarea</field>
             <field name="arch" type="xml">
                 <kanban>
-                    <field name="name"/>
-                    <field name="description"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click">
+                                <div>Nombre: <field name="nombre"/></div>
+                                <div>Fecha Creacion: <field name="fecha_creacion"/></div>
+                                <div>Contador de Personas Asignadas: <field name="contador_personas_asignadas"/></div>
+                                <div>Estado: <field name="estado"/></div>
+                            </div>
+                        </t>
+                    </templates>
                 </kanban>
             </field>
         </record>
 
-        
-        <record model="ir.actions.act_window" id="action_task_tree">
-            <field name="name">Task Tree</field>
-            <field name="res_model">gestor_tareas.tarea</field>  
+        <!-- Persona -->
+
+        <record id="persona_tree_view" model="ir.ui.view">
+            <field name="name">persona.tree</field>
+            <field name="model">tarea.persona</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre" />
+                    <field name="edad" />
+                    <field name="contador_Tareas_Asignadas" />
+                    <field name="tareas_ids" widget="many2many_tags" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="persona_form_view" model="ir.ui.view">
+            <field name="name">persona.form</field>
+            <field name="model">tarea.persona</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="nombre" />
+                        <field name="edad" />
+                        <field name="tareas_ids" widget="many2many_tags" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- Actions -->
+
+        <record model="ir.actions.act_window" id="tarea_list_tree_action">
+            <field name="nombre">Vista tree de la lista de Tareas</field>
+            <field name="res_model">tareas.tarea</field>
             <field name="view_mode">tree,form,kanban</field>
         </record>
 
-        <record model="ir.actions.act_window" id="action_task_form">
-            <field name="name">Task Form</field>
-            <field name="res_model">gestor_tareas.tarea</field>  
-            <field name="view_mode">form,tree,kanban</field>
+        <record model="ir.actions.act_window" id="tarea_list_form_action">
+            <field name="name">Vista form de la lista de Tareas</field>
+            <field name="res_model">tareas.tarea</field>
+            <field name="view_mode">form</field>
         </record>
 
-        
-        <menuitem id="menu_task" name="Tasks" sequence="20"/>
+        <record model="ir.actions.act_window" id="persona_list_tree_action">
+            <field name="name">Vista tree de la lista de Persona</field>
+            <field name="res_model">tarea.persona</field>
+            <field name="view_mode">tree,form</field>
+        </record>
 
-        <menuitem id="menu_task_tree" parent="menu_task" name="Task Tree" action="action_task_tree"/>
-        <menuitem id="menu_task_form" parent="menu_task" name="Task Form" action="action_task_form"/>
+        <record model="ir.actions.act_window" id="persona_list_form_action">
+            <field name="name">Vista form de la lista de Persona</field>
+            <field name="res_model">tarea.persona</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <!-- Menus -->
+
+        <menuitem id="tareas_menu" name="Tasks" sequence="20"/>
+
+        <menuitem id="tarea_list_tree" parent="tareas_menu" name="Vista tree de la lista de Tarea" action="tarea_list_tree_action" />
+        <menuitem id="tarea_list_form" parent="tareas_menu" name="Vista form de la lista de Tarea" action="tarea_list_form_action" />
+
+        <menuitem id="persona_list_tree" parent="tareas_menu" name="Vista tree de la lista de Persona" action="persona_list_tree_action" />
+        <menuitem id="persona_list_form" parent="tareas_menu" name="Vista form de la lista de Persona" action="persona_list_form_action" />
 
     </data>
 </odoo>

@@ -1,17 +1,15 @@
 from odoo import models, fields, api
 
 class Persona(models.Model):
-    _name = 'GestorTareas.persona'
-    _description = 'GestorDeTareasPersonas'
+    _name = "tarea.persona"
+    _description = "Gestor de Tareas - Personas"
 
-    name = fields.Char(string="Nombre de la Persona", required=True)
-    description = fields.Text(string="Descripción", required=True)
+    nombre = fields.Char('Nombre', required=True)
+    edad = fields.Integer('Edad')
+    contador_Tareas_Asignadas = fields.Integer(compute='_compute_total')
+    tareas_ids = fields.Many2many('tareas.tarea')
 
-    tarea_ids = fields.Many2many('gestor_tareas.tarea.tarea', string="Tareas asignadas")
-
-    total_tareas_asignadas = fields.Integer(string="Total de Tareas Asignadas", compute='_compute_total_tareas')
-
-    @api.depends('tarea_ids')
-    def _compute_total_tareas(self):
-        for persona in self:
-            persona.total_tareas_asignadas = len(persona.tarea_ids)
+    @api.depends("tareas_ids")
+    def _compute_total(self):
+        for record in self:
+            record.contador_Tareas_Asignadas = len(record.tareas_ids) if record.tareas_ids else 0
