@@ -1,4 +1,5 @@
 is_global = true
+build_property.PropertyChangedAnalyzerConfiguration = 
 build_property.EnableAotAnalyzer = 
 build_property.EnableSingleFileAnalyzer = 
 build_property.EnableTrimAnalyzer = false
@@ -12,47 +13,53 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Ejercicio8Tareas
-build_property.ProjectDir = C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio8Tareas\Ejercicio8Tareas\
+build_property.ProjectDir = S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Ejercicio8Tareas\Ejercicio8Tareas\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/App.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio8Tareas.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/AppShell.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio8Tareas.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/MainPage.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio8Tareas.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/MVVM/View/Vista1.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/MVVM/View/Vista1.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio8Tareas.MVVM.View.Vista1.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\View\Vista1.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\View\Vista1.xaml
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/MVVM/View/Vista2.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/MVVM/View/Vista2.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio8Tareas.MVVM.View.Vista2.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\View\Vista2.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\View\Vista2.xaml
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/Resources/Styles/Colors.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio8Tareas.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/dam/Desktop/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/Resources/Styles/Styles.xaml]
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/Resources/Styles/Diccionario1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio8Tareas.Resources.Styles.Diccionario1.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Diccionario1.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Diccionario1.xaml
+
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/Ejercicio8Tareas/Ejercicio8Tareas/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio8Tareas.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

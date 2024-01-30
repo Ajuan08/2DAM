@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <DataTemplate x:Key="Normal">
+
+        <Frame BackgroundColor="White" BorderColor="Black">
+            <HorizontalStackLayout>
+                <CheckBox IsChecked="{Binding Hecho}" Color="Orange"/>
+                <Label Text="{Binding Nombre}" TextColor="Black" />
+            </HorizontalStackLayout>
+        </Frame>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Tachado">
+
+        <Frame BackgroundColor="White" BorderColor="Black">
+            <HorizontalStackLayout>
+                <CheckBox IsChecked="{Binding Hecho}" Color="Orange"/>
+                <Label Text="{Binding Nombre}" TextColor="Black" TextDecorations="Strikethrough" />
+            </HorizontalStackLayout>
+        </Frame>
+    </DataTemplate>
+    
+
+</ResourceDictionary>

@@ -13,7 +13,10 @@ namespace Ejercicio8Tareas.MVVM.ViewModel
     {
         public ObservableCollection<TareaModel> tareaModel { get; set; } = new ObservableCollection<TareaModel>();
         public ObservableCollection<CategoriaModel> categoriaModel { get; set; } = new ObservableCollection<CategoriaModel>();
-        public Command IrAVista2Command { get; }
+        public Command IrAVista2Command { get; set; }
+        public Command AnadirTarea { get; set; }
+
+        public string NuevoNombreTarea { get; set; }
         public TareaViewModel()
         {
 
@@ -33,11 +36,21 @@ namespace Ejercicio8Tareas.MVVM.ViewModel
                 new CategoriaModel { Nombre = "Compras" }
             };
             IrAVista2Command = new Command(IrAVista2);
+            AnadirTarea = new Command(AnadirTareaMetodo);
         }
         private  async void IrAVista2()
         {
             Vista2 v2 = new Vista2();
              await Application.Current.MainPage.Navigation.PushAsync(v2);
+        }
+
+        public void AnadirTareaMetodo()
+        {
+            if (string.IsNullOrEmpty(NuevoNombreTarea))
+            {
+                TareaModel nuevaTarea = new TareaModel { Nombre = NuevoNombreTarea };
+                tareaModel.Add(nuevaTarea);
+            }
         }
     }
 }

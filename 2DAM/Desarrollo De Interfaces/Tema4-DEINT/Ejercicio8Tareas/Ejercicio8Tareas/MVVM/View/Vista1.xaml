@@ -2,8 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejercicio8Tareas.MVVM.View.Vista1"
+             xmlns:DataTemplate="clr-namespace:Ejercicio8Tareas.Selectors"
              Title="Vista1">
-    
+
+    <ContentPage.Resources>
+        <DataTemplate:TareaSelector x:Key="tareaSelector"/>
+    </ContentPage.Resources>
+
     <VerticalStackLayout>
         <Frame BackgroundColor="Blue">
             <Label Text="Mis Tareas" TextColor="White" FontSize="Large" HorizontalOptions="Start" VerticalOptions="Center"/>
@@ -33,23 +38,15 @@
                 <Label Text="TAREAS PENDIENTES" Grid.Column="0" Grid.Row="3" HorizontalOptions="Start" FontSize="Medium" TextColor="Gray"/>
 
                 <ScrollView Grid.Column="0" Grid.Row="4">
-                    <CollectionView x:Name="tareaCollectionView" ItemsSource="{Binding tareaModel}">
+                    <CollectionView x:Name="tareaCollectionView" ItemsSource="{Binding tareaModel}" ItemTemplate="{StaticResource tareaSelector}">
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout ItemSpacing="10" Orientation="Vertical"/>
                         </CollectionView.ItemsLayout>
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <StackLayout>
-                                    <Frame BackgroundColor="White" BorderColor="Black">
-                                        <Label Text="{Binding Nombre}" TextColor="Black" />
-                                    </Frame>
-                                </StackLayout>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
+                        
                     </CollectionView>
                 </ScrollView>
                 
-                <Button Command="{Binding IrAVista2Command}" Text="+" Grid.Column="4" Grid.Row="5" BackgroundColor="Blue" TextColor="White" CornerRadius="50" FontSize="Small"/>
+                <Button Command="{Binding IrAVista2Command}" Text="+" Grid.Column="4" Grid.Row="5" BackgroundColor="Blue" TextColor="White" CornerRadius="20" HorizontalOptions="End" VerticalOptions="End"/>
                 
             </Grid>
         </Frame>
