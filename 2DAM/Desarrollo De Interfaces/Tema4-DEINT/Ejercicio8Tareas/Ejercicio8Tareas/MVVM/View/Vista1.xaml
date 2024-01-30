@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio8Tareas.MVVM.View.Vista1"
+             Title="Vista1">
+    
+    <VerticalStackLayout>
+        <Frame BackgroundColor="Blue">
+            <Label Text="Mis Tareas" TextColor="White" FontSize="Large" HorizontalOptions="Start" VerticalOptions="Center"/>
+        </Frame>
+        <Frame BackgroundColor="White">
+            <Grid ColumnDefinitions="*,*,*,*,*" RowDefinitions="*,*,*,*,*,*">
+                <Label Text="Mis Tareas" Grid.Column="0" Grid.Row="0" HorizontalOptions="Start" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+                <Label Text="CATEGORIAS" Grid.Column="0" Grid.Row="1" HorizontalOptions="Start" FontSize="Medium" TextColor="Gray"/>
+
+                <ScrollView Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4">
+                    <CollectionView x:Name="categoriaCollectionView" ItemsSource="{Binding categoriaModel}">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal"/>
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                    <Frame BackgroundColor="White" BorderColor="Black">
+                                        <Label Text="{Binding Nombre}" TextColor="Black" />
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </ScrollView>
+
+                <Label Text="TAREAS PENDIENTES" Grid.Column="0" Grid.Row="3" HorizontalOptions="Start" FontSize="Medium" TextColor="Gray"/>
+
+                <ScrollView Grid.Column="0" Grid.Row="4">
+                    <CollectionView x:Name="tareaCollectionView" ItemsSource="{Binding tareaModel}">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout ItemSpacing="10" Orientation="Vertical"/>
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                    <Frame BackgroundColor="White" BorderColor="Black">
+                                        <Label Text="{Binding Nombre}" TextColor="Black" />
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </ScrollView>
+                
+                <Button Command="{Binding IrAVista2Command}" Text="+" Grid.Column="4" Grid.Row="5" BackgroundColor="Blue" TextColor="White" CornerRadius="50" FontSize="Small"/>
+                
+            </Grid>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
