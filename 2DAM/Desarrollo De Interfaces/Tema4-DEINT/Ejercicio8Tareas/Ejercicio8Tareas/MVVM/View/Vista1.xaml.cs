@@ -7,7 +7,7 @@ public partial class Vista1 : ContentPage
 	public Vista1()
 	{
 		InitializeComponent();
-		BindingContext = new TareaViewModel();
+		BindingContext = TareaViewModel.Instance;
 		
 	}
 }

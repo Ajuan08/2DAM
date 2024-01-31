@@ -9,7 +9,7 @@
         </Frame>
         <Frame BackgroundColor="White">
             <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="*,*,*,*,*">
-                <Entry Text="{Binding NuevoNombreCategoria}" Placeholder="Introduce Nueva Tarea / Categoría" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" HorizontalTextAlignment="Center" TextColor="Black"/>
+                <Entry Text="{Binding NuevoNombre}" Placeholder="Introduce Nueva Tarea / Categoría" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" HorizontalTextAlignment="Center" TextColor="Black"/>
 
                 <ScrollView Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4" Margin="20">
                     <CollectionView ItemsSource="{Binding categoriaModel}">

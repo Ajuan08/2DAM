@@ -11,17 +11,19 @@ namespace Ejercicio8Tareas.MVVM.ViewModel
 {
     public class TareaViewModel
     {
+        private static TareaViewModel _instance;
+
         public ObservableCollection<TareaModel> tareaModel { get; set; } = new ObservableCollection<TareaModel>();
         public ObservableCollection<CategoriaModel> categoriaModel { get; set; } = new ObservableCollection<CategoriaModel>();
         public Command IrAVista2Command { get; set; }
         public Command AnadirTarea { get; set; }
         public Command AnadirCategoria { get; set; }
+        public Command NTarea { get; set; }
 
-        public string NuevoNombreTarea { get; set; }
-        public string NuevoNombreCategoria { get; set; }
-        public TareaViewModel()
+        public string NuevoNombre { get; set; }
+
+        private TareaViewModel()
         {
-
             tareaModel = new ObservableCollection<TareaModel>
             {
                 new TareaModel { Nombre = "Actualizar ficheros" },
@@ -37,31 +39,59 @@ namespace Ejercicio8Tareas.MVVM.ViewModel
                 new CategoriaModel { Nombre = "Tutoriales" },
                 new CategoriaModel { Nombre = "Compras" }
             };
+
             IrAVista2Command = new Command(IrAVista2);
             AnadirTarea = new Command(AnadirTareaMetodo);
             AnadirCategoria = new Command(AnadirCategoriaMetodo);
 
-        }
-        private  async void IrAVista2()
-        {
-            Vista2 v2 = new Vista2();
-             await Application.Current.MainPage.Navigation.PushAsync(v2);
+            
         }
 
-        public void AnadirTareaMetodo()
+        public static TareaViewModel Instance
         {
-            if (!string.IsNullOrEmpty(NuevoNombreTarea))
+            get
             {
-                TareaModel nuevaTarea = new TareaModel { Nombre = NuevoNombreTarea };
-                tareaModel.Add(nuevaTarea);
+                if (_instance == null)
+                {
+                    _instance = new TareaViewModel();
+                }
+                return _instance;
             }
+        }
+
+        private async void IrAVista2()
+        {
+            Vista2 v2 = new Vista2();
+            await Application.Current.MainPage.Navigation.PushAsync(v2);
+        }
+
+        private void AnadirTareaMetodo()
+        {
+            if (!string.IsNullOrEmpty(NuevoNombre))
+            {
+                TareaModel nuevaTarea = new TareaModel { Nombre = NuevoNombre };
+                tareaModel.Add(nuevaTarea);
+
+                var categoriaConTarea = categoriaModel.FirstOrDefault(c => c.Tareas.Contains(nuevaTarea));
+                if (categoriaConTarea != null)
+                {
+                    ActualizarProgresoCategoria(categoriaConTarea);
+                }
+            }
+        }
+
+        private void ActualizarProgresoCategoria(CategoriaModel categoria)
+        {
+            categoria.TareasPendientes = categoria.Tareas.Count(t => !t.Hecho);
+            categoria.Progress = 1.0 - (double)categoria.TareasPendientes / categoria.Tareas.Count;
+            categoria.NTarea = $"{categoria.TareasPendientes} Tareas";
         }
 
         private void AnadirCategoriaMetodo()
         {
-            if (!string.IsNullOrEmpty(NuevoNombreCategoria))
+            if (!string.IsNullOrEmpty(NuevoNombre))
             {
-                CategoriaModel nuevaCategoria = new CategoriaModel { Nombre = NuevoNombreCategoria };
+                CategoriaModel nuevaCategoria = new CategoriaModel { Nombre = NuevoNombre };
                 categoriaModel.Add(nuevaCategoria);
             }
         }

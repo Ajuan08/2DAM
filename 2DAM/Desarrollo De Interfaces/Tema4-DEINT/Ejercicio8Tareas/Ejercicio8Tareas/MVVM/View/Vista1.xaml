@@ -28,8 +28,9 @@
                                 <StackLayout>
                                     <Frame BackgroundColor="White" BorderColor="Black">
                                         <VerticalStackLayout>
+                                            <Label Text="{Binding NTarea}" FontSize="Micro" TextColor="Gray" HorizontalOptions="Start"/>
                                             <Label Text="{Binding Nombre}" TextColor="Black" />
-                                            <ProgressBar BackgroundColor="Gray" ProgressColor="Orange" VerticalOptions="CenterAndExpand" />
+                                            <ProgressBar Progress="{Binding Progress}" BackgroundColor="Gray" ProgressColor="Orange" VerticalOptions="CenterAndExpand" />
                                         </VerticalStackLayout>
                                     </Frame>
                                 </StackLayout>

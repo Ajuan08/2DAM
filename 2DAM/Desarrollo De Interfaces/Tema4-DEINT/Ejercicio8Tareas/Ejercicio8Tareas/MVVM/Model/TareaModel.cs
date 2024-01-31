@@ -12,5 +12,6 @@ namespace Ejercicio8Tareas.MVVM.Model
     {
         public string Nombre { get; set; }
         public bool Hecho { get; set; }
+        
     }
 }
