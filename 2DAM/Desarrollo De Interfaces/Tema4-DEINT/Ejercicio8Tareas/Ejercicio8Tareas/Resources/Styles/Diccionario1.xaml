@@ -7,7 +7,7 @@
         <Frame BackgroundColor="White" BorderColor="Black">
             <HorizontalStackLayout>
                 <CheckBox IsChecked="{Binding Hecho}" Color="Orange"/>
-                <Label Text="{Binding Nombre}" TextColor="Black" />
+                <Label Text="{Binding Nombre}" TextColor="Black"/>
             </HorizontalStackLayout>
         </Frame>
     </DataTemplate>
@@ -16,8 +16,15 @@
 
         <Frame BackgroundColor="White" BorderColor="Black">
             <HorizontalStackLayout>
-                <CheckBox IsChecked="{Binding Hecho}" Color="Orange"/>
-                <Label Text="{Binding Nombre}" TextColor="Black" TextDecorations="Strikethrough" />
+                <CheckBox x:Name="checkBox" IsChecked="{Binding Hecho}" Color="Orange"/>
+                <Label Text="{Binding Nombre}" TextColor="Black">
+                    <Label.Triggers>
+                        <DataTrigger
+                            Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" TargetType="Label" Value="True">
+                            <Setter Property="TextDecorations" Value="Strikethrough" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
             </HorizontalStackLayout>
         </Frame>
     </DataTemplate>

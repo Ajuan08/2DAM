@@ -4,7 +4,7 @@
         <!-- Tarea -->
 
         <record id="tarea_tree_view" model="ir.ui.view">
-            <field name="name">tarea.tree</field>
+            <field name="name">tarea_tree_view</field>
             <field name="model">tareas.tarea</field>
             <field name="arch" type="xml">
                 <tree>
@@ -19,7 +19,7 @@
         </record>
 
         <record id="tarea_form_view" model="ir.ui.view">
-            <field name="name">tarea.form</field>
+            <field name="name">tarea_form_view</field>
             <field name="model">tareas.tarea</field>
             <field name="arch" type="xml">
                 <form>
@@ -36,7 +36,7 @@
         </record>
 
         <record id="tarea_kanban_view" model="ir.ui.view">
-            <field name="name">tarea.kanban</field>
+            <field name="name">tarea_kanban_view</field>
             <field name="model">tareas.tarea</field>
             <field name="arch" type="xml">
                 <kanban>
@@ -57,7 +57,7 @@
         <!-- Persona -->
 
         <record id="persona_tree_view" model="ir.ui.view">
-            <field name="name">persona.tree</field>
+            <field name="name">persona_tree_view</field>
             <field name="model">tarea.persona</field>
             <field name="arch" type="xml">
                 <tree>
@@ -70,7 +70,7 @@
         </record>
 
         <record id="persona_form_view" model="ir.ui.view">
-            <field name="name">persona.form</field>
+            <field name="name">persona_form_view</field>
             <field name="model">tarea.persona</field>
             <field name="arch" type="xml">
                 <form>
@@ -86,7 +86,7 @@
         <!-- Actions -->
 
         <record model="ir.actions.act_window" id="tarea_list_tree_action">
-            <field name="nombre">Vista tree de la lista de Tareas</field>
+            <field name="name">Vista tree de la lista de Tareas</field>
             <field name="res_model">tareas.tarea</field>
             <field name="view_mode">tree,form,kanban</field>
         </record>

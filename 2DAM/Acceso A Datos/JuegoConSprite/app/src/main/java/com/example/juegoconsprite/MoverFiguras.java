@@ -27,6 +27,7 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
     private Paint paint;
     private Paint linePaint;
     private List<Figura> figuras = new ArrayList<>();
+    private List<Sprite> sprites = new ArrayList<Sprite>();
 
 
     public MoverFiguras(Context context) {
@@ -49,8 +50,11 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
         sprite.onDraw(canvas);
+        canvas.drawColor(Color.BLACK);
+        for(Sprite sprite : sprites){
+            sprite.onDraw(canvas);
+        }
 
     }
 
@@ -96,6 +100,7 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
         gameThread.start();
         bmp = BitmapFactory.decodeResource(getResources(), R.drawable.bad1);
         sprite = new Sprite(this, bmp);
+        createSprites();
     }
 
     @Override
@@ -116,5 +121,16 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
 
             }
         }
+    }
+
+    public void createSprites(){
+       sprites.add(createSprites(R.drawable.bad1));
+        sprites.add(createSprites(R.drawable.bad2));
+        sprites.add(createSprites(R.drawable.bad3));
+    }
+
+    private Sprite createSprites(int resouce){
+        bmp = BitmapFactory.decodeResource(getResources(), resouce);
+        return new Sprite(this, bmp);
     }
 }

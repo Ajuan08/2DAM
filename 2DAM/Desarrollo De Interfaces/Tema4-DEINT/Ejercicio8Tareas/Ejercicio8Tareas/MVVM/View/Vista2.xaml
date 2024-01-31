@@ -9,7 +9,7 @@
         </Frame>
         <Frame BackgroundColor="White">
             <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="*,*,*,*,*">
-                <Entry Text="{Binding NuevoNombreTarea}" Placeholder="Introduce Nueva Tarea" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" HorizontalTextAlignment="Center" TextColor="Black"/>
+                <Entry Text="{Binding NuevoNombreCategoria}" Placeholder="Introduce Nueva Tarea / Categoría" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" HorizontalTextAlignment="Center" TextColor="Black"/>
 
                 <ScrollView Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4" Margin="20">
                     <CollectionView ItemsSource="{Binding categoriaModel}">
@@ -30,7 +30,8 @@
                 </ScrollView>
 
                 <Button Text="Añadir Tarea" Command="{Binding AnadirTarea}" Grid.Column="1" Grid.Row="3" CornerRadius="50" Margin="30"/>
-                <Button Text="Añadir Categoria" Grid.Column="2" Grid.Row="3" CornerRadius="50" Margin="30"/>
+                <Button Text="Añadir Categoria" Command="{Binding AnadirCategoria}" Grid.Column="2" Grid.Row="3" CornerRadius="50" Margin="30" />
+
             </Grid>
         </Frame>
     </VerticalStackLayout>

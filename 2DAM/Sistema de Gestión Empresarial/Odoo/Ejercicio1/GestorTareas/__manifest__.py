@@ -1,5 +1,5 @@
 {
-    'name': "GestorTareas",
+    'name': "gestorTareas",
     'summary': "Modulo creado para la gestion de tareas ",
     'description': "Este modulo consiste en la gestion y creacion de tareas",
     'author': "Antonio Juan Rios Fernandez",

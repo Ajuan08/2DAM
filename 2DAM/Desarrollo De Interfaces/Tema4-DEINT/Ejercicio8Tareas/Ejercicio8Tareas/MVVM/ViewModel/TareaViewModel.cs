@@ -15,8 +15,10 @@ namespace Ejercicio8Tareas.MVVM.ViewModel
         public ObservableCollection<CategoriaModel> categoriaModel { get; set; } = new ObservableCollection<CategoriaModel>();
         public Command IrAVista2Command { get; set; }
         public Command AnadirTarea { get; set; }
+        public Command AnadirCategoria { get; set; }
 
         public string NuevoNombreTarea { get; set; }
+        public string NuevoNombreCategoria { get; set; }
         public TareaViewModel()
         {
 
@@ -37,6 +39,8 @@ namespace Ejercicio8Tareas.MVVM.ViewModel
             };
             IrAVista2Command = new Command(IrAVista2);
             AnadirTarea = new Command(AnadirTareaMetodo);
+            AnadirCategoria = new Command(AnadirCategoriaMetodo);
+
         }
         private  async void IrAVista2()
         {
@@ -46,10 +50,19 @@ namespace Ejercicio8Tareas.MVVM.ViewModel
 
         public void AnadirTareaMetodo()
         {
-            if (string.IsNullOrEmpty(NuevoNombreTarea))
+            if (!string.IsNullOrEmpty(NuevoNombreTarea))
             {
                 TareaModel nuevaTarea = new TareaModel { Nombre = NuevoNombreTarea };
                 tareaModel.Add(nuevaTarea);
+            }
+        }
+
+        private void AnadirCategoriaMetodo()
+        {
+            if (!string.IsNullOrEmpty(NuevoNombreCategoria))
+            {
+                CategoriaModel nuevaCategoria = new CategoriaModel { Nombre = NuevoNombreCategoria };
+                categoriaModel.Add(nuevaCategoria);
             }
         }
     }

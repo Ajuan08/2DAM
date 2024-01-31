@@ -27,7 +27,10 @@
                             <DataTemplate>
                                 <StackLayout>
                                     <Frame BackgroundColor="White" BorderColor="Black">
-                                        <Label Text="{Binding Nombre}" TextColor="Black" />
+                                        <VerticalStackLayout>
+                                            <Label Text="{Binding Nombre}" TextColor="Black" />
+                                            <ProgressBar BackgroundColor="Gray" ProgressColor="Orange" VerticalOptions="CenterAndExpand" />
+                                        </VerticalStackLayout>
                                     </Frame>
                                 </StackLayout>
                             </DataTemplate>
@@ -38,11 +41,28 @@
                 <Label Text="TAREAS PENDIENTES" Grid.Column="0" Grid.Row="3" HorizontalOptions="Start" FontSize="Medium" TextColor="Gray"/>
 
                 <ScrollView Grid.Column="0" Grid.Row="4">
-                    <CollectionView x:Name="tareaCollectionView" ItemsSource="{Binding tareaModel}" ItemTemplate="{StaticResource tareaSelector}">
+                    <CollectionView x:Name="tareaCollectionView" ItemsSource="{Binding tareaModel}">
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout ItemSpacing="10" Orientation="Vertical"/>
                         </CollectionView.ItemsLayout>
-                        
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                    <Frame BackgroundColor="White" BorderColor="Black">
+                                        <HorizontalStackLayout>
+                                            <CheckBox x:Name="checkBox" IsChecked="{Binding Hecho}" Color="Orange"/>
+                                            <Label Text="{Binding Nombre}" TextColor="Black">
+                                                <Label.Triggers>
+                                                    <DataTrigger Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" TargetType="Label" Value="True">
+                                                        <Setter Property="TextDecorations" Value="Strikethrough" />
+                                                    </DataTrigger>
+                                                </Label.Triggers>
+                                            </Label>
+                                        </HorizontalStackLayout>
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
                     </CollectionView>
                 </ScrollView>
                 
