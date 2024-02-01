@@ -28,7 +28,7 @@
                                 <StackLayout>
                                     <Frame BackgroundColor="White" BorderColor="Black">
                                         <VerticalStackLayout>
-                                            <Label Text="{Binding NTarea}" FontSize="Micro" TextColor="Gray" HorizontalOptions="Start"/>
+                                            <Label Text="{Binding TareasPendientes, StringFormat='{0} Tareas'}" FontSize="Micro" TextColor="Gray" HorizontalOptions="Start"/>
                                             <Label Text="{Binding Nombre}" TextColor="Black" />
                                             <ProgressBar Progress="{Binding Progress}" BackgroundColor="Gray" ProgressColor="Orange" VerticalOptions="CenterAndExpand" />
                                         </VerticalStackLayout>
@@ -67,7 +67,7 @@
                     </CollectionView>
                 </ScrollView>
                 
-                <Button Command="{Binding IrAVista2Command}" Text="+" Grid.Column="4" Grid.Row="5" BackgroundColor="Blue" TextColor="White" CornerRadius="20" HorizontalOptions="End" VerticalOptions="End"/>
+                <Button Clicked="Button_Clicked" Text="+" Grid.Column="4" Grid.Row="5" BackgroundColor="Blue" TextColor="White" CornerRadius="20" HorizontalOptions="End" VerticalOptions="End"/>
                 
             </Grid>
         </Frame>

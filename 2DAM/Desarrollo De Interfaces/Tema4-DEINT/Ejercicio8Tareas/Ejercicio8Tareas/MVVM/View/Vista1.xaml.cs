@@ -4,10 +4,19 @@ namespace Ejercicio8Tareas.MVVM.View;
 
 public partial class Vista1 : ContentPage
 {
-	public Vista1()
+	TareaViewModel tareaViewModel;
+
+    public Vista1()
 	{
 		InitializeComponent();
-		BindingContext = TareaViewModel.Instance;
+		tareaViewModel = new TareaViewModel();
+		BindingContext = tareaViewModel;
 		
 	}
+
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+		Vista2 v2 = new Vista2(tareaViewModel);
+		await Application.Current.MainPage.Navigation.PushAsync(v2);
+    }
 }
