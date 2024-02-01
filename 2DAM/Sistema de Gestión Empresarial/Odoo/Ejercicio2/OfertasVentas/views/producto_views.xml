@@ -1,0 +1,56 @@
+<odoo>
+    <data>
+
+        <!-- Vista de lista de productos con descuentos -->
+
+        <record id="view_descuento_tree" model="ir.ui.view">
+            <field name="name">model.producto.tree</field>
+            <field name="model">model.producto</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre" />
+                    <field name="tipo_descuento" />
+                    <field name="valor" />
+                    <field name="descuentos_ids" widget="many2many_tags" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_descuento_form" model="ir.ui.view">
+            <field name="name">model.producto.form</field>
+            <field name="model">model.producto</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="nombre" />
+                        <field name="tipo_descuento" />
+                        <field name="valor" />
+                        <field name="descuentos_ids" widget="many2many_tags" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Actions -->
+
+        <record model="ir.actions.act_window" id="producto_list_tree_action">
+            <field name="name">Vista tree de productos</field>
+            <field name="res_model">model.producto</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="producto_list_form_action">
+            <field name="name">Vista form de producto</field>
+            <field name="res_model">model.producto</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <!-- Menus -->
+
+        <menuitem id="productos_menu" name="Productos" sequence="20"/>
+
+        <menuitem id="producto_list_tree" parent="productos_menu" name="Vista tree de productos" action="producto_list_tree_action" />
+        <menuitem id="producto_list_form" parent="productos_menu" name="Vista form de productos" action="producto_list_form_action" />
+    </data>
+</odoo>

@@ -1,0 +1,55 @@
+<odoo>
+    <data>
+
+        <!-- Vista de lista tree Descuentos -->
+
+        <record id="view_descuento_tree" model="ir.ui.view">
+            <field name="name">model.descuento.tree</field>
+            <field name="model">model.descuento</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre" />
+                    <field name="tipo_descuento" />
+                    <field name="valor" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_descuento_form" model="ir.ui.view">
+            <field name="name">model.descuento.form</field>
+            <field name="model">model.descuento</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="nombre" />
+                        <field name="tipo_descuento" />
+                        <field name="valor" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Actions -->
+
+        <record model="ir.actions.act_window" id="descuento_list_tree_action">
+            <field name="name">Vista tree de descuentos</field>
+            <field name="res_model">model.descuento</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="descuento_list_form_action">
+            <field name="name">Vista form de descuentos</field>
+            <field name="res_model">model.descuento</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <!-- Menus -->
+
+        <menuitem id="descuentos_menu" name="Descuentos" sequence="20"/>
+
+        <menuitem id="descuento_list_tree" parent="descuentos_menu" name="Vista tree de descuentos" action="descuento_list_tree_action" />
+        <menuitem id="descuento_list_form" parent="descuentos_menu" name="Vista form de descuentos" action="descuento_list_form_action" />
+
+    </data>
+</odoo>

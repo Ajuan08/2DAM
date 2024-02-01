@@ -33788,24 +33788,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anton\\.nuget\\packages\\": {},
+    "C:\\Users\\dam\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\Ejercicio8Tareas\\Ejercicio8Tareas\\Ejercicio8Tareas.csproj",
+      "projectUniqueName": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\Ejercicio8Tareas\\Ejercicio8Tareas\\Ejercicio8Tareas.csproj",
       "projectName": "Ejercicio8Tareas",
-      "projectPath": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\Ejercicio8Tareas\\Ejercicio8Tareas\\Ejercicio8Tareas.csproj",
-      "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-      "outputPath": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\Ejercicio8Tareas\\Ejercicio8Tareas\\obj\\",
+      "projectPath": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\Ejercicio8Tareas\\Ejercicio8Tareas\\Ejercicio8Tareas.csproj",
+      "packagesPath": "C:\\Users\\dam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dam\\Desktop\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\Ejercicio8Tareas\\Ejercicio8Tareas\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

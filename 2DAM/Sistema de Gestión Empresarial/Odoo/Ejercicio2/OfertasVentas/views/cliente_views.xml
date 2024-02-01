@@ -1,0 +1,58 @@
+<odoo>
+    <data>
+
+        <!-- Vista de lista de clientes con descuentos -->
+
+        <record id="view_descuento_tree" model="ir.ui.view">
+            <field name="name">model.cliente.tree</field>
+            <field name="model">model.cliente</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre" />
+                    <field name="tipo_descuento" />
+                    <field name="valor" />
+                    <field name="descuentos_ids" widget="many2many_tags" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_descuento_form" model="ir.ui.view">
+            <field name="name">model.cliente.form</field>
+            <field name="model">model.cliente</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="nombre" />
+                        <field name="tipo_descuento" />
+                        <field name="valor" />
+                        <field name="descuentos_ids" widget="many2many_tags" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Actions -->
+
+        <record model="ir.actions.act_window" id="clientes_list_tree_action">
+            <field name="name">Vista tree de clientes</field>
+            <field name="res_model">model.cliente</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="clientes_list_form_action">
+            <field name="name">Vista form de clientes</field>
+            <field name="res_model">model.cliente</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <!-- Menus -->
+
+        <menuitem id="clientes_menu" name="Clientes" sequence="20"/>
+
+        <menuitem id="cliente_list_tree" parent="clientes_menu" name="Vista tree de cliente" action="clientes_list_tree_action" />
+        <menuitem id="cliente_list_form" parent="clientes_menu" name="Vista form de cliente" action="clientes_list_form_action" />
+
+
+    </data>
+</odoo>

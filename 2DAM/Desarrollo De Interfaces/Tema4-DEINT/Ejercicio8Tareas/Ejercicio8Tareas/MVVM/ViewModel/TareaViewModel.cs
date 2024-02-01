@@ -95,5 +95,12 @@ namespace Ejercicio8Tareas.MVVM.ViewModel
                 categoriaModel.Add(nuevaCategoria);
             }
         }
+
+        public void AnadirTareaACategoria(TareaModel nuevaTarea, CategoriaModel categoria)
+        {
+            tareaModel.Add(nuevaTarea);
+            categoria.Tareas.Add(nuevaTarea);
+            ActualizarProgresoCategoria(categoria);
+        }
     }
 }

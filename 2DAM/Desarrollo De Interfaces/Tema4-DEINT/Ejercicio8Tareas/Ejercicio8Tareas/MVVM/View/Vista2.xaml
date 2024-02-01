@@ -20,7 +20,7 @@
                             <DataTemplate>
                                 <Frame BackgroundColor="White" BorderColor="Black">
                                     <HorizontalStackLayout>
-                                        <RadioButton IsChecked="False" VerticalOptions="Center" GroupName="Botones"/>
+                                        <RadioButton IsChecked="False" VerticalOptions="Center" GroupName="Botones" />
                                         <Label Text="{Binding Nombre}" TextColor="Black" />
                                     </HorizontalStackLayout>
                                 </Frame>
