@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Libro</title>
+</head>
+<body>
+    <h2>Formulario de Libro</h2>
+    
+    <form th:action="@{/agregar}" method="post">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" th:field="*{titulo}" required/>
+    <label for="autor">Autor:</label>
+    <input type="text" id="autor" name="autor" th:field="*{autor}" required/>
+    <button type="submit">Agregar Libro</button>
+</form>
+
+</body>
+</html>
+
