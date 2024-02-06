@@ -8,7 +8,6 @@ public class GameThread extends Thread {
     private MoverFiguras moverFiguras;
     private boolean run;
 
-    static final long FPS = 10;
 
     public GameThread(SurfaceHolder surfaceHolder, MoverFiguras moverFiguras) {
         this.surfaceHolder = surfaceHolder;
@@ -22,37 +21,25 @@ public class GameThread extends Thread {
 
     public void run() {
         Canvas canvas;
-        long ticksPS = 1000 / FPS;
-        long startTime;
-        long sleepTime;
 
         while (run) {
             canvas = null;
-            startTime = System.currentTimeMillis();
 
             try {
-                canvas = surfaceHolder.lockCanvas(null);
+                if (canvas != null) {
+                    canvas = surfaceHolder.lockCanvas(null);
 
-                synchronized (surfaceHolder) {
-                    moverFiguras.postInvalidate();
+                    synchronized (surfaceHolder) {
+                        moverFiguras.draw(canvas);
+                    }
                 }
-
             } finally {
                 if (canvas != null) {
                     surfaceHolder.unlockCanvasAndPost(canvas);
                 }
             }
-            sleepTime = ticksPS - (System.currentTimeMillis() - startTime);
-            try {
-                if (sleepTime > 0) {
-                    sleep(sleepTime);
-                } else {
-                    sleep(10);
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
+
         moverFiguras.postInvalidate();
     }
 }

@@ -1,7 +1,0 @@
-{
-  "name": "AplicacionCursos",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
