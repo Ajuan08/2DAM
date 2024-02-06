@@ -1,4 +1,6 @@
-﻿namespace Practica10ControlGastos
+﻿using Practica10ControlGastos.MVVM.View;
+
+namespace Practica10ControlGastos
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new View1());
         }
     }
 }

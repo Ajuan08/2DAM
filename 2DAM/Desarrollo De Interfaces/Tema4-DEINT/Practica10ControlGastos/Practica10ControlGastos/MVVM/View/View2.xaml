@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica10ControlGastos.MVVM.View.View2"
+             Title="View2">
+    <VerticalStackLayout>
+        <Label 
+         Text="Transacciones" TextColor="Gray"
+         VerticalOptions="Start" 
+         HorizontalOptions="Start" />
+
+        <Frame BackgroundColor="Purple">
+            <Label Text="Añadir transacción" VerticalOptions="Start" FontSize="Large" />
+        </Frame>
+
+        <Frame BackgroundColor="White" ZIndex="1" TranslationY="-24" Margin="10">
+            <Grid ColumnDefinitions="*" RowDefinitions="*,*,*,*,*,*,*,*,*,*">
+                <Label Text="Nombre de la transacción" Grid.Column="0" Grid.Row="0" VerticalOptions="Start" FontSize="Small" TextColor="Black" />
+                <Entry Grid.Column="0" Grid.Row="1" VerticalOptions="Start" FontSize="Large" TextColor="Black"  />
+                <Label Text="Cantidad" Grid.Column="0" Grid.Row="2" VerticalOptions="Start" FontSize="Small" TextColor="Black" />
+                <Entry Placeholder="0" Grid.Column="0" Grid.Row="3" VerticalOptions="Start" TextColor="Black" />
+                <Label Text="Fecha de la transacción" Grid.Column="0" Grid.Row="4" VerticalOptions="Start" FontSize="Small" TextColor="Black" />
+                <DatePicker Grid.Column="0" Grid.Row="5" VerticalOptions="Start" TextColor="Black" />
+                <Label Text="¿Es un Ingreso?" Grid.Column="0" Grid.Row="6" VerticalOptions="Start" TextColor="Black" />
+                <CheckBox Grid.Column="0" Grid.Row="7" VerticalOptions="Start" />
+                <Button Text="Guardar" Grid.Column="0" Grid.Row="8" VerticalOptions="Start" Margin="10" BackgroundColor="MediumPurple" TextColor="White" />
+                <Button Text="Cancelar" Grid.Column="0" Grid.Row="9" VerticalOptions="Start" Margin="10" BackgroundColor="Red" TextColor="White"/>
+
+            </Grid>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
