@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos\Practica10ControlGastos\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-06T11:54:07.693</Modified>
+      <Modified>2024-02-07T09:19:09.141</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos\Practica10ControlGastos\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Practica10ControlGastos.dll">
       <PackagePath>Practica10ControlGastos.dll</PackagePath>
-      <Modified>2024-02-06T11:54:07.163</Modified>
+      <Modified>2024-02-07T09:19:08.047</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos\Practica10ControlGastos\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Practica10ControlGastos.exe</PackagePath>
-      <Modified>2024-02-06T11:54:07.174</Modified>
+      <Modified>2024-02-07T09:19:08.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos\Practica10ControlGastos\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

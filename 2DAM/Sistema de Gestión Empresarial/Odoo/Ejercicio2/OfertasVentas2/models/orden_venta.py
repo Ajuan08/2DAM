@@ -1,6 +1,7 @@
 from odoo import models, fields, api
 
 class OrdenVentapersonalizada(models.Model):
+    
     _inherit = "sale.order"
     _description = "Orden de Venta Personalizada"
 

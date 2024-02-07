@@ -8,4 +8,4 @@ class Descuento(models.Model):
     tipo_descuento = fields.Selection([('porcentaje', 'Porcentaje'), ('monto_fijo', 'Monto Fijo')], string='Tipo de descuento', required=True)
     valor_descuento = fields.Float('Valor del Descuento', required=True)
 
-    clientes_ids = fields.Many2many('model.cliente', string='Clientes')
+    clientes_ids = fields.Many2many('model.cliente','relacion_descuento_cliente', 'descuento_id', 'cliente_id' ,string='Descuentos Personalizados')

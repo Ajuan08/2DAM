@@ -11,6 +11,7 @@ import java.util.Random;
 public class Sprite {
     private static final int BMP_ROWS = 4;
     private static final int BMP_COLUMNS = 3;
+    private static final int MAX_SPEED = 15;
     private int x = 0;
     private int y = 0;
     private int xSpeed = 24;
@@ -30,21 +31,21 @@ public class Sprite {
         this.width = bmp.getWidth() / BMP_COLUMNS;
         this.height = bmp.getHeight() / BMP_ROWS;
         Random rnd = new Random();
-        xSpeed = rnd.nextInt(50) -5;
-        ySpeed = rnd.nextInt(50) -5;
+        xSpeed = rnd.nextInt(MAX_SPEED * 2) -MAX_SPEED;
+        ySpeed = rnd.nextInt(MAX_SPEED * 2) -MAX_SPEED;
     }
 
     private void update() {
 
         if (x > moverFiguras.getWidth() - bmp.getWidth() - xSpeed || x + xSpeed < 0) {
-            xSpeed = -24;
+            xSpeed = -xSpeed;
         }
 
         x = x + xSpeed;
 
 
-        if (y > moverFiguras.getWidth() - bmp.getWidth() - ySpeed || y + ySpeed < 0) {
-            ySpeed = -24;
+        if (y > moverFiguras.getHeight() - bmp.getHeight() - ySpeed || y + ySpeed < 0) {
+            ySpeed = -ySpeed;
         }
 
         y = y + ySpeed;
@@ -69,5 +70,9 @@ public class Sprite {
         double dirDouble = (Math.atan2(xSpeed, ySpeed) / (Math.PI / 2) + 2);
         int direction = (int) Math.round(dirDouble) % BMP_ROWS;
         return direction;
+    }
+
+    public boolean isCollition(float x2, float y2) {
+        return x2 > x && x2 < x + width && y2 > y && y2 < y + height;
     }
 }

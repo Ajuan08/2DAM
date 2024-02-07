@@ -26,8 +26,11 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
     private Linea linea;
     private Paint paint;
     private Paint linePaint;
+    private long lastClick;
     private List<Figura> figuras = new ArrayList<>();
     private List<Sprite> sprites = new ArrayList<Sprite>();
+    private List<Sangre> sang = new ArrayList<Sangre>();
+    private Bitmap bmpsangre;
 
 
     public MoverFiguras(Context context) {
@@ -55,12 +58,30 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
         for(Sprite sprite : sprites){
             sprite.onDraw(canvas);
         }
+        for(int i = sang.size() - 1; i >= 0; i--) {
+            sang.get(i).onDraw(canvas);
+        }
 
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        //return super.onTouchEvent(event);
+        if(System.currentTimeMillis() - lastClick > 500) {
+            lastClick = System.currentTimeMillis();
+            synchronized (getHolder()) {
+                for (int i = sprites.size() - 1; i >= 0; i--) {
+                    Sprite sprite = sprites.get(i);
+                    if (sprite.isCollition(event.getX(), event.getY())) {
+                        sprites.remove(sprite);
+                        sprites.add(createSprites(R.drawable.bad1));
+                        sang.add(new Sangre(sang, this, event.getX(), event.getY(), bmpsangre));
+                        //sprites.add(createSprites(R.drawable.bad2));
+                        //sprites.add(createSprites(R.drawable.bad3));
+                        break;
+                    }
+                }
+            }
+        }
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 for (Figura figura : figuras) {
@@ -99,6 +120,7 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
         gameThread.setRunning(true);
         gameThread.start();
         bmp = BitmapFactory.decodeResource(getResources(), R.drawable.bad1);
+        bmpsangre = BitmapFactory.decodeResource(getResources(), R.drawable.blood1);
         sprite = new Sprite(this, bmp);
         createSprites();
     }
