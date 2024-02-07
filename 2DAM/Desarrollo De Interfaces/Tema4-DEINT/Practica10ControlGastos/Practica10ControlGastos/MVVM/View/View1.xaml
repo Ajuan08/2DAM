@@ -8,18 +8,18 @@
         <Frame BackgroundColor="Purple">
             <Grid ColumnDefinitions="*,*" RowDefinitions="*,*">
                 <Label Text="Buenos días," Grid.Column="0" Grid.Row="0" VerticalOptions="Start" />
-                <Label Text="Antonio Juan" Grid.Column="0" Grid.Row="1" VerticalOptions="Start" FontSize="Large" />
+                <Label Text="{Binding NombreUsuario}" Grid.Column="0" Grid.Row="1" VerticalOptions="Start" FontSize="Large" />
             </Grid>
         </Frame>
 
         <Frame BackgroundColor="White" ZIndex="1" TranslationY="-24" Margin="10">
             <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*,*">
                 <Label Text="Total del balance" Grid.Column="0" Grid.Row="0" VerticalOptions="Start" FontSize="Small" TextColor="Black" />
-                <Label Text="990,00€" Grid.Column="0" Grid.Row="1" VerticalOptions="Start" FontSize="Large" TextColor="Black" />
+                <Label Text="{Binding TotalBalance}" Grid.Column="0" Grid.Row="1" VerticalOptions="Start" FontSize="Large" TextColor="Black" />
                 <Label Text="Ingreso" Grid.Column="0" Grid.Row="2" VerticalOptions="Start" FontSize="Small" TextColor="Black" />
-                <Label Text="1.000.00€" Grid.Column="0" Grid.Row="3" VerticalOptions="Start" FontSize="Medium" TextColor="Black" />
+                <Label Text="{Binding TotalIngresos}" Grid.Column="0" Grid.Row="3" VerticalOptions="Start" FontSize="Medium" TextColor="Black" />
                 <Label Text="Gastos" Grid.Column="1" Grid.Row="2" VerticalOptions="Start" FontSize="Small" TextColor="Black" />
-                <Label Text="10,00€" Grid.Column="1" Grid.Row="3" VerticalOptions="Start" FontSize="Medium" TextColor="Black" />
+                <Label Text="{Binding TotalGastos}" Grid.Column="1" Grid.Row="3" VerticalOptions="Start" FontSize="Medium" TextColor="Black" />
                
             </Grid>
         </Frame>
@@ -27,16 +27,18 @@
 
         <Label Text="Transacciones" TranslationY="-80" Margin="20" />
 
-        <!--<CollectionView Grid.Row="1" ItemsSource="{Binding Customers}" SelectedItem="{Binding CurrentCustomer}" SelectionMode="Single" >
-            <CollectionView.ItemTemplate>
+        <ListView ItemsSource="{Binding Transaccion}" Background="White">
+            <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid ColumnDefinitions="*,*">
-                        <Label Text="{Binding Name}"/>
-                        <Label Text="{Binding Address}" Grid.Column="1"/>
-                    </Grid>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding Descripcion}" FontSize="Small" TextColor="Black" />
+                            <Label Text="{Binding Fecha}" FontSize="Medium" TextColor="Black" />
+                            <Label Text="{Binding Cantidad}" FontSize="Large" TextColor="Black" />
+                        </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>-->
-
+            </ListView.ItemTemplate>
+        </ListView>
     </VerticalStackLayout>
 </ContentPage>

@@ -9,4 +9,9 @@ public partial class View2 : ContentPage
 		InitializeComponent();
         BindingContext = gastosViewModel;
     }
+
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PopToRootAsync();
+    }
 }

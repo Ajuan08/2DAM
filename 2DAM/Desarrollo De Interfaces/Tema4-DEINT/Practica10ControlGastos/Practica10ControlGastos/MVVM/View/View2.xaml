@@ -12,15 +12,21 @@
         <Frame BackgroundColor="White" ZIndex="1" TranslationY="-24" Margin="10">
             <Grid ColumnDefinitions="*" RowDefinitions="*,*,*,*,*,*,*,*,*,*">
                 <Label Text="Nombre de la transacción" Grid.Column="0" Grid.Row="0" VerticalOptions="Start" FontSize="Small" TextColor="Black" />
-                <Entry Grid.Column="0" Grid.Row="1" VerticalOptions="Start" FontSize="Large" TextColor="Black"  />
+                <Frame BackgroundColor="White" BorderColor="Purple" Grid.Column="0" Grid.Row="1">
+                    <Entry Text="{Binding Transaccion.Descripcion}" VerticalOptions="Start" TextColor="Black"  />
+                </Frame>
                 <Label Text="Cantidad" Grid.Column="0" Grid.Row="2" VerticalOptions="Start" FontSize="Small" TextColor="Black" />
-                <Entry Placeholder="0" Grid.Column="0" Grid.Row="3" VerticalOptions="Start" TextColor="Black" />
+                <Frame BackgroundColor="White" BorderColor="Purple" Grid.Column="0" Grid.Row="3">
+                    <Entry Text="{Binding Transaccion.Cantidad}" Placeholder="0" VerticalOptions="Start" TextColor="Black" />
+                </Frame>
                 <Label Text="Fecha de la transacción" Grid.Column="0" Grid.Row="4" VerticalOptions="Start" FontSize="Small" TextColor="Black" />
-                <DatePicker Grid.Column="0" Grid.Row="5" VerticalOptions="Start" TextColor="Black" />
+                <Frame BackgroundColor="White" BorderColor="Purple" Grid.Column="0" Grid.Row="5">
+                    <DatePicker Date="{Binding Transaccion.Fecha}" VerticalOptions="Start" TextColor="Black" />
+                </Frame>
                 <Label Text="¿Es un Ingreso?" Grid.Column="0" Grid.Row="6" VerticalOptions="Start" TextColor="Black" />
-                <CheckBox Grid.Column="0" Grid.Row="7" VerticalOptions="Start" />
-                <Button Text="Guardar" Grid.Column="0" Grid.Row="8" VerticalOptions="Start" Margin="10" BackgroundColor="MediumPurple" TextColor="White" />
-                <Button Text="Cancelar" Grid.Column="0" Grid.Row="9" VerticalOptions="Start" Margin="10" BackgroundColor="Red" TextColor="White"/>
+                <CheckBox IsChecked="{Binding Transaccion.Tipo}" Grid.Column="0" Grid.Row="7" VerticalOptions="Start" />
+                <Button Command="{Binding AnadirTransaccion}" Text="Guardar" Grid.Column="0" Grid.Row="8" VerticalOptions="Start" Margin="10" BackgroundColor="MediumPurple" TextColor="White" />
+                <Button Clicked="Button_Clicked" Text="Cancelar" Grid.Column="0" Grid.Row="9" VerticalOptions="Start" Margin="10" BackgroundColor="Red" TextColor="White"/>
 
             </Grid>
         </Frame>

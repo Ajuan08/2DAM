@@ -1,12 +1,13 @@
-﻿using Microsoft.VisualBasic;
+﻿
 using Practica10ControlGastos.Abstraction;
 using SQLite;
+using SQLiteNetExtensions.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Practica10ControlGastos.Repository
 {
@@ -19,54 +20,42 @@ namespace Practica10ControlGastos.Repository
         {
             connection = new SQLiteConnection(Constants.DatabasePath, Constants.Flags);
             connection.CreateTable<T>();
-
         }
+
         public void DeleteItem(T item)
         {
             try
             {
-                //connection.Delete(ítem);
-                connection.Delete(item, true);
+                connection.Delete(item);
             }
             catch (Exception ex)
             {
-                StatusMessage =
-                     $"Error: {ex.Message}";
+                StatusMessage = $"Error: {ex.Message}";
             }
-        }
-
-        public void Dispose()
-        {
-            connection.Close();
         }
 
         public T GetItem(int id)
         {
             try
             {
-                return
-                     connection.Table<T>()
-                     .FirstOrDefault(x => x.Id == id);
+                return connection.Table<T>().FirstOrDefault(x => x.Id == id);
             }
             catch (Exception ex)
             {
-                StatusMessage =
-                     $"Error: {ex.Message}";
+                StatusMessage = $"Error: {ex.Message}";
             }
             return null;
         }
 
-        public T GetItem(Expression<Func<T, bool>> predicate)
+        public T GetItem(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
         {
             try
             {
-                return connection.Table<T>()
-                     .Where(predicate).FirstOrDefault();
+                return connection.Table<T>().Where(predicate).FirstOrDefault();
             }
             catch (Exception ex)
             {
-                StatusMessage =
-                     $"Error: {ex.Message}";
+                StatusMessage = $"Error: {ex.Message}";
             }
             return null;
         }
@@ -79,17 +68,29 @@ namespace Practica10ControlGastos.Repository
             }
             catch (Exception ex)
             {
-                StatusMessage =
-                     $"Error: {ex.Message}";
+                StatusMessage = $"Error: {ex.Message}";
             }
             return null;
         }
 
-        public List<T> GetItems(Expression<Func<T, bool>> predicate)
+        public List<T> GetItems(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
         {
             try
             {
                 return connection.Table<T>().Where(predicate).ToList();
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = $"Error: {ex.Message}";
+            }
+            return null;
+        }
+
+        public List<T> GetItemWithChildren()
+        {
+            try
+            {
+                return connection.GetAllWithChildren<T>().ToList();
             }
             catch (Exception ex)
             {
@@ -126,24 +127,21 @@ namespace Practica10ControlGastos.Repository
             }
         }
 
-
         public void SaveItemWithChildren(T item, bool recursive = false)
-        {
-            connection.InsertWithChildren(item, recursive);
-        }
-
-        public List<T> GetItemWithChildren()
         {
             try
             {
-                return connection.GetAllWithChildren<T>().ToList();
+                connection.InsertOrReplaceWithChildren(item, recursive);
             }
             catch (Exception ex)
             {
-                StatusMessage =
-                     $"Error: {ex.Message}";
+                StatusMessage = $"Error: {ex.Message}";
             }
-            return null;
+        }
+
+        public void Dispose()
+        {
+            connection.Close();
         }
     }
 }
