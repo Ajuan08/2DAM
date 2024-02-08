@@ -27,7 +27,7 @@
 
         <Label Text="Transacciones" TranslationY="-80" Margin="20" />
 
-        <ListView ItemsSource="{Binding Transaccion}" Background="White">
+        <ListView ItemsSource="{Binding Transacciones}" Background="White">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

@@ -470,3 +470,5 @@ S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos
 S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos\Practica10ControlGastos\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos\Practica10ControlGastos\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos\Practica10ControlGastos\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos\Practica10ControlGastos\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos\Practica10ControlGastos\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLiteNetExtensions.dll

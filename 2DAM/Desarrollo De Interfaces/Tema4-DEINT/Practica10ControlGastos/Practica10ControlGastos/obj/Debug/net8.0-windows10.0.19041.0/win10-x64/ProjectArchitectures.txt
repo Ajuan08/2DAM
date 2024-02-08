@@ -1,1 +1,1 @@
-S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos\Practica10ControlGastos\Practica10ControlGastos.csproj;x64
+C:\Users\dam\Desktop\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\Practica10ControlGastos\Practica10ControlGastos\Practica10ControlGastos.csproj;x64

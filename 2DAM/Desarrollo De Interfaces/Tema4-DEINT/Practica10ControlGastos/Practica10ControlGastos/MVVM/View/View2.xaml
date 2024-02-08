@@ -24,10 +24,9 @@
                     <DatePicker Date="{Binding Transaccion.Fecha}" VerticalOptions="Start" TextColor="Black" />
                 </Frame>
                 <Label Text="¿Es un Ingreso?" Grid.Column="0" Grid.Row="6" VerticalOptions="Start" TextColor="Black" />
-                <CheckBox IsChecked="{Binding Transaccion.Tipo}" Grid.Column="0" Grid.Row="7" VerticalOptions="Start" />
+                <CheckBox IsChecked="{Binding Transaccion.EsIngreso}" Grid.Column="0" Grid.Row="7" VerticalOptions="Start" />
                 <Button Command="{Binding AnadirTransaccion}" Text="Guardar" Grid.Column="0" Grid.Row="8" VerticalOptions="Start" Margin="10" BackgroundColor="MediumPurple" TextColor="White" />
                 <Button Clicked="Button_Clicked" Text="Cancelar" Grid.Column="0" Grid.Row="9" VerticalOptions="Start" Margin="10" BackgroundColor="Red" TextColor="White"/>
-
             </Grid>
         </Frame>
     </VerticalStackLayout>

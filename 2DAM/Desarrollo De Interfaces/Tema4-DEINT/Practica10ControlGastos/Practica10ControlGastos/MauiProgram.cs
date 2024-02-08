@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using Practica10ControlGastos.MVVM.Model;
+using Practica10ControlGastos.Repository;
 
 namespace Practica10ControlGastos
 {
@@ -18,6 +20,7 @@ namespace Practica10ControlGastos
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+            builder.Services.AddSingleton<BaseRepository<Transaccion>>();
 
             return builder.Build();
         }

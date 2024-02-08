@@ -11,22 +11,23 @@ namespace Practica10ControlGastos.MVVM.ViewModel
 
     public class GastosViewModel
     {
-        public Transaccion transaccion { get; set; }
+        public Transaccion Transaccion { get; set; }
 
-        public List<Transaccion> transacciones { get; set; }
+        public List<Transaccion> Transacciones { get; set; }
         public Usuario usuario { get; set; }
 
         public Command AnadirTransaccion { get; set; }
 
         public GastosViewModel()
         {
+            Transaccion = new Transaccion();
             AnadirTransaccion = new Command(anadirTrans);
 
         }
 
         private void anadirTrans()
         {
-            //App.TransaccionRepo.SaveItem(transaccion);
+            App.TransaccionRepo.SaveItem(Transaccion);
         }
 
 

@@ -1,0 +1,42 @@
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    
+  }
+  
+  button:hover,
+  button.active {
+    background-color: #001aff;
+    color: white;
+  }
+  
+  button:not(:hover):not(.active) {
+    background-color: #007bff;
+    color: white;
+  }
+
+  div {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  h1{
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  h1 img {
+    height: 100px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  

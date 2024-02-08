@@ -1,7 +1,8 @@
+<h1>Formulario de Autor</h1>
 <form>
-    <label for="nombre">Nombre Autor: </label>
-    <br>
-    <input type="text" id="nombre">
-    <br>
-    <button (click)="guardarAutor()">Guardar</button>
+  <label for="nombre">Nombre del Autor:</label>
+  <br>
+  <input type="text" id="nombre" formControlName="nombre" required>
+  <br>
+  <button type="submit">Guardar</button>
 </form>
