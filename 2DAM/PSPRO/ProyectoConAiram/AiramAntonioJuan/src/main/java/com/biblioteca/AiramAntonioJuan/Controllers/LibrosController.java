@@ -47,9 +47,9 @@ public class LibrosController {
     @PutMapping("/{id}")
     public Libro update(@PathVariable Long id, @RequestBody Libro libro) throws Exception {
         Libro libroToUpdate = libroRepository.findById(id).orElseThrow(() -> new Exception("Libro no encontrado"));
-//        libroToUpdate.setTitulo(libro.getTitulo());
-//        libroToUpdate.setAutor(libro.getAutor());
-        // ...
+        libroToUpdate.setTitulo(libro.getTitulo());
+        libroToUpdate.setAutor(libro.getAutor());
+        libroToUpdate.setCategorias(libro.getCategorias());
         return libroRepository.save(libroToUpdate);
     }
 

@@ -2,9 +2,22 @@
   <form>
     <label for="nombre">Nombre Categoria:</label>
     <br>
-    <input type="text" id="nombre">
+    <input type="text" id="nombre" #categoriaNombre value="{{categoria.nombre}}">
     <br>
-    <button (click)="guardarCategoria()">Guardar</button>
+    <button (click)="editarCategoria(categoriaNombre.value)">Guardar</button>
   </form>
+
+  <div>
+
+    @for (item of ListaCategoria; track $index) {
+      <div id="div2">
+        <p>{{item.nombre}}</p>
+        <button (click)="setCategoria(item.id, item.nombre)">Editar</button>
+        <button (click)="eliminarCategoria(item.id)">Eliminar</button>
+      </div>
+      
+  }
+  </div>
+ 
 
   

@@ -26,14 +26,40 @@ input {
 
 button {
     margin-top: 10px;
+    margin-left: 10px;
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
     border: 1px solid #007bff;
     border-radius: 4px;
     cursor: pointer;
+    
 }
 
 button:hover {
     background-color: #0069d9;
+}
+
+div{
+    width: 60;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #949494;
+    border-radius: 5px;
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#div2{
+    width: 60;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #949494;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
 }

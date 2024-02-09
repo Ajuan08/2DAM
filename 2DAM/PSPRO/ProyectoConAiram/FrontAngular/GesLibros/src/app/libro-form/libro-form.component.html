@@ -19,5 +19,24 @@
   </select>
   <br>
 
-  <button (click)="guardarLibro()">Guardar</button>
+  <button>Guardar</button>
 </form>
+
+@for (item of ListaLibros; track $index) {
+  <div id="divItem">
+    <div id="divTitulo">
+      <p>Titulo:{{item.titulo}}</p>
+      <p>Autor: {{item.autor.nombre}}</p>
+      @for (categoria of item.categorias; track $index) {
+        <p>{{categoria.nombre}}</p>
+      }
+      <p>Categorias: {{item.categorias}}</p>
+    </div>
+    <div id="divBotones">
+      <button>Editar</button>
+      <button>Eliminar</button>
+    </div> 
+  </div>
+  
+  
+}

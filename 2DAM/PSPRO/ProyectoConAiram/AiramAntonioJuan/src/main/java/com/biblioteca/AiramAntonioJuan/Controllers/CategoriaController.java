@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author anton
  */
 @RestController
-@RequestMapping("/api/categoria")
+@RequestMapping("/api/categorias")
 public class CategoriaController {
 
     @Autowired
@@ -48,9 +48,8 @@ public class CategoriaController {
     @PutMapping("/{id}")
     public Categoria update(@PathVariable Long id, @RequestBody Categoria categoria) throws Exception {
         Categoria categoriaToUpdate = categoriaRepository.findById(id).orElseThrow(() -> new Exception("Categoria no encontrado"));
-//        categoriaRepository.setTitulo(libro.getTitulo());
-//        categoriaRepository.setAutor(libro.getAutor());
-        // ...
+        categoriaToUpdate.setNombre(categoria.getNombre());
+        categoriaToUpdate.setLibros(categoria.getLibros());
         return categoriaRepository.save(categoriaToUpdate);
     }
 

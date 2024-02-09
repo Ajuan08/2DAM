@@ -1,11 +1,16 @@
 package com.biblioteca.AiramAntonioJuan.Models;
 
-import com.biblioteca.AiramAntonioJuan.Models.Libro;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
-import java.util.List;
+import java.io.Serializable;
+import java.util.Set;
 
 @Entity
-public class Categoria {
+public class Categoria implements Serializable{
+    private static final long serialVersionUID = 3L;
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -13,13 +18,49 @@ public class Categoria {
     private String nombre;
     
     @ManyToMany
-    @JoinTable (
-        name = "categoria_libros",
-        joinColumns = @JoinColumn (name = "id_categoria"),
-        inverseJoinColumns = @JoinColumn (name = "id_libros")
-    
+    @JoinTable(
+            name = "categoria_libro",
+            joinColumns = @JoinColumn(name = "id_categoria"),
+            inverseJoinColumns = @JoinColumn(name = "id_libro")
     )
-    private List<Libro>libros;
-    // Constructores, getters, setters, etc.
+    @JsonIdentityInfo(
+            generator = ObjectIdGenerators.PropertyGenerator.class,
+            property = "id"
+    )
+    private Set<Libro> libros;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Set<Libro> getLibros() {
+        return libros;
+    }
+
+    public void setLibros(Set<Libro> libros) {
+        this.libros = libros;
+    }
+
+    public Categoria() {
+    }
+
+    @Override
+    public String toString() {
+        return "Categoria{" + "id=" + id + ", nombre=" + nombre + '}';
+    }
+    
+    
 }
 

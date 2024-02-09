@@ -2,7 +2,18 @@
 <form>
   <label for="nombre">Nombre del Autor:</label>
   <br>
-  <input type="text" id="nombre" formControlName="nombre" required>
+  <input type="text" id="nombre" #autorNombre value="{{autor.nombre}}"  required>
   <br>
-  <button type="submit">Guardar</button>
+  <button (click)="editarAutor(autorNombre.value)">Guardar</button>
 </form>
+
+<div>
+  @for (item of ListaAutores; track $index) {
+    <div id="div2">
+      <p>{{item.nombre}}</p>
+      <button (click)="setAutor(item.id, item.nombre)">Editar</button>
+      <button (click)="eliminarAutor(item.id)">Eliminar</button>
+    </div> 
+  }
+</div>
+
