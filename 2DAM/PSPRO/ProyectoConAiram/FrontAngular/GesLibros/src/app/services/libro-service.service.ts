@@ -5,7 +5,7 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class LibroServiceService {
-  apiUrl = 'http://192.168.12.51:8080/api/libros';
+  apiUrl = 'http://localhost:8080/api/libros';
    constructor() { }
   
   getLibros() {
@@ -34,6 +34,18 @@ export class LibroServiceService {
 
   deleteLibro(id: number) {
     return axios.delete(this.apiUrl + '/'+ id).then((response) => {
+      return response.data;
+    });
+  }
+
+  getAutores() {
+    return axios.get(`${this.apiUrl}/autores`).then((response) => {
+      return response.data;
+    });
+  }
+
+  getCategorias() {
+    return axios.get(`${this.apiUrl}/categorias`).then((response) => {
       return response.data;
     });
   }

@@ -6,7 +6,7 @@ import { Autor } from '../autor-form/Autor';
   providedIn: 'root'
 })
 export class AutorServiceService {
-  apiUrl = 'http://192.168.12.51:8080/api/autores';
+  apiUrl = 'http://localhost:8080/api/autores';
   constructor() {}
 
   getAutores() {

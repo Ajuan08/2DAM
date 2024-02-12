@@ -5,7 +5,7 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class CategoriaServiceService {
-  apiUrl = 'http://192.168.12.51:8080/api/categorias';
+  apiUrl = 'http://localhost:8080/api/categorias';
   constructor() {}
 
   getCategorias() {
