@@ -17,7 +17,7 @@
                 </Frame>
                 <Label Text="Cantidad" Grid.Column="0" Grid.Row="2" VerticalOptions="Start" FontSize="Small" TextColor="Black" />
                 <Frame BackgroundColor="White" BorderColor="Purple" Grid.Column="0" Grid.Row="3">
-                    <Entry Text="{Binding Transaccion.Cantidad}" Placeholder="0" VerticalOptions="Start" TextColor="Black" />
+                    <Entry Text="{Binding Transaccion.Cantidad}" Placeholder="0" VerticalOptions="Start" TextColor="Black"  />
                 </Frame>
                 <Label Text="Fecha de la transacción" Grid.Column="0" Grid.Row="4" VerticalOptions="Start" FontSize="Small" TextColor="Black" />
                 <Frame BackgroundColor="White" BorderColor="Purple" Grid.Column="0" Grid.Row="5">
@@ -25,7 +25,7 @@
                 </Frame>
                 <Label Text="¿Es un Ingreso?" Grid.Column="0" Grid.Row="6" VerticalOptions="Start" TextColor="Black" />
                 <CheckBox IsChecked="{Binding Transaccion.EsIngreso}" Grid.Column="0" Grid.Row="7" VerticalOptions="Start" />
-                <Button Command="{Binding AnadirTransaccion}" Text="Guardar" Grid.Column="0" Grid.Row="8" VerticalOptions="Start" Margin="10" BackgroundColor="MediumPurple" TextColor="White" />
+                <Button Command="{Binding AnadirTransaccion}" Clicked="Button_Clicked" Text="Guardar" Grid.Column="0" Grid.Row="8" VerticalOptions="Start" Margin="10" BackgroundColor="MediumPurple" TextColor="White" />
                 <Button Clicked="Button_Clicked" Text="Cancelar" Grid.Column="0" Grid.Row="9" VerticalOptions="Start" Margin="10" BackgroundColor="Red" TextColor="White"/>
             </Grid>
         </Frame>

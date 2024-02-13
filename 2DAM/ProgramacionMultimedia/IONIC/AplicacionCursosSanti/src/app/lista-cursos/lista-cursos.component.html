@@ -1,0 +1,10 @@
+<ion-content class="ion-padding">
+  <ion-title>Listado de cursos añadidos</ion-title>
+
+  <ion-list>
+    <ion-item *ngFor="let curso of cursos" (click)="cambioPagina(curso)">
+      <ion-label>{{curso.nombre}}</ion-label>
+      <ion-note slot="end" class="puntos-text" >{{curso.puntos}} puntos</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>

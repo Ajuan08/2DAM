@@ -34,11 +34,11 @@
         android:text="Puntuación: 0"
         android:textAlignment="center"/>
 
-    <SurfaceView
+    <com.example.caidaobjetos2.MoverFiguras
         android:id="@+id/surfaceView"
         android:layout_width="match_parent"
-        android:layout_height="629dp"
-        android:background="@drawable/imagenfondo" />
+        android:layout_height="618dp"
+        android:background="@drawable/imagenfondo"/>
 
 
 </RelativeLayout>

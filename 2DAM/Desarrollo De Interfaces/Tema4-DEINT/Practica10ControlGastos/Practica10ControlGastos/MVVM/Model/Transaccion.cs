@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 namespace Practica10ControlGastos.MVVM.Model
 {
     [AddINotifyPropertyChangedInterface]
+
     [Table("Transaccion")]
     public class Transaccion : TableData
     {
@@ -18,7 +19,7 @@ namespace Practica10ControlGastos.MVVM.Model
         public string Descripcion { get; set; }
 
         [Column("Cantidad"), NotNull]
-        public double Cantidad { get; set; }
+        public string Cantidad { get; set; }
 
         [Column("Fecha"), NotNull]
         public DateTime Fecha { get; set; }

@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Practica10ControlGastos.MVVM.View.View1">
+             x:Class="Practica10ControlGastos.MVVM.View.View1"
+             xmlns:converter="clr-namespace:Practica10ControlGastos.Converter">
+
+    <ContentPage.Resources>
+        <converter:Converter x:Key="Converter" />
+    </ContentPage.Resources>
+    
+    
     <VerticalStackLayout>
         <Label Text="Control de gastos" TextColor="Gray" VerticalOptions="Start" HorizontalOptions="Start" FontSize="Large" />
 
         <Frame BackgroundColor="Purple">
             <Grid ColumnDefinitions="*,*" RowDefinitions="*,*">
                 <Label Text="Buenos días," Grid.Column="0" Grid.Row="0" VerticalOptions="Start" />
-                <Label Text="{Binding NombreUsuario}" Grid.Column="0" Grid.Row="1" VerticalOptions="Start" FontSize="Large" />
+                <Label Text="Antonio Juan" Grid.Column="0" Grid.Row="1" VerticalOptions="Start" FontSize="Large" />
             </Grid>
         </Frame>
 
@@ -27,14 +34,29 @@
 
         <Label Text="Transacciones" TranslationY="-80" Margin="20" />
 
-        <ListView ItemsSource="{Binding Transacciones}" Background="White">
+
+        <ListView ItemsSource="{Binding Transacciones}" Background="White" Margin="20" TranslationY="-110" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
-                            <Label Text="{Binding Descripcion}" FontSize="Small" TextColor="Black" />
-                            <Label Text="{Binding Fecha}" FontSize="Medium" TextColor="Black" />
-                            <Label Text="{Binding Cantidad}" FontSize="Large" TextColor="Black" />
+                            <Label Text="{Binding Descripcion}" FontSize="Small" TextColor="Black" HorizontalOptions="Start" />
+                            <Label Text="{Binding Fecha, Converter={StaticResource Converter}}" FontSize="Medium" TextColor="Black" />
+                            <Label Text="{Binding Cantidad}" FontSize="Large" HorizontalOptions="End">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="TextColor" Value="Black" />
+                                        <Style.Triggers>
+                                            <DataTrigger TargetType="Label" Binding="{Binding EsIngreso}" Value="True">
+                                                <Setter Property="TextColor" Value="Green" />
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Label" Binding="{Binding EsIngreso}" Value="False">
+                                                <Setter Property="TextColor" Value="Red" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

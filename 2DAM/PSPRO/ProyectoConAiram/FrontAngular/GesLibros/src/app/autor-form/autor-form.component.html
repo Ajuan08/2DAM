@@ -4,7 +4,8 @@
   <br>
   <input type="text" id="nombre" #autorNombre value="{{autor.nombre}}"  required>
   <br>
-  <button (click)="editarAutor(autorNombre.value)">Guardar</button>
+  <button (click)="editarAutor(autorNombre.value)">Guarda Editado</button>
+  <button (click)="guardarNuevo(autorNombre.value)">Guardar Nuevo</button>
 </form>
 
 <div>

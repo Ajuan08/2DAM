@@ -12,6 +12,11 @@ public partial class View1 : ContentPage
 		BindingContext = gastosViewModel;
 	}
 
+	protected override void OnAppearing()
+	{
+        this.ForceLayout();
+    }
+
 	private async void Button_Clicked(object sender, EventArgs e)
 	{
         View2 v2 = new View2(gastosViewModel);

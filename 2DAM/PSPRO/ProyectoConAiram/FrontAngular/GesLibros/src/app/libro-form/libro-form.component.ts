@@ -5,6 +5,8 @@ import { LibroServiceService } from '../services/libro-service.service';
 import { Autor } from '../autor-form/Autor';
 import { Categoria } from '../categoria-form/Categoria';
 import { CommonModule } from '@angular/common';
+import { AutorServiceService } from '../services/autor-service.service';
+import { CategoriaServiceService } from '../services/categoria-service.service';
 
 @Component({
   selector: 'app-libro-form',
@@ -22,10 +24,12 @@ export class LibroFormComponent implements OnInit{
   idCategoria: Categoria[] = [];
   ListaLibros: Libro[] = [];
 
-  constructor(private router: Router, private libroServicio: LibroServiceService) {}
+  constructor(private router: Router, private libroServicio: LibroServiceService, private autorServicio: AutorServiceService, private categoriaService: CategoriaServiceService) {}
   ngOnInit(): void {
     this.libro = new Libro(0, '', this.idAutor, this.idCategoria);
     this.getLibros();
+    this.getAutores();
+    this.getCategorias();
   }
 
   getLibros() {
@@ -56,14 +60,14 @@ export class LibroFormComponent implements OnInit{
   
 
   getAutores() {
-    this.libroServicio.getAutores().then((response) => {
+    this.autorServicio.getAutores().then((response) => {
       console.log(response);
       this.autores = (response);
     });
   }
 
   getCategorias() {
-    this.libroServicio.getCategorias().then((response) => {
+    this.categoriaService.getCategorias().then((response) => {
       console.log(response);
       this.categorias = (response);
     });
