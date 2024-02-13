@@ -6,6 +6,7 @@ package com.biblioteca.AiramAntonioJuan.Models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import java.io.Serializable;
@@ -38,7 +39,12 @@ public class Libro implements Serializable{
     @JoinColumn(name = "id_autor")
     private Autor autor;
 
-    @ManyToMany(mappedBy = "libros")
+    @ManyToMany
+    @JoinTable(
+            name = "categoria_libro",
+            joinColumns = @JoinColumn(name = "id_libro"),
+            inverseJoinColumns = @JoinColumn(name = "id_categoria")
+    )
     private Set<Categoria> categorias;
 
     public Long getId() {

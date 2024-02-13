@@ -30,6 +30,14 @@ export class CategoriaFormComponent {
     });
   }
 
+  guardarNuevo(autorNombre: any) {
+    this.categoria.nombre = autorNombre;
+    this.categoriaService.createCategoria(this.categoria).then(() => {
+      this.categoria = new Categoria(0, '');
+      this.getCategorias();
+    });
+  }
+
   editarCategoria(categoriaNombre: any) {
     this.categoria.id = this.categoria.id;
     this.categoria.nombre = categoriaNombre;

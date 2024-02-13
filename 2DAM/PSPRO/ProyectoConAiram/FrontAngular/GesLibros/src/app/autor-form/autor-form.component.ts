@@ -29,6 +29,14 @@ export class AutorFormComponent implements OnInit {
     });
   }
 
+  guardarNuevo(autorNombre: any) {
+    this.autor.nombre = autorNombre;
+    this.autorService.createAutor(this.autor).then(() => {
+      this.autor = new Autor(0, '');
+      this.getAutores();
+    });
+  }
+
   editarAutor(autorNombre: any) {
     this.autor.id = this.autor.id;
     this.autor.nombre = autorNombre;
@@ -48,14 +56,5 @@ export class AutorFormComponent implements OnInit {
   setAutor(id: number, nombre: string) {
     this.autor.id = id
     this.autor.nombre = nombre;
-  }
-
-  guardarNuevo(autorNombre: any) {
-    this.autor.id = this.autor.id;
-    this.autor.nombre = autorNombre;
-    this.autorService.createAutor(this.autor).then(() => {
-      this.autor = new Autor(0, '');
-      this.getAutores();
-    });
   }
 }

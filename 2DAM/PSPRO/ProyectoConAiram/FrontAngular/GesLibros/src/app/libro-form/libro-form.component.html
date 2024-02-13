@@ -2,22 +2,30 @@
 <form>
   <label for="nombre">Nombre Libro</label>
   <br>
-  <input type="text" id="nombre">
+  <input type="text" id="nombre" #nombre value="{{libro.titulo}}">
   <br>
 
   <label for="autor">Autor:</label>
-  <select id="autor">
-    <option *ngFor="let autor of autores" [value]="autor.id">{{ autor.nombre }}</option>
+  <select id="autor" name="autor" (change)="onAutorChange($event)">
+    @for (autor of autores; track $index) {
+      <option>{{ autor.nombre }}</option>
+    }
   </select>
   <br>
 
-  <label for="categoria">Categoría:</label>
-  <select id="categoria">
-    <option *ngFor="let categoria of categorias" [value]="categoria.id">{{ categoria.nombre }}</option>
-  </select>
+  <label for="categoria">Categoría:</label><br><br>
+
+  <div>
+    @for (categoria of categorias; track $index) {
+      {{ categoria.nombre }}
+      <input (change)="onCategoriaChange($event)" type="checkbox" name="categoria_{{ $index }}">
+    }
+  </div>
+  
   <br>
 
-  <button (click)="guardarCambios()">Guardar</button>
+  <button (click)="guardarCambios(nombre.value)">Guardar</button>
+  <button (click)="guardarNuevo(nombre.value)">Guardar Nuevo</button>
 
 </form>
 
@@ -26,14 +34,14 @@
     <div id="divTitulo">
       <p>Titulo: {{item.titulo}}</p>
       <p>Autor: {{item.autor.nombre}}</p>
+      <p>Categorias:
       @for (categoria of item.categorias; track $index) {
-        <p>Categoria: {{categoria.nombre}}</p>
-      }
+        <p>- {{categoria.nombre}}</p>
+      }</p>
     </div>
     <div id="divBotones">
       <button (click)="editarLibro(item)">Editar</button>
       <button (click)="eliminarLibro(item.id)">Eliminar</button>
-
     </div> 
   </div>
 }

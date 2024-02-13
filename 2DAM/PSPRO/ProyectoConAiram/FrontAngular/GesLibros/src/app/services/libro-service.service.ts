@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import axios from 'axios';
+import { Libro } from '../libro-form/Libro';
 
 @Injectable({
   providedIn: 'root'
@@ -20,13 +21,19 @@ export class LibroServiceService {
     });
   }
 
-  createLibro(libro: any) {
-    return axios.post(this.apiUrl, libro).then((response) => {
+  createLibro(libro: Libro) {
+    let libroliteral = {
+      titulo: libro.titulo,
+      autor: libro.autor,
+      categorias: libro.categorias
+    }
+    console.log(libroliteral);
+    return axios.post(this.apiUrl, libroliteral).then((response) => {
       return response.data;
     });
   }
 
-  updateLibro(libro: any) {
+  updateLibro(libro: Libro) {
     return axios.put(this.apiUrl + '/' + libro.id, libro).then((response) => {
       return response.data;
     });

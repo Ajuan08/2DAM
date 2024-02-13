@@ -1,7 +1,9 @@
 package com.biblioteca.AiramAntonioJuan.Models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import java.io.Serializable;
@@ -21,12 +23,8 @@ public class Categoria implements Serializable{
 
     private String nombre;
     
-    @ManyToMany
-    @JoinTable(
-            name = "categoria_libro",
-            joinColumns = @JoinColumn(name = "id_categoria"),
-            inverseJoinColumns = @JoinColumn(name = "id_libro")
-    )
+    @JsonIgnore
+    @ManyToMany(mappedBy = "categorias")
     @JsonIdentityInfo(
             generator = ObjectIdGenerators.PropertyGenerator.class,
             property = "id"
