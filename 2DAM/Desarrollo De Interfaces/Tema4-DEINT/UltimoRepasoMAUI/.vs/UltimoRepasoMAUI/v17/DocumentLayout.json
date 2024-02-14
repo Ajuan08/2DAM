@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\UltimoRepasoMAUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|s:\\github\\2dam\\2dam\\desarrollo de interfaces\\tema4-deint\\ultimorepasomaui\\ultimorepasomaui\\mvvm\\viewmodel\\tareaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|solutionrelative:ultimorepasomaui\\mvvm\\viewmodel\\tareaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|s:\\github\\2dam\\2dam\\desarrollo de interfaces\\tema4-deint\\ultimorepasomaui\\ultimorepasomaui\\mvvm\\model\\tareamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|solutionrelative:ultimorepasomaui\\mvvm\\model\\tareamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|s:\\github\\2dam\\2dam\\desarrollo de interfaces\\tema4-deint\\ultimorepasomaui\\ultimorepasomaui\\mvvm\\view\\tareaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|solutionrelative:ultimorepasomaui\\mvvm\\view\\tareaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TareaModel.cs",
+              "DocumentMoniker": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\UltimoRepasoMAUI\\UltimoRepasoMAUI\\MVVM\\Model\\TareaModel.cs",
+              "RelativeDocumentMoniker": "UltimoRepasoMAUI\\MVVM\\Model\\TareaModel.cs",
+              "ToolTip": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\UltimoRepasoMAUI\\UltimoRepasoMAUI\\MVVM\\Model\\TareaModel.cs",
+              "RelativeToolTip": "UltimoRepasoMAUI\\MVVM\\Model\\TareaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T20:03:35.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TareaViewModel.cs",
+              "DocumentMoniker": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\UltimoRepasoMAUI\\UltimoRepasoMAUI\\MVVM\\ViewModel\\TareaViewModel.cs",
+              "RelativeDocumentMoniker": "UltimoRepasoMAUI\\MVVM\\ViewModel\\TareaViewModel.cs",
+              "ToolTip": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\UltimoRepasoMAUI\\UltimoRepasoMAUI\\MVVM\\ViewModel\\TareaViewModel.cs",
+              "RelativeToolTip": "UltimoRepasoMAUI\\MVVM\\ViewModel\\TareaViewModel.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T19:04:30.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TareaView.xaml",
+              "DocumentMoniker": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\UltimoRepasoMAUI\\UltimoRepasoMAUI\\MVVM\\View\\TareaView.xaml",
+              "RelativeDocumentMoniker": "UltimoRepasoMAUI\\MVVM\\View\\TareaView.xaml",
+              "ToolTip": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\UltimoRepasoMAUI\\UltimoRepasoMAUI\\MVVM\\View\\TareaView.xaml",
+              "RelativeToolTip": "UltimoRepasoMAUI\\MVVM\\View\\TareaView.xaml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-14T18:25:50.186Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

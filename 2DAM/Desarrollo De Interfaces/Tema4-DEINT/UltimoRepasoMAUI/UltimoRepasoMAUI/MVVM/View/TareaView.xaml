@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UltimoRepasoMAUI.MVVM.View.TareaView"
+             Title="TareaView">
+    <VerticalStackLayout>
+        <Label 
+            Text="REPASO BD MAUI"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+
+        <Frame Padding="10" Margin="10" BackgroundColor="LightGray">
+            <StackLayout>
+                <Label Text="Nombre" VerticalOptions="Start" HorizontalOptions="Start" TextColor="Black" />
+                <Entry Placeholder="Nombre" Text="{Binding Tarea.Nombre}" TextColor="Black" />
+                <Label Text="Descripcion" VerticalOptions="Start" HorizontalOptions="Start" TextColor="Black" />
+                <Entry Placeholder="Descripcion" Text="{Binding Tarea.Descripcion}" TextColor="Black" />
+                <Button Text="Guardar" Margin="10" Command="{Binding GuardarTareaCommand}" TextColor="Black" />
+            </StackLayout>
+        </Frame>
+        <Frame Padding="10" Margin="10" BackgroundColor="LightGray">
+            <StackLayout>
+                <ListView ItemsSource="{Binding Tareas}" Background="White" Margin="20" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label Text="{Binding Nombre}" FontSize="Small" TextColor="Black" HorizontalOptions="Start" />
+                                    <Label Text="{Binding Descripcion}" FontSize="Medium" TextColor="Black" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Text="Eliminar" Margin="10" Command="{Binding BindingContext.EliminarTareaCommand}" TextColor="Black" />
+                <Button Text="Editar" Clicked="Button_Clicked" Margin="10" Command="{Binding BindingContext.EditarTareaCommand}" TextColor="Black" />
+
+            </StackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
