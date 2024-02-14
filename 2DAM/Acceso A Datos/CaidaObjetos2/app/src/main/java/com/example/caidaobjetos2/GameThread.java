@@ -29,8 +29,11 @@ public class GameThread extends Thread {
                 canvas = surfaceHolder.lockCanvas(null);
                 synchronized (surfaceHolder) {
                     if (canvas != null) {
-                        moverFiguras.update();
+
+                        moverFiguras.postInvalidate();
                         moverFiguras.draw(canvas);
+
+
                     }
                 }
             } finally {

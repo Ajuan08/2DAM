@@ -26,7 +26,7 @@ const placeSchema = new mongoose.Schema({
         required: true,
         ref: 'User'
     },
-    alqulador: {
+    alquilador: {
         type: mongoose.Schema.Types.ObjectId,
         required: false,
         ref: 'User'

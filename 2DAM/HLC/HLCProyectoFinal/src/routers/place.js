@@ -13,7 +13,7 @@ router.get('/places', async (req, res) => {
 })
 
 router.post('/places/add', auth, async (req, res) => {
-    req.body.owner = req.user
+    req.body.propietario = req.user
     const place = new Place(req.body)
     try {
         await place.save();
@@ -25,9 +25,9 @@ router.post('/places/add', auth, async (req, res) => {
 
 router.post('/users/login', async (req, res) => {
     try {
-        const user = await User.findByCredentials(req.body.email, req.body.password)
+        const usuario = await User.findByCredentials(req.body.email, req.body.contrasena)
         const token = await user.generateAuthToken()
-        res.send({ user, token })
+        res.send({ usuario, token })
     } catch (e) {
         res.status(400).send()
     }
@@ -62,11 +62,11 @@ router.get('/users/me', auth, async (req, res) => {
 
 router.patch('/users/me', auth, async (req, res) => {
     const updates = Object.keys(req.body)
-    const allowedUpdates = ['name', 'email', 'password', 'age']
+    const allowedUpdates = ['nombre', 'email', 'contrasena', 'edad']
     const isValidOperation = updates.every((update) => allowedUpdates.includes(update))
 
     if (!isValidOperation) {
-        return res.status(400).send({ error: 'Invalid updates!' })
+        return res.status(400).send({ error: 'Cambios Invalidos!' })
     }
 
     try {

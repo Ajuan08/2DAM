@@ -13,10 +13,7 @@ import android.view.SurfaceView;
 public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback {
     private Sprite sprite;
     private GameThread gameThread;
-
-    // Variables para rastrear la posición anterior del toque
     private float previousX;
-    private float previousY;
 
     public MoverFiguras(Context context) {
         super(context);
@@ -37,10 +34,12 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
         getHolder().addCallback(this);
 
         Bitmap originalBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.cesta);
-        int newWidth = originalBitmap.getWidth() / 4;
-        int newHeight = originalBitmap.getHeight() / 4;
+        int newWidth = originalBitmap.getWidth() / 5;
+        int newHeight = originalBitmap.getHeight() / 5;
         Bitmap scaledBitmap = Bitmap.createScaledBitmap(originalBitmap, newWidth, newHeight, true);
-        sprite = new Sprite(scaledBitmap);
+        sprite = new Sprite(scaledBitmap, this);
+
+
     }
 
     @Override
@@ -73,28 +72,22 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
         sprite.draw(canvas);
     }
 
-    public void update() {
-        sprite.update();
-    }
-
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.d("MoverFiguras", "Clic recibido en X: " + event.getX());
+                Log.d("MoverFiguras", "Click en " + event.getX());
                 previousX = event.getX();
                 break;
             case MotionEvent.ACTION_MOVE:
+                Log.d("MoverFiguras", " Hay movimiento");
+                Log.d("MoverFiguras", "Nueva posicion en " + event.getX());
                 float currentX = event.getX();
                 float deltaX = currentX - previousX;
-
                 sprite.move(deltaX);
-
                 previousX = currentX;
                 break;
         }
         return true;
     }
-
-
 }

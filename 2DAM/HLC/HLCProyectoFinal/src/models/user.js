@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 const Place = require('./place')
 
 const userSchema = new mongoose.Schema({
-    name: {
+    nombre: {
         type: String,
         required: true,
         trim: true
@@ -22,18 +22,18 @@ const userSchema = new mongoose.Schema({
             }
         }
     },
-    password: {
+    contrasena: {
         type: String,
         required: true,
         minlength: 8,
         trim: true,
         validate(value) {
-            if (value.toLowerCase().includes('password')) {
-                throw new Error('La contraseña no puede contener "password"')
+            if (value.toLowerCase().includes('contrasena')) {
+                throw new Error('La contraseña no puede contener "contrasena"')
             }
         }
     },
-    age: {
+    edad: {
         type: Number,
         default: 0,
         validate(value) {
@@ -54,7 +54,7 @@ userSchema.methods.toJSON = function () {
     const user = this
     const userObject = user.toObject()
 
-    delete userObject.password
+    delete userObject.contrasena
     delete userObject.tokens
 
     return userObject
@@ -70,14 +70,14 @@ userSchema.methods.generateAuthToken = async function () {
     return token
 }
 
-userSchema.statics.findByCredentials = async (email, password) => {
+userSchema.statics.findByCredentials = async (email, contrasena) => {
     const user = await User.findOne({ email })
 
     if (!user) {
         throw new Error('Impossible logearse.')
     }
 
-    const isMatch = await bcrypt.compare(password, user.password)
+    const isMatch = await bcrypt.compare(contrasena, user.contrasena)
 
     if (!isMatch) {
         throw new Error('Impossible logearse.')
@@ -86,19 +86,19 @@ userSchema.statics.findByCredentials = async (email, password) => {
     return user
 }
 
-userSchema.pre('guardar', async function (next) {
+userSchema.pre('save', async function (next) {
     const user = this
 
-    if (user.isModified('password')) {
-        user.password = await bcrypt.hash(user.password, 8)
+    if (user.isModified('contrasena')) {
+        user.contrasena = await bcrypt.hash(user.contrasena, 8)
     }
 
     next()
 })
 
-userSchema.pre('borrar', async function (next) {
+userSchema.pre('remove', async function (next) {
     const user = this
-    await Place.deleteMany({ owner: user._id })
+    await Place.deleteMany({ propietario: user._id })
     next()
 })
 
