@@ -30,11 +30,13 @@ export class LibroFormComponent implements OnInit{
     private categoryService: CategoriaServiceService, 
     private autoService: AutorServiceService) {
   }
-  ngOnInit(): void {
-    this.libro = new Libro('', this.idAutor, this.categorias);
+  
+  ngOnInit() {
     this.getLibros();
     this.getAutores();
     this.getCategorias();
+    this.libro = new Libro('', new Autor(0,""), this.categorias);
+    console.log(this.libro);
   }
 
   getLibros() {
@@ -45,7 +47,13 @@ export class LibroFormComponent implements OnInit{
   }
 
   editarLibro(libro: Libro) {
+    this.selectedCategorias = [];
+    this.idAutor = libro.autor;
+    libro.categorias.forEach((categoria, index) => {
+      this.selectedCategorias.push(index);
+    });
     this.libro = libro
+    console.log(this.selectedCategorias);
   }
 
   eliminarLibro(id: number) {
@@ -54,26 +62,43 @@ export class LibroFormComponent implements OnInit{
     });
   }
 
+  isSelected(id: number): boolean {
+    return this.selectedCategorias.includes(id-1);
+  }
+
   guardarNuevo(nombre: string) {
     this.setLibro(nombre)
-    //this.libro = new Libro(nombre, this.libro.autor, this.libro.categorias)
     console.log(this.libro);
-    this.libroServicio.createLibro(this.libro).then(() => {
-      this.getLibros();
-    });
+    if (this.libro.categorias.length == 0) {
+      alert('Debe seleccionar al menos una categoria');
+    }else{
+      this.libroServicio.createLibro(this.libro).then(() => {
+        this.getLibros();
+        this.libro = new Libro('', new Autor(0,""), this.categorias);
+        this.selectedCategorias = [];
+      });
+    }
+    
   }
 
   guardarCambios(nombre: string) {
     this.setLibro(nombre)
-    this.libroServicio.updateLibro(this.libro).then(() => {
-      this.getLibros();
-    });
+    if (this.libro.categorias.length == 0) {
+      alert('Debe seleccionar al menos una categoria');
+    }else{
+      this.libroServicio.updateLibro(this.libro).then(() => {
+        this.getLibros();
+        this.libro = new Libro('', new Autor(0,""), this.categorias);
+        this.selectedCategorias = [];
+      });
+    }
   }
 
   getAutores() {
     this.autoService.getAutores().then((response) => {
       console.log(response);
       this.autores = (response);
+      this.idAutor = this.autores[0];
     });
   }
 
@@ -81,11 +106,15 @@ export class LibroFormComponent implements OnInit{
     this.categoryService.getCategorias().then((response) => {
       console.log(response);
       this.categorias = (response);
+      
     });
   }
 
   setLibro(nombre: string) {
     this.libro.titulo = nombre
+    if (this.idAutor == null) {
+      this.idAutor = this.autores[0];
+    }
     this.libro.autor = this.idAutor
     this.categorias.forEach((categoria, index) => {
       if (this.selectedCategorias.includes(index)) {
@@ -109,7 +138,7 @@ export class LibroFormComponent implements OnInit{
   onAutorChange(event: Event) {
     const index = (event.target as HTMLSelectElement).selectedIndex;
     console.log(index);
-    this.idAutor = this.autores[index];
+    this.idAutor = this.autores[index-1];
     console.log(this.idAutor);
   }
 

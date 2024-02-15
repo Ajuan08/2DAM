@@ -6,25 +6,33 @@
   <br>
 
   <label for="autor">Autor:</label>
-  <select id="autor" name="autor" (change)="onAutorChange($event)">
+  <select id="autor" name="autor" (select)="onAutorChange($event)">
+    <option value="0" >Selcciona un autor</option>
     @for (autor of autores; track $index) {
-      <option>{{ autor.nombre }}</option>
+      @if (libro.autor.id == autor.id) {
+        <option selected>{{ autor.nombre }}</option>
+      }@else {
+        <option>{{ autor.nombre }}</option>
+      }
     }
   </select>
   <br>
 
-  <label for="categoria">Categoría:</label><br><br>
-
+  <label>Categoría:</label><br><br>
   <div>
     @for (categoria of categorias; track $index) {
       {{ categoria.nombre }}
-      <input (change)="onCategoriaChange($event)" type="checkbox" name="categoria_{{ $index }}">
+      @if (isSelected(categoria.id)) {
+        <input (change)="onCategoriaChange($event)" type="checkbox" name="categoria_{{ $index }}"  checked>
+      }@else {
+        <input (change)="onCategoriaChange($event)" type="checkbox" name="categoria_{{ $index }}">
+      }
     }
   </div>
   
   <br>
 
-  <button (click)="guardarCambios(nombre.value)">Guardar</button>
+  <button (click)="guardarCambios(nombre.value)">Guardar Cambios</button>
   <button (click)="guardarNuevo(nombre.value)">Guardar Nuevo</button>
 
 </form>
