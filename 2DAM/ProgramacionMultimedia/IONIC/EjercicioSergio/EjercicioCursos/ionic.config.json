@@ -1,0 +1,7 @@
+{
+  "name": "EjercicioCursos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

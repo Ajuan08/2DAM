@@ -1,0 +1,42 @@
+1.- En appXaml definir Repositorio :
+	public static BaseRepository<Tarea> TareaRepository = new BaseRepository<Tarea>();
+	public App(BaseRepository<Tarea> tarea)
+	{
+    		InitializeComponent();
+    		TareaRepository = tarea;
+    		MainPage = new NavigationPage(new TareasView());
+	}
+2.- En Maui Program:
+	builder.Services.AddSingleton<BaseRepository<Tarea>>();
+
+Model:
+	[AddINotifyPropertyChangedInterface]
+	[Table("Tarea")]
+	public class Tarea : TableData
+	{
+    		[Column("Nombre"), NotNull]
+    		public string Nombre { get; set; }
+
+    		[Column("Descripcion")]
+    		public string Descripcion { get; set; }
+	}
+El id esta en TableData.
+
+Se supone que silvia da: IBaseReposity, BaseRepository y constants
+
+Estilos dinamicos:
+<Label Text="{Binding Amount}" FontSize="Medium" HorizontalOptions="End">
+    <Label.Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Black" />
+            <Style.Triggers>
+                <DataTrigger TargetType="Label" Binding="{Binding IsIncome}" Value="True">
+                    <Setter Property="TextColor" Value="Green" />
+                </DataTrigger>
+                <DataTrigger TargetType="Label" Binding="{Binding IsIncome}" Value="False">
+                    <Setter Property="TextColor" Value="Red" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Label.Style>
+</Label>

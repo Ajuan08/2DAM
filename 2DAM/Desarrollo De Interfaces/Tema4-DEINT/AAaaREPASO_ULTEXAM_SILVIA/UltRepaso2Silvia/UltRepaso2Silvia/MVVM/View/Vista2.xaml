@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UltRepaso2Silvia.MVVM.View.Vista2"
+             Title="Vista2">
+    <VerticalStackLayout>
+        <Frame>
+            <StackLayout>
+                <Label Text="Nombre" TextColor="White" />
+                <Entry Text="{Binding TareaCambiada.Nombre}" Placeholder="Nombre" TextColor="White" />
+                <Label Text="Descripcion" TextColor="White" />
+                <Entry Text="{Binding TareaCambiada.Descripcion}" Placeholder="Descripcion" TextColor="White" />
+
+                <Button Text="Eliminar" Command="{Binding EliminarTareaCommand}" Margin="10" TextColor="White" />
+                <Button Text="Aceptar" Command="{Binding EditarTareaCommand}" Margin="10" TextColor="White" />
+            </StackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

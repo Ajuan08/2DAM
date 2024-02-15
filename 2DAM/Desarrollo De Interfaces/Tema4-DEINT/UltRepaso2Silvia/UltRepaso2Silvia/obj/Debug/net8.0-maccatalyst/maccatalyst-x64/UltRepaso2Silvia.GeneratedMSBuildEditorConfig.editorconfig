@@ -1,0 +1,60 @@
+is_global = true
+build_property.PropertyChangedAnalyzerConfiguration = 
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = UltRepaso2Silvia
+build_property.ProjectDir = S:\GitHub\2DAM\2DAM\Desarrollo De Interfaces\Tema4-DEINT\UltRepaso2Silvia\UltRepaso2Silvia\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/UltRepaso2Silvia/UltRepaso2Silvia/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UltRepaso2Silvia.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/UltRepaso2Silvia/UltRepaso2Silvia/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UltRepaso2Silvia.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/UltRepaso2Silvia/UltRepaso2Silvia/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UltRepaso2Silvia.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/UltRepaso2Silvia/UltRepaso2Silvia/MVVM/View/Vista1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UltRepaso2Silvia.MVVM.View.Vista1.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\Vista1.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\Vista1.xaml
+
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/UltRepaso2Silvia/UltRepaso2Silvia/MVVM/View/Vista2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UltRepaso2Silvia.MVVM.View.Vista2.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\Vista2.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\Vista2.xaml
+
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/UltRepaso2Silvia/UltRepaso2Silvia/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UltRepaso2Silvia.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[S:/GitHub/2DAM/2DAM/Desarrollo De Interfaces/Tema4-DEINT/UltRepaso2Silvia/UltRepaso2Silvia/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UltRepaso2Silvia.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

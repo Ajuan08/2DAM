@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Lista de Cursos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Curso</ion-label>
+      <ion-input type="text" [(ngModel)]="curso"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Puntos</ion-label>
+      <ion-input type="number" [(ngModel)]="puntos"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" (click)="agregarCurso()">
+    <ion-icon slot="start" name="add"></ion-icon>
+    Añadir Curso
+  </ion-button>
+
+  <ion-item *ngFor="let item of listaCursos" [routerLink]="['/detalles-curso', item.id]">
+    {{ item.curso }} - {{ item.puntos }}
+  </ion-item>
+  
+  
+</ion-content>

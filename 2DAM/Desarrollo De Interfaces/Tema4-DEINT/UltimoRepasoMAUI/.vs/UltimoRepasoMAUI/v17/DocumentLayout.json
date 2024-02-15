@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|solutionrelative:ultimorepasomaui\\mvvm\\viewmodel\\tareaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|s:\\github\\2dam\\2dam\\desarrollo de interfaces\\tema4-deint\\ultimorepasomaui\\ultimorepasomaui\\mvvm\\model\\tareamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|solutionrelative:ultimorepasomaui\\mvvm\\model\\tareamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|s:\\github\\2dam\\2dam\\desarrollo de interfaces\\tema4-deint\\ultimorepasomaui\\ultimorepasomaui\\mvvm\\view\\tareaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|solutionrelative:ultimorepasomaui\\mvvm\\view\\tareaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|s:\\github\\2dam\\2dam\\desarrollo de interfaces\\tema4-deint\\ultimorepasomaui\\ultimorepasomaui\\mvvm\\model\\tareamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D92DF2E-4810-45BC-9457-4E7409B14815}|UltimoRepasoMAUI\\UltimoRepasoMAUI.csproj|solutionrelative:ultimorepasomaui\\mvvm\\model\\tareamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TareaModel.cs",
               "DocumentMoniker": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\UltimoRepasoMAUI\\UltimoRepasoMAUI\\MVVM\\Model\\TareaModel.cs",
               "RelativeDocumentMoniker": "UltimoRepasoMAUI\\MVVM\\Model\\TareaModel.cs",
@@ -46,8 +46,7 @@
               "RelativeToolTip": "UltimoRepasoMAUI\\MVVM\\Model\\TareaModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T20:03:35.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-14T20:03:35.827Z"
             },
             {
               "$type": "Document",
@@ -57,20 +56,20 @@
               "RelativeDocumentMoniker": "UltimoRepasoMAUI\\MVVM\\ViewModel\\TareaViewModel.cs",
               "ToolTip": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\UltimoRepasoMAUI\\UltimoRepasoMAUI\\MVVM\\ViewModel\\TareaViewModel.cs",
               "RelativeToolTip": "UltimoRepasoMAUI\\MVVM\\ViewModel\\TareaViewModel.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACoAAAAIAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAwCoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-14T19:04:30.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "TareaView.xaml",
               "DocumentMoniker": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\UltimoRepasoMAUI\\UltimoRepasoMAUI\\MVVM\\View\\TareaView.xaml",
               "RelativeDocumentMoniker": "UltimoRepasoMAUI\\MVVM\\View\\TareaView.xaml",
               "ToolTip": "S:\\GitHub\\2DAM\\2DAM\\Desarrollo De Interfaces\\Tema4-DEINT\\UltimoRepasoMAUI\\UltimoRepasoMAUI\\MVVM\\View\\TareaView.xaml",
               "RelativeToolTip": "UltimoRepasoMAUI\\MVVM\\View\\TareaView.xaml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAaAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-02-14T18:25:50.186Z",
               "EditorCaption": ""

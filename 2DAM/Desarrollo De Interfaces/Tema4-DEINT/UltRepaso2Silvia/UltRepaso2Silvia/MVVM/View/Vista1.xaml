@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UltRepaso2Silvia.MVVM.View.Vista1"
+             Title="Vista1">
+    <VerticalStackLayout>
+        <Frame>
+            <StackLayout>
+                <Label Text="Nombre" TextColor="White" />
+                <Entry Text="{Binding Tarea.Nombre}" Placeholder="Nombre" TextColor="White" />
+                <Label Text="Descripcion" TextColor="White" />
+                <Entry Text="{Binding Tarea.Descripcion}" Placeholder="Descripcion" TextColor="White" />
+
+                <Button Text="Guardar" Command="{Binding GuardarTareaCommand}" Margin="10" TextColor="White" />
+            </StackLayout>
+        </Frame>
+
+        <Frame Margin="30">
+            <CollectionView ItemsSource="{Binding Tareas}" Background="White" Margin="20" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding Nombre}" TextColor="Black" HorizontalOptions="Start" />
+                            <Label Text="{Binding Descripcion}" TextColor="Black" />
+                            <Button Clicked="Button_Clicked" CommandParameter="{Binding .}" Text="Editar" Margin="10" TextColor="White" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Frame>
+        
+        
+        
+    </VerticalStackLayout>
+</ContentPage>
