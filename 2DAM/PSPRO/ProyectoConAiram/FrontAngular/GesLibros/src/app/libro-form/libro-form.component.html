@@ -6,7 +6,7 @@
   <br>
 
   <label for="autor">Autor:</label>
-  <select id="autor" name="autor" (select)="onAutorChange($event)">
+  <select id="autor" name="autor" (change)="onAutorChange($event)">
     <option value="0" >Selcciona un autor</option>
     @for (autor of autores; track $index) {
       @if (libro.autor.id == autor.id) {
@@ -22,7 +22,7 @@
   <div>
     @for (categoria of categorias; track $index) {
       {{ categoria.nombre }}
-      @if (isSelected(categoria.id)) {
+      @if (isSelected(categoria)) {
         <input (change)="onCategoriaChange($event)" type="checkbox" name="categoria_{{ $index }}"  checked>
       }@else {
         <input (change)="onCategoriaChange($event)" type="checkbox" name="categoria_{{ $index }}">
@@ -32,8 +32,8 @@
   
   <br>
 
-  <button (click)="guardarCambios(nombre.value)">Guardar Cambios</button>
-  <button (click)="guardarNuevo(nombre.value)">Guardar Nuevo</button>
+  <button (click)="guardarCambios(nombre.value)">Guardar Cambios Editados</button>
+  <button (click)="guardarNuevo(nombre.value)">Guardar Nuevo Libro</button>
 
 </form>
 

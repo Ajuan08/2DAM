@@ -3,20 +3,18 @@ package com.biblioteca.AiramAntonioJuan.Models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.List;
 import jakarta.persistence.*;
-import java.io.Serializable;
 
 @Entity
 @Table(name = "autor")
-public class Autor implements Serializable {
+public class Autor {
     
-    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
     private String nombre;
     
-    @OneToMany(mappedBy = "autor", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "autor")
     @JsonIgnore
     private List<Libro> libros;
 

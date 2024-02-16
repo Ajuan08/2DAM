@@ -1,9 +1,7 @@
 package com.biblioteca.AiramAntonioJuan.Models;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import java.io.Serializable;
@@ -16,19 +14,18 @@ import java.util.Set;
 @Entity
 public class Categoria implements Serializable{
     private static final long serialVersionUID = 3L;
-    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIdentityInfo(
+            generator = ObjectIdGenerators.PropertyGenerator.class,
+            property = "id"
+    )
     private Long id;
 
     private String nombre;
     
     @JsonIgnore
     @ManyToMany(mappedBy = "categorias")
-    @JsonIdentityInfo(
-            generator = ObjectIdGenerators.PropertyGenerator.class,
-            property = "id"
-    )
     private Set<Libro> libros;
 
     public Long getId() {

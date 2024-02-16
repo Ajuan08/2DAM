@@ -23,7 +23,7 @@ export class LibroFormComponent implements OnInit{
   categorias: Categoria[] = [];
   idAutor!: Autor;
   ListaLibros: Libro[] = [];
-  selectedCategorias: number[] = [];
+  selectedCategorias: Categoria[] = [];
 
   constructor(private router: Router, 
     private libroServicio: LibroServiceService, 
@@ -50,7 +50,8 @@ export class LibroFormComponent implements OnInit{
     this.selectedCategorias = [];
     this.idAutor = libro.autor;
     libro.categorias.forEach((categoria, index) => {
-      this.selectedCategorias.push(index);
+      console.log(categoria);
+      this.selectedCategorias.push(categoria);
     });
     this.libro = libro
     console.log(this.selectedCategorias);
@@ -62,8 +63,12 @@ export class LibroFormComponent implements OnInit{
     });
   }
 
-  isSelected(id: number): boolean {
-    return this.selectedCategorias.includes(id-1);
+  isSelected(categoriaA: Categoria): boolean {
+    this.selectedCategorias.forEach(categoria => {
+      return categoriaA.id == categoria.id;
+    });
+    return false;
+    //return this.selectedCategorias.includes(categoria);
   }
 
   guardarNuevo(nombre: string) {
@@ -111,13 +116,14 @@ export class LibroFormComponent implements OnInit{
   }
 
   setLibro(nombre: string) {
+    this.libro.categorias = [];
     this.libro.titulo = nombre
     if (this.idAutor == null) {
       this.idAutor = this.autores[0];
     }
     this.libro.autor = this.idAutor
     this.categorias.forEach((categoria, index) => {
-      if (this.selectedCategorias.includes(index)) {
+      if (this.selectedCategorias.includes(categoria)) {
         this.libro.categorias.push(categoria);
       }
     });
@@ -128,9 +134,9 @@ export class LibroFormComponent implements OnInit{
     const index = parseInt((event.target as HTMLInputElement).name.split('_')[1]);
   
     if (isChecked) {
-      this.selectedCategorias.push(index);
+      this.selectedCategorias.push(this.categorias[index]);
     } else {
-      const i = this.selectedCategorias.indexOf(index);
+      const i = this.selectedCategorias.indexOf(this.categorias[index]);
       this.selectedCategorias.splice(i, 1);
     }
   }

@@ -4,9 +4,7 @@
  */
 package com.biblioteca.AiramAntonioJuan.Models;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import java.io.Serializable;
@@ -22,7 +20,6 @@ import java.util.Set;
 @Table(name = "libro")
 public class Libro implements Serializable{
     private static final long serialVersionUID = 2L;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
