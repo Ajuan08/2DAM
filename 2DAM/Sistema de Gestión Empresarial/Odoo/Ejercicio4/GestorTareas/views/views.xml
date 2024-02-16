@@ -1,0 +1,134 @@
+<odoo>
+    <data>
+
+        <!-- Tarea -->
+
+        <record id="tarea_tree_view" model="ir.ui.view">
+            <field name="name">tarea_tree_view</field>
+            <field name="model">tareas.tarea</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre" />
+                    <field name="descripcion" />
+                    <field name="fecha_creacion" />
+                    <field name="contador_personas_asignadas" />
+                    <field name="personas_ids" widget="many2many_tags" />
+                    <field name="estado" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="tarea_form_view" model="ir.ui.view">
+            <field name="name">tarea_form_view</field>
+            <field name="model">tareas.tarea</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="nombre" />
+                        <field name="descripcion" />
+                        <field name="fecha_creacion" />
+                        <field name="contador_personas_asignadas" />
+                        <field name="personas_ids" widget="many2many_tags" />
+                        <field name="estado" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="tarea_kanban_view" model="ir.ui.view">
+            <field name="name">tarea_kanban_view</field>
+            <field name="model">tareas.tarea</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click">
+                                <div>Nombre: <field name="nombre"/></div>
+                                <div>Fecha Creacion: <field name="fecha_creacion"/></div>
+                                <div>Contador de Personas Asignadas: <field name="contador_personas_asignadas"/></div>
+                                <div>Estado: <field name="estado"/></div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <!-- Persona -->
+
+        <record id="persona_tree_view" model="ir.ui.view">
+            <field name="name">persona_tree_view</field>
+            <field name="model">tarea.persona</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre" />
+                    <field name="edad" />
+                    <field name="contador_Tareas_Asignadas" />
+                    <field name="tareas_ids" widget="many2many_tags" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="persona_form_view" model="ir.ui.view">
+            <field name="name">persona_form_view</field>
+            <field name="model">tarea.persona</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="nombre" />
+                        <field name="edad" />
+                        <field name="tareas_ids" widget="many2many_tags" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- Actions -->
+
+        <record model="ir.actions.act_window" id="tarea_list_tree_action">
+            <field name="name">Vista tree de la lista de Tareas</field>
+            <field name="res_model">tareas.tarea</field>
+            <field name="view_mode">tree,form,kanban</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="tarea_list_form_action">
+            <field name="name">Vista form de la lista de Tareas</field>
+            <field name="res_model">tareas.tarea</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="persona_list_tree_action">
+            <field name="name">Vista tree de la lista de Persona</field>
+            <field name="res_model">tarea.persona</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="persona_list_form_action">
+            <field name="name">Vista form de la lista de Persona</field>
+            <field name="res_model">tarea.persona</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <record id="action_report_completed_tasks" model="ir.actions.report">
+            <field name="name">Report Tareas Completadas</field>
+            <field name="model">tareas.tarea</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">tarea.report_completed_tasks</field>
+            <field name="report_file">tarea.report_completed_tasks</field>
+        </record>
+
+        <!-- Menus -->
+
+        <menuitem id="tareas_menu" name="Tasks" sequence="20"/>
+
+        <menuitem id="tarea_list_tree" parent="tareas_menu" name="Vista tree de la lista de Tarea" action="tarea_list_tree_action" />
+        <menuitem id="tarea_list_form" parent="tareas_menu" name="Vista form de la lista de Tarea" action="tarea_list_form_action" />
+
+        <menuitem id="persona_list_tree" parent="tareas_menu" name="Vista tree de la lista de Persona" action="persona_list_tree_action" />
+        <menuitem id="persona_list_form" parent="tareas_menu" name="Vista form de la lista de Persona" action="persona_list_form_action" />
+
+        <menuitem id="menu_completed_tasks_report" name="Report Tareas Completadas" action="action_report_completed_tasks" parent="tareas_menu"/>
+
+
+    </data>
+</odoo>
