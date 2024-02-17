@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>App de cursos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="contenido">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">PaginaPrincipal</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-formulario></app-formulario>
+
+  <app-lista *ngFor="let dato of arrDatos | async" [dato]="dato"></app-lista>
+</ion-content>
