@@ -1,0 +1,363 @@
+--------------------------------------TEORIA-----------------------------------------------------------------------
+
+/////DIFERENCIA ENTRE MONGODB Y MONGOOSE/////
+	
+	MongoDB es la base de datos NoSQL que almacena datos en documentos JSON, mientras que Mongoose es una 	biblioteca de modelado de objetos que simplifica la interacción con MongoDB en entornos Node.js.
+
+/////PARA QUE ES EL MIDDLEWARE Y QUE DIFERENCIA HAY ENTRE EL MIDDLEWARE DE MONGOOSE Y EL QUE TU CREAS/////
+
+	El middleware es una función que se ejecuta antes o después de una operación específica en una aplicación. 
+
+	El middleware de Mongoose se enfoca específicamente en manipular datos antes o después de operaciones de base de datos, mientras que el middleware 	personalizado en Node.js puede utilizarse para una amplia variedad de tareas relacionadas con la lógica de la aplicación en general.
+
+/////TIPOS DE RESPUESTAS(200,400,500)/////
+	
+	Respuesta 200: Ok
+	Respuesta 400: Error en la peticion
+	Respuesta 500: Error en el servidor
+
+/////COMO ES EL DESPLIEGUE DE LA APLICACION DE NODE EN MONGODB/////
+
+	Carga de módulos y dependencias
+	Creación del servidor
+	Escucha de solicitudes
+	Manejo de solicitudes
+
+Finalmente, tu aplicación estará en un bucle continuo escuchando y manejando solicitudes entrantes. Cuando llega una solicitud, se pasa a través de la cadena de middleware definida y se maneja según las rutas y lógica de aplicación definidas.
+
+
+------------------------------------PRACTICA-----------------------------------------------------------------------
+
+////////////CONFIG///////////////////
+
+dev.env:
+	PORT=3000
+	PASSWORD=bookingApp
+	MONGODB_ULR=mongodb+srv://ajuan24:Ajrf_2402@bd-booking.5b5wjvy.mongodb.net/?retryWrites=true&w=majority
+	
+
+////////////DB///////////////////
+
+mongoose.js:
+
+const mongoose = require('mongoose');
+
+mongoose.connect(process.env.MONGODB_URL, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true
+});
+
+
+
+
+////////////MIDDLEWARE///////////////////
+
+Middleware.js: 
+
+	const jwt = require('jsonwebtoken')
+	const User = require('../models/user')
+
+	const auth = async (req, res, next) => {
+    		try {
+        		const token = req.header('Authorization').replace('Bearer ', '')
+        		const decoded = jwt.verify(token, process.env.JWT_SECRET)
+        		const user = await User.findOne({ _id: decoded._id, 'tokens.token': token })
+
+        	if (!user) {
+            		throw new Error()
+       		}
+
+        	req.token = token
+        	req.user = user
+        	next()
+    		} catch (e) {
+        		res.status(401).send({ error: 'Please authenticate.' })
+    		}
+	}
+
+module.exports = auth
+
+
+////////////MODELOS///////////////////
+
+Alojamiento.js
+
+const mongoose = require('mongoose');
+
+const alojamientoSchema = new mongoose.Schema({
+    titulo: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    descripcion: {
+        type: String,
+        required: false,
+        trim: true
+    },
+    propietario: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'Usuario'
+    },
+    alquilador: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: false,
+        ref: 'Usuario'
+    }
+}, {
+    timestamps: true
+});
+
+const Alojamiento = mongoose.model('Alojamiento', alojamientoSchema);
+
+module.exports = Alojamiento;
+
+
+Usuario.js:
+
+const mongoose = require('mongoose')
+const validator = require('validator')
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
+const Modelo = require('./modelo')
+
+const usuarioSchema = new mongoose.Schema({
+    nombre: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    email: {
+        type: String,
+        unique: true,
+        required: true,
+        trim: true,
+        lowercase: true,
+        validate(value) {
+            if (!validator.isEmail(value)) {
+                throw new Error('Email es incorrecto')
+            }
+        }
+    },
+    contrasena: {
+        type: String,
+        required: true,
+        minlength: 8,
+        trim: true,
+        validate(value) {
+            if (value.toLowerCase().includes('contrasena')) {
+                throw new Error('La contraseña no puede contener "contrasena"')
+            }
+        }
+    },
+    edad: {
+        type: Number,
+        default: 0,
+        validate(value) {
+            if (value < 0) {
+                throw new Error('La edad no puede ser un numero negativo')
+            }
+        }
+    },
+    tokens: [{
+        token: {
+            type: String,
+            required: true
+        }
+    }]
+})
+
+userSchema.virtual('alojamiento', {
+    ref: 'Alojamiento',
+    localField: '_id',
+    foreignField: 'propietario'
+})
+
+usuarioSchema.methods.toJSON = function () {
+    const user = this
+    const userObject = user.toObject()
+
+    delete userObject.contrasena
+    delete userObject.tokens
+
+    return userObject
+}
+
+usuarioSchema.methods.generateAuthToken = async function () {
+    const user = this
+    const token = jwt.sign({ _id: user._id.toString() }, process.env.PASSWORD)
+
+    user.tokens = user.tokens.concat({ token })
+    await user.save()
+
+    return token
+}
+
+usuarioSchema.statics.findByCredentials = async (email, contrasena) => {
+    const user = await User.findOne({ email })
+
+    if (!user) {
+        throw new Error('Es imposible loguearse')
+    }
+
+    const isMatch = await bcrypt.compare(contrasena, user.contrasena)
+
+    if (!isMatch) {
+        throw new Error('Es imposible loguearse')
+    }
+
+    return user
+}
+
+usuarioSchema.pre('save', async function (next) {
+    const user = this
+
+    if (user.isModified('contrasena')) {
+        user.contrasena = await bcrypt.hash(user.contrasena, 8)
+    }
+
+    next()
+})
+
+usuarioSchema.pre('remove', async function (next) {
+    const user = this
+    await Alojamiento.deleteMany({ owner: user._id })
+    next()
+})
+
+const Usuario = mongoose.model('Usuario', usuarioSchema)
+
+module.exports = Usuario;
+
+
+////////////ROUTERS///////////////////
+
+Alojamiento.js: 
+	
+	router.get('/alojamiento', async (req, res) => {
+    try {
+        res.send(await Alojamiento.find({}))
+    } catch (e) {
+        res.status(400).send(e)
+    }
+})
+
+router.post('/alojamiento/anadir', auth, async (req, res) => {
+    req.body.propietario = req.usuario
+    const alojamiento = new Alojamiento(req.body)
+    try {
+        await alojamiento.save();
+        res.status(201).send({ alojamiento })
+    } catch (e) {
+        res.status(400).send(e)
+    }
+})
+
+router.patch('/alojamiento/editar', auth, async (req, res) => {
+    const alojamiento = await Alojamiento.findById(req.body._id)
+    let updates = Object.keys(req.body)
+    updates = updates.filter(update => update !== '_id')
+    const allowedUpdates = ['titulo', 'descripcion', 'imagenURL', 'precio']
+    const isValidOperation = updates.every((update) => allowedUpdates.includes(update))
+
+    if (!isValidOperation) {
+        return res.status(400).send({ error: 'Cambios erroneos' })
+    }
+
+    try {
+        updates.forEach((update) => alojamiento[update] = req.body[update])
+        await alojamiento.save()
+        res.send()
+    } catch (e) {
+        res.status(400).send(e)
+    }
+})
+
+router.patch('/alojamiento/mostrar', auth, async (req, res) => {
+    const alojamiento = await Alojamiento.findById(req.body.id)
+    try {
+        alojamiento.alquilador = req.user._id;
+        await alojamiento.save();
+        res.send()
+    } catch (e) {
+        res.status(400).send(e)
+    }
+})
+
+router.patch('/alojamiento/borrar', auth, async (req, res) => {
+    const alojamiento = await Alojamiento.findById(req.body.id)
+    try {
+        alojamiento.alquilador = undefined;
+        await alojamiento.save();
+        res.send()
+    } catch (e) {
+        res.status(400).send(e)
+    }
+})
+
+module.exports = router
+
+
+Usuario.js:
+
+const express = require('express')
+const Usuario = require('../models/usuario')
+const auth = require('../middlewares/auth')
+const router = new express.Router()
+
+router.post('/usuario/anadir', async (req, res) => {
+    const usu = new Usuario(req.body)
+    try {
+        await usu.save()
+        res.status(201).send({ usu })
+    } catch (e) {
+        res.status(400).send(e)
+    }
+})
+
+router.post('/usuario/login', async (req, res) => {
+    try {
+        const usu = await Usuario.findByCredentials(req.body.email, req.body.contrasena)
+        const token = await usu.generateAuthToken()
+        res.send({ usu, token })
+    } catch (e) {
+        res.status(400).send()
+    }
+})
+
+router.post('/usuario/logout', auth, async (req, res) => {
+    try {
+        req.usu.tokens = req.usu.tokens.filter((token) => {
+            return token.token !== req.token
+        })
+        await req.usu.save()
+
+        res.send()
+    } catch (e) {
+        res.status(500).send()
+    }
+})
+
+module.exports = router
+
+
+////////////INDEX.JS///////////////////
+
+const express = require('express')
+const cors = require('cors');
+require('./db/mongoose')
+const usuRouter = require('./routers/usuario')
+const aloRouter = require('./routers/alojamiento')
+
+const app = express()
+const port = process.env.PORT || 3000
+
+app.use(cors());
+app.use(usuRouter)
+app.use(aloRouter)
+
+app.listen(port, () => {
+    console.log('Servidor escuchando en el puerto:  ' + port)
+})
