@@ -1,0 +1,429 @@
+--------------------------TEMA 1: QUE ES ODOO ----------------------------------
+
+///////////ESTRUCTURA GENERAL DE UN MÓDULO EN ODOO////////////////////
+
+	__init__.py
+
+		aqui se importa de manera general que es lo que vas a utilizar.
+		from . import models
+	
+
+	1.- __manifest__.py
+		
+		Es aquel que contiene datos del modulo como sus dependencias
+	
+	2.- models
+
+		Aqui se colocan los archivos Python que definen los modelos de datos. Son clases que mediante una libreria ORM 
+		se traducira a tablas en la base de datos PostGreeSQL.
+
+		__init__.py
+		
+			aqui se importan los modelos que hemos creado:
+			from . import modelo
+	
+	3.- views
+
+		Aqui se encuentran los archivos XML que definen la vista de usuario.
+
+
+///////////CREACION BASICA DE UN MODELO EN ODOO////////////////////
+
+	from odoo import models, fields, api
+
+	class Persona(models.Model): (Heredan siempre al ser modelos del models.Model)
+   		 _name = "tarea.persona"
+    		_description = "Gestor de Tareas - Personas"
+
+    		nombre = fields.Char('Nombre', required=True)
+    		edad = fields.Integer('Edad')
+
+
+///////////CREACION BASICA DE UNA VISTA EN ODOO////////////////////
+
+Hay 3 tipos de vistas en Odoo:
+
+	Vistas Tree:
+
+		Muestra una lista de registro en forma de tabla
+
+		<record id="persona_tree_view" model="ir.ui.view">
+            		<field name="name">persona_tree_view</field>
+            		<field name="model">tarea.persona</field>
+            		<field name="arch" type="xml">
+                	<tree>
+                    		<field name="nombre" />
+                    		<field name="edad" />
+                	</tree>
+            		</field>
+        	</record>
+
+	Vistas Form:
+
+		Utilizadas para mostrar y editar en un unico registro del modelo
+
+		<record id="persona_form_view" model="ir.ui.view">
+            	<field name="name">persona_form_view</field>
+            	<field name="model">tarea.persona</field>
+            	<field name="arch" type="xml">
+                	<form>
+                    	<group>
+                        	<field name="nombre" />
+                        	<field name="edad" />
+                    	</group>
+                	</form>
+            	</field>
+        	</record>
+
+		
+	Vistas KanBan:
+
+		Se utilizan para representar los registros en forma de tarjeta
+
+		<record id="tarea_kanban_view" model="ir.ui.view">
+            	<field name="name">tarea_kanban_view</field>
+            	<field name="model">tareas.tarea</field>
+            	<field name="arch" type="xml">
+                	<kanban>
+                    	<templates>
+                        	<t t-name="kanban-box">
+                            	<div t-attf-class="oe_kanban_global_click">
+                                	<div>Nombre: <field name="nombre"/></div>
+                                	<div>Fecha Creacion: <field name="fecha_creacion"/></div>
+                                	<div>Contador de Personas Asignadas: <field name="contador_personas_asignadas"/></div>
+                                	<div>Estado: <field name="estado"/></div>
+                            	</div>
+                        	</t>
+                    	</templates>
+                	</kanban>
+            	</field>
+        	</record>
+
+
+///////////ACCIONES Y MENÚS EN ODOO////////////////////
+
+	Acciones:
+
+		Son acciones específicas que un usuario puede realizar en la interfaz.
+
+	Menus:
+		Son elementos de la interfaz que proporcionan acceso a diversas funcionalidades y vistas en Odoo.
+
+	
+	<!-- Actions -->
+
+        <record model="ir.actions.act_window" id="persona_list_tree_action">
+            <field name="name">Vista tree de la lista de Persona</field>
+            <field name="res_model">tarea.persona</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="persona_list_form_action">
+            <field name="name">Vista form de la lista de Persona</field>
+            <field name="res_model">tarea.persona</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <!-- Menus -->
+
+        <menuitem id="tareas_menu" name="Tasks" sequence="20"/>
+
+        <menuitem id="persona_list_tree" parent="tareas_menu" name="Vista tree de la lista de Persona" action="persona_list_tree_action" />
+        <menuitem id="persona_list_form" parent="tareas_menu" name="Vista form de la lista de Persona" action="persona_list_form_action" />
+
+
+
+
+///////////INTERRELACIONES ENTRE MODELOS////////////////////
+
+	Hay 3 tipos de relaciones:
+	
+		One2one (uno a uno):
+	
+		class Persona(models.Model): (Heredan siempre al ser modelos del models.Model)
+   		 _name = "mi_modulo.modelo_a"
+    		_description = "Gestor de Tareas - Personas"
+
+    		nombre = fields.Char('Nombre', required=True)
+    		edad = fields.Integer('Edad')
+		relacion_b = fileds.One2one('mi_modulo.modelo_b', 'campo_relacionado_a', string='Relacion Uno a uno')
+
+		class PersonaB(models.Model): (Heredan siempre al ser modelos del models.Model)
+   		 _name = "mi_modulo.modelo_b"
+    		_description = "Gestor de Tareas - Personas"
+
+    		nombre = fields.Char('Nombre', required=True)
+    		edad = fields.Integer('Edad')
+		campo_relacionado_a = fileds.One2one('mi_modulo.modelo_a' string='Relacion Uno a uno')
+
+
+		One2many (uno a muchos):
+	
+		class Persona(models.Model): (Heredan siempre al ser modelos del models.Model)
+   		 _name = "mi_modulo.modelo_a"
+    		_description = "Gestor de Tareas - Personas"
+
+    		nombre = fields.Char('Nombre', required=True)
+    		edad = fields.Integer('Edad')
+		relacion_b = fileds.One2many('mi_modulo.modelo_b', 'campo_relacionado_a', string='Relacion Uno a muchos')
+
+		class PersonaB(models.Model): (Heredan siempre al ser modelos del models.Model)
+   		 _name = "mi_modulo.modelo_b"
+    		_description = "Gestor de Tareas - Personas"
+
+    		nombre = fields.Char('Nombre', required=True)
+    		edad = fields.Integer('Edad')
+		campo_relacionado_a = fileds.Many2one('mi_modulo.modelo_a' string='Relacion Uno a muchos')
+		
+
+		Many2many (muchos a muchos):
+	
+		class Persona(models.Model): (Heredan siempre al ser modelos del models.Model)
+   		 _name = "mi_modulo.modelo_a"
+    		_description = "Gestor de Tareas - Personas"
+
+    		nombre = fields.Char('Nombre', required=True)
+    		edad = fields.Integer('Edad')
+		relacion_b = fileds.Many2many('mi_modulo.modelo_b', 'tabla_relacion', 'campo_relacionado_a' 'campo_b', string='Relacion Muchos a muchos')
+
+		class PersonaB(models.Model): (Heredan siempre al ser modelos del models.Model)
+   		 _name = "mi_modulo.modelo_b"
+    		_description = "Gestor de Tareas - Personas"
+
+    		nombre = fields.Char('Nombre', required=True)
+    		edad = fields.Integer('Edad')
+		campo_relacionado_a = fileds.Many2one('mi_modulo.modelo_a', 'tabla_relacion', 'campo_b', 'campo_relacionado_a'  string='Relacion Muchos a muchos')
+
+
+///////////EXTENSION DE LOS MODELOS CON METODOS////////////////////
+
+		Un modelo representa una entidad de datos que puede ser almacenada y recuperada de la BD.
+		Al incluir metodos, puedes agregar lógica de negocio, funcionalidades y comportamientos.
+
+
+--------------------------TEMA 2: HERENCIA ODOO ----------------------------------
+
+El método OnChange() se utiliza para realizar acciones en respuesta a cambios en la interfaz de usuario.
+
+
+
+///////////INTERCONEXION DE MODULOS EN ODOO////////////////////
+
+		Ventajas: 
+		
+			La intercionxion de modulos proporciona una una infraestructura empresarial eficiente,
+			contribuyendo a la mejora de rendimiento de la empresa
+
+		Cómo se consigue:
+
+			Mediante técnicas como la herencia. En este caso un modulo puede extender o modificar
+			modelos existentes de otros modulos.Además el uno de hooks y eventos que proporciona
+			el decorador OnChange, facilita la ejecucion de la logica.
+
+Ahora hay una serie de pasos que deberias hacer:
+
+	PASO1: Analisis de la aplicacion.
+		
+		Aqui tenemos 2 posibilidades de como hacerlo:
+		
+			--Modificando directamente el modulo original
+			--O crear un nuevo módulo que herede el original
+
+	PASO2: Definicion de Modelos.
+	
+		Modulos Descuento y Clientes:
+
+			
+			class Descuento(models.Model):
+    				_name = "model.descuento"
+    				_description = "Modulo de descuentos en Ventas"
+
+    			name = fields.Char('Nombre', required=True)
+    			tipo_descuento = fields.Selection([('porcentaje', 'Porcentaje'), ('monto_fijo', 'Monto Fijo')], string='Tipo de descuento', required=True)
+    			valor_descuento = fields.Float('Valor del Descuento', required=True)
+
+    			clientes_ids = fields.Many2many('model.cliente','relacion_descuento_cliente', 'descuento_id', 'cliente_id' ,string='Descuentos Personalizados')
+
+			class Cliente(models.Model):
+    				_name = "model.cliente"
+    				_inherit = "res.partner"
+
+    			descuentos_ids = fields.Many2many('model.descuento', 'relacion_descuento_cliente', 'cliente_id','descuento_id', string='Clientes')
+    
+    			channel_ids = fields.Many2many(relation='relacion_channel_cliente')
+
+
+		Modulos OrdenVentas:
+
+		class OrdenVentapersonalizada(models.Model):
+    
+    			_inherit = "sale.order"
+    			_description = "Orden de Venta Personalizada"
+
+    			cliente_id = fields.Many2one('model.cliente', string='Cliente')
+
+   			 @api.onchange('cliente_id')
+    			def _onchange_cliente_id(self):
+        			if self.cliente_id:
+           				descuentos = self.cliente_id.descuentos_ids
+
+           			total_descuentos_porcentaje = sum(descuento.valor_descuento for descuento in descuentos if descuento.tipo_descuento == 'porcentaje')
+           			total_descuento_monto_fijo = sum(descuento.valor_descuento for descuento in descuentos if descuento.tipo_descuento == 'monto_fijo')
+
+           			descuento_porcentaje = (total_descuentos_porcentaje / 100) * self.amount_untaxed
+
+           			self.amount_total -= total_descuento_monto_fijo + descuento_porcentaje
+
+	PASO4: CREAR VISTAS:
+
+			<record id="view_descuento_form" model="ir.ui.view">
+            			<field name="name">model.descuento.form</field>
+            			<field name="model">model.descuento</field>
+            			<field name="arch" type="xml">
+                		<form>
+                    		<group>
+                        		<field name="name" />
+                        		<field name="tipo_descuento" />
+                        		<field name="valor_descuento" />
+                        		<field name="clientes_ids" widget="many2many_tags" />
+                    		</group>
+                		</form>
+            			</field>
+        		</record>
+
+        		<!-- ORDENVENTAS -->
+
+        		<record id="view_sale_order_form_inherit" model="ir.ui.view">
+            			<field name="name">sale.order.form.inherit</field>
+            			<field name="model">sale.order</field>
+            			<field name="inherit_id" ref="sale.view_order_form"/>
+            			<field name="arch" type="xml">
+               				<xpath expr="//field[@name='partner_id']" position="after">
+                    			<field name="cliente_id" />
+                		</xpath>
+            			</field>
+        		</record>
+
+	PASO5: CREAR MENUS Y ACCIONES:
+
+		<record model="ir.actions.act_window" id="descuento_list_form_action">
+            		<field name="name">Vista form de descuentos</field>
+            		<field name="res_model">model.descuento</field>
+            		<field name="view_mode">form</field>
+        	</record>
+
+        	<!-- Menus -->
+
+        	<menuitem id="descuentos_menu" name="Descuentos" sequence="20"/>
+
+        <menuitem id="descuento_list_tree" parent="descuentos_menu" name="Vista tree de descuentos" action="descuento_list_tree_action" />
+
+
+
+--------------------------TEMA 3: API ODOO----------------------------------
+
+
+//////////////////CREAR UNA API EN ODOO//////////////////////////
+
+	Importante: Añadir en el __manifest__.py una nueva seccion llamada controllers y dentro 
+	poner tu controlador
+
+		--Razones por la cual usar Odoo como backend:
+
+			Porque puedes construir una aplicacion completa sin tener que integrar multiples sistemas ni tecnologias
+
+
+		--¿Cómo se hace?
+
+			En primer lugar define los modelos
+			Luego deberas hacer el controlador web
+			Por ultimo, configuraras las rutas de tu API
+
+		Ejemplo de controlador web: 
+	
+			from odoo import http
+			from odoo.http import request
+			import json
+
+			_____ESTO ES A JSON_____
+			class VentasController(http.Controller):
+
+    			@http.route('/ventas_controller_endpoint', type='http', auth='public', methods=['GET'], website=True)
+    			def obtener_ordenes_ventas(self, **kw):
+        			sale_orders = request.env['sale.order'].search([('amount_total', '>', 1000)])
+        			orders_data = [{'name': order.name} for order in sale_orders]
+        		return json.dumps(orders_data)
+
+
+--------------------------TEMA 4: INFORMES ODOO ----------------------------------
+
+	--¿Para que sirven los informes en Odoo?
+
+		Sirven para la generacion de documentos que presentan informacion sobre la BD de la empresa.
+
+	--Ventajas para la empresa
+
+		--Personalizacion
+		--Automatizacion
+		--Acceso rapido a la informacion
+		--Analisis en tiempo real
+		--Mejora de la eficiencia
+		--Facilidad de uso
+		--Integracion con otros modulos
+
+	--Tecnologias usadas
+
+		--QWEB: Es un motor de plantillas para generar informes en HTML, PDF. Permite crear plantillas
+			de informes flexibles y personalizadas con XML y Python. Una de sus principales
+			caracteristicas es su integracion con Python, lo que permite crear logica dentro
+			de las plantillas.
+			El QWEB, tiene su propia estructuras como por ejemplo el t-foreach, t-if
+
+		--Librerias Python: Con ReportLab, crea informes PDF con graficos personalizados
+
+		--Odoo Studio: Esta es una herramienta de pago en Odoo que permite personalizar y crear informes
+			sin necesidad de escribir código.
+
+	Ejemplo:
+
+		Vista:
+			<template id="report_sales_orders">
+				<t t-call="web.html_container">
+					<t t-call="web.external_layout">
+					<div class="page">
+						<h2>Informe de Ordenes ventas />
+					<table class="table table-condensed">
+						<thread>
+						<tr>
+							<th>Numero de Orden />
+							<th>Cliente />
+							<th>Total />
+						</tr>
+						</thread>
+					<tbody>
+						<t t-foreach="sales_orders">
+							<tr>
+								<td><t t-esc="order.name"/></td>
+								<td><t t-esc="order.partner_id.name"/></td>
+								<td><t t-esc="order.amount_total"/></td>
+							</tr>
+						</t>
+					</tbody>
+					</table>
+					</div>
+				</t>
+			</template>
+
+		Controller:
+			
+			from odoo import http
+			from odoo.http import request
+
+				class SalesOrderReportController(http.Controller):
+				
+				@http.route('/sales_order_report', type='http', auth='user')
+				def sales_order_report(self):
+					sales_orders = request.env['sale.order'].sudo().search([])
+					return http.request.render('your_module.report_sales_orders',{'sales_orders': sales_orders})
+
+

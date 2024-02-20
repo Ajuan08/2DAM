@@ -14,7 +14,7 @@ public class Autor {
     
     private String nombre;
     
-    @OneToMany(mappedBy = "autor")
+    @OneToMany(mappedBy = "autor", cascade = CascadeType.REMOVE)
     @JsonIgnore
     private List<Libro> libros;
 

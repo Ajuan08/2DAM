@@ -25,7 +25,7 @@ public class Categoria implements Serializable{
     private String nombre;
     
     @JsonIgnore
-    @ManyToMany(mappedBy = "categorias")
+    @ManyToMany(mappedBy = "categorias", cascade = CascadeType.REMOVE)
     private Set<Libro> libros;
 
     public Long getId() {
