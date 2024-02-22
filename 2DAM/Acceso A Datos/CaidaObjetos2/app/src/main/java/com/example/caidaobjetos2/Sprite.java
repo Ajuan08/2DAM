@@ -1,4 +1,3 @@
-// Clase Sprite
 package com.example.caidaobjetos2;
 
 import android.graphics.Bitmap;
@@ -9,6 +8,14 @@ public class Sprite {
     private int x = 0, y = 1380;
     private int width;
     private int height;
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
 
     private MoverFiguras moverFiguras;
 
@@ -36,4 +43,6 @@ public class Sprite {
             x = LimiteDer;
         }
     }
+
+
 }

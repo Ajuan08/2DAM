@@ -10,10 +10,24 @@ import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback {
     private Sprite sprite;
     private GameThread gameThread;
     private float previousX;
+
+    private float xCesta;
+    private float yCesta;
+
+    private List<Fruta> frutas = new ArrayList<>();
+
+    private List<Fruta> frutasPorSalir = new ArrayList<>();
+
+    private List<Fruta> frutaAanadir = new ArrayList<>();
+
+    private int TotalLista = 0;
 
     public MoverFiguras(Context context) {
         super(context);
@@ -39,6 +53,41 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
         Bitmap scaledBitmap = Bitmap.createScaledBitmap(originalBitmap, newWidth, newHeight, true);
         sprite = new Sprite(scaledBitmap, this);
 
+        Bitmap platanoSprite = BitmapFactory.decodeResource(getResources(), R.drawable.platano);
+        int newWidthPlatano = platanoSprite.getWidth() / 7;
+        int newHeightPlatano = platanoSprite.getHeight() / 7;
+        Bitmap scaledPlatano = Bitmap.createScaledBitmap(platanoSprite, newWidthPlatano, newHeightPlatano, true);
+        frutas.add(new Fruta(scaledPlatano, this));
+
+        Bitmap manzanaSprite = BitmapFactory.decodeResource(getResources(), R.drawable.manzana);
+        int newWidthManzana = manzanaSprite.getWidth() / 7;
+        int newHeightManzana = manzanaSprite.getHeight() / 7;
+        Bitmap scaledManzana = Bitmap.createScaledBitmap(manzanaSprite, newWidthManzana, newHeightManzana, true);
+        frutasPorSalir.add(new Fruta(scaledManzana, this));
+
+        Bitmap peraSprite = BitmapFactory.decodeResource(getResources(), R.drawable.pera);
+        int newWidthPera = peraSprite.getWidth() / 7;
+        int newHeightPera = peraSprite.getHeight() / 7;
+        Bitmap scaledPera = Bitmap.createScaledBitmap(peraSprite, newWidthPera, newHeightPera, true);
+        frutasPorSalir.add(new Fruta(scaledPera, this));
+
+        Bitmap fresaSprite = BitmapFactory.decodeResource(getResources(), R.drawable.fresa);
+        int newWidthFresa = fresaSprite.getWidth() / 7;
+        int newHeightFresa = fresaSprite.getHeight() / 7;
+        Bitmap scaledFresa = Bitmap.createScaledBitmap(fresaSprite, newWidthFresa, newHeightFresa, true);
+        frutasPorSalir.add(new Fruta(scaledFresa, this));
+
+        Bitmap pinaSprite = BitmapFactory.decodeResource(getResources(), R.drawable.pina);
+        int newWidthPina = pinaSprite.getWidth() / 7;
+        int newHeightPina = pinaSprite.getHeight() / 7;
+        Bitmap scaledPina = Bitmap.createScaledBitmap(pinaSprite, newWidthPina, newHeightPina, true);
+        frutasPorSalir.add(new Fruta(scaledPina, this));
+
+        Bitmap platanoSprite2 = BitmapFactory.decodeResource(getResources(), R.drawable.platano);
+        int newWidthPlatano2 = platanoSprite2.getWidth() / 7;
+        int newHeightPlatano2 = platanoSprite2.getHeight() / 7;
+        Bitmap scaledPlatano2 = Bitmap.createScaledBitmap(platanoSprite2, newWidthPlatano2, newHeightPlatano2, true);
+        frutasPorSalir.add(new Fruta(scaledPlatano2, this));
 
     }
 
@@ -70,6 +119,14 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
     public void draw(Canvas canvas) {
         super.draw(canvas);
         sprite.draw(canvas);
+        for (Fruta fruta : frutas) {
+            fruta.draw(canvas);
+            fruta.caidaFruta(sprite.getX(), sprite.getY(), (ArrayList<Fruta>) frutaAanadir, (ArrayList<Fruta>) frutasPorSalir);
+        }
+        if(TotalLista < frutaAanadir.size()) {
+            frutas.add(frutaAanadir.get(TotalLista));
+            TotalLista++;
+        }
     }
 
     @Override
