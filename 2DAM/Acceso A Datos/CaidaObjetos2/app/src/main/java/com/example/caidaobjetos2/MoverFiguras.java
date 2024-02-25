@@ -1,5 +1,6 @@
 package com.example.caidaobjetos2;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,6 +10,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,9 +20,6 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
     private GameThread gameThread;
     private float previousX;
 
-    private float xCesta;
-    private float yCesta;
-
     private List<Fruta> frutas = new ArrayList<>();
 
     private List<Fruta> frutasPorSalir = new ArrayList<>();
@@ -28,6 +27,9 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
     private List<Fruta> frutaAanadir = new ArrayList<>();
 
     private int TotalLista = 0;
+
+    TextView puntuacion;
+
 
     public MoverFiguras(Context context) {
         super(context);
@@ -46,6 +48,7 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
 
     private void init(Context context) {
         getHolder().addCallback(this);
+        puntuacion = ((Activity) getContext()).findViewById(R.id.scoreTextView);
 
         Bitmap originalBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.cesta);
         int newWidth = originalBitmap.getWidth() / 5;
@@ -72,8 +75,8 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
         frutasPorSalir.add(new Fruta(scaledPera, this));
 
         Bitmap fresaSprite = BitmapFactory.decodeResource(getResources(), R.drawable.fresa);
-        int newWidthFresa = fresaSprite.getWidth() / 7;
-        int newHeightFresa = fresaSprite.getHeight() / 7;
+        int newWidthFresa = fresaSprite.getWidth() / 6;
+        int newHeightFresa = fresaSprite.getHeight() / 6;
         Bitmap scaledFresa = Bitmap.createScaledBitmap(fresaSprite, newWidthFresa, newHeightFresa, true);
         frutasPorSalir.add(new Fruta(scaledFresa, this));
 
@@ -82,6 +85,12 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
         int newHeightPina = pinaSprite.getHeight() / 7;
         Bitmap scaledPina = Bitmap.createScaledBitmap(pinaSprite, newWidthPina, newHeightPina, true);
         frutasPorSalir.add(new Fruta(scaledPina, this));
+
+        Bitmap pelotaSprite = BitmapFactory.decodeResource(getResources(), R.drawable.pelota);
+        int newWidthPelota = pelotaSprite.getWidth() / 7;
+        int newHeightPelota = pelotaSprite.getHeight() / 7;
+        Bitmap scaledPelota = Bitmap.createScaledBitmap(pelotaSprite, newWidthPelota, newHeightPelota, true);
+        frutasPorSalir.add(new Fruta(scaledPelota, this));
 
         Bitmap platanoSprite2 = BitmapFactory.decodeResource(getResources(), R.drawable.platano);
         int newWidthPlatano2 = platanoSprite2.getWidth() / 7;
@@ -96,6 +105,9 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
         gameThread = new GameThread(getHolder(), this);
         gameThread.setRunning(true);
         gameThread.start();
+
+        //puntuacion = ((Activity) getContext()).findViewById(R.id.scoreTextView);
+
     }
 
     @Override
@@ -122,6 +134,9 @@ public class MoverFiguras extends SurfaceView implements SurfaceHolder.Callback 
         for (Fruta fruta : frutas) {
             fruta.draw(canvas);
             fruta.caidaFruta(sprite.getX(), sprite.getY(), (ArrayList<Fruta>) frutaAanadir, (ArrayList<Fruta>) frutasPorSalir);
+            if(puntuacion != null){
+                puntuacion.setText("Puntuación: " + Constants.puntuacion);
+            }
         }
         if(TotalLista < frutaAanadir.size()) {
             frutas.add(frutaAanadir.get(TotalLista));

@@ -19,25 +19,7 @@ public class VistaJuego extends AppCompatActivity {
         setContentView(getLayoutRes());
         puntuacion = findViewById(R.id.scoreTextView);
         actualizarPuntuacion();
-        puntuacion.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                puntuacion.setText("Puntuación: " + Constants.puntuacion);
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                actualizarPuntuacion();
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                actualizarPuntuacion();
-            }
-        }
-        );
     }
-
 
     public void actualizarPuntuacion() {
         puntuacion.setText("Puntuación: " + Constants.puntuacion);

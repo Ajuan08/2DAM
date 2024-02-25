@@ -32,8 +32,6 @@ public class GameThread extends Thread {
 
                         moverFiguras.postInvalidate();
                         moverFiguras.draw(canvas);
-
-
                     }
                 }
             } finally {
