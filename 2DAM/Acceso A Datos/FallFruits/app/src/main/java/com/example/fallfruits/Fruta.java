@@ -1,11 +1,9 @@
-package com.example.caidaobjetos2;
+package com.example.fallfruits;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
-import android.util.Log;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class Fruta {

@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.caidaobjetos2"
+    namespace = "com.example.fallfruits"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.caidaobjetos2"
+        applicationId = "com.example.fallfruits"
         minSdk = 30
         targetSdk = 34
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.example.caidaobjetos2;
+package com.example.fallfruits;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

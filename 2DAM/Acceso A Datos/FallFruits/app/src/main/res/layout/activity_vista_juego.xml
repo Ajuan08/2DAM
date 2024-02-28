@@ -50,7 +50,7 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <com.example.caidaobjetos2.MoverFiguras
+    <com.example.fallfruits.MoverFiguras
         android:id="@+id/surfaceView"
         android:layout_width="match_parent"
         android:layout_height="618dp"
