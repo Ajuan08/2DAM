@@ -11,18 +11,18 @@ import android.widget.TextView;
 
 public class VistaJuego extends AppCompatActivity {
 
-    private TextView puntuacion;
+    TextView puntuacion;
+
+    TextView labelDerrota;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutRes());
         puntuacion = findViewById(R.id.scoreTextView);
-        actualizarPuntuacion();
-    }
-
-    public void actualizarPuntuacion() {
-        puntuacion.setText("Puntuación: " + Constants.puntuacion);
+        labelDerrota = findViewById(R.id.LabelDerrota);
+        MoverFiguras moverFiguras = findViewById(R.id.surfaceView);
+        moverFiguras.acutalizarTextViews(this);
     }
 
     protected int getLayoutRes() {
@@ -32,8 +32,8 @@ public class VistaJuego extends AppCompatActivity {
     public void onClick(View v) {
         switch (getResources().getResourceEntryName(v.getId())) {
             case "buttonVolver":
-                Intent volver = new Intent(this, MainActivity.class);
-                startActivity(volver);
+                finish();
+
                 break;
         }
     }

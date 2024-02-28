@@ -43,7 +43,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="623dp"
         android:layout_marginBottom="41dp"
-        android:text="HAS PERDIDO! "
         android:textAlignment="center" />
 
     <com.example.caidaobjetos2.MoverFiguras
@@ -51,6 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="618dp"
         android:background="@drawable/imagenfondo"/>
+
 
 
 </RelativeLayout>

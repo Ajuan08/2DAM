@@ -26,11 +26,14 @@ public class Fruta {
 
     private MoverFiguras moverFiguras;
 
-    public Fruta(Bitmap bitmap, MoverFiguras moverFiguras) {
+    private boolean esPelota;
+
+    public Fruta(Bitmap bitmap, MoverFiguras moverFiguras, boolean esPelota) {
         this.bitmap = bitmap;
         this.width = bitmap.getWidth();
         this.height = bitmap.getHeight();
         this.moverFiguras = moverFiguras;
+        this.esPelota = esPelota;
         Random random = new Random();
         x = random.nextInt((800-10)+1)+10;
 
@@ -40,7 +43,7 @@ public class Fruta {
         canvas.drawBitmap(bitmap, x, y, null);
     }
 
-    public void caidaFruta(float xCesta, float yCesta, ArrayList<Fruta> frutasAnadir, ArrayList<Fruta> frutaPorSalir) {
+    public boolean caidaFruta(float xCesta, float yCesta, ArrayList<Fruta> frutasAnadir, ArrayList<Fruta> frutaPorSalir) {
         y += Constants.VelocidadCaida;
         if (y > moverFiguras.getHeight()) {
             Random random = new Random();
@@ -50,16 +53,21 @@ public class Fruta {
         if(isCollition(xCesta, yCesta)) {
             Random random = new Random();
             y = 20;
-            if(Constants.VelocidadCaida < Constants.VelocidadMaxima){
-                Constants.VelocidadCaida += 2;
+            if (Constants.VelocidadCaida < Constants.VelocidadMaxima) {
+                Constants.VelocidadCaida += 1;
             }
-            if(Constants.numeroLista < frutaPorSalir.size()-1) {
+            if (Constants.numeroLista < frutaPorSalir.size() - 1) {
                 frutasAnadir.add(frutaPorSalir.get(Constants.numeroLista));
                 Constants.numeroLista++;
             }
             x = random.nextInt((800 - 10) + 1) + 30;
             Constants.puntuacion++;
+
+            if (esPelota) {
+                return false;
+            }
         }
+            return true;
     }
     public boolean isCollition(float xCesta, float yCesta) {
         return (xCesta + width > x && xCesta + width < x + width) && (yCesta + height > y && yCesta + height < y + height) || (xCesta > x && xCesta < x + width) && (yCesta + height > y && yCesta + height < y + height);
