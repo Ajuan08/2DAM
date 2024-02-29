@@ -43,6 +43,4 @@ public class Sprite {
             x = LimiteDer;
         }
     }
-
-
 }
