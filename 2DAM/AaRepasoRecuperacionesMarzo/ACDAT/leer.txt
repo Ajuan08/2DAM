@@ -1,0 +1,3 @@
+Se realiza en Android Studio
+
+Se debe realizar una aplicacion con BD SQLite

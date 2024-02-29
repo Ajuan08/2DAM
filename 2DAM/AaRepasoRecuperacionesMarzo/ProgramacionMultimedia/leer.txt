@@ -1,0 +1,3 @@
+Se va a utilizar Angular16
+
+Para ello tengo que aprender Inputs, Outputs, Tuberias, Directivas, Observables...

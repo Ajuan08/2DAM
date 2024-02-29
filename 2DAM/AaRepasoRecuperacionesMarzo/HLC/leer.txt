@@ -1,0 +1,3 @@
+Se realiza en Eclipse IDE 2023-09
+
+Se debe estudiar el tema Teorico de Redes y ademas repasar parte práctica Sockets.
