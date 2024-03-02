@@ -5,11 +5,13 @@
 package DAO;
 
 import Conexion.BD1;
+import Excepciones.ExcepcionInsertVacio;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import javax.swing.JComboBox;
 
 /**
  *
@@ -35,7 +37,7 @@ public class DAOPersonas {
     return resultSet;
 }
    
-    public void insertarPersona(int id, String nombre){
+    public void insertarPersona(int id, String nombre) throws ExcepcionInsertVacio{
          String sqlQuery = "INSERT INTO persona (idpersona, nombre) VALUES (?,?)";
 
             try (PreparedStatement statement = conexion.prepareStatement(sqlQuery)) {
@@ -44,7 +46,7 @@ public class DAOPersonas {
                 statement.executeUpdate();
        
             } catch (SQLException e) {
-                e.printStackTrace();
+                throw new ExcepcionInsertVacio();
             }
     }
     
@@ -70,5 +72,25 @@ public class DAOPersonas {
         System.out.println("Error al modificar la persona: " + ex.getMessage());
         ex.printStackTrace();
     }
-}
+    }
+    
+    public ResultSet cargarComboBox(JComboBox<String> combo){
+        try {
+        String query = "SELECT nombre FROM persona";
+        Statement statement = conexion.createStatement();
+        ResultSet resultSet = statement.executeQuery(query);
+
+        while (resultSet.next()) {
+            String nombrePersona = resultSet.getString("nombre");
+            combo.addItem(nombrePersona);
+        }
+
+        return resultSet;
+    } catch (SQLException ex) {
+        System.out.println("Error al cargar el ComboBox");
+        ex.printStackTrace();
+    }
+
+    return null;
+   }
 }
