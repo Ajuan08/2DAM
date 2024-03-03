@@ -15,3 +15,19 @@ Y en el pom.xml se pone esto:
             <version>8.2.0</version>
         </dependency>
     </dependencies>
+
+Ejemplo SQL:
+
+CREATE TABLE persona (
+    idpersona INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50)
+);
+
+CREATE TABLE vivienda (
+    idvivienda INT AUTO_INCREMENT PRIMARY KEY,
+    direccion VARCHAR(100),
+    numero int,
+    esChungo boolean,
+    idpersona INT,
+    FOREIGN KEY (idpersona) REFERENCES persona(idpersona)
+);
