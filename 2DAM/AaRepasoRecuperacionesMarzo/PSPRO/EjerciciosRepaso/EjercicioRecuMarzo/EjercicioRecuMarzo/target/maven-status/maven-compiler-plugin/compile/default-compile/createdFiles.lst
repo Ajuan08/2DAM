@@ -1,5 +1,6 @@
 Clases\Personas.class
 com\mycompany\ejerciciorecumarzo\principal$1.class
+com\mycompany\ejerciciorecumarzo\Prueba$1.class
 com\mycompany\ejerciciorecumarzo\principal$7.class
 com\mycompany\ejerciciorecumarzo\principal.class
 com\mycompany\ejerciciorecumarzo\principal$8.class
@@ -7,7 +8,9 @@ DAO\DAOPersonas.class
 com\mycompany\ejerciciorecumarzo\principal$4.class
 com\mycompany\ejerciciorecumarzo\principal$3.class
 Conexion\BD1.class
+com\mycompany\ejerciciorecumarzo\principal$11.class
 com\mycompany\ejerciciorecumarzo\principal$9.class
+com\mycompany\ejerciciorecumarzo\Prueba.class
 com\mycompany\ejerciciorecumarzo\principal$2.class
 com\mycompany\ejerciciorecumarzo\principal$5.class
 Excepciones\ExcepcionInsertVacio.class

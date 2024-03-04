@@ -120,6 +120,7 @@ public class principal extends javax.swing.JFrame {
         botonInsertarVivienda = new javax.swing.JButton();
         textIDPersona1 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
+        botonNuevaVentana = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -229,6 +230,14 @@ public class principal extends javax.swing.JFrame {
 
         jLabel8.setText("IDPersonaVivienda:");
 
+        botonNuevaVentana.setText("Ir Nueva Ventana");
+        botonNuevaVentana.setActionCommand("");
+        botonNuevaVentana.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonNuevaVentanaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -242,7 +251,10 @@ public class principal extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(122, 122, 122)
+                                .addComponent(botonNuevaVentana))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(botonInsertar)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -290,8 +302,7 @@ public class principal extends javax.swing.JFrame {
                                         .addGap(12, 12, 12)
                                         .addComponent(jLabel8)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(textIDPersona1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(38, 38, 38))
+                                        .addComponent(textIDPersona1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(botonInsertarVivienda)
                                         .addGap(18, 18, 18)
@@ -314,7 +325,10 @@ public class principal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(botonNuevaVentana)
+                        .addGap(47, 47, 47)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -547,6 +561,11 @@ public class principal extends javax.swing.JFrame {
         }  
     }//GEN-LAST:event_botonInsertarViviendaActionPerformed
 
+    private void botonNuevaVentanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonNuevaVentanaActionPerformed
+        Prueba prueba = new Prueba();
+        prueba.show();
+    }//GEN-LAST:event_botonNuevaVentanaActionPerformed
+
     public void limpiarTexts(){
         textDireccion.setText("");
         textID.setText("");
@@ -599,6 +618,7 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JButton botonListado;
     private javax.swing.JButton botonModificar1;
     private javax.swing.JButton botonModificarVivienda;
+    private javax.swing.JButton botonNuevaVentana;
     private javax.swing.JComboBox<String> comboBoxPersonas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
