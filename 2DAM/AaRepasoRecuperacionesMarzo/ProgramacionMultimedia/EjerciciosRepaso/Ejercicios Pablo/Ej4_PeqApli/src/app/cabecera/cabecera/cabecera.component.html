@@ -1,0 +1,5 @@
+<div class="mt-5 p-4">
+    <button *ngFor="let libro of libros" class="btn btn-primary mx-3" (click)="emitirIdLibro(libro.id)">{{libro.titulo}}</button>
+</div>
+
+

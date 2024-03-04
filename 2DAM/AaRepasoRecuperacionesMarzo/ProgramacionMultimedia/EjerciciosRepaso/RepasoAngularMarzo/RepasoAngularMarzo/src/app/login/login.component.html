@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>REPASO ANGULAR MARZO</h1>
+    <h3>Login</h3>
+
+    <div>
+        <form>
+            <label for="nombre">Nombre: </label>
+            <input type="text"  #nombre id="nombre" name="nombre">
+
+            <br>
+            <label for="contrasena">Contrasena: </label>
+            <input type="password" #contrasena id="contrasena" name="contrasena">
+
+            <br>
+            <div *ngIf="error">
+                <p>{{mensajeError}}</p>
+            </div>
+
+            <button type="button" (click)="login(nombre.value,contrasena.value)">Iniciar Sesion</button>
+        </form>
+    </div>
+</div>

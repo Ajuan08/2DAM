@@ -1,0 +1,20 @@
+<div class="general">
+    <h2>JUEGO TRIVIAL</h2>
+    <h3>REGISTRO</h3>
+        <div class="container">
+            <form class="form">
+                <label for="usuario">Usuario:</label>
+                <input type="text" #usuario id="usuario" name="usuario" required>
+        
+                <label for="contrasena">Contraseña:</label>
+                <input type="contrasena" #contrasena id="contrasena" name="contrasena" required>
+
+                <div *ngIf="error">
+                    <p class="error">{{errorText}}</p>
+                </div>
+        
+                <button type="button" (click)="registrarse(usuario.value, contrasena.value)">Registrarse</button>
+            </form>
+        </div>
+    <a (click)="irLogin()">¿Ya tienes una cuenta? Inicia sesión</a>
+</div>

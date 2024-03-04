@@ -1,0 +1,12 @@
+<div [ngClass]="{'mt-4': true, 'card': true}">
+    <div [ngClass]="{'card-header': true}">
+        <p [ngClass]="{'display-6': true}">Información del Libro</p>
+    </div>
+    <div [ngClass]="{'card-body': true}">
+        <h5 *ngIf="libro" [ngClass]="{'text-danger': libro.titulo}">Titulo: {{libro.titulo}}</h5>
+        <h6 *ngIf="libro" [ngClass]="{'text-muted': libro.autor}">Autor: {{libro.autor}}</h6>
+        <p *ngIf="libro" [ngClass]="{'text-primary': libro.editorial}">Editorial: {{libro.editorial}}</p>
+        <p *ngIf="libro" [ngClass]="{'text-primary': libro.fechaPublicacion}">Fecha de Publicación: {{libro.fechaPublicacion | date: 'yyyy-MM-dd' }}</p>
+        <p *ngIf="libro" [ngClass]="{'text-primary': libro.fechaPublicacion}">Años que lleva editado: {{ libro.fechaPublicacion | tuberia }}</p>
+    </div>
+</div>

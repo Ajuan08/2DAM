@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>FORMULARIO DATOS</h1>
+    <div>
+        <form [formGroup]="formulario" (ngSubmit)="enviarDatos()">
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" formControlName="nombre">
+                <div *ngIf="formulario.get('nombre')?.invalid && formulario.get('nombre')?.touched">
+                    <div *ngIf="formulario.get('nombre')?.errors">El nombre es obligatorio</div>
+                </div>
+
+                <br>
+                <br>
+
+                <label for="edad">Edad: </label>
+                <input type="number" id="edad" formControlName="edad">
+                <div *ngIf="formulario.get('edad')?.invalid && formulario.get('edad')?.touched">
+                    <div *ngIf="formulario.get('edad')?.errors">La edad minima es de 16</div>
+                </div>
+
+                <br>
+                <br>
+
+                <label for="mensaje">Mensaje: </label>
+                <input type="text" id="mensaje" formControlName="mensaje">
+                <div *ngIf="formulario.get('mensaje')?.invalid && formulario.get('mensaje')?.touched">
+                    <div *ngIf="formulario.get('mensaje')?.errors">El maximo del mensaje es de 50 palabras</div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <button type="submit" [disabled]="formulario.invalid" >Enviar Información</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>PAGINA DETALLE</h1>
+  <div>
+    <h2 appDirectivaColor [textoColor]="{color: 'red'}">{{nombre}}, con edad de {{edad}} años dice esto: {{mensaje | tuberiaMayusculas}}</h2>
+    <h3>Componente Hijo</h3>
+    
+    <app-hijo-pagina-detalle [nombre]="nombre" (dinero)="recogerDinero($event)"></app-hijo-pagina-detalle>
+    <h4>El dinero recogido es: {{dinero}}</h4>
+    <p>La descripcion es {{descripcion}}</p>
+  </div>
+</div>
