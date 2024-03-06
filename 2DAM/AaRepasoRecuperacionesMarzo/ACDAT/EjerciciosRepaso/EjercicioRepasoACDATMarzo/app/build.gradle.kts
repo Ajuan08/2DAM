@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.examenacdatrecu"
+    namespace = "com.example.ejerciciorepasoacdatmarzo"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.examenacdatrecu"
-        minSdk = 33
+        applicationId = "com.example.ejerciciorepasoacdatmarzo"
+        minSdk = 34
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
